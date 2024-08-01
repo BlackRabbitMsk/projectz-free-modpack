@@ -1,0 +1,801 @@
+<configs>
+
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- LIGHT ARMOR -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- LUMBERJACK -->
+		
+	<!-- Lumberjack helmet xxx Not working -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorLumberjackHelmet']/effect_group/passive_effect[@name='HarvestCount']"/>
+	<remove xpath="/items/item[@name='armorLumberjackHelmet']/effect_group/display_value[@name='dHarvestCount']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorLumberjackHelmet']/effect_group[@name='LumberjackHelmet']">
+		<display_value name="dPlayerExpGainRepairTool" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".18,.36,.54,.72,.9,1.8" tier="1,2,3,4,5,6" tags="Upgrading">
+			<requirement name="HoldingItemHasTags" tags="repairTool"/>
+		</passive_effect>
+	</append>
+	
+	<!-- Lumberjack outfit / WITHOUT CHANGES -->
+	
+	<!-- LUMBERJACK GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorLumberjackGloves']/effect_group/passive_effect[@name='EntityDamage']"/>
+	<remove xpath="/items/item[@name='armorLumberjackGloves']/effect_group/display_value[@name='dLumberJackDamage']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorLumberjackGloves']">
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6" tags="axe"/>
+			<display_value name="dBlockDamage" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+				
+	<!-- LUMBERJACK BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorLumberjackBoots']/effect_group/passive_effect[@name='StaminaChangeOT']"/>
+	<remove xpath="/items/item[@name='armorLumberjackBoots']/effect_group/display_value[@name='dStaminaRegen']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorLumberjackBoots']/effect_group[@name='LumberjackBoots']">
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2,-.4" tier="1,2,3,4,5,6">
+			<requirement name="HoldingItemHasTags" tags="axe"/>
+		</passive_effect>
+		<display_value name="dStaminaLossAxe" value="-.04,-.08,-.12,-.16,-.2,-.4" tier="1,2,3,4,5,6"/>
+	</append>
+	
+
+			
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- PREACHER -->
+		
+	<!-- PREACHER HELMET -->
+	<set xpath="/items/item[@name='armorPreacherHelmet']/effect_group/display_value[@name='dBartering']/@value">.04,.08,.12,.16,.2,.3</set>
+	<set xpath="/items/item[@name='armorPreacherHelmet']/effect_group/passive_effect[@name='BarteringBuying']/@value">.04,.08,.12,.16,.2,.3</set>
+	
+	<!-- PREACHER OUTFIT -->
+	<set xpath="/items/item[@name='armorPreacherOutfit']/effect_group[@name='PreacherOutfit']/display_value[@name='dDamageResist']/@value">.04,.08,.12,.16,.2,.3</set>
+	<set xpath="/items/item[@name='armorPreacherOutfit']/effect_group/passive_effect[@name='PhysicalDamageResist' and contains(@operation,'perc_add')]/@value">.04,.08,.12,.16,.2,.3</set>
+	
+	<!-- PREACHER GLOVES -->
+	<set xpath="/items/item[@name='armorPreacherGloves']/effect_group/passive_effect[@name='EntityDamage']/@value">.04,.08,.12,.16,.2,.3</set>
+	<set xpath="/items/item[@name='armorPreacherGloves']/effect_group/display_value[@name='dEntityDamage']/@value">.04,.08,.12,.16,.2,.3</set>
+	
+	<!-- PREACHER BOOTS -->
+	<set xpath="/items/item[@name='armorPreacherBoots']/effect_group/display_value[@name='dTreatedCritHealing']/@value">.04,.08,.12,.16,.2,.3</set>
+	<set xpath="/items/item[@name='armorPreacherBoots']/effect_group/triggered_effect[@trigger='onSelfEquipUpdate']/@value">.04,.08,.12,.16,.2,.3</set>
+		
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- ROGUE -->
+	
+	<!-- ROGUE HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRogueHelmet']/effect_group/passive_effect[@name='ScavengingTime']"/>
+	<remove xpath="/items/item[@name='armorRogueHelmet']/effect_group/passive_effect[@name='LootStage']"/>
+	<remove xpath="/items/item[@name='armorRogueHelmet']/effect_group/display_value[@name='dLootStage']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRogueHelmet']/effect_group[@name='RogueHelmet']">
+		<passive_effect name="LootQuantity" operation="perc_add" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6" tags="dukes"/>
+		<display_value name="dLootQuantity" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+	</append>
+	
+	<!-- ROGUE OUTFIT -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group[@name='RogueOutfit']/display_value[@name='dSneakEffectiveness']"/>
+	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group/requirement[@name='CVarCompare']"/>
+	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group/passive_effect[@name='LightMultiplier']"/>
+	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group/passive_effect[@name='NoiseMultiplier']"/>
+	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group/passive_effect[@name='CrouchSpeed']"/>
+	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group/passive_effect[@name='EnemySearchDuration']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRogueOutfit']/effect_group[@name='RogueOutfit']">
+		<triggered_effect trigger="onSelfEquipUpdate" action="ModifyCVar" cvar="$commandoCritNaturalHealing" operation="set" value=".04,.08,.12,.16,.2,.4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$commandoCritNaturalHealing" operation="set" value="0"/>
+		<display_value name="dNaturalCritHealing" value=".04,.08,.12,.16,.2,.4" tier="1,2,3,4,5,6"/>
+	</append>
+
+	<!-- ROGUE GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRogueGloves']/effect_group[@name='RogueGloves']/display_value[@name='dLockpickSpeed']"/>
+	<remove xpath="/items/item[@name='armorRogueGloves']/effect_group[@name='RogueGloves']/display_value[@name='dLockpickSuccess']"/>
+	<remove xpath="/items/item[@name='armorRogueGloves']/effect_group/passive_effect[@name='LockPickBreakChance']"/>
+	<remove xpath="/items/item[@name='armorRogueGloves']/effect_group/passive_effect[@name='LockPickTime']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRogueGloves']/effect_group[@name='RogueGloves']">
+		<passive_effect name="ScavengingTime" operation="perc_add" value="-.2" />
+		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6" tags="perkArchery"/>
+		<display_value name="dReloadSpeedMultiplierArchery" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+		<display_value name="dLootTime" value="-.2"/>
+	</append>
+	
+	<!-- ROGUE BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRogueBoots']/effect_group[@name='RogueBoots']/display_value[@name='dFallDamage']"/>
+	<remove xpath="/items/item[@name='armorRogueBoots']/effect_group/triggered_effect"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRogueBoots']/effect_group[@name='RogueBoots']">
+		<display_value name="dSneakEffectiveness" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+		<display_value name="dCrouchSpeed" value=".04,.08,.12,.16,.2,.4" tier="1,2,3,4,5,6"/>
+	</append>
+	<append xpath="/items/item[@name='armorRogueBoots']">
+		<effect_group>
+		<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<passive_effect name="LightMultiplier" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6">
+				<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="65"/>
+			</passive_effect>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+			<passive_effect name="CrouchSpeed" operation="perc_add" value=".04,.08,.12,.16,.2,.4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- ATHLETIC -->
+		
+	<!-- ATHLETIC HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorAthleticHelmet']/effect_group[@name='AthleticHelmet']/display_value[@name='dFitnessBartering']"/>
+	<remove xpath="/items/item[@name='armorAthleticHelmet']/effect_group/passive_effect[@name='BarteringBuying']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorAthleticHelmet']/effect_group[@name='AthleticHelmet']">
+		<display_value name="dFoodAndWaterLoss" value="-.05,-.1,-.15,-.2,-.25,-.5" tier="1,2,3,4,5,6"/>
+	</append>
+	<append xpath="/items/item[@name='armorAthleticHelmet']">
+		<effect_group>
+			<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25,-.5" tier="1,2,3,4,5,6"/>
+			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25,-.5" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+	
+	<!-- ATHLETIC OUTFIT -->
+	<set xpath="/items/item[@name='armorAthleticOutfit']/effect_group/passive_effect[@name='HealthMax']/@value">4,8,12,16,20,30</set>
+	<set xpath="/items/item[@name='armorAthleticOutfit']/effect_group/display_value[@name='dHealthMax']/@value">4,8,12,16,20,30</set>
+	
+	<!-- ATHLETIC GLOVES -->
+	<remove xpath="/items/item[@name='armorAthleticGloves']/effect_group/passive_effect[@name='StaminaMax']"/>
+	<remove xpath="/items/item[@name='armorAthleticGloves']/effect_group/display_value[@name='dStaminaMax']"/>
+	
+	<append xpath="/items/item[@name='armorAthleticGloves']/effect_group[@name='AthleticGloves']">
+		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+		<display_value name="dReloadSpeedMultiplier" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+	</append>
+	
+	<!-- ATHLETIC BOOTS -->
+	<remove xpath="/items/item[@name='armorAthleticBoots']/effect_group/passive_effect[@name='RunSpeed']"/>
+	<remove xpath="/items/item[@name='armorAthleticBoots']/effect_group/display_value[@name='dRunSpeed']"/>
+	
+	<append xpath="/items/item[@name='armorAthleticBoots']">
+		<effect_group>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6" tags="running"/>
+			<display_value name="dStaminaRegen" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- ENFORCER -->
+		
+	<!-- ENFORCER HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorEnforcerHelmet']/effect_group/passive_effect[@name='BarteringBuying']"/>
+	<remove xpath="/items/item[@name='armorEnforcerHelmet']/effect_group/passive_effect[@name='BarteringSelling']"/>	
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorEnforcerHelmet']">
+		<effect_group>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6" />
+			<display_value name="dBarteringSelling" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+	
+	<!-- ENFORCER OUTFIT / WITHOUT CHANGES -->
+	
+	<!-- ENFORCER GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorEnforcerGloves']/effect_group[@name='EnforcerGloves']/display_value[@name='dFuelUsage']"/>
+	<remove xpath="/items/item[@name='armorEnforcerGloves']/effect_group/passive_effect[@name='VehicleFuelUsePer']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorEnforcerGloves']">
+		<effect_group>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6" tags="perkGunslinger"/>
+			<display_value name="dReloadSpeedMultiplierGunslinger" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+	
+	<!-- ENFORCER BOOTS -->
+	<remove xpath="/items/item[@name='armorEnforcerBoots']/effect_group/passive_effect[@name='RunSpeed']"/>
+	<remove xpath="/items/item[@name='armorEnforcerBoots']/effect_group/display_value[@name='dRunSpeed']"/>
+	
+	<append xpath="/items/item[@name='armorEnforcerBoots']/effect_group[@name='EnforcerBoots']">
+		<passive_effect name="StaminaMax" operation="base_add" value="5,10,15,20,25,50" tier="1,2,3,4,5,6"/>
+		<display_value name="dStaminaMax" value="5,10,15,20,25,50" tier="1,2,3,4,5,6"/>
+	</append>
+	
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- MEDUUM ARMOR -->
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	<!-- FARMER -->
+		
+	<!-- FARMER HELMET / WITHOUT CHANGES -->
+			
+	<!-- FARMER OUTFIT -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorFarmerOutfit']/effect_group/requirement[@name='RequirementItemTier']"/>
+	<remove xpath="/items/item[@name='armorFarmerOutfit']/effect_group/display_value[@name='dHarvestCount']"/>
+		
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorFarmerOutfit']/effect_group[@name='FarmerOutfit']">
+		<passive_effect name="CarryCapacity" operation="base_add" value="1,2,3,4,5,10" tier="1,2,3,4,5,6"/>
+		<display_value name="dCarryCapacity" value="1,2,3,4,5,10" tier="1,2,3,4,5,6"/>
+	</append>
+	
+	<!-- FARMER GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorFarmerGloves']/effect_group[@name='FarmerGloves']/display_value[@name='dRifleDamage']"/>
+	<remove xpath="/items/item[@name='armorFarmerGloves']/effect_group/requirement[@name='HoldingItemHasTags']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorFarmerGloves']/effect_group[@name='FarmerGloves']">
+		<display_value name="dAttacksPerMinute" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+	</append>
+	<insertAfter xpath="/items/item[@name='armorFarmerGloves']/effect_group[@name='FarmerGloves']">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="attAgility,bladeSkill"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+		
+	<!-- FARMER BOOTS / WITHOUT CHANGES -->
+	
+	
+	<!-- BIKER -->
+		
+	<!-- BIKER HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorBikerHelmet']/effect_group/passive_effect[@name='BuffResistance']"/>
+	<remove xpath="/items/item[@name='armorBikerHelmet']/effect_group/display_value[@name='dStunResist']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorBikerHelmet']/effect_group[@name='BikerHelmet']">
+		<display_value name="dPlayerExpGainWinterDesertBiomesKill" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6" tags="Kill">
+			<requirement name="InBiome" biome="5"/>
+		</passive_effect>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6" tags="Kill">
+			<requirement name="InBiome" biome="1"/>
+		</passive_effect>
+	</append>
+
+	<!-- BIKER OUTFIT -->
+	<set xpath="/items/item[@name='armorBikerOutfit']/effect_group/passive_effect[@name='HealthMax']/@value">4,8,12,16,20,30</set>
+	<set xpath="/items/item[@name='armorBikerOutfit']/effect_group/display_value[@name='dHealthMax']/@value">4,8,12,16,20,30</set>
+	
+	<!-- BIKER GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorBikerGloves']/effect_group/requirement[@name='HoldingItemHasTags']"/>
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorBikerGloves']/effect_group[@name='BikerGloves']">
+		<display_value name="dAttacksPerMinute" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+	</append>
+	<insertAfter xpath="/items/item[@name='armorBikerGloves']/effect_group[@name='BikerGloves']">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkPummelPete,perkSkullCrusher"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- BIKER BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorBikerBoots']/effect_group[@name='BikerBoots']/display_value[@name='dStaminaLoss']"/>
+	<remove xpath="/items/item[@name='armorBikerBoots']/effect_group/requirement[@name='HoldingItemHasTags']"/>
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorBikerBoots']/effect_group[@name='BikerBoots']">
+		<display_value name="dFuelUsage" value="-.05,-.1,-.15,-.2,-.25,-.5" tier="1,2,3,4,5,6"/>
+	</append>
+	<insertAfter xpath="/items/item[@name='armorBikerBoots']/effect_group[@name='BikerBoots']">
+		<effect_group>
+		<passive_effect name="VehicleFuelUsePer" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25,-.5" tier="1,2,3,4,5,6"/>
+	</effect_group>
+	</insertAfter>	
+		
+	
+	<!-- SCAVENGER -->
+		
+	<!-- SCAVENGER HELMET -->
+	<set xpath="/items/item[@name='armorScavengerHelmet']/effect_group/passive_effect[@name='PlayerExpGain']/@value">.05,.1,.15,.2,.25,.4</set>
+	
+	<!-- SCAVENGER OUTFIT / WITHOUT CHANGES -->
+	
+	<!-- SCAVENGER GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorScavengerGloves']/effect_group"/>
+	
+		<!-- Add new property -->
+	<insertAfter xpath="/items/item[@name='armorScavengerGloves']/property[@name='SoundPlace']">
+		<effect_group name="ScavengerGloves">
+			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="13,17.3" tier="1,6" tags="heat,electrical"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+			
+			<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="-.56"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+			<display_value name="dNoiseMultiplier" value=".1"/>
+			
+			<display_value name="dHarvestSalvage" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			<display_value name="dAttacksPerMinute" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			<effect_group>
+			<requirement name="HoldingItemHasTags" tags="salvageTool,perkSalvageOperations"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			</effect_group>
+		</effect_group>
+		<!-- Gives a chance to harvest additional resources when salvaging. Chance increases with Tier -->
+		<effect_group>
+			<requirement name="RequirementItemTier" operation="Equals" value="1"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+			<requirement name="HoldingItemHasTags" tags="salvagingSkill"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="salvageHarvest,allHarvest"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="RequirementItemTier" operation="Equals" value="2"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="4"/>
+			<requirement name="HoldingItemHasTags" tags="salvagingSkill"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="salvageHarvest,allHarvest"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="RequirementItemTier" operation="Equals" value="3"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="6"/>
+			<requirement name="HoldingItemHasTags" tags="salvagingSkill"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="salvageHarvest,allHarvest"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="RequirementItemTier" operation="Equals" value="4"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="8"/>
+			<requirement name="HoldingItemHasTags" tags="salvagingSkill"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="salvageHarvest,allHarvest"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="RequirementItemTier" operation="Equals" value="5"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+			<requirement name="HoldingItemHasTags" tags="salvagingSkill"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="1" tags="salvageHarvest,allHarvest"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="RequirementItemTier" operation="Equals" value="6"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+			<requirement name="HoldingItemHasTags" tags="salvagingSkill"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="1" tags="salvageHarvest,allHarvest"/>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- SCAVENGER BOOTS / WITHOUT CHANGES -->
+	
+	<!-- RANGER -->
+		
+	<!-- RANGER HELMET / WITHOUT CHANGES -->
+	<!-- RANGER OUTFIT -->
+	<set xpath="/items/item[@name='armorRangerOutfit']/effect_group/passive_effect[@name='HealthMax']/@value">4,8,12,16,20,30</set>
+	<set xpath="/items/item[@name='armorRangerOutfit']/effect_group/display_value[@name='dHealthMax']/@value">4,8,12,16,20,30</set>
+	
+	<!-- RANGER GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRangerGloves']/effect_group[@name='RangerGloves']/display_value[@name='dRangerDamage']"/>
+	<remove xpath="/items/item[@name='armorRangerGloves']/effect_group/passive_effect[@name='EntityDamage']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRangerGloves']/effect_group[@name='RangerGloves']">
+		<display_value name="dReloadSpeedMultiplier" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+	</append>	
+	<set xpath="/items/item[@name='armorRangerGloves']/effect_group/requirement[@name='HoldingItemHasTags']/@tags">ranged</set>
+	<append xpath="/items/item[@name='armorRangerGloves']/effect_group/requirement[@name='HoldingItemHasTags']">
+		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+	</append>
+	
+	<!-- RANGER BOOTS -->
+	<set xpath="/items/item[@name='armorRangerBoots']/effect_group/passive_effect[@name='StaminaMax']/@value">5,10,15,20,25,50</set>        
+	<set xpath="/items/item[@name='armorRangerBoots']/effect_group/display_value[@name='dStaminaMax']/@value">5,10,15,20,25,50</set>
+	
+	<!-- COMMANDO -->
+		
+	<!-- COMMANDO HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorCommandoHelmet']/effect_group/passive_effect[@name='BuffResistance']"/>
+	<remove xpath="/items/item[@name='armorCommandoHelmet']/effect_group/display_value[@name='dStunResist']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorCommandoHelmet']">
+		<effect_group>
+			<display_value name="dHealingSpeed" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando"/>
+		</effect_group>
+	</append>
+
+	<!-- COMMANDO OUTFIT -->
+	<set xpath="/items/item[@name='armorCommandoOutfit']/effect_group[@name='CommandoOutfit']/triggered_effect[@trigger='onSelfEquipUpdate']/@value">.05,.1,.15,.2,.25,.4</set>
+	<set xpath="/items/item[@name='armorCommandoOutfit']/effect_group[@name='CommandoOutfit']/display_value[@name='dNaturalCritHealing']/@value">.05,.1,.15,.2,.25,.4</set>
+	
+	<!-- COMMANDO GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorCommandoGloves']/effect_group[@name='CommandoGloves']/display_value[@name='dEntityDamage']"/>
+	<remove xpath="/items/item[@name='armorCommandoGloves']/effect_group/passive_effect[@name='EntityDamage']"/>
+		
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorCommandoGloves']/effect_group[@name='CommandoGloves']">
+		<display_value name="dReloadSpeedAutomaticWeapon" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+	</append>	
+	<set xpath="/items/item[@name='armorCommandoGloves']/effect_group/requirement[@name='HoldingItemHasTags']/@tags">perkMachineGunner</set>
+	<append xpath="/items/item[@name='armorCommandoGloves']/effect_group/requirement[@name='HoldingItemHasTags']">
+		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+	</append>
+		
+	<!-- COMMANDO BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorCommandoBoots']/effect_group/display_value[@name='dRunSpeed']"/>
+	<remove xpath="/items/item[@name='armorCommandoBoots']/effect_group/passive_effect[@name='RunSpeed']"/>
+		
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorCommandoBoots']/effect_group[@name='CommandoBoots']">
+		<display_value name="dFallDamage" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+	</append>
+	<insertAfter xpath="/items/item[@name='armorCommandoBoots']/effect_group[@name='CommandoBoots']">
+			<!-- Increase $nerdBootFallDMG with each tier to then process in buffPlayerFallingDamage -->
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdBootFallDMG" operation="set" value=".01414" >
+				<requirement name="RequirementItemTier" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdBootFallDMG" operation="set" value=".02828" >
+				<requirement name="RequirementItemTier" operation="Equals" value="2"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdBootFallDMG" operation="set" value=".044" >
+				<requirement name="RequirementItemTier" operation="Equals" value="3"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdBootFallDMG" operation="set" value=".05656" >
+				<requirement name="RequirementItemTier" operation="Equals" value="4"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdBootFallDMG" operation="set" value=".0707" >
+				<requirement name="RequirementItemTier" operation="Equals" value="5"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$nerdBootFallDMG" operation="set" value=".08484" >
+				<requirement name="RequirementItemTier" operation="Equals" value="6"/></triggered_effect>
+		</effect_group>
+	</insertAfter>
+	
+	
+	<!-- ASSASSIN -->
+		
+	<!-- ASSASSIN HELMET -->
+	<set xpath="/items/item[@name='armorAssassinHelmet']/effect_group[@name='sneak damage bonus']/passive_effect[@name='DamageBonus']/@value">.1,.2,.3,.4,.5,1</set>
+	<set xpath="/items/item[@name='armorAssassinHelmet']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,1</set>
+	<set xpath="/items/item[@name='armorAssassinHelmet']/effect_group[@name='sneak damage bonus']/display_value[@name='dEntityDamageSneak']/@value">.1,.2,.3,.4,.5,1</set>
+	
+	<!-- ASSASSIN OUTFIT / WITHOUT CHANGES -->
+	
+	<!-- ASSASSIN GLOVES -->
+	<remove xpath="/items/item[@name='armorAssassinGloves']/effect_group[@name='AssassinGloves']/display_value[@name='dAttackSpeed']"/>
+	<remove xpath="/items/item[@name='armorAssassinGloves']/effect_group/requirement[@name='HoldingItemHasTags']"/>
+		
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorAssassinGloves']/effect_group[@name='AssassinGloves']">
+		<display_value name="dReloadSpeedMultiplierSniper" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		<display_value name="dRoundsPerMinuteSniper" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+	</append>	
+	
+	<insertAfter xpath="/items/item[@name='armorAssassinGloves']/effect_group[@name='AssassinGloves']">
+		
+		<effect_group>
+		<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+		
+	<!-- ASSASSIN BOOTS / WITHOUT CHANGES -->
+		
+		<!-- HEAVY ARMOR -->
+		
+	<!-- MINER -->
+		
+	<!-- MINER HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorMinerHelmet']/effect_group/passive_effect[@name='HarvestCount']"/>
+	<remove xpath="/items/item[@name='armorMinerHelmet']/effect_group/display_value[@name='dHarvestCount']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorMinerHelmet']/effect_group[@name='MinerHelmet']">
+		<display_value name="dPlayerExpGainMining" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6" tags="Harvesting">
+			<requirement name="HoldingItemHasTags" tags="perkMiner69r"/>
+		</passive_effect>
+	</append>
+	
+	<!-- MINER OUTFIT -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorMinerOutfit']/effect_group[@name='MinerOutfit']/display_value[@name='dStaminaLoss']"/>
+	<remove xpath="/items/item[@name='armorMinerOutfit']/effect_group/passive_effect[@name='StaminaLoss']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorMinerOutfit']/effect_group[@name='MinerOutfit']">
+		<display_value name="dDegradationPerUse" value="-.05,-.1,-.15,-.2,-.25,-.4" tier="1,2,3,4,5,6"/>		
+	</append>
+	
+	<insertAfter xpath="/items/item[@name='armorMinerOutfit']/effect_group[@name='MinerOutfit']">
+		<effect_group>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2,-.4" tier="1,2,3,4,5,6">
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+			</passive_effect>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- MINER GLOVES -->
+	<set xpath="/items/item[@name='armorMinerGloves']/effect_group/display_value[@name='dBlockDamage']/@value">.03,.06,.09,.12,.15,.3</set>
+	<set xpath="/items/item[@name='armorMinerGloves']/effect_group/passive_effect[@name='BlockDamage']/@value">.03,.06,.09,.12,.15,.3</set>
+	
+	<!-- MINER BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorMinerBoots']/effect_group"/>
+	
+		<!-- Add new property -->
+	<insertAfter xpath="/items/item[@name='armorMinerBoots']/property[@name='SoundPlace']">
+		<effect_group name="MinerBoots">
+			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="18,21" tier="1,6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="18,21" tier="1,6" tags="heat,electrical"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+			
+			<passive_effect name="Mobility" operation="perc_add" value="-.075"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.045" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.09" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="-.9"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/>
+			<display_value name="dNoiseMultiplier" value=".2"/>
+			
+		</effect_group>
+		<effect_group>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2,-.4" tier="1,2,3,4,5,6">
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+			</passive_effect>
+			<display_value name="dStaminaLossPickaxe" value="-.04,-.08,-.12,-.16,-.2,-.4" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- NOMAD -->
+		
+	<!-- NOMAD HELMET -->
+	<set xpath="/items/item[@name='armorNomadHelmet']/effect_group[@name='NomadHelmet']/display_value[@name='dFoodWaterUse']/@value">-.05,-.1,-.15,-.2,-.25,-.5</set>
+	<set xpath="/items/item[@name='armorNomadHelmet']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">-.05,-.1,-.15,-.2,-.25,-.5</set>
+	<set xpath="/items/item[@name='armorNomadHelmet']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">-.05,-.1,-.15,-.2,-.25,-.5</set>
+		
+	<!-- NOMAD OUTFIT -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorNomadOutfit']/effect_group[@name='NomadOutfit']/passive_effect[@name='CarryCapacity']"/>
+	<remove xpath="/items/item[@name='armorNomadOutfit']/effect_group[@name='NomadOutfit']/display_value[@name='dCarryCapacity']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorNomadOutfit']/effect_group[@name='NomadOutfit']">	
+		<triggered_effect trigger="onSelfEquipUpdate" action="ModifyCVar" cvar="$commandoCritNaturalHealing" operation="set" value=".05,.1,.15,.2,.25,.4"/>
+		<display_value name="dNaturalCritHealing" value=".05,.1,.15,.2,.25,.4" tier="1,2,3,4,5,6"/>
+	</append>
+				
+	<!-- NOMAD GLOVES -->
+	<remove xpath="/items/item[@name='armorNomadGloves']/effect_group[@name='NomadGloves']/display_value[@name='dEntityDamage']"/>
+	<remove xpath="/items/item[@name='armorNomadGloves']/effect_group/requirement[@name='EntityTagCompare']"/>
+	
+	<append xpath="/items/item[@name='armorNomadGloves']/effect_group[@name='NomadGloves']">
+		<display_value name="dReloadSpeedShotgun" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		<display_value name="dRoundsPerMinuteShotgun" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+	</append>	
+	
+	<insertAfter xpath="/items/item[@name='armorNomadGloves']/effect_group[@name='NomadGloves']">
+		<effect_group>
+		<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- NOMAD BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorNomadBoots']/effect_group/display_value[@name='dRunSpeed']"/>
+	<remove xpath="/items/item[@name='armorNomadBoots']/effect_group/passive_effect[@name='RunSpeed']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorNomadBoots']/effect_group[@name='NomadBoots']">
+		<display_value name="dFallDamage" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+	</append>	
+	
+	<insertAfter xpath="/items/item[@name='armorNomadBoots']/effect_group[@name='NomadBoots']">
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value=".01414" >
+				<requirement name="RequirementItemTier" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value=".02828" >
+				<requirement name="RequirementItemTier" operation="Equals" value="2"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value=".044" >
+				<requirement name="RequirementItemTier" operation="Equals" value="3"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value=".05656" >
+				<requirement name="RequirementItemTier" operation="Equals" value="4"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value=".0707" >
+				<requirement name="RequirementItemTier" operation="Equals" value="5"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value=".08484" >
+				<requirement name="RequirementItemTier" operation="Equals" value="6"/></triggered_effect>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$minerBootFallDMG" operation="set" value="0"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNomadBoots"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNomadBoots"/>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- NERD -->
+		
+	<!-- NERD HELMET -->
+	<set xpath="/items/item[@name='armorNerdHelmet']/effect_group[@name='NerdHelmet']/passive_effect[@name='PlayerExpGain']/@value">.02,.04,.06,.08,.1,.15</set>
+	<set xpath="/items/item[@name='armorNerdHelmet']/effect_group[@name='NerdHelmet']/display_value[@name='dPlayerExpGain']/@value">.02,.04,.06,.08,.1,.15</set>
+	
+	<!-- NERD OUTFIT / WITHOUT CHANGES -->
+	
+	<!-- NERD GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorNerdGloves']/effect_group[@name='NerdGloves']/display_value[@name='dNerdDamage']"/>
+	<remove xpath="/items/item[@name='armorNerdGloves']/effect_group/passive_effect[@name='EntityDamage']"/>
+	
+	<!-- Add new property -->
+	<append xpath="/items/item[@name='armorNerdGloves']/effect_group[@name='NerdGloves']">
+		<display_value name="dNerdAtackSpeed" value=".04,.08,.12,.16,.2,.4" tier="1,2,3,4,5,6"/>
+	</append>
+	<append xpath="/items/item[@name='armorNerdGloves']">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="meleeIntellect"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".04,.08,.12,.16,.2,.4" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</append>
+		
+	<!-- NERD BOOTS -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorNerdBoots']/effect_group"/>
+		<!-- Add new property -->
+	<insertAfter xpath="/items/item[@name='armorNerdBoots']/property[@name='SoundPlace']">	
+		<effect_group name="NerdBoots">
+			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="18,21" tier="1,6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="18,21" tier="1,6" tags="heat,electrical"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+			
+			<passive_effect name="Mobility" operation="perc_add" value="-.075"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.045" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.09" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="-.9"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/>
+			<display_value name="dNoiseMultiplier" value=".2"/>
+			
+			<passive_effect name="RunSpeed" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			<display_value name="dRunSpeed" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+	
+	<!-- RAIDER -->
+		
+	<!-- RAIDER HELMET -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRaiderHelmet']/effect_group/passive_effect[@name='BuffResistance']"/>
+	<remove xpath="/items/item[@name='armorRaiderHelmet']/effect_group/display_value[@name='dStunResist']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRaiderHelmet']">
+		<effect_group>
+			<display_value name="dHealingSpeed" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCommando" operation="set" value=".03,.06,.09,.12,.15,.3" tier="1,2,3,4,5,6"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando"/>
+		</effect_group>   
+	</append>
+	
+	<!-- RAIDER OUTFIT -->
+	<set  xpath="/items/item[@name='armorRaiderOutfit']/effect_group[@name='RaiderOutfit']/triggered_effect[@trigger='onSelfEquipUpdate']">.04,.08,.12,.16,.2,.4</set>
+	<set  xpath="/items/item[@name='armorRaiderOutfit']/effect_group[@name='RaiderOutfit']/display_value[@name='dNaturalCritHealing']">.04,.08,.12,.16,.2,.4</set>
+	
+	<!-- RAIDER GLOVES -->
+		<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRaiderGloves']/effect_group[@name='RaiderGloves']/display_value[@name='dEntityDamage']"/><remove xpath="/items/item[@name='armorRaiderGloves']/effect_group/passive_effect[@name='EntityDamage']"/>
+	
+		<!-- Add new property -->
+	<append xpath="/items/item[@name='armorRaiderGloves']/effect_group[@name='RaiderGloves']">
+		<display_value name="dRaiderAtackSpeed" value=".05,.1,.15,.2,.25,.5" tier="1,2,3,4,5,6"/>
+	</append>
+	<insertAfter xpath="/items/item[@name='armorRaiderGloves']/effect_group[@name='RaiderGloves']">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05,.1,.15,.2,.25,.5" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+
+	<!-- RAIDER BOOTS -->
+	<!-- Removing old property -->
+	<remove xpath="/items/item[@name='armorRaiderBoots']/effect_group"/>
+		<!-- Add new property -->
+	<insertAfter xpath="/items/item[@name='armorRaiderBoots']/property[@name='SoundPlace']">	
+		<effect_group name="RaiderBoots">
+			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="18,21" tier="1,6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="18,21" tier="1,6" tags="heat,electrical"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+			
+			<passive_effect name="Mobility" operation="perc_add" value="-.075"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.045" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.09" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="-.9"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/>
+			<display_value name="dNoiseMultiplier" value=".2"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.03,-.06,-.09,-.12,-.15,-.3" tier="1,2,3,4,5,6">
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+			</passive_effect>
+			<display_value name="dStaminaLossMelee" value="-.03,-.06,-.09,-.12,-.15,-.299" tier="1,2,3,4,5,6"/>
+		</effect_group>
+	</insertAfter>
+	
+
+
+	
+</configs>

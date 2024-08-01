@@ -1,0 +1,313 @@
+<config>
+	
+	<append xpath="/recipes">
+		
+		<!-- Cement Mixer -->
+		<recipe name="cementMixerImp" count="1" craft_time="1200" tags="learnable,workbenchCrafting">
+			<ingredient name="cementMixer" count="1"/>
+			<ingredient name="resourceUltraLightAlloys" count="20"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="20"/>
+			<ingredient name="smallEngine" count="3"/>
+		</recipe>	
+		
+		<recipe name="resourceConcreteMix" count="1" craft_time="1" craft_area="cementMixerImp" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="1"/>
+			<ingredient name="resourceRockSmall" count="1"/>
+			<ingredient name="resourceCement" count="1"/>
+		</recipe>
+
+		<recipe name="resourceConcreteBundle" count="1" craft_time="700" craft_area="cementMixerImp" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="700"/>
+			<ingredient name="resourceRockSmall" count="700"/>
+			<ingredient name="resourceCement" count="700"/>
+		</recipe>
+		
+		<recipe name="resourceConcreteBundle" count="1" craft_time="5" craft_area="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="1000"/>
+		</recipe>
+
+		<recipe name="resourceCrushedSand" count="1" craft_area="cementMixerImp" tags="cementMixerCrafting">
+			<ingredient name="resourceRockSmall" count="1"/>
+		</recipe>
+
+		<recipe name="terrGravel" count="1" craft_time="6" craft_area="cementMixerImp" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="7"/>
+			<ingredient name="resourceRockSmall" count="7"/>
+		</recipe>
+
+		<recipe name="terrAsphalt" count="1" craft_time="8" craft_area="cementMixerImp" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="6"/>
+			<ingredient name="resourceRockSmall" count="14"/>
+			<ingredient name="resourceOilShale" count="3"/>
+		</recipe>
+
+		<recipe name="terrStone" count="1" craft_time="4" craft_area="cementMixerImp" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="7"/>
+			<ingredient name="resourceRockSmall" count="15"/>
+			<ingredient name="resourceCement" count="2"/>
+		</recipe>
+		
+		<!-- IMP Forge -->
+		<recipe name="forgeImp" count="1" craft_time="1200" tags="learnable,workbenchCrafting">
+			<ingredient name="forge" count="1"/>
+			<ingredient name="resourceUltraLightAlloys" count="20"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="20"/>	
+		</recipe>
+		
+		<recipe name="toolAnvilImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="toolAnvil" count="1"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="10"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+		</recipe>
+		
+		<recipe name="toolBellowsImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="toolBellows" count="1"/>
+			<ingredient name="resourceUltraLightAlloys" count="10"/>
+			<ingredient name="resourceLeather" count="75"/>
+		</recipe>
+		
+		<!-- IMP Workbench -->
+		<recipe name="workbenchImp" count="1" craft_time="1200" tags="learnable,workbenchCrafting">
+			<ingredient name="workbench" count="1"/>
+			<ingredient name="resourceUltraLightAlloys" count="20"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="20"/>	
+		</recipe>
+		
+		<recipe name="toolSmallParts" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="UniversalParts" count="50"/>
+			<ingredient name="resourceScrapPolymers" count="75"/>
+			<ingredient name="resourceRepairKit" count="10"/>
+		</recipe>
+		
+		<recipe name="toolImprovedTools" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="UniversalParts" count="150"/>
+			<ingredient name="resourceExperimentalAlloys" count="20"/>
+			<ingredient name="resourcePreciousMetals" count="25"/>
+		</recipe>
+		
+		<!-- IMP Stove -->
+		<recipe name="kitchenStove" count="1" craft_time="1200" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceRockSmall" count="300"/>
+			<ingredient name="resourceSpring" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>			
+		</recipe>
+		
+		<!-- Dew collector -->
+		<recipe name="DewCollectorImp" count="1" craft_time="1200" tags="learnable,workbenchCrafting">
+			<ingredient name="cntDewCollector" count="1"/>
+			<ingredient name="toolDewFilter" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="250"/>
+			<ingredient name="resourceMetalPipe" count="20"/>			
+		</recipe>
+		
+		<recipe name="toolDewFilter" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBrokenGlass" count="20"/>
+			<ingredient name="resourceCoal" count="3000"/>
+			<ingredient name="resourceCloth" count="500"/>
+			<ingredient name="resourceScrapPolymers" count="1000"/>			
+		</recipe>
+		
+		<recipe name="toolDewTarp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceCloth" count="250"/>
+			<ingredient name="resourceScrapPolymers" count="200"/>			
+		</recipe>
+		
+		<recipe name="toolDewGatherer" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSnowBall" count="500"/>
+			<ingredient name="bucketEmpty" count="1"/>			
+		</recipe>
+		
+		<!-- Master Magazine -->
+		<recipe name="masterMachineGunsSkillMagazine" count="1" craft_time="10" tags="learnable,workbenchCrafting">
+			<ingredient name="machineGunsSkillMagazine" count="6"/>
+		</recipe>
+		<recipe name="MasterShotgunsSkillMagazine" count="1" craft_time="10" tags="learnable,workbenchCrafting">
+			<ingredient name="shotgunsSkillMagazine" count="6"/>
+		</recipe>
+		<recipe name="MasterRiflesSkillMagazine" count="1" craft_time="10" tags="learnable,workbenchCrafting">
+			<ingredient name="riflesSkillMagazine" count="6"/>
+		</recipe>
+		<recipe name="MasterHandgunsSkillMagazine" count="1" craft_time="10" tags="learnable,workbenchCrafting">
+			<ingredient name="handgunsSkillMagazine" count="6"/>
+		</recipe>
+		<recipe name="MasterBowsSkillMagazine" count="1" craft_time="10" tags="learnable,workbenchCrafting">
+			<ingredient name="bowsSkillMagazine" count="6"/>
+		</recipe>
+		<recipe name="MasterWorkstationsMagazine" count="1" craft_time="10" tags="learnable,workbenchCrafting">
+			<ingredient name="workstationSkillMagazine" count="6"/>
+		</recipe>
+		
+		<!-- AUTOMATIC WEAPON -->
+		
+		<recipe name="gunMGT4M60Imp" count="1" craft_time="1500" craft_area="workbench" tags="learnable,perkMachineGunner">
+			<ingredient name="gunMGT1AK47Parts" count="15"/>
+			<ingredient name="gunMGT3M60" count="1"/>
+			<ingredient name="resourceForgedSteel" count="0"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="3,15" tags="gunMGT1AK47Parts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="5,6" operation="base_add" value="1,2" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		<recipe name="gunMGT5M60Bulldog" count="1" craft_time="1500" craft_area="workbench" tags="learnable,perkMachineGunner" craft_tool="toolImprovedTools">
+			<ingredient name="gunMGT1AK47Parts" count="20"/>
+			<ingredient name="resourceRepairKit" count="10"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="5,25" tags="gunMGT1AK47Parts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceRepairKit"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="100,500" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		
+		
+		<!-- SHOTGUNS WEAPON -->
+		
+		<recipe name="gunShotgunT4AutoShotgunImp" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="15"/>
+			<ingredient name="gunShotgunT3AutoShotgun" count="1"/>
+			<ingredient name="resourceForgedSteel" count="0"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="3,15" tags="gunShotgunT1DoubleBarrelParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="5,6" operation="base_add" value="1,2" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="gunShotgunT5AutoShotgunEraser" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkBoomstick" craft_tool="toolImprovedTools">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="20"/>
+			<ingredient name="resourceRepairKit" count="10"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="5,25" tags="gunShotgunT1DoubleBarrelParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceRepairKit"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="100,500" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+
+		<!-- RIFLES WEAPON -->
+		
+		<recipe name="gunRifleT4SniperRifleImp" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkDeadEye">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="15"/>
+			<ingredient name="gunRifleT3SniperRifle" count="1"/>
+			<ingredient name="resourceForgedSteel" count="0"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="3,15" tags="gunRifleT1HuntingRifleParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="5,6" operation="base_add" value="1,2" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="gunRifleT5SniperRifleGaus" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkDeadEye" craft_tool="toolImprovedTools">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="20"/>
+			<ingredient name="resourceRepairKit" count="10"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="5,25" tags="gunRifleT1HuntingRifleParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceRepairKit"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="100,500" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- HANDGUN WEAPON -->
+	
+		<recipe name="gunHandgunT4SMG5Imp" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkGunslinger">
+			<ingredient name="gunHandgunT1PistolParts" count="15"/>
+			<ingredient name="gunHandgunT3SMG5" count="1"/>
+			<ingredient name="resourceForgedSteel" count="0"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="3,15" tags="gunHandgunT1PistolParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="5,6" operation="base_add" value="1,2" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="gunHandgunT5SMG5Zinger" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkGunslinger" craft_tool="toolImprovedTools">
+			<ingredient name="gunHandgunT1PistolParts" count="20"/>
+			<ingredient name="resourceRepairKit" count="10"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="5,25" tags="gunHandgunT1PistolParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceRepairKit"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="100,500" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- BOWS WEAPON -->
+		
+		<recipe name="gunBowT4CompoundBowImp" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkArchery">
+			<ingredient name="gunBowT1WoodenBowParts" count="15"/>
+			<ingredient name="gunBowT3CompoundBow" count="1"/>
+			<ingredient name="resourceForgedSteel" count="0"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="3,15" tags="gunBowT1WoodenBowParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="5,6" operation="base_add" value="1,2" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="gunBowT4CompoundCrossbowImp" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkArchery">
+			<ingredient name="gunBowT1WoodenBowParts" count="15"/>
+			<ingredient name="gunBowT3CompoundCrossbow" count="1"/>
+			<ingredient name="resourceForgedSteel" count="0"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="3,15" tags="gunBowT1WoodenBowParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="5,6" operation="base_add" value="1,2" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="gunBowT5CompoundCrossbowMantis" craft_time="1500" count="1" craft_area="workbench" tags="learnable,perkArchery" craft_tool="toolImprovedTools">
+			<ingredient name="gunBowT1WoodenBowParts" count="20"/>
+			<ingredient name="resourceRepairKit" count="10"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceDuctTape" count="0"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="5,25" tags="gunBowT1WoodenBowParts"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceRepairKit"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="50,250" tags="resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="10,50" tags="resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="4,6" operation="base_add" value="1,3" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+	
+	</append>
+	
+</config>

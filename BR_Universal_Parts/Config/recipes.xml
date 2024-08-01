@@ -1,0 +1,58 @@
+<config>
+	
+	<insertAfter xpath="/recipes/recipe[@name='resourceScrapLead']">
+		<recipe name="UniversalParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /></recipe>
+	</insertAfter>
+	
+	<append xpath="/recipes">
+	<recipe name="gunBowT1WoodenBowParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="gunHandgunT1PistolParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="gunShotgunT1DoubleBarrelParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="gunRifleT1HuntingRifleParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="gunMGT1AK47Parts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="gunExplosivesT3RocketLauncherParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="gunBotRoboticsParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeWpnBatonT2StunBatonParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeWpnKnucklesT3SteelKnucklesParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeToolAxeT3ChainsawParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeWpnSpearT3SteelSpearParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeWpnClubT3SteelClubParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeWpnSledgeT3SteelSledgehammerParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="meleeToolAllSteelParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	<recipe name="armorParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="UniversalParts" count="3"/>
+	</recipe>
+	</append>
+	
+</config>

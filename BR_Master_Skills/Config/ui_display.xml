@@ -1,0 +1,59 @@
+<config>
+	
+	<append xpath="/ui_display_info/crafting_category_display">
+		
+		<!-- Advanced Workstation Filters -->
+		<crafting_category_list display_type="forgeImp">
+			<!-- <crafting_category name="" icon="ui_game_symbol_forge" display_name="lblAll" /> -->
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<!-- <crafting_category name="AdvBuilding" icon="ui_game_symbol_map_fortress" display_name="lblCategoryAdvBuilding" /> -->
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<!-- <crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" /> -->
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="workbenchImp">
+			<!-- <crafting_category name="" icon="ui_game_symbol_workbench" display_name="lblAll" /> -->
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience" />
+			<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+			<crafting_category name="Clothing" icon="ui_game_symbol_shirt" display_name="lblCategoryClothing" />
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+			<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc" />
+			<!-- <crafting_category name="Vehicles" icon="ui_game_symbol_4x4" display_name="lblCategoryVehicles" /> -->
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="kitchenStove">
+			<!-- <crafting_category name="" icon="ui_game_symbol_campfire" display_name="lblAll" />
+			<crafting_category name="Drink/Cooking" icon="ui_game_symbol_water" display_name="lblCategoryChemicals" /> -->
+			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+			<crafting_category name="CFMedical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="cementMixerImp">
+			<crafting_category name="" icon="ui_game_symbol_cement" display_name="lblCategoryCementMixer" />
+		</crafting_category_list>
+	</append>
+		
+	<append xpath="/ui_display_info/item_display">
+	 
+		<item_display_info display_type="rangedSniper" display_group="groupRanged">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<!-- <display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true"/> -->
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			
+		</item_display_info>
+		
+	</append>
+	
+</config>

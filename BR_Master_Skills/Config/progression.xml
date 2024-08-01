@@ -1,0 +1,185 @@
+<config>
+	
+	
+	<append xpath="/progression/attributes">	
+		<attribute name="attmaster" name_key="attmaster" desc_key="attmaster" icon="ui_game_symbol_block_upgrade" min_level="0" max_level="0" base_skill_point_cost="0"/>
+	</append>
+	
+	<!-- Adding conditions for crafting Master's magazines -->
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="masterMachineGunsSkillMagazine"/>
+		</effect_group>
+	</append>
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'machineGunsCSM')]/requirement/@progression_name">MasterCraftingMachineGuns</set>
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'machineGunsCSM')]/requirement/@value">50</set>
+	
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterShotgunsSkillMagazine"/>
+		</effect_group>
+	</append>
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'shotgunsCSM')]/requirement/@progression_name">MasterCraftingShotgun</set>
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'shotgunsCSM')]/requirement/@value">50</set>
+	
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterRiflesSkillMagazine"/>
+		</effect_group>
+	</append>
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'riflesCSM')]/requirement/@progression_name">MasterCraftingRifle</set>
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'riflesCSM')]/requirement/@value">50</set>
+	
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterHandgunsSkillMagazine"/>
+		</effect_group>
+	</append>
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'handgunsCSM')]/requirement/@progression_name">MasterCraftingHandguns</set>
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'handgunsCSM')]/requirement/@value">50</set>
+	
+	<append xpath="/progression/perks/perk[@name='perkArchery']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterBowsSkillMagazine"/>
+		</effect_group>
+	</append>
+	<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'bowsCSM')]/requirement/@progression_name">MasterCraftingBows</set>
+	<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'bowsCSM')]/requirement/@value">50</set>
+	
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterBowsSkillMagazine"/>
+		</effect_group>
+	</append>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'workstationCSM')]/requirement/@progression_name">MasterCraftingBows</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'workstationCSM')]/requirement/@value">30</set>
+	
+	<append xpath="/progression/crafting_skills">
+	
+		<!-- Machine gun -->
+		<crafting_skill name="MasterCraftingMachineGuns" max_level="50" parent="attmaster" name_key="MasterMachineGunsName" desc_key="MasterMachineGunsDesc" long_desc_key="MasterMachineGunsLongDesc" icon="ui_game_symbol_rifle">
+			
+			<display_entry item="gunMGT4M60Imp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunMGT5M60Bulldog" unlock_level="25,30,35,40,45,50"/>
+			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunMGT4M60Imp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunMGT5M60Bulldog"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunMGT4M60Imp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="25,30,35,40,45,50" value="1,2,3,4,5,5" tags="gunMGT5M60Bulldog"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Shotgun -->
+		<crafting_skill name="MasterCraftingShotgun" max_level="50" parent="attmaster" name_key="MasterCraftingShotgunName" desc_key="MasterCraftingShotgunDesc" long_desc_key="MasterCraftingShotgunLongDesc" icon="ui_game_symbol_shotgun">
+			
+			<display_entry item="gunShotgunT4AutoShotgunImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunShotgunT5AutoShotgunEraser" unlock_level="25,30,35,40,45,50"/>
+			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunShotgunT4AutoShotgunImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunShotgunT5AutoShotgunEraser"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunShotgunT4AutoShotgunImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="25,30,35,40,45,50" value="1,2,3,4,5,5" tags="gunShotgunT5AutoShotgunEraser"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Sniper rifle -->
+		<crafting_skill name="MasterCraftingRifle" max_level="50" parent="attmaster" name_key="MasterCraftingRifleName" desc_key="MasterCraftingRifleDesc" long_desc_key="MasterCraftingRifleLongDesc" icon="ui_game_symbol_long_shot">
+			
+			<display_entry item="gunRifleT4SniperRifleImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunRifleT5SniperRifleGaus" unlock_level="25,30,35,40,45,50"/>
+			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunRifleT4SniperRifleImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunRifleT5SniperRifleGaus"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunRifleT4SniperRifleImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="25,30,35,40,45,50" value="1,2,3,4,5,5" tags="gunRifleT5SniperRifleGaus"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Handguns -->
+		<crafting_skill name="MasterCraftingHandguns" max_level="50" parent="attmaster" name_key="MasterCraftingHandgunsName" desc_key="MasterCraftingHandgunsDesc" long_desc_key="MasterCraftingHandgunsLongDesc" icon="ui_game_symbol_pistol">
+			
+			<display_entry item="gunHandgunT4SMG5Imp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunHandgunT5SMG5Zinger" unlock_level="25,30,35,40,45,50"/>
+			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunHandgunT4SMG5Imp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunHandgunT5SMG5Zinger"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunHandgunT4SMG5Imp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="25,30,35,40,45,50" value="1,2,3,4,5,5" tags="gunHandgunT5SMG5Zinger"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Bows -->
+		<crafting_skill name="MasterCraftingBows" max_level="50" parent="attmaster" name_key="MasterCraftingBowsName" desc_key="MasterCraftingBowsDesc" long_desc_key="MasterCraftingHandgunsLongDesc" icon="ui_game_symbol_archery">
+						
+			<display_entry icon="gunBowT3CompoundCrossbow" name_key="bowsT1" has_quality="true" unlock_level="5,10,15,20,25,28">
+				<unlock_entry item="gunBowT4CompoundCrossbowImp,gunBowT4CompoundBowImp" unlock_tier="1" recipes="gunBowT4CompoundCrossbowImp,gunBowT4CompoundBowImp"/>
+			</display_entry>
+			<display_entry item="gunBowT5CompoundCrossbowMantis" unlock_level="25,30,35,40,45,50"/>
+			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBowT4CompoundBowImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBowT4CompoundCrossbowImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunHandgunT5SMG5Zinger"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunBowT4CompoundBowImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunBowT4CompoundCrossbowImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="25,30,35,40,45,50" value="1,2,3,4,5,5" tags="gunBowT5CompoundCrossbowMantis"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Workstations -->
+		<crafting_skill name="MasterWorkstations" max_level="30" parent="attmaster" name_key="MasterWorkstationsName" desc_key="MasterWorkstationsDesc" long_desc_key="MasterWorkstationsLongDesc" icon="ui_game_symbol_workbench">
+			
+			<display_entry icon="cntWoodBurningStove,toolDewGatherer,toolDewTarp,toolDewFilter,cntDewCollector" name_key="masterworkstationsT1-1,masterworkstationsT1-2,masterworkstationsT1-3,masterworkstationsT1-4,masterworkstationsT1-5" has_quality="false" unlock_level="3,6,6,9,12">
+				<unlock_entry item="kitchenStove" unlock_tier="1" />
+				<unlock_entry item="toolDewGatherer" unlock_tier="2" />
+				<unlock_entry item="toolDewTarp" unlock_tier="3" />
+				<unlock_entry item="toolDewFilter" unlock_tier="4" />
+				<unlock_entry item="DewCollectorImp" unlock_tier="5" />
+			</display_entry>
+			<display_entry icon="workbench,toolSmallParts,toolImprovedTools" name_key="masterworkstationsT2-1,masterworkstationsT2-2,masterworkstationsT2-3" has_quality="false" unlock_level="15,18,21">
+				<unlock_entry item="workbenchImp" unlock_tier="1" />
+				<unlock_entry item="toolSmallParts" unlock_tier="2" />
+				<unlock_entry item="toolImprovedTools" unlock_tier="3" />
+			</display_entry>
+			<display_entry icon="cementMixer" name_key="masterworkstationsT3-1" has_quality="false" unlock_level="24" >
+				<unlock_entry item="cementMixerImp" unlock_tier="1" />
+			</display_entry>
+			<display_entry icon="forge,toolBellows,toolAnvil" name_key="masterworkstationsT4-1,masterworkstationsT4-2,masterworkstationsT4-3" has_quality="false" unlock_level="27,30,30">
+				<unlock_entry item="forgeImp" unlock_tier="1" />
+				<unlock_entry item="toolBellowsImp" unlock_tier="2" />
+				<unlock_entry item="toolAnvilImp" unlock_tier="3" />
+			</display_entry>			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="kitchenStove"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="toolDewGatherer"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="toolDewTarp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,100" value="1" tags="toolDewFilter"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="DewCollectorImp"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="workbenchImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="toolSmallParts"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,100" value="1" tags="toolImprovedTools"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="cementMixerImp"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="forgeImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="toolBellowsImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="toolAnvilImp"/>
+				
+			</effect_group>
+		</crafting_skill>
+		
+	</append>
+	 
+
+</config>

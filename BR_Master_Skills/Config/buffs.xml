@@ -1,0 +1,74 @@
+<config>
+	
+			
+	<append xpath="/buffs">
+	
+		<buff name="buffWeaponBleeding" hidden="true">
+			<damage_type value="bloodloss"/>
+			<damage_source value="Internal"/>
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$bleedDuration" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$bleedDuration" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$bleedDuration" operation="add" value="-1"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffWeaponBleeding">
+					<requirement name="CVarCompare" cvar="$bleedDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$bleedDuration"/>
+			
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="18"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.5"/>
+				
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="buffWeaponShock" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ShockDuration" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$ShockDuration" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ShockDuration" operation="add" value="-1"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffWeaponShock">
+					<requirement name="CVarCompare" cvar="$ShockDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$ShockDuration"/>
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.8"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.3"/>
+				
+			</effect_group>
+			
+		</buff>
+		
+		<!-- <buff name="buffWeaponKnockdown" hidden="true"> -->
+			<!-- <damage_type value="knockdown"/> -->
+			<!-- <stack_type value="ignore"/> -->
+			<!-- <duration value="4"/> -->
+
+			
+			<!-- <effect_group> -->
+				
+				<!-- <passive_effect name="RunSpeed" operation="perc_set" value="0"/> -->
+				<!-- <passive_effect name="WalkSpeed" operation="perc_set" value="0"/> -->
+				<!-- <passive_effect name="CrouchSpeed" operation="perc_set" value="0"/> -->
+				<!-- <passive_effect name="JumpStrength" operation="perc_set" value="0"/> -->
+				
+			<!-- </effect_group> -->
+			
+		<!-- </buff> -->
+		
+		
+	</append>
+	
+	
+</config>

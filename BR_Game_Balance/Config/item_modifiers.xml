@@ -1,0 +1,9 @@
+<config>
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@installable_tags">armorHands</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@installable_tags">armorHands</set>
+	
+</config>

@@ -1,0 +1,124 @@
+<config>
+	
+	<set xpath="/items/item[(starts-with(@name, 'gun') or starts-with(@name, 'melee')) and contains(@name, 'T3')]/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[(starts-with(@name, 'gun') or starts-with(@name, 'melee')) and contains(@name, 'T3')]/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Weight']/@value">4</set>
+	<set xpath="/items/item[(starts-with(@name, 'armor')) and contains(@name, 'Master')]/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[(starts-with(@name, 'armor')) and contains(@name, 'Master')]/property[@name='Weight']/@value">4</set>
+	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Weight']/@value">4</set>
+	
+	<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Material']/@value">MUniversalParts</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Material']">
+		<property name="Weight" value="4"/>
+	</insertAfter>
+	
+	
+	<append xpath="/items/item[@name='gunBowT1WoodenBowParts']">
+		<property name="UnlockedBy" value="craftingBows"/>
+	</append>
+	<append xpath="/items/item[@name='gunHandgunT1PistolParts']">
+		<property name="UnlockedBy" value="craftingHandguns"/>
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']">
+		<property name="UnlockedBy" value="craftingShotguns"/>
+	</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifleParts']">
+		<property name="UnlockedBy" value="craftingRifles"/>
+	</append>
+	<append xpath="/items/item[@name='gunMGT1AK47Parts']">
+		<property name="UnlockedBy" value="craftingMachineGuns"/>
+	</append>
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']">
+		<property name="UnlockedBy" value="craftingExplosives"/>
+	</append>
+	<append xpath="/items/item[@name='gunBotRoboticsParts']">
+		<property name="UnlockedBy" value="craftingRobotics"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']">
+		<property name="UnlockedBy" value="craftingRobotics"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']">
+		<property name="UnlockedBy" value="craftingKnuckles"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']">
+		<property name="UnlockedBy" value="craftingHarvestingTools"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']">
+		<property name="UnlockedBy" value="craftingBlades"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']">
+		<property name="UnlockedBy" value="craftingSpears"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']">
+		<property name="UnlockedBy" value="craftingClubs"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+		<property name="UnlockedBy" value="craftingSledgehammers"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAllSteelParts']">
+		<property name="UnlockedBy" value="craftingHarvestingTools"/>
+	</append>
+	<append xpath="/items/item[@name='armorParts']">
+		<property name="UnlockedBy" value="craftingArmor"/>
+	</append>
+
+	<append xpath="/items">
+			
+		<item name="UniversalParts">
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="meleeToolAllSteelParts"/>
+			<property name="CustomIconTint" value="D0C986"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MUniversalParts"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="250"/> <!-- STK resource -->
+			<property name="Group" value="Resources"/>
+			<property name="EconomicValue" value="75"/>
+			<property name="NoScrapping" value="true" />
+		</item>
+		
+	</append>
+	
+</config>

@@ -74,13 +74,11 @@
 		</recipe>
 		
 		<recipe name="toolSmallParts" count="1" craft_time="180" tags="learnable,workbenchCrafting">
-			<ingredient name="UniversalParts" count="50"/>
 			<ingredient name="resourceScrapPolymers" count="75"/>
 			<ingredient name="resourceRepairKit" count="10"/>
 		</recipe>
 		
 		<recipe name="toolImprovedTools" count="1" craft_time="180" tags="learnable,workbenchCrafting">
-			<ingredient name="UniversalParts" count="150"/>
 			<ingredient name="resourceExperimentalAlloys" count="20"/>
 			<ingredient name="resourcePreciousMetals" count="25"/>
 		</recipe>

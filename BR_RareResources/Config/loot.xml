@@ -1,0 +1,33 @@
+<config>
+		
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestConcreteShapes']">
+		<lootgroup name="groupExperimentalAlloys" count="all">
+			<item name="ExperimentalAlloys_BundleSmall" count="1" loot_prob_template="medLow"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRareAlloys" count="all">
+			<item name="UltraLightAlloys_BundleSmall" count="1" loot_prob_template="medHigh"/>
+			<item name="UltraStrengthAlloys_BundleSmall" count="1" loot_prob_template="medHigh"/>
+		</lootgroup>
+	</insertAfter>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupPassNGas03']">
+		<item name="resourceUltraStrengthAlloys" count="3,6" loot_prob_template="medLow"/>
+		<item name="resourceUltraLightAlloys" count="3,6" loot_prob_template="medLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupAirDropT4Bundles']">
+		<item group="groupRareAlloys"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupAirDropT5Bundles']">
+		<item group="groupExperimentalAlloys"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT5_08']">
+		<item name="UltraLightAlloys_BundleSmall" count="1" loot_prob_template="medHigh"/>
+		<item name="UltraStrengthAlloys_BundleSmall" count="1" loot_prob_template="medHigh"/>
+		<item name="ExperimentalAlloys_BundleSmall" count="1" loot_prob_template="medLow"/>
+	</append>
+	
+</config>

@@ -1,0 +1,14 @@
+<config>
+		
+	<append xpath="/recipes">
+		
+		<!-- Precious Metals -->
+		<recipe name="resourcePreciousMetals" craft_time="75" count="1" craft_area="workbench">
+			<ingredient name="resourceGoldNugget" count="5"/>
+			<ingredient name="resourceSilverNugget" count="10"/>
+			<ingredient name="resourceRawDiamond" count="1"/>
+		</recipe>
+		
+	</append>
+	
+</config>

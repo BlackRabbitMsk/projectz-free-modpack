@@ -98,7 +98,7 @@ MasterCraftingHandgunsDesc,progression,Attribute,,"The skill [DECEA3]Gunslinger 
 MasterCraftingBowsName,progression,Attribute,,Master Archery,Мастер стрельбы из луков
 MasterCraftingBowsDesc,progression,Attribute,,"The skill [DECEA3]Archery lvl.5[-] makes it possible to create magazines [DECEA3]Bows master[-]\nReading these magazines improves the quality of the weapons you upgrade.","Умение [DECEA3]Стрельбы из лука ур.5[-] дает возможность создавать журналы [DECEA3]Мастер луков и арбалетов[-]\nЧтение этих журналов повышает качество улучшаемого оружия."
 MasterWorkstationsName,progression,Attribute,,Master Workstations,Мастер рабочих станций
-MasterWorkstationsDesc,progression,Attribute,,"The skill [DECEA3]Advanced Engineering lvl.5[-] makes it possible to create magazines [DECEA3]Bows master[-]\nReading these magazines opens up new stations and tools for them.","Умение [DECEA3]Продвинутое проектирование ур.5[-] дает возможность создавать журналы [DECEA3]Мастер луков и арбалетов[-]\nЧтение этих журналов открывает новые станции и инструменты к ним."
+MasterWorkstationsDesc,progression,Attribute,,"The skill [DECEA3]Advanced Engineering lvl.5[-] makes it possible to create magazines [DECEA3]Workstation Master[-]\nReading these magazines opens up new stations and tools for them.","Умение [DECEA3]Продвинутое проектирование ур.5[-] дает возможность создавать журналы [DECEA3]Мастер рабочих станций[-]\nЧтение этих журналов открывает новые станции и инструменты к ним."
 
 masterworkstationsT1-1,progression,Attribute,,Tier 1: Kitchen Stove,Уровень 1: Кухонная плита
 masterworkstationsT1-2,progression,Attribute,,Tier 1: Gatherer,Уровень 1: Собиратель

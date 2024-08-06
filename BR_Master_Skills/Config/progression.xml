@@ -48,7 +48,7 @@
 	
 	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']">	
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterBowsSkillMagazine"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterWorkstationsMagazine"/>
 		</effect_group>
 	</append>
 	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='LootProb' and contains(@value,'1,1') and contains(@tags,'workstationCSM')]/requirement/@progression_name">MasterCraftingBows</set>
@@ -128,7 +128,7 @@
 			<effect_group>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBowT4CompoundBowImp"/>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBowT4CompoundCrossbowImp"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunHandgunT5SMG5Zinger"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunBowT5CompoundCrossbowMantis"/>
 				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunBowT4CompoundBowImp"/>
 				<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,50" value="1,2,3,4,5,5" tags="gunBowT4CompoundCrossbowImp"/>
 				<passive_effect name="CraftingTier" operation="base_add" level="25,30,35,40,45,50" value="1,2,3,4,5,5" tags="gunBowT5CompoundCrossbowMantis"/>

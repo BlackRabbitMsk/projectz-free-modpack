@@ -101,7 +101,7 @@
 				<rect pos="3,0" width="180" height="100%" visible="{showtraderoptions}" >
 					<sprite depth="12" name="itemtypeicon" width="36" height="36" sprite="ui_game_symbol_{itemtypeicon}" pos="8,-54" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
 					<sprite color="[mediumGrey]" type="sliced" height="44" />
-					<rect name="counterControl" width="180" height="43" pos="0,0" controller="RecipeCraftCount">
+					<rect name="counterControl" width="180" height="43" pos="0,0" controller="Counter">
 						<sprite depth="1" color="[darkestGrey]" type="sliced" globalopacity="true" width="180" height="43" />
 						<button depth="2" name="countDown" style="icon30px, press, held" pos="17,-23" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" disabledcolor="[lightGrey]" enabled="{enablecountdown}"/>
 						<textfield name="count_input" depth="2" pos="38,-9" width="62" height="27" character_limit="4" validation="integer" virtual_keyboard_prompt="vkPromptCount" />

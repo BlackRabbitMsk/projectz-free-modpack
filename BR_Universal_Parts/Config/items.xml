@@ -1,6 +1,7 @@
 <config>
 	
 	<set xpath="/items/item[(starts-with(@name, 'gun') or starts-with(@name, 'melee')) and contains(@name, 'T3')]/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[(starts-with(@name, 'gun') or starts-with(@name, 'melee') or starts-with(@name, 'armor')) and contains(@name, 'Parts')]/property[@name='Material']/@value">MUniversalParts</set>
 	<set xpath="/items/item[(starts-with(@name, 'gun') or starts-with(@name, 'melee')) and contains(@name, 'T3')]/property[@name='Weight']/@value">4</set>
 	
 	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Material']/@value">MUniversalParts</set>

@@ -54,6 +54,27 @@
 			
 		</item_display_info>
 		
+		<item_display_info display_type="reactorTools" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r"/>
+			<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,admin"/>
+		</item_display_info>
+		
+	</append>
+	
+	<append xpath="/ui_display_info/item_display">
+	
+		<item_display_info display_type="meleeImp" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+		</item_display_info>
+		
 	</append>
 	
 </config>

@@ -2,6 +2,20 @@ Key,Source,Context,Changes,English,Russian
 
 xuiAccessories,UI,XUI,,Accessories,Принадлежности
 
+resourceMechanicalPartsImp,items,item,,Mechanical Parts [DECEA3]Improved[-],Механические части [DECEA3]Улучшенные[-]
+resourceMechanicalPartsImpDesc,items,item,,"Improved mechanical parts allow you to create more complex items.\nOnly a Advance Engineer can create these.","Улучшенные механические части позволяют создавать более сложные предметы.\nСоздать такие может только Ведущий инженер."
+resourceElectricPartsImp,items,item,,Electric Parts [DECEA3]Improved[-],Электрика [DECEA3]Улучшенные[-]
+resourceElectricPartsImpDesc,items,item,,"Improved electric parts allow you to create more complex items.\nOnly a Advance Engineer can create these.","Улучшенная электрика позволяет создавать более сложные предметы.\nСоздать такие может только Ведущий инженер."
+
+DewCollectorBundleWater,items,item,,Bottle of water,Бутыль чистой воды
+resourceReactorBatteryDesc,items,item,,"Purified water from the improved collector is collected in a large bottle. With them you will not have problems with water","Очищенная вода из улучшенного коллектора собирается в большое бутыли. С ними проблемы с водой у вас не будет"
+
+resourceReactorBattery,items,item,,Reactor Battery,Реакторная батарея
+resourceReactorBatteryDesc,items,item,,"A small homemade battery with some charge left from a battery pack. Used to charge [FFB800]Reactor[-] Tools","Небольшая самодельная батарея с остатком заряда от аккумулятора. Используется для зарядки [FFB800]Реакторных[-] инструментов"
+
+PortableReactor,items,item,,Portable [FFB800]Reactor[-],Портативный [FFB800]Реактор[-]
+PortableReactorDesc,items,item,,"Experimental technology in energy. The most powerful and long-lasting source of energy. [DECEA3]Iron Man[-] is resting.\n\nUsed to create a reactor tools and operate powerful energy sources.","Экспериментальная технология в энергетике. Самый можный и долговечный источник энергии. [DECEA3]Железный человек[-] отдыхает.\n\nИспользуется для создания реакторных инструментов и работы мощных истоников энергии."
+
 forgeImp,blocks,Workstation,,Forge [DECEA3]Improved[-],Кузница [DECEA3]Улучшенная[-]
 forgeImpDesc,blocks,Workstation,,"This large, improved forge is a great time saver. Improved tools allow you to smelt large amounts of resources much faster.","Это большая, улучшенная кузница значительно экономит ваше время. Улучшенные инструменты позволяют значительно быстрее переплавить большое количество ресурсов."
 workbenchImp,blocks,Workstation,,Workbench [DECEA3]Improved[-],Верстак [DECEA3]Улучшенный[-]
@@ -12,6 +26,8 @@ DewCollectorImp,blocks,Workstation,,Dew Collector [DECEA3]Improved[-],Колле
 DewCollectorImpDesc,blocks,Workstation,,"There will be no more problems with water. The improved dew collector allows you to collect water 30% faster.\nWhen installing a water filter, water is collected in bottles. This significantly increases the amount of water obtained.","С водой больше не будет проблем. Улучшенный коллектор росы позволяет собирать воду на 30% быстрее.\nПри установке фильтра для воды, вода собирается бутылями. Это значительно увеличивает количество получаемой воды."
 cementMixerImp,blocks,Workstation,,Cement Mixer [DECEA3]Improved[-],Бетономешалка [DECEA3]Улучшенная[-]
 cementMixerImpDesc,blocks,Workstation,,"Now you can build a whole city.\nThe speed of resource processing has been increased, and the cost of recipes has been reduced.","Теперь вы можете построить целый город.\nУвеличена скорость переработки ресурсов, а также уменьшена стоимость рецептов."
+ReactorСhargingStation,blocks,BatteryBank,,[FFB800]Reactor[-] Сharging Station,[FFB800]Реакторная[-] Зарядная станция
+ReactorСhargingStationDesc,blocks,BatteryBank,,"Experimental station for charging a reactor instrument.\n\nATTENTION! Requires connection to power grid for charging.","Эксперементальная станция заряда реакторного инструмента.\n\nВНИМАНИЕ! Для зарядки требуется подключить к электосети."
 
 toolBellowsImp,items,item,,Bellows [DECEA3]Improved[-],Кузнечные меха [DECEA3]Улучшенные[-]
 toolBellowsImpDesc,items,item,,"Blacksmith's bellows for the improved forge. Increases smelting speed by 2x.","Кузнечные меха для улучшенной кузницы. Увеличиват скорость плавки в 2 раза."
@@ -26,27 +42,24 @@ toolKitchenKnivesDesc,items,item,,"Good sharp knives are always useful in the ki
 resourceConcreteBundle,items,item,,Stack of Concrete Mix [DECEA3]1000[-],Упаковака бетона [DECEA3]1000[-]
 resourceConcreteBundleDesc,items,item,,"Compact pack of concrete. Requires less resources when crafting./nOpen this pack to get 1000 concrete","Компактная упаковка бетона. При создании требует меньше ресурсов./nОткройте этот набор чтобы получить 1000 бетона"
 
+0000 -- RANGE WEAPON -- 0000
 
 gunMGT4M60Imp,items,Gun,,M60 Machine Gun [DECEA3]Improved[-],Пулемет М60 [DECEA3]Улучшенный[-]
 gunMGT4M60ImpDesc,items,Gun,,"Improved model of the M60 machine gun.\nAll main characteristics have been increased. The rate of fire has been significantly increased. Improved ease of aiming.\nThis is the best weapon you could ever dream of.","Улучшенная модель пулемета M60.\nУвеличены все основные характеристики. Значительно увеличена скорострельноть. Повышено удобство прицеливания.\nЭто лучшее оружие о котором вы могли мечтать."
 gunMGT5M60Bulldog,items,Gun,,Machine Gun [FFB800]Bulldog[-],Пулемет [FFB800]Бульдог[-]
 gunMGT5M60BulldogDesc,items,Gun,,"Experimental Bulldog model.\nAllows firing with .44 caliber ammunition. The main characteristics have been significantly improved. When you hit an enemy, it causes them to bleed and slows them down for 6 seconds.\nThe best way to negotiate with any horde, on your terms.","Экспериментальная модель Бульдог.\nПозволят вести огонь боеприпасами .44 калибра. Значительно улучшены основные характеристики. При попадании по противнику вызывает у него кровотечение и замедляет на 6 сек.\nЛучший способ вести переговоры с любой ордой, на ваших условиях."
-
 gunShotgunT4AutoShotgunImp,items,Gun,,Auto shotgun [DECEA3]Improved[-],Автоматический дробовик [DECEA3]Улучшенный[-]
 gunShotgunT4AutoShotgunImpDesc,items,Gun,,"Improved model of an automatic shotgun.\nDamage, rate of fire and magazine capacity have been increased. Thanks to improved balancing, you will be able to deal damage at a greater distance.","Улучшенная модель автоматического дробовика.\nУвеличен урон, скорострельность и вместимость магазина. Благодаря улучшению балансировки вы сможете наносить урон на большей дистанции."
 gunShotgunT5AutoShotgunEraser,items,Gun,,Auto shotgun [FFB800]Eraser[-],Автоматический дробовик [FFB800]Стиратель[-]
 gunShotgunT5AutoShotgunEraserDesc,items,Gun,,"Experimental model Eraser is the optimal weapon for firing at large concentrations of enemies at short and medium distances. A significant increase in the main indicators allows you not to kill, but to Delete.","Экспериментальная модель Стиратель оптимальное оружие для ведения огня по большому скоплению противников на малой и средней дистанциях. Значительное увеличение основных показателей позволяет не убивать, а Удалять."
-
 gunRifleT4SniperRifleImp,items,Gun,,Sniper rifle [DECEA3]Improved[-],Снайперская винтовка [DECEA3]Улучшенная[-]
 gunRifleT4SniperRifleImpDesc,items,Gun,,"An improved model of a sniper rifle.\nAn increased magazine and rate of fire allows you to deal significantly more damage to targets. Thanks to improved balancing, you can riddle your target at any distance.","Улучшенная модель снайперской винтовки.\nУвеличенный магазин и скорострельность позволяет наносить по целям значительно больше урона. Благодаря улучшению балансировки вы можете изрешетить свою цель на любой дистанции."
 gunRifleT5SniperRifleGaus,items,Gun,,Sniper rifle [FFB800]Gaus[-],Снайперская винтовка [FFB800]Гаус[-]
 gunRifleT5SniperRifleGausDesc,items,Gun,,"The experimental Gaus model is the most powerful weapon in terms of causing damage in 1 shot. The enemy literally will not be able to prevent this from happening.\nEliminating targets with a large supply of HP will not be a problem.","Экспериментальная модель Гаус самое мощное оружие по нанесению урона за 1 выстрел. Противник в буквальном смысле не сможет устроять от такого.\nЛиквидация целей с большим запасом ОЗ не будет проблемой."
-
 gunHandgunT4SMG5Imp,items,Gun,,SMG-5 [DECEA3]Improved[-],ПП-5 [DECEA3]Улучшенный[-]
 gunHandgunT4SMG5ImpDesc,items,Gun,,"An improved model of a semi-automatic pistol SMG-5.\nAn increased magazine and rate of fire allows you to deal significantly more damage to targets. Thanks to improved balancing, weapon spread has been reduced.","Улучшенная модель полуавтоматического пистолета SMG-5.\nУвеличенный магазин и скорострельность позволяет наносить по целям значительно больше урона. Благодаря улучшению балансировки уменьшен разброс оружия."
 gunHandgunT5SMG5Zinger,items,Gun,,SMG-5 [FFB800]Zinger[-],ПП-5 [FFB800]Зингер[-]
 gunHandgunT5SMG5ZingerDesc,items,Gun,,"The experimental Zinger model.\nBecause of its rate of fire, many stalkers named the model after a fast and reliable sewing machine. And for good reason.\nVery quick and easy - an ideal gift for zombies if you decide to visit them.","Экспериментальная модель Зингер.\nИз-за своей скорострельности многие сталкеры назвали модель в честь быстрой и надежной швейной машинки. И не зря.\nОчень быстрый и легкий - идельный подарок для зомби, если вы решите зайти к ним в гости."
-
 gunBowT4CompoundBowImp,items,Gun,,Composite bow [DECEA3]Improved[-],Композитный лук [DECEA3]Улучшенный[-]
 gunBowT4CompoundBowImpDesc,items,Gun,,"Improved model of the composite bow.\nIncreased damage and rate of fire. Damage from stealth has been increased by 50%.\nThe ideal weapon for silent clearing.","Улучшенная модель композитного лука.\nУвеличен урон и скорострельность. Урон из стелся увеличен на 50%.\nИдельное оружие для безшумной зачистки."
 gunBowT4CompoundCrossbowImp,items,Gun,,Composite crossbow [DECEA3]Improved[-],Композитный арбалет [DECEA3]Улучшенный[-]
@@ -54,35 +67,79 @@ gunBowT4CompoundCrossbowImpDesc,items,Gun,,"Improved model of a composite crossb
 gunBowT5CompoundCrossbowMantis,items,Gun,,Crossbow [FFB800]Mantis[-],Арбалет [FFB800]Мантис[-]
 gunBowT5CompoundCrossbowMantisDesc,items,Gun,,"Experimental model of the Mantis crossbow.\nAll main indicators have been significantly increased. Damage from stealth has been increased by 50%.\nEliminating quickly and silently a large number of sleeping enemies will no longer be a problem for you.","Экспериментальная модель арбалета Мантис.\nЗначительно увеличены все основные показатели. Урон из стелся увеличен на 50%.\nЛиквидировать быстро и безшумно большое количество спящих противников теперь не будет для вас проблемой."
 
+0000 -- HEAVY MELEE WEAPON -- 0000
 
+meleeWpnSledgeT4SteelSledgehammerImp,items,Melee,,Steel Sledgehammer [DECEA3]Improved[-],Стальная кувалда [DECEA3]Улучшенная[-]
+meleeWpnSledgeT4SteelSledgehammerImpDesc,items,Melee,,"Improved steel sledgehammer. Experience gained from killing enemies has been increased by 15%\nAll main stats have been significantly increased.\nIf zombies are still alive, they will regret this.","Улучшенная стальная кувалда. Получаемый опыт за убийство противников увеличена на 15%\nЗначительно увеличены все основные показатели.\nЕсли зомби еще живы - они пожалеют от этом."
+meleeWpnClubT4SteelClubImp,items,Melee,,Steel Club [DECEA3]Improved[-],Стальная дубина [DECEA3]Улучшенная[-]
+meleeWpnClubT4SteelClubImpDesc,items,Melee,,"Improved steel club. Experience gained from killing enemies has been increased by 15%\nSignificantly increased all main stats.\n[DECEA3]Zombie:[-] Doctor, what's wrong with my head?\n[DECEA3]Doctor:[-] No problem, you don't have one","Улучшенная стальная дубина. Получаемый опыт за убийство противников увеличена на 15%\nЗначительно увеличены все основные показатели.\n[DECEA3]Зомби:[-] Доктор что у меня с головой?\n[DECEA3]Доктор:[-] Ничего страшного, у вас ее нет"
+meleeWpnSpearT4SteelSpearImp,items,Melee,,Steel Spear [DECEA3]Improved[-],Стальное копье [DECEA3]Улучшенное[-]
+meleeWpnSpearT4SteelSpearImpDesc,items,Melee,,"Improved steel sledgehammer. Experience gained from killing enemies has been increased by 15%\nAll main stats have been significantly increased.\nCreate canapes to suit your taste.","Улучшенное стальное копье. Получаемый опыт за убийство противников увеличена на 15%\nЗначительно увеличены все основные показатели.\nСоздавайте канапе на свой вкус."
+meleeWpnClubT5SteelAxeBarbarian,items,Melee,,Axe [FFB800]Barbarian[-],Топор [FFB800]Варвар[-]
+meleeWpnClubT5SteelAxeBarbarianDesc,items,Melee,,"Unique Barbarian axe. Experience gained from killing opponents has been increased by 30%\nAll main indicators have been significantly increased.\nA large concentration of zombies is only to your advantage. Don't forget to take napkins, it will be wet. Although it is not a fact that they will help.","Уникальный топор Варвар.Получаемый опыт за убийство противников увеличена на 30%\nЗначительно увеличены все основные показатели.\nБольшое скопление зомби вам только на руку. Не забудьте взять салфетки, будет мокро. Хотя не факт что помогут."
 
+0000 -- LIGHT MELEE WEAPON -- 0000
 
+meleeWpnBatonT4PlasmaBaton,items,Melee,,Stun Baton [DECEA3]Improved[-],Оглушающая дубинка [DECEA3]Улучшенная[-]
+meleeWpnBatonT4PlasmaBatonDesc,items,Melee,,"Improved stun baton. Experience gained from killing enemies has been increased by 15%\nAll main stats have been significantly increased.\nLet's Dance.","Улучшенная оглушающая дубинка. Получаемый опыт за убийство противников увеличена на 15%\nЗначительно увеличены все основные показатели.\nДавайте потанцуем."
+meleeWpnKnucklesT4SteelKnucklesImp,items,Melee,,Steel Knuckles [DECEA3]Improved[-],Стальные кастеты [DECEA3]Улучшенные[-]
+meleeWpnKnucklesT4SteelKnucklesImpDesc,items,Melee,,"Improved steel knockles. Experience gained from killing enemies has been increased by 15%\nAll main stats have been significantly increased.\nBar-hopping in my past life didn't go to waste.","Улучшенные стальные кастеты. Получаемый опыт за убийство противников увеличена на 15%\nЗначительно увеличены все основные показатели.\nПоходы по барам в прошлой жизни не прошли даром."
+meleeWpnBladeT4MacheteImp,items,Melee,,Machete [DECEA3]Improved[-],Мачете [DECEA3]Улучшенное[-]
+meleeWpnBladeT4MacheteImpDesc,items,Melee,,"Improved machete. Experience gained from killing enemies has been increased by 15%\nAll main stats have been significantly increased.\nTake your tropical hunt to the city.","Улучшенное мачете. Получаемый опыт за убийство противников увеличена на 15%\nЗначительно увеличены все основные показатели.\nУстройте тропическую охоту в городе."
+meleeWpnBladeT5MacheteIndiana,items,Melee,,Machete [FFB800]Indiana[-],Мачете [FFB800]Индиана[-]
+meleeWpnBladeT5MacheteIndianaDesc,items,Melee,,"Unique Machete Indiana. Experience gained from killing opponents is increased by 30%\nAll main stats have been significantly increased.\nCut, cut, cut...","Уникальное мачете Индиана. Получаемый опыт за убийство противников увеличена на 30%\nЗначительно увеличены все основные показатели.\nРезать, резать, резать..."
 
-gunBowT5CompoundCrossbowMantis,items,Gun,,Crossbow [FFB800]Mantis[-],Арбалет [FFB800]Мантис[-]
-gunBowT5CompoundCrossbowMantisDesc,items,Gun,,"Experimental model of the Mantis crossbow.\nAll main indicators have been significantly increased. In addition, you will be able to simultaneously charge up to 10 bolts.\nEliminating quickly and silently a large number of sleeping opponents will no longer be a problem for you.","Экспериментальная модель арбалета Мантис.\nЗначительно увеличены все основные показатели. Кроме этого вы сможете одновременно заряжать до 10 болтов.\nЛиквидировать быстро и безшумно большое количество спящих противников теперь не будет для вас проблемой."
+0000 -- TOOLS -- 0000
 
+meleeToolAxeT4ChainsawImp,items,Tool,,Chainsaw [DECEA3]Improved[-],Бензопила [DECEA3]Улучшенная[-]
+meleeToolAxeT4ChainsawImpDesc,items,Gun,,"Improved chainsaw.\nIncreased block damage and speed. Increases the number of mods that can be installed.\nThe perfect tool for harvesting wood.","Улучшенная бензопила.\nУвеличен урон по блоку и скорость работы. Увеличивает количество устанавливаемых модов.\nИдеальный инструмент для заготовки древесины."
+meleeToolPickT4AugerImp,items,Tool,,Auger [DECEA3]Improved[-],Бур [DECEA3]Улучшенный[-]
+meleeToolPickT4AugerImpDesc,items,Gun,,"Improved auger.\nIncreased block damage and speed. Increases the number of mods that can be installed.\nIt is now much easier to extract resources from the mine.","Улучшенный бур.\nУвеличен урон по блоку и скорость работы. Увеличивает количество устанавливаемых модов.\nДобыть ресурсы в шахте теперь значительно проще."
+meleeToolSalvageT4ImpactDriverImp,items,Tool,,Impact Driver [DECEA3]Improved[-],Шуруповерт [DECEA3]Улучшенный[-]
+meleeToolSalvageT4ImpactDriverImpDesc,items,Gun,,"Improved impact driver. Experience gained from disassembling has been increased by 15%\nIncreased damage to the block and speed of work. Increases the number of installed mods.\nDismantle all the cars in the area in a couple of clicks.","Улучшенный шуруповерт. Получаемый опыт за разбор увеличена на 15%\nУвеличен урон по блоку и скорость работы. Увеличивает количество устанавливаемых модов.\nРазбор всех машин в округе за пару нажатий."
+meleeToolRepairT4NailgunImp,items,Tool,,Nailgun [DECEA3]Improved[-],Гвоздомет [DECEA3]Улучшенный[-]
+meleeToolRepairT4NailgunImpDesc,items,Gun,,"Improved nailgun.\nSignificantly increased the speed of upgrading and repairing blocks.\nBuild the city of your dreams.","Улучшенный гвоздомет.\nЗначительно увеличена скорость улучшения и ремонта блоков.\nПостройте город своей мечты."
+meleeToolPickT5AugerReact,items,Tool,,Auger [FFB800]Reactor[-],Бур [FFB800]Реакторный[-]
+meleeToolPickT5AugerReactDesc,items,Tool,,"Experimental model of a reactor auger.\nAll the main indicators have been significantly increased, and advanced mods can be installed. Resource extraction has been increased by 100%.\nDoes not consume gasoline during operation and does not make sounds, which significantly reduces the chance of attracting unnecessary attention during extraction. Now the durability of the tool is its charge. It can be restored at a charging station or using reactor batteries.\nThere is no better tool for extraction.","Экспериментальная модель реакторного бура.\nЗначительно увеличены все основные показатели, а также доступна установка продвинутых модов. Добыча ресурсов увеличена на 100%.\nНе расходует бензин при работе и не издает звуки, что значительно уменьшает шанс привлечения лишнего внимания при добыче. Теперь прочность инструмента это его заряд. Его можно восстановить в зарядной станции или использовать реакторные батареи \nЛучшего инструмента для добычи не существует."
+meleeToolSalvageT5ImpactDriverReact,items,Tool,,Impact Driver [FFB800]Reactor[-],Шуруповерт [FFB800]Реакторный[-]
+meleeToolSalvageT5ImpactDriverReactDesc,items,Tool,,"Experimental model of a reactor impact driver. Experience gained from disassembling has been increased by 30%\nAll the main indicators have been significantly increased, and it is also possible to extract rare resources by dismantling vehicles.\nDoes not consume gasoline during operation and does not make sounds, which significantly reduces the chance of attracting unnecessary attention during extraction. Now the durability of the tool is its charge. It can be restored at a charging station or using reactor batteries.\nDisassembles everything that moves, has moved, or does not move at all.","Экспериментальная модель реакторного шуруповерта. Получаемый опыт за разбор увеличена на 30%\nЗначительно увеличены все основные показатели, а также возможна добыча редких ресурсов при разборе транспорта.\nНе расходует бензин при работе и не издает звуки, что значительно уменьшает шанс привлечения лишнего внимания при добыче. Теперь прочность инструмента это его заряд. Его можно восстановить в зарядной станции или использовать реакторные батареи \nРазбирает все что движется или двигалось или не движется вовсе."
 
+0000 -- MASTER BOOK -- 0000
 
-
-
-
-masterMachineGunsSkillMagazine,items,item,,Machine gun master,Мастер пулеметов
+masterMachineGunsSkillMagazine,items,item,,[DECEA3]Magazine[-] Machine gun master,[DECEA3]Журнал[-] Мастер пулеметов
 masterMachineGunsSkillMagazineDesc,items,item,,"In magazines about assault weapons, you can find small articles on how people independently improve factory weapons.\n\nHaving collected a sufficient number of articles, you will be able to improve machine guns or create experimental models.","В журналах про штурмовое оружие, можной найти небольшие статьи как люди самостоятельно улучшают заводское оружие.\n\nСобрав достаточное количество статей вы сможете улучшать пулементы или создать экспериментальные модели."
 
-MasterShotgunsSkillMagazine,items,item,,Shotguns master,Мастер дробовиков
+MasterShotgunsSkillMagazine,items,item,,[DECEA3]Magazine[-] Shotguns master,[DECEA3]Журнал[-] Мастер дробовиков
 MasterShotgunsSkillMagazineDesc,items,item,,"In magazines about shotguns, you can find small articles on how people independently improve factory weapons.\n\nHaving collected a sufficient number of articles, you can improve shotguns or create experimental models.","В журналах про дробовики, можной найти небольшие статьи как люди самостоятельно улучшают заводское оружие.\n\nСобрав достаточное количество статей вы сможете улучшать дробовики или создать экспериментальные модели."
 
-MasterRiflesSkillMagazine,items,item,,Rifles master,Мастер винтовок
+MasterRiflesSkillMagazine,items,item,,[DECEA3]Magazine[-] Rifles master,[DECEA3]Журнал[-] Мастер винтовок
 MasterRiflesSkillMagazineDesc,items,item,,"In magazines about the world of rifles, you can find small articles on how people independently improve factory weapons.\n\nHaving collected a sufficient number of articles, you can improve sniper rifles or create experimental models.","В журналах о мире винтовок, можной найти небольшие статьи как люди самостоятельно улучшают заводское оружие.\n\nСобрав достаточное количество статей вы сможете улучшать снайперские винтовки или создать экспериментальные модели."
 
-MasterHandgunsSkillMagazine,items,item,,Handguns master,Мастер ручного оружия
+MasterHandgunsSkillMagazine,items,item,,[DECEA3]Magazine[-] Handguns master,[DECEA3]Журнал[-] Мастер ручного оружия
 MasterHandgunsSkillMagazineDesc,items,item,,"In magazines about hand weapons, you can find small articles on how people independently improve factory models of weapons.\n\nHaving collected a sufficient number of articles, you can improve automatic pistols or create experimental models.","В журналах о ручном оружии, можной найти небольшие статьи как люди самостоятельно улучшают заводские модели оружия.\n\nСобрав достаточное количество статей вы сможете улучшать автоматические пистолеты или создать экспериментальные модели."
 
-MasterBowsSkillMagazine,items,item,,Archery master,Мастер стрельбы из луков
+MasterBowsSkillMagazine,items,item,,[DECEA3]Magazine[-] Archery master,[DECEA3]Журнал[-] Мастер стрельбы из луков
 MasterBowsSkillMagazineDesc,items,item,,"In archery enthusiasts' magazines, you can find small articles on how people improve their weapons on their own.\n\nHaving collected a sufficient number of articles, you can improve your bow and crossbow, or create experimental models.","В журналах любителей стрельбы из лука, можной найти небольшие статьи как люди самостоятельно улучшают свое оружие.\n\nСобрав достаточное количество статей вы сможете улучшать свой лук и арбалет, или создать экспериментальные модели."
 
-MasterWorkstationsMagazine,items,item,,Workstations Master,Мастер рабочих станций
+MasterWorkstationsMagazine,items,item,,[DECEA3]Magazine[-] Workstations Master,[DECEA3]Журнал[-] Мастер рабочих станций
 MasterWorkstationsMagazineDesc,items,item,,"You have learned how to create any workstations. But there are articles from experts that tell how to improve them.\n\nHaving collected a sufficient number of articles, you will be able to improve your stations and create useful tools for them.","Вы научились создавать любые рабочие станции. Но есть статьи экспертов которые расказывают как их можно улучшить.\n\nСобрав достаточное количество статей вы сможете улучшать свои станции и создавать для них полезные инструменты."
+
+MasterToolsMagazine,items,item,,[DECEA3]Magazine[-] Tools Master,[DECEA3]Журнал[-] Мастер инструментов
+MasterToolsMagazineDesc,items,item,,"Learning how to create tools is not that difficult. It is difficult to understand how to improve them. Some magazines have articles on how to do this.\n\nHaving collected enough articles, you will be able to improve your tools and create experimental ones.","Научиться создавать инструменты не так сложно. Сложно понять как их улучшить. В некоторых журналах есть статьи как это можно сделать.\n\nСобрав достаточное количество статей вы сможете улучшать свои инструменты и создавать эксперементальные."
+
+MasterElectricianMagazine,items,item,,[DECEA3]Magazine[-] Electrician Master,[DECEA3]Журнал[-] Мастер электрик
+MasterElectricianMagazineDesc,items,item,,"Professional electricians sometimes leave notes on how to create complex mechanisms with your own hands. There are also notes on experimental energy sources.\n\nHaving collected a sufficient number of articles, you will be able to create complex electrical devices and energy sources.","Профессиональные электрики иногда оставляют заметки как можно создать своими руками сложные механизмы. Также попадаются заметки про экспериментальные источники энергии.\n\nСобрав достаточное количество статей вы сможете создавать сложные электроприборы и источники энергии."
+
+MasterHeavyMeleeWeaponMagazine,items,item,,[DECEA3]Magazine[-] Master Melee Heavy Weapons,[DECEA3]Журнал[-] Мастер тяжелого оружия ближнего боя
+MasterHeavyMeleeWeaponMagazineDesc,items,item,,"It is not so easy to create a strong weapon for close combat, especially for heavy types. Only a few know the secrets of creating a truly powerful weapon. You can find notes about this in magazines.\n\nHaving collected a sufficient number of articles, you will be able to improve sledgehammers, clubs and spears, or create legendary ones.","Создать крепкое оружие для ближнего боя не так просто, тем более для тяжелых видов. Только единицы знают секреты создания по настоящему мощного оружия. Заметки про это вы можете найти журналах.\n\nСобрав достаточное количество статей вы сможете улучшать кувалды, дубины и копья, или создать легендарные."
+
+MasterLightMeleeWeaponMagazine,items,item,,[DECEA3]Magazine[-] Master Melee Light Weapons,[DECEA3]Журнал[-] Мастер легкого оружия ближнего боя
+MasterLightMeleeWeaponMagazineDesc,items,item,,"A weapon for killing zombies should not only be light, but also convenient. How to make knives and brass knuckles with maximum slants is sometimes written in thematic magazines. And if you add a little electricity... Try it and the result will definitely please you. You can find notes about this in magazines.\n\nHaving collected a sufficient number of articles, you will be able to improve brass knuckles, machetes and a stun baton, or create legendary ones.","Оружие для убийства зомби должно быть не только легким, но и удобным. Как сделать максимально слалансированные ножи и кастеты иногда пишут в тематических журналах. А если добавить немного электричества... Попробуйте и результат вас однозначно порадует. Заметки про это вы можете найти журналах.\n\nСобрав достаточное количество статей вы сможете улучшать кастеты, мачете и оглушающий жезл, или создать легендарные."
+
+MasterKitchenMagazine,items,item,,[DECEA3]Magazine[-] Kitchen Master,[DECEA3]Журнал[-] Мастер кухни
+MasterKitchenMagazineDesc,items,item,,"How difficult it is when you need to eat and drink a lot of tasty things for one task. And you also need to understand how long it will work. In books about food you can learn how to create food sets.\n\nHaving collected a sufficient number of articles, you will be able to create new elixirs.","Как же сложно когда для одной задачи нужно съесть и выпить много всего вкусного. Да еще и нужно понимать как долго это будет дейтсвовать. В книгах о еде можно узнать как можно создавать комплекты еды.\n\nСобрав достаточное количество статей вы сможете создавать новые эликсиры."
+
+0000 -- PROGRESSION -- 0000
 
 attmaster,progression,Attribute,,Master skills,Навыки мастера
 bowsT1,progression,Attribute,,Improved bows and crossbows,Улучшенные луки и арбалеты
@@ -99,6 +156,17 @@ MasterCraftingBowsName,progression,Attribute,,Master Archery,Мастер стр
 MasterCraftingBowsDesc,progression,Attribute,,"The skill [DECEA3]Archery lvl.5[-] makes it possible to create magazines [DECEA3]Bows master[-]\nReading these magazines improves the quality of the weapons you upgrade.","Умение [DECEA3]Стрельбы из лука ур.5[-] дает возможность создавать журналы [DECEA3]Мастер луков и арбалетов[-]\nЧтение этих журналов повышает качество улучшаемого оружия."
 MasterWorkstationsName,progression,Attribute,,Master Workstations,Мастер рабочих станций
 MasterWorkstationsDesc,progression,Attribute,,"The skill [DECEA3]Advanced Engineering lvl.5[-] makes it possible to create magazines [DECEA3]Workstation Master[-]\nReading these magazines opens up new stations and tools for them.","Умение [DECEA3]Продвинутое проектирование ур.5[-] дает возможность создавать журналы [DECEA3]Мастер рабочих станций[-]\nЧтение этих журналов открывает новые станции и инструменты к ним."
+MasterToolsName,progression,Attribute,,Master Tools,Мастер инструментов
+MasterToolsDesc,progression,Attribute,,"Any of the skills [DECEA3]Miner 69'er lvl.5[-], [DECEA3]Advanced Engineering lvl.5[-] or [DECEA3]Salvage Operations lvl.5[-] makes it possible to create magazines [DECEA3]Tools Master[-]\nReading these magazines improves the quality of the tool.","Любое из умений [DECEA3]Долбатель ур.5[-], [DECEA3]Продвинутое проектирование ур.5[-] или [DECEA3]Сбор трофеев ур.5[-] дает возможность создавать журналы [DECEA3]Мастер инструментов[-]\nЧтение этих журналов повышает качество инструмента."
+MasterElectricianName,progression,Attribute,,Master Electrician,Мастер электрик
+MasterElectricianDesc,progression,Attribute,,"The skill [DECEA3]Advanced Engineering lvl.5[-] makes it possible to create magazines [DECEA3]Electrician Master[-]\nReading these magazines will allow you to create new items.","Умение [DECEA3]Продвинутое проектирование ур.5[-] дает возможность создавать журналы [DECEA3]Мастер Электрик[-]\nЧтение этих журналов позволят создавать новые предметы."
+MasterHeavyMeleeWeaponName,progression,Attribute,,Master Melee Heavy Weapons,Мастер тяжелого оружия ближнего боя
+MasterHeavyMeleeWeaponDesc,progression,Attribute,,"Any of the skills [DECEA3]Skull Crusher lvl.5[-], [DECEA3]Pummel Pete lvl.5[-] or [DECEA3]Spear Master lvl.5[-] makes it possible to create magazines [DECEA3]Master Melee Heavy Weapons[-]\nReading these magazines improves the quality of the weapons you upgrade.","Любое из умений [DECEA3]Дробитель черепов ур.5[-], [DECEA3]Громила Пит ур.5[-] или [DECEA3]Мастер копья ур.5[-] дает возможность создавать журналы [DECEA3]Мастер тяжелого оружия ближнего боя[-]\nЧтение этих журналов повышает качество улучшаемого оружия."
+MasterLightMeleeWeaponName,progression,Attribute,,Master Melee Light Weapons,Мастер легкого оружия ближнего боя
+MasterLightMeleeWeaponDesc,progression,Attribute,,"Any of the skills [DECEA3]The Brawler lvl.5[-], [DECEA3]Deep cuts lvl.5[-] or [DECEA3]Electrocutioner lvl.5[-] makes it possible to create magazines [DECEA3]Master Melee Light Weapons[-]\nReading these magazines improves the quality of the weapons you upgrade.","Любое из умений [DECEA3]Драчун ур.5[-], [DECEA3]Глубокие раны ур.5[-] или [DECEA3]Электрочикатило ур.5[-] дает возможность создавать журналы [DECEA3]Мастер легкого оружия ближнего боя[-]\nЧтение этих журналов повышает качество улучшаемого оружия."
+
+MasterKitchenName,progression,Attribute,,Master Kitchen,Мастер кухни
+MasterElectricianDesc,progression,Attribute,,"The skill [DECEA3]Master Chef lvl.5[-] makes it possible to create magazines [DECEA3]Kitchen Master[-]\nReading these journals will allow you to create new elixirs.","Умение [DECEA3]Шеф повар ур.5[-] дает возможность создавать журналы [DECEA3]Мастер Кухни[-]\nЧтение этих журналов позволят создавать новые эликсиры."
 
 masterworkstationsT1-1,progression,Attribute,,Tier 1: Kitchen Stove,Уровень 1: Кухонная плита
 masterworkstationsT1-2,progression,Attribute,,Tier 1: Gatherer,Уровень 1: Собиратель
@@ -115,4 +183,10 @@ masterworkstationsT3-1,progression,Attribute,,Tier 3: [DECEA3]Improved[-] Cement
 masterworkstationsT4-1,progression,Attribute,,Tier 4: [DECEA3]Improved[-] Forge,Уровень 4: [DECEA3]Улучшенная[-] Кузница
 masterworkstationsT4-2,progression,Attribute,,Tier 4: [DECEA3]Improved[-] Bellows,Уровень 4: [DECEA3]Улучшенные[-] Кузнечные меха
 masterworkstationsT4-3,progression,Attribute,,Tier 4: [DECEA3]Improved[-] Anvil,Уровень 4: [DECEA3]Улучшенная[-] Наковальня
+
+mastertoolsT1,progression,Attribute,,"Tier 1: [DECEA3]Improved[-] Auger, Chainsaw, Impact driver, Nailgun","Уровень 1: [DECEA3]Улучшенные[-] Бур, Бензопила, Шуруповерт, Гвоздомет"
+mastertoolsT2,progression,Attribute,,"Tier 1: [FFB800]Reactor[-] Auger, Impact driver","Уровень 1: [FFB800]Реакторные[-] Бур, Шуруповерт"
+
+MasterElectricianT3-1,progression,Attribute,,Tier 3: Portable [FFB800]Reactor[-],Уровень 3: Портативный [FFB800]Реактор[-]
+MasterElectricianT3-2,progression,Attribute,,Tier 3: Charging station [FFB800]Reactor[-],Уровень 3: Зарядная станция [FFB800]Реактор[-]
 

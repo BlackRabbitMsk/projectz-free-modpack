@@ -75,14 +75,14 @@
 		<property name="Class" value="Workstation"/>
 		<property class="Workstation">
 			<property name="Modules" value="output"/>
-			<property name="CraftingAreaRecipes" value="player,workbench"/>
+			<property name="CraftingAreaRecipes" value="player,workbench,workbenchImp"/>
 		</property>
 		<property name="UnlockedBy" value="MasterWorkstations"/>
 		<!-- UI_Info -->
 		<property name="CreativeMode" value="Player"/>
 		<property name="DescriptionKey" value="workbenchImpDesc"/>
 		<property name="DisplayType" value="blockMulti"/>
-		<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+		<property name="WorkstationIcon" value="ui_game_symbol_block_repair"/>
 		<property name="Stacknumber" value="1"/>
 		<!-- Visual -->
 		<property name="CustomIcon" value="workbench"/>
@@ -311,7 +311,109 @@
 		<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	</block>
 
+	<block name="ReactorСhargingStation">
+		<property name="Class" value="BatteryBank"/>
+		<property name="UnlockedBy" value="MasterElectrician"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="SlotItem" value="meleeToolPickT5AugerReact,meleeToolSalvageT5ImpactDriverReact"/>
+		<property name="CustomIcon" value="controlPanelBase01"/>
+		<property name="CustomIconTint" value="FFB800"/>
+		<property name="ItemTypeIcon" value="electric_plugin"/>
+		<property name="InputPerTick" value="15"/>
+		<property name="ChargePerInput" value="3"/>
+		<property name="MaxPower" value="90"/>
+		<property name="OutputPerCharge" value="15"/>
+		<property name="OutputPerStack" value="15"/>
+		<property name="UnlockedBy" value="MasterElectrician"/>
+		<property name="DescriptionKey" value="ReactorСhargingStationDesc"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Material" value="Mmetal_weak"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Industrial/controlPanelBase_01Prefab"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="HandleFace" value="Bottom"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Path" value="solid"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="TakeDelay" value="15"/>
+		<property name="EconomicValue" value="8000"/>
+		<property name="SellableToTrader" value="false"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="8"/>
+			<property name="resourceElectricParts" value="8"/>
+			<property name="resourceScrapPolymers" value="4"/>
+		</property>
+		<drop event="Harvest" name="resourceScrapIron" count="120" tag="allHarvest"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="3,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<property name="SortOrder1" value="B155"/>
+		<property name="SortOrder2" value="0004"/>
+		<property name="Group" value="Science,TCScience"/>
+		<property name="Tags" value="electricianSkill"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+	</block>
 	
 	</append>
+	
+	<append xpath="/blocks/block[@name='solarbank']">
+		<property name="UnlockedBy" value="MasterElectrician"/>
+	</append>
+	
+	<!-- Light Alloys -->
+	<insertAfter xpath="/blocks/block[@name='cntSedan01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntSedan3Wide01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntMinivan01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntMinivan3Wide01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntSUV3Wide01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntPickupTruck01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntPickupTruck3Wide01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraLightAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	
+	<!-- Strength Alloys -->
+	<insertAfter xpath="/blocks/block[@name='cntSemiTruck01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraStrengthAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntFireTruck01White']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraStrengthAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntBusSchool']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraStrengthAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntFarmTruckClosed']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceUltraStrengthAlloys" count="2,4" prob=".2" tag="HarvestRareRecources"/>
+	</insertAfter>
+
+	
+	<!-- Experimental Alloys -->
+	<insertAfter xpath="/blocks/block[@name='cntPoliceCar01PickedLockBonus']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceExperimentalAlloys" count="2,4" prob=".25" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntPoliceCar01AlarmUnlocked']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceExperimentalAlloys" count="2,4" prob=".25" tag="HarvestRareRecources"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntArmyTruckOpen']/drop[@name='carBattery']">
+		<drop event="Harvest" name="resourceExperimentalAlloys" count="2,4" prob=".25" tag="HarvestRareRecources"/>
+	</insertAfter>
+	
+	<set xpath="/blocks/block[@name='cntArmyTruckClosed']/property[@name='Extends']/@value">cntArmyTruckOpen</set>
+
 	
 </config>

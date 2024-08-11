@@ -93,7 +93,7 @@
 	
 	<append xpath="/progression/perks/perk[@name='perkMasterChef']">	
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterKitchenMagazine"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,3" value="1" tags="MasterKitchenMagazine"/>
 			
 			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="foodCSM">
 				<requirement name="ProgressionLevel" progression_name="craftingFood" operation="Equals" value="100"/>

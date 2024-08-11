@@ -63,8 +63,6 @@
 			<update_rate value="1"/>
 			
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$ActiveRadiationStatus"/>
-								
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
 					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>

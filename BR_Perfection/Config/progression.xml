@@ -533,7 +533,7 @@
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".12">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="4"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=",15">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".15">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="5"/>
 				</triggered_effect>
 			</effect_group>

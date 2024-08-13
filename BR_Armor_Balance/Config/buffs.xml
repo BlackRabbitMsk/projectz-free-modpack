@@ -1,5 +1,11 @@
 <configs>
 	
+	<!-- Corrections -->
+	<remove xpath="/buffs/buff[@name='buffMinerBoots']"/>
+	<remove xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@value='@$minerBootFallDMG']"/>
+	
+	
+	
 	<!-- LIGHT ARMOR -->
 	
 	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->

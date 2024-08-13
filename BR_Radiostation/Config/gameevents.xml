@@ -86,7 +86,7 @@
 				<requirement class="GroupLiveCount">
 					<property name="target_group" value="spawnedEnemies"/>
 					<property name="operation" value="LessThan"/> 
-					<property name="count" value="3"/>	
+					<property name="count" value="1"/>	
 				</requirement>
 				<action class="CallGameEvent">
 					<property name="phase" value="1" />
@@ -122,10 +122,10 @@
 		</action_sequence>
 		
 		<!-- Wave for big case -->
-		<action_sequence name="BigCase_Wave">
+		<action_sequence name="BigCase_Wave" target_type="POI">
 			<action class="SpawnEntity">	    
 				<property name="entity_names" value="zombieNurseFeral,zombieDarleneFeral,zombieBoeFeral,zombieSpiderFeral,animalZombieVultureRadiated,zombieSkateboarderFeral,zombieBikerRadiated,animalDireWolf,zombieSkateboarderRadiated,zombieBowlerRadiated,zombieFatCopRadiated,zombieJanitorRadiated,zombieMarleneRadiated,zombieFemaleFatElite,zombieDemolitionElite,zombieSoldierElite,zombieLumberjackElite,zombieLabElite,zombieInmateElite,zombieJoeElite" param1="zombiename" />
-				<property name="spawn_count" value="7" param1="spawncount" />
+				<property name="spawn_count" value="6" param1="spawncount" />
 				<property name="max_distance" value="30" param1="maxdist" />
 				<property name="min_distance" value="20" param1="mindist" />
 				<property name="air_spawn" value="true" param1="airspawn" />

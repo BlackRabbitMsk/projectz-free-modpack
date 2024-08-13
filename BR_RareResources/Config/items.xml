@@ -18,6 +18,8 @@
 			<property name="SoundPlace" value="forgedmetal_place"/>
 			<property name="CustomIcon" value="resourceForgedSteel"/>
 			<property name="CustomIconTint" value="882FA7"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="SellableToTrader" value="false"/>
 		</item>
 		
 		<item name="ExperimentalAlloys_BundleSmall">
@@ -69,6 +71,8 @@
 			<property name="SoundPlace" value="forgedmetal_place"/>
 			<property name="CustomIcon" value="resourceForgedSteel"/>
 			<property name="CustomIconTint" value="E9653B"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="SellableToTrader" value="false"/>
 		</item>
 		
 		<item name="UltraStrengthAlloys_BundleSmall">
@@ -120,6 +124,8 @@
 			<property name="SoundPlace" value="forgedmetal_place"/>
 			<property name="CustomIcon" value="resourceForgedSteel"/>
 			<property name="CustomIconTint" value="59F5FF"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="SellableToTrader" value="false"/>
 		</item>
 		
 		<item name="UltraLightAlloys_BundleSmall">
@@ -171,6 +177,7 @@
 			<property name="SoundPlace" value="forgedmetal_place"/>
 			<property name="CustomIcon" value="resourceForgedSteel"/>
 			<property name="CustomIconTint" value="FFE927"/>
+			<property name="EconomicValue" value="1950"/>
 		</item>
 		
 	</append>

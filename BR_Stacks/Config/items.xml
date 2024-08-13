@@ -122,7 +122,8 @@
     <set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">100</set>
 
 	<!-- Ressources -->
-
+	
+	<set xpath="/items/item[@name='smallEngine']/property[@name='Stacknumber']/@value">10</set>
     <set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='resourceYuccaFibers']/property[@name='Stacknumber']/@value">1000</set>
     <set xpath="/items/item[@name='resourceBone']/property[@name='Stacknumber']/@value">1000</set>

@@ -25,12 +25,15 @@
 		</buff>
 		
 		<!-- Launching a wave of Big cases -->
-		<buff name="Buff_BigCase_Spawner" hidden="true">
+		<buff name="Buff_BigCase_Spawner" name_key="buffActiveRadiationResist1Name" tooltip_key="buffActiveRadiationResist1Tooltip" description_key="buffActiveRadiationResist1IncDesc" icon="ui_game_symbol_defense" icon_color="60,238,196">
 			<duration value="300"/>
 			<update_rate value="5"/>
 			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="BigCase_Wave_Count" allow_client_call="true" />
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" event="Buff_BigCase_Spawner"> -->
+					<!-- <requirement name="HasBuff" buff="god"/> -->
+				<!-- </triggered_effect> -->
 			</effect_group>
 
 		</buff>

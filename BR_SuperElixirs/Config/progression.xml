@@ -1,26 +1,26 @@
 <config>
 	
-	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@icon='foodTunaFishGravyToast,foodShepardsPie,drinkJarGrandpasLearningElixir,foodSpaghetti,foodGumboStew']">
+	<!-- <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@icon='foodTunaFishGravyToast,foodShepardsPie,drinkJarGrandpasLearningElixir,foodSpaghetti,foodGumboStew']"> -->
 	
-		<display_entry icon="drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir" name_key="foodT5-1,foodT5-2,foodT5-3,foodT5-4,foodT5-5" has_quality="false" unlock_level="80,85,90,95,100" >
-			<unlock_entry item="superElixirQuestRunner" unlock_tier="1" />
-			<unlock_entry item="superElixirMeleeMaster" unlock_tier="2" />
-			<unlock_entry item="superElixirMinerMaster" unlock_tier="3" />
-			<unlock_entry item="superElixirTradeMaster" unlock_tier="4" />
-			<unlock_entry item="superElixirHordeExpert" unlock_tier="5" />
-		</display_entry>
+		<!-- <display_entry icon="drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir,drinkJarGrandpasForgettingElixir" name_key="foodT5-1,foodT5-2,foodT5-3,foodT5-4,foodT5-5" has_quality="false" unlock_level="80,85,90,95,100" > -->
+			<!-- <unlock_entry item="superElixirQuestRunner" unlock_tier="1" /> -->
+			<!-- <unlock_entry item="superElixirMeleeMaster" unlock_tier="2" /> -->
+			<!-- <unlock_entry item="superElixirMinerMaster" unlock_tier="3" /> -->
+			<!-- <unlock_entry item="superElixirTradeMaster" unlock_tier="4" /> -->
+			<!-- <unlock_entry item="superElixirHordeExpert" unlock_tier="5" /> -->
+		<!-- </display_entry> -->
 
-	</insertAfter>
+	<!-- </insertAfter> -->
 	
-	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'foodGumboStew')]">
+	<!-- <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'foodGumboStew')]"> -->
 		
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="superElixirQuestRunner"/>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="superElixirMeleeMaster"/>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="superElixirMinerMaster"/>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="95,100" value="1" tags="superElixirTradeMaster"/>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="superElixirHordeExpert"/>
+		<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="superElixirQuestRunner"/> -->
+		<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="superElixirMeleeMaster"/> -->
+		<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="superElixirMinerMaster"/> -->
+		<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="95,100" value="1" tags="superElixirTradeMaster"/> -->
+		<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="superElixirHordeExpert"/> -->
 		
 		
-	</insertAfter>
+	<!-- </insertAfter> -->
 	
 </config>

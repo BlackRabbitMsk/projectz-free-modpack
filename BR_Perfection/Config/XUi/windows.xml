@@ -1,8 +1,0 @@
-<config>
-	
-	<set xpath="windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@width='410']/grid/@cols">10</set>
-	<set xpath="windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@width='200']/@pos">410,0</set>
-	<set xpath="windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@width='200']/textfield/@width">106</set>
-	<set xpath="windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel[@width='104']/@pos">536,0</set>
-	
-</config>

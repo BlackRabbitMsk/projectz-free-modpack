@@ -1,5 +1,0 @@
-<config>
-	
-	<remove xpath="/lootcontainers/lootgroup[@name='groupHardenedChestT5_08']/item[@name='questRewardT4FoodBundle']"/>
-	
-</config>

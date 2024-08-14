@@ -1,8 +1,0 @@
-<config>
-	
-	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']/@blocked_tags">noMods,reactorTools</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']/@blocked_tags">noMods,reactorTools</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']/@blocked_tags">noMods,noBlades,reactorTools</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@blocked_tags">noMods,reactorTools</set>
-	
-</config>

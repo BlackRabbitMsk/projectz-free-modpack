@@ -1,5 +1,0 @@
-<config>
-		
-	<set xpath="/buffs/buff[@name='buffDrunkGrandpasLearningElixir']/@icon">ui_game_symbol_xp</set>
-	
-</config>

@@ -1,0 +1,120 @@
+<config>
+	 
+	<!-- Bows -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']">
+		<display_entry item="gunBowT1WoodenBowParts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunBowT1IronCrossbow')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="gunBowT1WoodenBowParts"/>
+	</insertAfter>
+	
+	<!-- Handguns -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']">
+		<display_entry item="gunHandgunT1PistolParts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunHandgunT2Magnum44')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="gunHandgunT1PistolParts"/>
+	</insertAfter>
+	
+	<!-- Shotguns -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingShotguns']">
+		<display_entry item="gunShotgunT1DoubleBarrelParts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingShotguns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunShotgunT2PumpShotgun')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="gunShotgunT1DoubleBarrelParts"/>
+	</insertAfter>
+	
+	<!-- Rifles -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']">
+		<display_entry item="gunRifleT1HuntingRifleParts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunRifleT2LeverActionRifle')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="gunRifleT1HuntingRifleParts"/>
+	</insertAfter>
+	
+	<!-- MGuns -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']">
+		<display_entry item="gunMGT1AK47Parts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunMGT2TacticalAR')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="gunMGT1AK47Parts"/>
+	</insertAfter>
+	
+	<!-- Explosives -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry item="gunExplosivesT3RocketLauncherParts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunExplosivesT3RocketLauncher')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="gunExplosivesT3RocketLauncherParts"/>
+	</insertAfter>
+	
+	<!-- Robotics -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/display_entry[@item='gunBotT3JunkDrone']">
+		<display_entry item="meleeWpnBatonT2StunBatonParts" unlock_level="50" />
+		<display_entry item="gunBotRoboticsParts" unlock_level="75" />
+	</insertAfter>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'gunBotT2JunkTurret')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="gunBotRoboticsParts"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeWpnBatonT2StunBatonParts"/>
+	</insertAfter>
+	
+	<!-- Knickles -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']/display_entry[@item='meleeWpnKnucklesT3SteelKnuckles']">
+		<display_entry item="meleeWpnKnucklesT3SteelKnucklesParts" unlock_level="50" />
+	</insertAfter>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'meleeWpnKnucklesT1IronKnuckles')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeWpnKnucklesT3SteelKnucklesParts"/>
+	</insertAfter>
+	
+	<!-- Harvesting Tools -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry[@icon='meleeToolPickT3Auger']">
+		<display_entry item="meleeToolAllSteelParts" unlock_level="50" />
+		<display_entry item="meleeToolAxeT3ChainsawParts" unlock_level="75" />
+	</insertAfter>
+	
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'meleeToolPickT3Auger,meleeToolAxeT3Chainsaw')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeToolAllSteelParts"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="meleeToolAxeT3ChainsawParts"/>
+	</insertAfter>
+	
+	<!-- Blades -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/display_entry[@item='meleeWpnBladeT3Machete']">
+		<display_entry item="meleeWpnBladeT3MacheteParts" unlock_level="50" />
+	</insertAfter>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'meleeWpnBladeT1HuntingKnife')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeWpnBladeT3MacheteParts"/>
+	</insertAfter>
+	
+	<!-- Spear -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']/display_entry[@item='meleeWpnSpearT3SteelSpear']">
+		<display_entry item="meleeWpnSpearT3SteelSpearParts" unlock_level="50" />
+	</insertAfter>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'meleeWpnSpearT1IronSpear')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeWpnSpearT3SteelSpearParts"/>
+	</insertAfter>
+	
+	<!-- Clubs -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']/display_entry[@item='meleeWpnClubT3SteelClub']">
+		<display_entry item="meleeWpnClubT3SteelClubParts" unlock_level="50" />
+	</insertAfter>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'meleeWpnClubT1BaseballBat')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeWpnClubT3SteelClubParts"/>
+	</insertAfter>
+	
+	<!-- Sledgehammers -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']/display_entry[@item='meleeWpnSledgeT3SteelSledgehammer']">
+		<display_entry item="meleeWpnSledgeT3SteelSledgehammerParts" unlock_level="50" />
+	</insertAfter>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'meleeWpnSledgeT1IronSledgehammer')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="meleeWpnSledgeT3SteelSledgehammerParts"/>
+	</insertAfter>
+	
+	<!-- Armor -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']">
+		<display_entry item="armorParts" unlock_level="50" />
+	</append>
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'armorPrimitiveMaster,armorPrimitiveHelmet,armorPrimitiveOutfit,armorPrimitiveGloves,armorPrimitiveBoots')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="armorParts"/>
+	</insertAfter>	 
+
+</config>

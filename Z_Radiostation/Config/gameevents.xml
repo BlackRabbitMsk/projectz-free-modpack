@@ -1,0 +1,141 @@
+<config>
+	
+	<append xpath="/gameevents">
+		
+		<!-- Launching a wave of small cases -->
+		<action_sequence name="Spawner_SmallCase_Start">	
+			
+			<action class="AddBuff">
+				<property name="buff_name" value="Buff_SmallCase_Spawner" />		
+			</action>
+			
+		</action_sequence>
+		
+		<action_sequence name="SmallCase_Wave_Count">
+			
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="spawnedEnemies" />
+				<property name="entity_tags" value="entity" />
+				<property name="target_only" value="true" />
+			</action>
+		
+			<decision class="If">
+				<requirement class="GroupLiveCount">
+					<property name="target_group" value="spawnedEnemies"/>
+					<property name="operation" value="LessThan"/> 
+					<property name="count" value="2"/>	
+				</requirement>
+				<action class="CallGameEvent">
+					<property name="phase" value="1" />
+					<property name="game_events" value="SmallCase_Wave" />
+				</action>
+			</decision>
+		</action_sequence>
+		
+		<!-- Launching a wave of Medium cases -->
+		<action_sequence name="Spawner_MediumCase_Start">	
+			
+			<action class="AddBuff">
+				<property name="buff_name" value="Buff_MediumCase_Spawner" />		
+			</action>
+			
+		</action_sequence>
+		
+		<action_sequence name="MediumCase_Wave_Count">
+			
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="spawnedEnemies" />
+				<property name="entity_tags" value="entity" />
+				<property name="target_only" value="true" />
+			</action>
+		
+			<decision class="If">
+				<requirement class="GroupLiveCount">
+					<property name="target_group" value="spawnedEnemies"/>
+					<property name="operation" value="LessThan"/> 
+					<property name="count" value="2"/>	
+				</requirement>
+				<action class="CallGameEvent">
+					<property name="phase" value="1" />
+					<property name="game_events" value="MediumCase_Wave" />
+				</action>
+			</decision>
+		</action_sequence>
+		
+		<!-- Launching a wave of Big cases -->
+		<action_sequence name="Spawner_BigCase_Start">	
+			
+			<action class="AddBuff">
+				<property name="buff_name" value="Buff_BigCase_Spawner" />		
+			</action>
+			
+		</action_sequence>
+		
+		<action_sequence name="BigCase_Wave_Count">
+			
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="spawnedEnemies" />
+				<property name="entity_tags" value="entity" />
+				<property name="target_only" value="true" />
+			</action>
+		
+			<decision class="If">
+				<requirement class="GroupLiveCount">
+					<property name="target_group" value="spawnedEnemies"/>
+					<property name="operation" value="LessThan"/> 
+					<property name="count" value="2"/>	
+				</requirement>
+				<action class="CallGameEvent">
+					<property name="phase" value="1" />
+					<property name="game_events" value="BigCase_Wave" />
+				</action>
+			</decision>
+		</action_sequence>
+	
+		<!-- Wave for small case -->
+		<action_sequence name="SmallCase_Wave">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieArlene,zombieFatCop,zombieLab,zombieMarlene,zombieDarlene,zombiePartyGirlFeral,zombieNurseFeral,zombieSkateboarderFeral,zombieTomClarkFeral,zombieBoeFeral,zombieJoeRadiated,zombieSteveRadiated,zombieYoRadiated,zombieBusinessManRadiated,zombieUtilityWorkerRadiated" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="20" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+				<property name="add_to_group" value="targets" />
+				<property name="add_buffs" value="EnemyDot_Buff" />
+			</action>	
+		</action_sequence>
+		
+		<!-- Wave for medium case -->
+		<action_sequence name="MediumCase_Wave">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieSkateboarder,zombieTomClark,zombieBoeFeral,zombieSpiderFeral,animalZombieVulture,zombieFatHawaiianFeral,zombieLumberjackFeral,animalDireWolf,zombieFatCopFeral,zombiePartyGirlFeral,zombieSteveRadiated,zombieJanitorRadiated,zombieFemaleFatRadiated,zombieWightRadiated,zombieScreamerRadiated,zombieYoRadiated,zombieBurntElite,zombieTomClarkElite" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="20" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+				<property name="add_to_group" value="targets" />
+				<property name="add_buffs" value="EnemyDot_Buff,Zombie_BlockDamage_Buff" />
+			</action>	
+		</action_sequence>
+		
+		<!-- Wave for big case -->
+		<action_sequence name="BigCase_Wave" target_type="POI">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieNurseFeral,zombieDarleneFeral,zombieBoeFeral,zombieSpiderFeral,animalZombieVultureRadiated,zombieSkateboarderFeral,zombieBikerRadiated,animalDireWolf,zombieSkateboarderRadiated,zombieBowlerRadiated,zombieFatCopRadiated,zombieJanitorRadiated,zombieMarleneRadiated,zombieFemaleFatElite,zombieDemolitionElite,zombieSoldierElite,zombieLumberjackElite,zombieLabElite,zombieInmateElite,zombieJoeElite" param1="zombiename" />
+				<property name="spawn_count" value="5" param1="spawncount" />
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="20" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+				<property name="add_to_group" value="targets" />
+				<property name="add_buffs" value="EnemyDot_Buff,Zombie_BlockDamage_Buff" />
+			</action>	
+		</action_sequence>
+		
+		
+		
+	</append>
+	
+</config>

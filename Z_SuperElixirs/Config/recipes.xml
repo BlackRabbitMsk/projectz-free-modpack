@@ -1,0 +1,39 @@
+<config>
+		
+	<append xpath="/recipes">
+	
+		<recipe name="superElixirTradeMaster" craft_time="60" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarGrandpasLearningElixir" count="1"/>
+			<ingredient name="drinkJarGrandpasAwesomeSauce" count="1"/>
+			<ingredient name="drugSugarButts" count="1"/>
+			<ingredient name="foodPumpkinCheesecake" count="1"/>
+		</recipe>
+		
+		<recipe name="superElixirQuestRunner" craft_time="60" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarGrandpasLearningElixir" count="1"/>
+			<ingredient name="drugEyeKandy" count="1"/>
+			<ingredient name="drugHackers" count="1"/>
+			<ingredient name="drugSteroids" count="1"/>
+		</recipe>
+		
+		<recipe name="superElixirHordeExpert" craft_time="60" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarGrandpasLearningElixir" count="1"/>
+			<ingredient name="drugRecog" count="1"/>
+			<ingredient name="drugFortBites" count="1"/>
+		</recipe>
+		
+		<recipe name="superElixirMeleeMaster" craft_time="60" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarGrandpasLearningElixir" count="1"/>
+			<ingredient name="drugSkullCrushers" count="1"/>
+			<ingredient name="drugFortBites" count="1"/>
+		</recipe>
+		
+		<recipe name="superElixirMinerMaster" craft_time="60" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarGrandpasLearningElixir" count="1"/>
+			<ingredient name="drugRockBusters" count="1"/>
+			<ingredient name="drinkJarBlackStrapCoffee" count="1"/>
+		</recipe>
+		
+	</append>
+	
+</config>

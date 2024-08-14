@@ -1,0 +1,45 @@
+<config>
+	
+	<insertAfter xpath="/items/item[@name='drugSteroids']">
+	
+	<item name="drugAntiRadPills">
+		<property name="Tags" value="medical,medicalSkill,fitness"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="120"/>
+		<property name="Stacknumber" value="25"/>
+		<property name="UnlockedBy" value="craftingMedical"/>
+		<property name="DisplayType" value="medicalAntiRad"/>
+		<property name="TintColor" value="255,43,43"/>
+		<property name="Group" value="Science,CFMedical,Medical,TCMedical"/>
+		<property name="ItemTypeIcon" value="radiation"/>
+		<property name="CustomIcon" value="drugPainkillers"/>
+		<property name="CustomIconTint" value="FF2B2B"/>
+	
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+
+		<effect_group tiered="false">
+			<display_value name="dIrradiation" value="-.2"/>
+			<display_value name="dRadIncreasing" value=".5"/>
+			<display_value name="dRadEffectResist" value="1"/>
+			<display_value name="dDuration" value="720"/>
+			<display_value name="drugAntiRadPillsDesc"/>
+			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$IRradiationStatus" operation="subtract" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffARPillsResistDuration" operation="add" value="723"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffARPillsResistDuration" operation="set" value="2163">
+				<requirement name="CVarCompare" cvar="$buffARPillsResistDuration" operation="GT" value="2163"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffARPillsResist"/>
+		</effect_group>
+	
+	</item>
+	
+	</insertAfter>
+	
+</config>

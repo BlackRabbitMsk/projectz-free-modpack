@@ -1,0 +1,87 @@
+<config>
+	
+	<append xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group">
+		<!-- Light Armor -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLightArmorSkillBonus">
+			<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="GTE" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLightArmorSkillBonus">
+			<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="LT" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLightArmorSkillBonus">
+			<requirement name="WornItems" operation="LT" value="4" tags="lightArmor"/>
+            <requirement name="StatCompareCurrent" stat="Armor" operation="GT" value="0.00"/>
+            <requirement name="HasBuff" buff="buffLightArmorSkillBonus"/>
+		</triggered_effect>
+		<!-- Medium Armor -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMediumArmorSkillBonus">
+			<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="GTE" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffMediumArmorSkillBonus">
+			<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="LT" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffMediumArmorSkillBonus">
+			<requirement name="WornItems" operation="LT" value="4" tags="mediumArmor"/>
+            <requirement name="StatCompareCurrent" stat="Armor" operation="GT" value="0.00"/>
+            <requirement name="HasBuff" buff="buffMediumArmorSkillBonus"/>
+		</triggered_effect>
+		<!-- Heavy Armor -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHeavyArmorSkillBonus">
+			<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="GTE" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHeavyArmorSkillBonus">
+			<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="LT" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHeavyArmorSkillBonus">
+			<requirement name="WornItems" operation="LT" value="4" tags="heavyArmor"/>
+            <requirement name="StatCompareCurrent" stat="Armor" operation="GT" value="0.00"/>
+            <requirement name="HasBuff" buff="buffMediumArmorSkillBonus"/>
+		</triggered_effect>
+		
+	</append>
+	
+	<append xpath="/buffs">
+	
+       <buff name="buffLightArmorSkillBonus" hidden="true">
+            <stack_type value="ignore"/>
+			<effect_group>				
+                <passive_effect name="RunSpeed" operation="perc_add" value="@$LightArmorSkillMSBonus" />
+				<passive_effect name="GeneralDamageResist" operation="base_add" value="@$LightArmorSkillDefBonus"/>
+            </effect_group>
+       </buff>
+	   <buff name="buffMediumArmorSkillBonus" hidden="true">
+            <stack_type value="ignore"/>
+			<effect_group>				
+                <passive_effect name="EntityDamage" operation="perc_add" value="@$MediumArmorSkillDMGBonus">
+					<requirement name="HoldingItemHasTags" tags="ranged"/>
+				</passive_effect>
+				<passive_effect name="GeneralDamageResist" operation="base_add" value="@$MediumArmorSkillDefBonus"/>
+            </effect_group>
+       </buff>
+	   <buff name="buffHeavyArmorSkillBonus" hidden="true">
+            <stack_type value="ignore"/>
+			<effect_group>				
+                <passive_effect name="HealthMax" operation="base_add" value="@$HeavyArmorSkillHealthBonus"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="@$HeavyArmorSkillMeleeBonus">
+					<requirement name="HoldingItemHasTags" tags="melee"/>
+				</passive_effect>
+				<passive_effect name="GeneralDamageResist" operation="base_add" value="@$HeavyArmorSkillDefBonus"/>
+            </effect_group>
+       </buff>
+	   <buff name="buffXPBonus" name_key="buffXPBonusName" tooltip_key="buffXPBonusTooltip" description_key="buffXPBonusIncDesc" icon="ui_game_symbol_skills" icon_color="61,162,255">
+            <stack_type value="replace"/>
+			<duration value="10"/>
+			<effect_group>				
+                <passive_effect name="PlayerExpGain" operation="perc_add" value=".25"/>
+            </effect_group>
+       </buff>
+		
+    </append>
+	
+</config>

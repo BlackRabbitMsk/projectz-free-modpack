@@ -1,6 +1,0 @@
-<config>
-	
-	<set xpath="controls/item_action_entry/rect/sprite/@width">174</set>
-	<set xpath="controls/item_action_entry/rect/label[@name='keyboardButton']/@pos">168,-22</set>
-	
-</config>

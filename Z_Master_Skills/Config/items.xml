@@ -2626,7 +2626,8 @@
 			<passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
 			
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,3000" tier="1,6" tags="perkSalvageOperations"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkSalvageOperations"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="15" tags="perkSalvageOperations"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="15" tags="perkSalvageOperations"/>
 			
 			<passive_effect name="MaxRange" operation="base_set" value="3" tags="perkSalvageOperations"/>
 			<passive_effect name="BlockRange" operation="base_set" value="5" tags="perkSalvageOperations"/>
@@ -3244,7 +3245,7 @@
 	<item name="resourceReactorBattery">
 		<property name="CustomIcon" value="carBattery"/>
 		<property name="ItemTypeIcon" value="electric_power"/>
-		<property name="CustomIconTint" value="FFB800"/>
+		<property name="CustomIconTint" value="8692FF"/>
 		<property name="HoldType" value="45"/>
 		<property name="Tags" value="junk"/>
 		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>

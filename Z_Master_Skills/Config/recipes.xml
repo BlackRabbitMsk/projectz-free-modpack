@@ -22,7 +22,7 @@
 		</recipe>
 		
 		<recipe name="resourceReactorBattery" count="1" craft_time="10" tags="learnable">
-			<ingredient name="carBattery" count="1"/>
+			<ingredient name="carBattery" count="3"/>
 		</recipe>
 		
 		<recipe name="ReactorСhargingStation" count="1" craft_time="600" tags="learnable,workbenchCrafting" craft_tool="toolImprovedTools" craft_area="workbenchImp">

@@ -2489,7 +2489,7 @@
 </item>
 	
 	<item name="meleeToolSalvageT4ImpactDriverImp"> <!-- NA -->
-	<property name="Tags" value="blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill"/>
+	<property name="Tags" value="blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,ImprovedParsing"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="74"/>
 	<property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
@@ -2570,7 +2570,7 @@
 </item>
 	
 	<item name="meleeToolSalvageT5ImpactDriverReact"> <!-- NA -->
-		<property name="Tags" value="blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,reactorTools"/>
+		<property name="Tags" value="blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,reactorTools,ImprovedParsing"/>
 		<property name="DisplayType" value="melee"/>
 		<property name="HoldType" value="74"/>
 		<property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
@@ -2645,7 +2645,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
-			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest,HarvestRareRecources"/>
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest"/>
 			
 		</effect_group>
 		<effect_group name="Power Attack">

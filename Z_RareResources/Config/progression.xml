@@ -1,0 +1,7 @@
+<config>
+	
+	<insertAfter xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='HarvestCount']">	
+		<passive_effect name="HarvestCount" operation="base_set" level="1,2,3,4,5" value="0,0,1,2,2" tags="HarvestRareRecources"/>
+	</insertAfter>
+
+</config>

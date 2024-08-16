@@ -88,11 +88,11 @@
 				</rect>
 			</rect>
 			<!--Adjusted surrounding windows to fit changes, such as God Mode / buff popups-->
-			<rect name="hud" pos="91,222" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
-				<panel width="168" height="46" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" style="press" sound="[recipe_click]" on_hover="true" >
-					<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="46" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-					<sprite depth="4" name="Icon" size="40,40" pos="-54,0" pivot="center" color="[transparent]"/>
-					<label depth="6" name="TextContent" pos="0,-2" font_size="28" color="[white]" justify="center" height="40" pivot="center"/>
+			<rect name="hud" pos="90,224" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+				<panel width="180" height="46" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" style="press" sound="[recipe_click]" on_hover="true" >
+					<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="46" width="190" pivot="center" flip="Horizontally" color="[transparent]" />
+					<sprite depth="4" name="Icon" size="36,36" pos="-78,-1" pivot="left" color="[transparent]"/>
+					<label depth="6" name="TextContent" pos="58,-2" font_size="26" color="222,206,163" justify="left" height="40" pivot="center"/>
 				</panel>
 			</rect>
 		</window>

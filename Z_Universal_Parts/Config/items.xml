@@ -6,8 +6,8 @@
 	
 	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Material']/@value">MUniversalParts</set>
 	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Weight']/@value">4</set>
-	<set xpath="/items/item[(starts-with(@name, 'armor')) and contains(@name, 'Master')]/property[@name='Material']/@value">MUniversalParts</set>
-	<set xpath="/items/item[(starts-with(@name, 'armor')) and contains(@name, 'Master')]/property[@name='Weight']/@value">4</set>
+	<set xpath="/items/item[(starts-with(@name, 'armor')) and contains(@name, 'Master') and not(contains(@name, 'Primitive'))]/property[@name='Material']/@value">MUniversalParts</set>
+	<set xpath="/items/item[(starts-with(@name, 'armor')) and contains(@name, 'Master') and not(contains(@name, 'Primitive'))]/property[@name='Weight']/@value">4</set>
 	<set xpath="/items/item[(starts-with(@name, 'meleeTool')) and contains(@name, 'T2')]/property[@name='Weight']/@value">4</set>
 	
 	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Material']/@value">MUniversalParts</set>

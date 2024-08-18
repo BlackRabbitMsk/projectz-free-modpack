@@ -108,7 +108,7 @@
 			<property name="DescriptionKey" value="UltraStrengthAlloys_BundleBigDesc"/>
 			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
 			<property class="Action0">
-				<property name="Create_item_count" value="50"/>
+				<property name="Create_item_count" value="100"/>
 			</property>
 		</item>
 		

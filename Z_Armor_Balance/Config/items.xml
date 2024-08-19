@@ -313,6 +313,7 @@
 	<!-- SCAVENGER -->
 		
 	<!-- SCAVENGER HELMET -->
+	<set xpath="/items/item[@name='armorScavengerHelmet']/effect_group/display_value[@name='dPlayerExpGain']/@value">.05,.1,.15,.2,.25,.4</set>
 	<set xpath="/items/item[@name='armorScavengerHelmet']/effect_group/passive_effect[@name='PlayerExpGain']/@value">.05,.1,.15,.2,.25,.4</set>
 	
 	<!-- SCAVENGER OUTFIT / WITHOUT CHANGES -->

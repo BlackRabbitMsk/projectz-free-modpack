@@ -1,0 +1,85 @@
+Key,Source,Context,Changes,English,Russian
+
+lblCategoryRequest,UI,Tooltip,,Support Request,Запрос поддержки
+
+resourceResourceSet,items,Resources,,Resource Kit [DECEA3]Support[-],Набор ресурсов [DECEA3]Поддержка[-]
+resourceResourceSetDesc,items,Resources,,Collect sets of resources and request an exchange for rare alloys at the [DECEA3]Radio Station.[-],Собирайте наборы ресурсов и запрашивайте обмен на редкие сплавы в [DECEA3]Радиостанции.[-]
+
+UltraLightAlloysSmall_Quest,items,Request,,[DECEA3]Small case[-] Ultra light alloys,[DECEA3]Малый кейс[-] Сверхлегкие сплавы
+UltraLightAlloysSmall_QuestDesc,items,Request,,"Request for a small resource case.\nBe careful, dropping the cargo may attract the attention of zombies.\n\nIf you successfully receive the cargo, you will receive [DECEA3]10 Ultra light alloys.[-]","Запрос на получение малого кейса ресурсов.\nБудьте осторожны сброс груза может привлечь внимание зомби.\n\nВ случае успешного получения груза в получите [DECEA3]10 Сверхлегких сплавов.[-]"
+requestUltraStrengthAlloysSmall,items,Request,,[DECEA3]Small case[-] Ultra strength alloys,[DECEA3]Малый кейс[-] Сверхпрочные сплавы
+requestUltraStrengthAlloysSmallDesc,items,Request,,"Request for a small resource case.\nBe careful, dropping the cargo may attract the attention of zombies.\n\nIf you successfully receive the cargo, you will receive [DECEA3]10 Ultra strength alloys.[-]","Запрос на получение малого кейса ресурсов.\nБудьте осторожны сброс груза может привлечь внимание зомби.\n\nВ случае успешного получения груза в получите [DECEA3]10 Сверхпрочные сплавов.[-]"
+requestExperimentalAlloysSmall,items,Request,,[DECEA3]Small case[-] Experimental alloys,[DECEA3]Малый кейс[-] Эксперементальные сплавы
+requestExperimentalAlloysSmallDesc,items,Request,,"Request for a small resource case.\nBe careful, dropping the cargo may attract the attention of zombies.\n\nIf you successfully receive the cargo, you will receive [DECEA3]10 Experimental alloys.[-]","Запрос на получение малого кейса ресурсов.\nБудьте осторожны сброс груза может привлечь внимание зомби.\n\nВ случае успешного получения груза в получите [DECEA3]10 Экспериментальных сплавов.[-]"
+
+requestUltraLightAlloysMedium,items,Request,,[DECEA3]Medium case[-] Ultra light alloys,[DECEA3]Средний кейс[-] Сверхлегкие сплавы
+requestUltraLightAlloysMediumDesc,items,Request,,"Request to receive a medium case of resources.\nBe careful, dropping the cargo may attract the attention of zombies from all over the area.\n\nIf you successfully receive the cargo, you will receive [DECEA3]50 Ultra light alloys.[-]","Запрос на получение среднего кейса ресурсов.\nБудьте осторожны сброс груза может привлечь внимание зомби со всей округи.\n\nВ случае успешного получения груза в получите [DECEA3]50 Сверхлегких сплавов.[-]"
+requestUltraStrengthAlloysMedium,items,Request,,[DECEA3]Medium case[-] Ultra strength alloys,[DECEA3]Средний кейс[-] Сверхпрочные сплавы
+requestUltraStrengthAlloysMediumDesc,items,Request,,"Request to receive a medium case of resources.\nBe careful, dropping the cargo may attract the attention of zombies from all over the area.\n\nIf you successfully receive the cargo, you will receive [DECEA3]50 Ultra strength alloys.[-]","Запрос на получение среднего кейса ресурсов.\nБудьте осторожны сброс груза может привлечь внимание зомби со всей округи.\n\nВ случае успешного получения груза в получите [DECEA3]50 Сверхпрочных сплавов.[-]"
+requestExperimentalAlloysMedium,items,Request,,[DECEA3]Medium case[-] Experimental alloys,[DECEA3]Средний кейс[-] Эксперементальные сплавы
+requestExperimentalAlloysMediumDesc,items,Request,,"Request to receive a medium case of resources.\nBe careful, dropping the cargo may attract the attention of zombies from all over the area.\n\nIf you successfully receive the cargo, you will receive [DECEA3]50 Experimental alloys.[-]","Запрос на получение среднего кейса ресурсов.\nБудьте осторожны сброс груза может привлечь внимание зомби со всей округи.\n\nВ случае успешного получения груза в получите [DECEA3]50 Экспериментальных сплавов.[-]"
+
+requestUltraLightAlloysBig,items,Request,,[DECEA3]Big case[-] Ultra light alloys,[DECEA3]Большой кейс[-] Сверхлегкие сплавы
+requestUltraLightAlloysBigDesc,items,Request,,"Request for a large case of resources.\nBe careful, dropping such a quantity of cargo will attract the attention of the horde.\n\nIf you successfully receive the cargo, you will receive [DECEA3]100 Ultra light alloys.[-]","Запрос на получение большого кейса ресурсов.\nБудьте осторожны сброс такого количества груза привлечет внимание орды.\n\nВ случае успешного получения груза в получите [DECEA3]100 Сверхлегких сплавов.[-]"
+requesUltraStrengthAlloysBig,items,Request,,[DECEA3]Big case[-] Ultra strength alloys,[DECEA3]Большой кейс[-] Сверхпрочные сплавы
+requesUltraStrengthAlloysBigDesc,items,Request,,"Request for a large case of resources.\nBe careful, dropping such a quantity of cargo will attract the attention of the horde.\n\nIf you successfully receive the cargo, you will receive [DECEA3]100 Ultra strength alloys.[-]","Запрос на получение большого кейса ресурсов.\nБудьте осторожны сброс такого количества груза привлечет внимание орды.\n\nВ случае успешного получения груза в получите [DECEA3]100 Сверхпрочных сплавов.[-]"
+requestExperimentalAlloysBig,items,Request,,[DECEA3]Big case[-] Experimental alloys,[DECEA3]Большой кейс[-] Эксперементальные сплавы
+requestExperimentalAlloysBigDesc,items,Request,,"Request for a large case of resources.\nBe careful, dropping such a quantity of cargo will attract the attention of the horde.\n\nIf you successfully receive the cargo, you will receive [DECEA3]100 Experimental alloys.[-]","Запрос на получение большого кейса ресурсов.\nБудьте осторожны сброс такого количества груза привлечет внимание орды.\n\nВ случае успешного получения груза в получите [DECEA3]100 Экспериментальных сплавов.[-]"
+
+workstationsT3-2,progression,Attribute,,Level 3: Radio station,Уровень 3: Радиостанция
+
+radioStation,blocks,Workstation,,Radio station,Радиостанция
+radioStationDesc,blocks,Workstation,,"Traders in the exclusion zone cannot help with everything. Communication with the outside world will allow you to exchange rare resources and receive unique tasks.","Торговцы в зоне отчуждения не во всем могут помочь. Связь с внешним миром, позволит вам обменивать редкие ресурсы и получать уникальные задания."
+
+SignalSmokeFaint,blocks,QuestItems,,Faint signal smoke,Слабый сигнальный дым
+SignalSmokeFaintDesc,blocks,QuestItems,,"There is not much smoke, but you can see it from the plane. But be careful, it can attract unnecessary attention.\n\n[DECEA3]Support mission item. Be careful - you need to place signal smoke after activating the mission at the specified point. Can be dismantled for valuable resources.[-]","Дыма не так много, но с самолета разлядеть можно. Но будьте осторожны, он может привлечь излишнее внимание.\n\n[DECEA3]Предмет задания поддержки. Будьте внимательны - размещать сигнальный дым нужно после активации задания на указанной точке. Разбирается на ценные ресурсы.[-]"
+SignalSmokeMedium,blocks,QuestItems,,Medium signal smoke,Средний сигнальный дым
+SignalSmokeMediumDesc,blocks,QuestItems,,"Medium smoke screen. But be careful, it will definitely attract zombies.\n\n[DECEA3]Support mission item. Be careful - you need to place signal smoke after activating the mission at the specified point. Can be dismantled for valuable resources.[-]","Средняя дымовая завеса. Но будьте осторожны, это точно привлечет внимание зомби.\n\n[DECEA3]Предмет задания поддержки. Будьте внимательны - размещать сигнальный дым нужно после активации задания на указанной точке. Разбирается на ценные ресурсы.[-]"
+SignalSmokeStrong,blocks,QuestItems,,Strong signal smoke,Сильный сигнальный дым
+SignalSmokeStrongDesc,blocks,QuestItems,,"A powerful smoke screen. But be careful, it will definitely attract the attention of the horde.\n\n[DECEA3]Support mission item. Be careful - you need to place signal smoke after activating the mission at the specified point. Can be dismantled for valuable resources.[-]","Сильная дымовая завеса. Но будьте осторожны, это точно привлечет внимание орды.\n\n[DECEA3]Предмет задания поддержки. Будьте внимательны - размещать сигнальный дым нужно после активации задания на указанной точке. Разбирается на ценные ресурсы.[-]"
+
+quest_support_statement,Quest,Quest Info,,Receive a load of support,Пролучите груз поддержки
+quest_support_subtitle,Quest,Quest Info,,Receive a load of support,Пролучите груз поддержки
+quest_support_response,Quest,Quest Info,,Request support([DECEA3]{poi.distance} {poi.direction}[-]),Запрос поддержки ([DECEA3]{poi.distance} {poi.direction}[-])
+
+SmallCase_Name,Quest,Quest Info,,Support Request [DECEA3]Small Case[-],Запрос поддержки [DECEA3]Малый кейс[-]
+
+SmallCase01_Offer,Quest,Quest Info,,"You have requested a small support case. Go to the designated location and place the signal smoke when ready. Be careful, it may attract unwanted guests. If you manage to hold out for a while, you will receive a small resource pack [DECEA3]Ultra Light Alloys[-]","Вы запросили малый кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны он может привлечь нежелательных гостей. Если у вас получиться продержаться в получите малый набор ресурсов [DECEA3]Сверхлегкие сплавы[-]"
+SmallCase02_Offer,Quest,Quest Info,,"You have requested a small support case. Go to the designated location and place the signal smoke when ready. Be careful, it may attract unwanted guests. If you manage to hold out for a while, you will receive a small resource pack [DECEA3]Ultra Strength Alloys[-]","Вы запросили малый кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны он может привлечь нежелательных гостей. Если у вас получиться продержаться в получите малый набор ресурсов [DECEA3]Сверхпрочные сплавы[-]"
+SmallCase03_Offer,Quest,Quest Info,,"You have requested a small support case. Go to the designated location and place the signal smoke when ready. Be careful, it may attract unwanted guests. If you manage to hold out for a while, you will receive a small resource pack [DECEA3]Experimental alloys[-]","Вы запросили малый кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны он может привлечь нежелательных гостей. Если у вас получиться продержаться в получите малый набор ресурсов [DECEA3]Экспериментальные сплавы[-]"
+
+MediumCase_Name,Quest,Quest Info,,Support Request [DECEA3]Medium Case[-],Запрос поддержки [DECEA3]Средний кейс[-]
+
+MediumCase01_Offer,Quest,Quest Info,,"You have requested a medium support case. Go to the designated location and place the signal smoke when ready. Be careful, it will attract sleepers from all around. If you manage to hold out for a while, you will receive a medium resource pack [DECEA3]Ultra Light Alloys[-]","Вы запросили средний кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны он привлечет спящих со всей округи. Если у вас получиться продержаться в получите средний набор ресурсов [DECEA3]Сверхлегкие сплавы[-]"
+MediumCase02_Offer,Quest,Quest Info,,"You have requested a medium support case. Go to the designated location and place the signal smoke when ready. Be careful, it will attract sleepers from all around. If you manage to hold out for a while, you will receive a medium resource pack [DECEA3]Ultra Strength Alloys[-]","Вы запросили средний кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны он привлечет спящих со всей округи. Если у вас получиться продержаться в получите средний набор ресурсов [DECEA3]Сверхпрочные сплавы[-]"
+MediumCase03_Offer,Quest,Quest Info,,"You have requested a medium support case. Go to the designated location and place the signal smoke when ready. Be careful, it will attract sleepers from all around. If you manage to hold out for a while, you will receive a medium resource pack [DECEA3]Experimental Alloys[-]","Вы запросили средний кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны он привлечет спящих со всей округи. Если у вас получиться продержаться в получите средний набор ресурсов [DECEA3]Экспериментальные сплавы[-]"
+
+BigCase_Step1_Name,Quest,Quest Info,,Support Request: Start [DECEA3]Big Case[-],Запрос поддержки: Начало [DECEA3]Большой кейс[-]
+BigCase_Step2_Name,Quest,Quest Info,,Support Request [DECEA3]Big Case[-],Запрос поддержки [DECEA3]Большой кейс[-]
+
+BigCase_Desc,Quest,Quest Info,,"Go to the designated point and place the signal smoke when you are ready. Be careful this will attract the attention of the horde.\n\n[DECEA3]Be careful, you need to place the signal smoke after activating the task at the designated point. If you place it prematurely, the task will not be completed and you will have to cancel it without a reward.[-]","Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны это привлечет внимание орды.\n\n[DECEA3]Будьте внимательны - размещать сигнальный дым нужно после активации задания на указанной точке. Если вы его установите преждевременно - задание не сможет быть завершено, и вам придеться его отменить без награды.[-]"
+BigCase01_Offer,Quest,Quest Info,,"You have requested a big support case. Go to the designated location and place the signal smoke when ready. Be careful this will attract the attention of the horde. If you manage to hold out for a while, you will receive a big resource pack [DECEA3]Ultra Light Alloys[-]","Вы запросили большой кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны это привлечет внимание орды. Если у вас получиться продержаться в получите большой набор ресурсов [DECEA3]Сверхлегкие сплавы[-]"
+BigCase02_Offer,Quest,Quest Info,,"You have requested a big support case. Go to the designated location and place the signal smoke when ready. Be careful this will attract the attention of the horde. If you manage to hold out for a while, you will receive a big resource pack [DECEA3]Ultra Strength Alloys[-]","Вы запросили большой кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны это привлечет внимание орды. Если у вас получиться продержаться в получите большой набор ресурсов [DECEA3]Сверхпрочные сплавы[-]"
+BigCase03_Offer,Quest,Quest Info,,"You have requested a big support case. Go to the designated location and place the signal smoke when ready. Be careful this will attract the attention of the horde. If you manage to hold out for a while, you will receive a big resource pack [DECEA3]Experimental Alloys[-]","Вы запросили большой кейс поддержки. Отправляйтесь в указанную точку и разместите сигнальный дым когда будите готовы. Будьте осторожны это привлечет внимание орды. Если у вас получиться продержаться в получите большой набор ресурсов [DECEA3]Экспериментальные сплавы[-]"
+
+dropSmallLightAlloys,entityclasses,Entity,,[59F5FF]Ultra Light[-] Alloys [DECEA3]Small Case[-],[59F5FF]Сверхлегкие[-] Сплавы [DECEA3]Малый кейс[-]
+dropSmallStrengthAlloys,entityclasses,Entity,,[E9653B]Ultra Strength[-] Alloys [DECEA3]Small Case[-],[E9653B]Сверхпрочные[-] Сплавы [DECEA3]Малый кейс[-]
+dropSmallExperimentalAlloys,entityclasses,Entity,,[882FA7]Experimental[-] Alloys [DECEA3]Small Case[-],[882FA7]Экспериментальные[-] Сплавы [DECEA3]Малый кейс[-]
+dropMediumLightAlloys,entityclasses,Entity,,[59F5FF]Ultra Light[-] Alloys [DECEA3]Medium Case[-],[59F5FF]Сверхлегкие[-] Сплавы [DECEA3]Средний кейс[-]
+dropMediumStrengthAlloys,entityclasses,Entity,,[E9653B]Ultra Strength[-] Alloys [DECEA3]Medium Case[-],[E9653B]Сверхпрочные[-] Сплавы [DECEA3]Средний кейс[-]
+dropMediumExperimentalAlloys,entityclasses,Entity,,[882FA7]Experimental[-] Alloys [DECEA3]Medium Case[-],[882FA7]Экспериментальные[-] Сплавы [DECEA3]Средний кейс[-]
+dropBigLightAlloys,entityclasses,Entity,,[59F5FF]Ultra Light[-] Alloys [DECEA3]Big Case[-],[59F5FF]Сверхлегкие[-] Сплавы [DECEA3]Большой кейс[-]
+dropBigStrengthAlloys,entityclasses,Entity,,[E9653B]Ultra Strength[-] Alloys [DECEA3]Big Case[-],[E9653B]Сверхпрочные[-] Сплавы [DECEA3]Большой кейс[-]
+dropBigExperimentalAlloys,entityclasses,Entity,,[882FA7]Experimental[-] Alloys [DECEA3]Big Case[-],[882FA7]Экспериментальные[-] Сплавы [DECEA3]Большой кейс[-]
+
+
+
+
+
+
+
+
+
+
+
+

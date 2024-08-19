@@ -1,0 +1,200 @@
+<config>
+	
+	<remove xpath="windows/window[@name='windowCraftingQueue']"/>
+	
+	<append xpath="/windows">
+	
+	<!-- FORGE -->
+	<window name="windowCraftingQueue" width="397" height="78" panel="Left" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<rect depth="0" pos="18,-18" width="303" controller="CraftingQueue">
+			<!-- <sprite name="background" color="[black]" type="sliced" pos="0,-10" /> -->
+			<grid name="queue" rows="1" cols="5" pos="3,4" cell_width="75" cell_height="75" repeat_content="true">
+				<recipe_stack name="0"/>
+			</grid>
+		</rect>
+	</window>
+	
+	<window name="windowCraftingListImp"  width="397" height="596" controller="CraftingListInfo" panel="Left" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="Craft_Icon_Basics"/>
+			<label style="header.name" text="basics" text_key="xuiBasics" />
+
+			<!-- <label pos="387, -6" depth="2" name="unlockedCount" width="64" height="32" text="0/65" font_size="32" color="[lightGrey]" justify="right" pivot="topright"/> -->
+			<!-- <sprite pos="328, -5" depth="2" name="unlockedIcon" style="icon32px" sprite="ui_game_symbol_book" color="[lightGrey]" pivot="topright"/> -->
+		</panel>
+
+		<panel name="content" width="100%" height="650" depth="1" pos="0,-43" on_scroll="true" disableautobackground="true">
+
+			<rect depth="2" name="categorySelector" width="390" height="44" pos="3,-6">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[mediumGrey]" type="sliced" />
+				<grid name="categories" pos="23,-21" rows="1" cols="9" width="390" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+					<category_icon />
+				</grid>
+			</rect>
+
+			<rect depth="3" name="searchControls" width="390" height="44" pos="3,-52">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[darkGrey]" type="sliced" />
+				<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
+				<button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" collider_scale="1.5" />
+				<!--*#$-IGS END.-$#-->
+
+				<!--#$-IGS BEGIN: Disabling an element for console builds. -$#-->
+				<panel pos="104,0" width="200" disableautobackground="true">
+				<!--*#$-IGS END.-$#-->
+					<sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
+					<textfield depth="5" name="searchInput" pos="22,-7" width="140" height="30" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true" close_group_on_tab="true" clear_button="true" />
+				</panel>
+
+				<panel pos="286,0" width="104" height="43" disableautobackground="true">
+					<pager name="pager" pos="4,-6" contents_parent="content"/>
+				</panel>
+			</rect>
+
+			<grid name="recipes" rows="10" cols="1" pos="3,-98" width="390" height="506" cell_width="390" cell_height="46" controller="RecipeList" repeat_content="true" arrangement="vertical" >
+				<recipe_entry name="0"/>
+			</grid>
+		</panel>
+	</window>
+	
+	<window name="windowCraftingQueue10" width="397" height="78" panel="Left" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<rect depth="0" pos="18,-18" width="303" controller="CraftingQueue">
+			<!-- <sprite name="background" color="[black]" type="sliced" pos="0,-10" /> -->
+			<grid name="queue" rows="2" cols="5" pos="3,-13" cell_width="75" cell_height="75" repeat_content="true">
+				<recipe_stack name="0"/>
+			</grid>
+		</rect>
+	</window>
+	
+	<window name="windowForgeInputImp" width="228" height="229" panel="Right"
+			controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
+			<panel style="header.panel" pos="0,2">
+				<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
+				<label style="header.name" text="INPUT" text_key="xuiSmelting" />
+			</panel>
+
+			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-43" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+			<rect name="content" depth="1" pos="0,-121" height="153">
+
+				<grid depth="7" rows="3" cols="1" pos="3,75" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+
+			</rect>
+
+			<rect name="content2" depth="0" pos="78, -46" width="147" height="223">
+				<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
+				<grid rows="7" cols="1" pos="8,-20" cell_width="147" cell_height="32"  repeat_content="true">
+					<forge_material name="0"/>
+				</grid>
+			</rect>
+		</window>
+	
+	<window name="windowForgeOutputImp" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
+		<panel style="header.panel" pos="0,-44">
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput"/>
+		</panel>
+
+
+		<rect name="content" depth="0" pos="0,-89" height="150" disablefallthrough="true" on_press="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="153" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+				<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+		</rect>
+	</window>
+	
+	<window name="windowToolsForgeImp" width="228" height="121" panel="Right" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true"
+			required_tools="toolBellowsImp,toolAnvilImp,toolForgeCrucible" required_tools_only="true">
+				<item_stack controller="RequiredItemStack" name="0"/>
+			</grid>
+		</rect>
+
+	</window>
+	
+	<!-- WORKBENCH -->
+	<window name="windowToolsWorkbenchImp" width="228" height="121" panel="Right" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true"
+			required_tools="toolSmallParts,toolImprovedTools" required_tools_only="true">
+				<item_stack controller="RequiredItemStack" name="0"/>
+			</grid>
+		</rect>
+
+	</window>
+	
+	<window name="windowWorkbenchOutputImp" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput"/>
+		</panel>
+
+
+		<rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="153" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+				<grid depth="10" name="inventory" rows="4" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+		</rect>
+	</window>
+	
+	<!-- Stove -->
+	<!-- Will be implemented later -->
+	<!-- <window name="windowKitchenAccessories" width="228" height="121" panel="Right" cursor_area="true" > -->
+		<!-- <panel style="header.panel"> -->
+			<!-- <sprite style="header.icon" sprite="ui_game_symbol_fork"/> -->
+			<!-- <label style="header.name" text="ACCESSORIES" text_key="xuiAccessories" /> -->
+		<!-- </panel> -->
+
+		<!-- <rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true"> -->
+
+			<!-- <grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" -->
+			<!-- required_tools="toolKitchenKnives,toolDishes" required_tools_only="true"> -->
+				<!-- <item_stack controller="RequiredItemStack" name="0"/> -->
+			<!-- </grid> -->
+		<!-- </rect> -->
+	<!-- </window> -->
+	
+	<!-- Cement mixer -->
+	<window name="windowMixerutputImp" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
+		<panel style="header.panel" pos="0,0">
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput"/>
+		</panel>
+
+
+		<rect name="content" depth="0" pos="0,-46" height="150" disablefallthrough="true" on_press="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="153" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+				<grid depth="10" name="inventory" rows="4" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+		</rect>
+	</window>
+	
+	
+	
+	</append>
+	
+</config>

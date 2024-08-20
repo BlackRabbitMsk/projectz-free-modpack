@@ -52,7 +52,7 @@
 	</insertAfter>
 	
 	<!-- Laser Sight -->
-	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/item_property_overrides[@name='gunHandgunT3DesertVulture']">
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']/property[@name='TraderStageTemplate']">
 		<item_property_overrides name="gunHandgunT5SMG5Zinger">
 			<property name="SideOffset" value="0,.0108,.0148"/>
 			<property name="SideScale" value="1.25,1.25,1.25"/>

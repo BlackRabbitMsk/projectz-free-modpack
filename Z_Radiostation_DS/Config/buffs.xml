@@ -15,8 +15,23 @@
 			<update_rate value="10"/>
 			
 			<effect_group>
+				
 				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="SmallCase_Wave_Count" allow_client_call="true" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="SmallCase_Wave_Count" allow_client_call="true" />
+				
+				<!-- Cancellation on BloodMoon -->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_failquest" allow_client_call="true">
+					<requirement name="IsBloodMoon"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="Buff_SmallCase_Spawner">
+					<requirement name="IsBloodMoon"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_failquest" allow_client_call="true">
+					<requirement name="IsBloodMoon"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="Buff_SmallCase_Spawner">
+					<requirement name="IsBloodMoon"/>
+				</triggered_effect>
 			</effect_group>
 
 		</buff>
@@ -30,7 +45,19 @@
 				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="MediumCase_Wave_Count" allow_client_call="true" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="MediumCase_Wave_Count" allow_client_call="true" />
 			</effect_group>
-
+		<!-- Cancellation on BloodMoon -->
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_failquest" allow_client_call="true">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="Buff_MediumCase_Spawner">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_failquest" allow_client_call="true">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="Buff_MediumCase_Spawner">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>	
 		</buff>
 		
 		<!-- Launching a wave of Big cases -->
@@ -42,7 +69,20 @@
 				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="BigCase_Wave_Count" allow_client_call="true" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="BigCase_Wave_Count" allow_client_call="true" />
 			</effect_group>
-
+			<!-- Cancellation on BloodMoon -->
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_failquest" allow_client_call="true">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="Buff_BigCase_Spawner">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_failquest" allow_client_call="true">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="Buff_BigCase_Spawner">
+				<requirement name="IsBloodMoon"/>
+			</triggered_effect>	
+		
 		</buff>
 		
 		<!-- Zombie Buffs -->

@@ -1,11 +1,9 @@
 <configs>
 	
-	<!-- Лут контейнеры Элитных зомби -->
+	<!-- Elite Zombie Loot Containers -->
 	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">1800</set>
     <set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">1800</set>
 	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">1800</set>
-	
-	<!-- <set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">1800</set> -->
 
 	<append xpath="/entity_classes">  
 
@@ -54,8 +52,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -98,8 +95,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -141,8 +137,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -183,8 +178,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -234,8 +228,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -277,8 +270,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -320,8 +312,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -363,8 +354,8 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
+				<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			</effect_group>
 			
 		</entity_class>
@@ -406,9 +397,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -450,8 +439,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -493,8 +481,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -536,8 +523,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -587,8 +573,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -630,8 +615,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -673,8 +657,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -716,8 +699,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -759,8 +741,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -802,8 +783,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -845,8 +825,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -888,8 +867,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -931,8 +909,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -974,8 +951,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -1017,8 +993,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -1060,8 +1035,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -1103,8 +1077,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -1146,8 +1119,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>
@@ -1189,8 +1161,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffAcRadEliteZombieAOEself"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHands,BuffAcRadEliteZombieAOEself"/>
 			</effect_group>
 			
 		</entity_class>

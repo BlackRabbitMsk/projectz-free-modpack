@@ -62,23 +62,25 @@
 			<duration value="5"/>
 			<update_rate value="1"/>
 			
-			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
-					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity=".06" fade=".3" effect_name="Hot">
-					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".3" effect_name="Hot">
-					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".06" fade="2"/>
-				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
-			</effect_group>
+			<!-- Visual effect of radiation -->
+			
+			<!-- <effect_group> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"> -->
+					<!-- <requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/> -->
+				<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity=".06" fade=".3" effect_name="Hot"> -->
+					<!-- <requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/> -->
+				<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".3" effect_name="Hot"> -->
+					<!-- <requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/> -->
+				<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".06" fade="2"/> -->
+				<!-- <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/> -->
+			<!-- </effect_group> -->
 		</buff>
 		
 	</append>

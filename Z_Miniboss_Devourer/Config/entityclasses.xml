@@ -1,0 +1,146 @@
+<configs>
+	
+	<append xpath="/entity_classes">  
+
+		<!-- DEVOURER -->
+		<entity_class name="bossDevourer" extends="animalWolf">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="EntityFlags" value="animal,zombie,boss"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,wolf,perkAT02,perkAT03,boss"/>
+			<property name="PhysicsBody" value="AWolf"/>
+			<property name="Mass" value="220"/>
+			<property name="Prefab" value="/Entities/Animals/DireWolf/animalDireWolfPrefab"/>
+			<property name="SizeScale" value="2.4"/>
+			<property name="DismemberMultiplierHead" value="0"/>
+
+			<property name="AIPathCostScale" value=".15, .2"/>
+			<property name="AITask" value="
+			BreakBlock|
+			DestroyArea|
+			Territorial|
+			ApproachDistraction|
+			ApproachAndAttackTarget class=EntityPlayer,25,EntityBandit,20,EntityAnimalStag,30|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+			<property name="AITarget" value="
+			SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+			BlockingTargetTask|
+			SetNearestCorpseAsTarget flags=edible|
+			SetNearestEntityAsTarget class=EntityPlayer,16,10,EntityBandit,0,-8,EntityAnimalStag,0,0|
+			"/>
+
+			<property name="SoundAlert" value="wolfdirealert"/>
+			<property name="SoundAttack" value="wolfdireattack"/>
+			<property name="SoundDeath" value="wolfdiredeath"/>
+			<property name="SoundGiveUp" value="wolfdiregiveup"/>
+			<property name="SoundHurt" value="wolfdirepain"/>
+			<property name="SoundRandom" value="wolfdireroam"/>
+			<property name="SoundSense" value="wolfdiresense"/>
+
+			<!-- Gameplay  -->
+			<property name="MoveSpeedAggro" value="1, 1.4"/>
+			<property name="JumpMaxDistance" value="6, 7"/>
+			<property name="HandItem" value="meleeHandAnimalDireWolf"/>
+			<property name="Immunity" value="sickness;disease;wellness"/> 
+			<property name="PainResistPerHit" value=".95"/>
+			<property name="DeadBodyHitPoints" value="750"/>
+
+			<property name="ExperienceGain" value="9000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="1"/> 
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="45"/> 
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="18"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="7"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="40000"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				
+				<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_onFire" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffDevourerAOEself,buffCallDevourerMinionPhase1"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffCallDevourerMinionPhase2">
+					<requirement name="HasBuff" buff="buffCallDevourerMinionPhase2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="BuffTerribleWounds">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				</triggered_effect>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_direwolf,clear_sleeper" />
+		</entity_class>
+		
+		<entity_class name="DevourerMinion" extends="animalWolf">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="EntityFlags" value="animal,zombie"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,wolf,perkAT02,perkAT03"/>
+			<property name="PhysicsBody" value="AWolf"/>
+			<property name="Mass" value="140"/>
+			<property name="Prefab" value="/Entities/Animals/DireWolf/animalDireWolfPrefab"/>
+			<property name="SizeScale" value="1.1"/>
+			<property name="DismemberMultiplierHead" value="0"/>
+
+			<property name="AIPathCostScale" value=".15, .2"/>
+			<property name="AITask" value="
+			BreakBlock|
+			DestroyArea|
+			Territorial|
+			ApproachDistraction|
+			ApproachAndAttackTarget class=EntityPlayer,25,EntityBandit,20,EntityAnimalStag,30|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+			<property name="AITarget" value="
+			SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+			BlockingTargetTask|
+			SetNearestCorpseAsTarget flags=edible|
+			SetNearestEntityAsTarget class=EntityPlayer,16,10,EntityBandit,0,-8,EntityAnimalStag,0,0|
+			"/>
+
+			<property name="SoundAlert" value="wolfdirealert"/>
+			<property name="SoundAttack" value="wolfdireattack"/>
+			<property name="SoundDeath" value="wolfdiredeath"/>
+			<property name="SoundGiveUp" value="wolfdiregiveup"/>
+			<property name="SoundHurt" value="wolfdirepain"/>
+			<property name="SoundRandom" value="wolfdireroam"/>
+			<property name="SoundSense" value="wolfdiresense"/>
+
+			<!-- Gameplay  -->
+			<property name="MoveSpeedAggro" value="1.1, 1.5"/>
+			<property name="JumpMaxDistance" value="7, 9"/>
+			<property name="HandItem" value="meleeHandDevourerMinion"/>
+			<property name="Immunity" value="sickness;disease;wellness"/> 
+			<property name="PainResistPerHit" value=".95"/>
+			<property name="DeadBodyHitPoints" value="500"/>
+
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".1"/> 
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="6000"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffEliteHandsBurnt"/>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_direwolf,clear_sleeper" />
+		</entity_class>
+	</append>
+	
+</configs>

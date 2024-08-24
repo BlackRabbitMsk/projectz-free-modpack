@@ -1,0 +1,12 @@
+Key,Source,Context,Changes,English,Russian
+
+buffBuffDevourerAOE,buffs,Buff,,Devourer,Пожиратель
+BuffDevourerAOEName,buffs,buff,,Devourer nearby, Пожиратель рядом
+BuffDevourerAOETooltip,buffs,buff,,The Devourer is on the hunt,Пожиратель вышел на охоту
+BuffDevourerAOEIncDesc,buffs,Buff,,"You have sometimes heard about this creature in stories from experienced wanderers. And here is this creature next to you. If you are not ready to meet it, you better run away. The Devourer never walks alone, if it senses danger, it can call minions.\nIt is difficult for you to overcome fear. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Вы иногда слышали об этой твари в расказах от бывалых странников. И вот это тварь рядом с вами. Если вы не готовы к встречи с ней лучше убегайте. Пожиратель никогда не ходит один, если он почувствует опасность он может позвать приспешников.\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffTerribleWoundsName,buffs,buff,,Terrible wound, Ужасные раны
+BuffTerribleWoundsTooltip,buffs,buff,,You have a terrible wound,У вас ужасная рана
+BuffTerribleWoundsIncDesc,buffs,Buff,,"You have opened up a nasty wound. You take periodic damage from blood loss. \nYour health is reduced by [FFB800]25[-] and your mobility is reduced by [FFB800]20%[-]","У вас открылась ужасная рана. Вы получаете периодический урон от потери крови. \nЗапас здоровья снижен на [FFB800]25[-] а ваша мобильность на [FFB800]20%[-]"
+
+bossDevourer,entityclasses,Entity,,[FFB800]Mini BOSS[-] DEVOURER,[FFB800]Мини БОСС[-] ПОЖИРАТЕЛЬ

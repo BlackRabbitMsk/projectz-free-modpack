@@ -1,0 +1,28 @@
+<config>
+		
+	<!-- WASTELAND -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		bossDevourer, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		bossDevourer, .5
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add" >
+		bossDevourer, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']/text()" delim="\n" op="add" >
+		bossDevourer, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']/text()" delim="\n" op="add" >
+		bossDevourer, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']/text()" delim="\n" op="add" >
+		bossDevourer, .25
+	</csv>
+		
+	<!-- BURNT_FOREST -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestNight']/text()" delim="\n" op="add" >
+		bossDevourer, 8
+	</csv>
+	
+</config>

@@ -1,0 +1,125 @@
+<configs>
+	
+	<append xpath="/buffs">  
+		
+		<buff name="BuffTerribleWounds" name_key="BuffTerribleWoundsName" tooltip_key="BuffTerribleWoundsTooltip" description_key="BuffTerribleWoundsIncDesc" icon="ui_game_symbol_deep_cuts" icon_color="255,20,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="6"/>
+			<update_rate value="2"/>
+			<display_value value=".BuffTerribleWounds"/>
+			<display_value_format value="time"/>
+			
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="8"/>
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="25"/>
+				<passive_effect name="Mobility" operation="base_add" value="-.2"/>
+			</effect_group>
+			<effect_group name="Timer">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".BuffTerribleWounds" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".BuffTerribleWounds" operation="subtract" value="2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".BuffTerribleWounds"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffCallDevourerMinionPhase1" hidden="true">
+			<stack_type value="replace"/>
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffCallDevourerMinionPhase2">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherDamagedSelf" action="RemoveBuff" buff="buffCallDevourerMinionPhase1"/>
+			</effect_group>
+		</buff>
+		<buff name="buffCallDevourerMinionPhase2" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="30"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="Small_Wave_WolfMinions" allow_client_call="true">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="Small_Wave_WolfMinions" allow_client_call="true">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffDevourerAOEself" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="BuffDevourerAOE">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="BuffAcRadBossesAOE,BuffHeatDevouverAOE">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffDevourerAOE" name_key="BuffDevourerAOEName" tooltip_key="BuffDevourerAOETooltip" description_key="BuffDevourerAOEIncDesc" icon="ui_game_symbol_trex" icon_color="255,160,50">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<update_rate value="1"/>
+			<display_value_key value="buffBuffDevourerAOE"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_shield_enemies"/>
+				<passive_effect name="Mobility" operation="base_add" value="-.1"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Greyscale" intensity=".5" fade="3"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Greyscale" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Greyscale" intensity="0" fade="3"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="FadeToBlack" intensity=".3" fade="3"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="FadeToBlack" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="FadeToBlack" intensity="0" fade="3"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity=".2" fade="1"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Trippy" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Trippy" intensity="0" fade="1"/>
+			</effect_group>
+		</buff>
+		
+		<!-- Burnt hands -->
+		<buff name="BuffEliteHandsBurnt">
+			<stack_type value="replace"/>
+			<duration value="600"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="BuffAcRadEliteZombie">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_fire_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_fire_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_fire_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_fire_right" />
+				</triggered_effect>				
+			</effect_group>
+		</buff>
+		
+	</append>
+	
+</configs>

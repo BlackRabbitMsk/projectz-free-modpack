@@ -1,0 +1,67 @@
+<config>
+	
+	 <append xpath="/lootcontainers">
+		
+		<!-- lootgroups -->
+		<lootgroup name="SmallLightAlloys">
+			<item name="resourceUltraLightAlloys" count="10"/>
+		</lootgroup>
+		<lootgroup name="SmallStrengthAlloys">
+			<item name="resourceUltraStrengthAlloys" count="10"/>
+		</lootgroup>
+		<lootgroup name="SmallExperimentalAlloys">
+			<item name="resourceExperimentalAlloys" count="10"/>
+		</lootgroup>
+		<lootgroup name="MediumLightAlloys">
+			<item name="resourceUltraLightAlloys" count="50"/>
+		</lootgroup>
+		<lootgroup name="MediumStrengthAlloys">
+			<item name="resourceUltraStrengthAlloys" count="50"/>
+		</lootgroup>
+		<lootgroup name="MediumExperimentalAlloys">
+			<item name="resourceExperimentalAlloys" count="50"/>
+		</lootgroup>
+		<lootgroup name="BigLightAlloys">
+			<item name="resourceUltraLightAlloys" count="100"/>
+		</lootgroup>
+		<lootgroup name="BigStrengthAlloys">
+			<item name="resourceUltraStrengthAlloys" count="100"/>
+		</lootgroup>
+		<lootgroup name="BigExperimentalAlloys">
+			<item name="resourceExperimentalAlloys" count="100"/>
+		</lootgroup>
+		
+		<!-- Lootcontainers -->
+		<lootcontainer name="rewardSmallLightAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="SmallLightAlloys"/>
+		</lootcontainer>
+		<lootcontainer name="rewardSmallStrengthAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="SmallStrengthAlloys"/>
+		</lootcontainer>
+		<lootcontainer name="rewardSmallExperimentalAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="SmallExperimentalAlloys"/>
+		</lootcontainer>
+		
+		<lootcontainer name="rewardMediumLightAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="MediumLightAlloys"/>
+		</lootcontainer>
+		<lootcontainer name="rewardMediumStrengthAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="MediumStrengthAlloys"/>
+		</lootcontainer>
+		<lootcontainer name="rewardMediumExperimentalAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="MediumExperimentalAlloys"/>
+		</lootcontainer>
+		
+		<lootcontainer name="rewardBigLightAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="BigLightAlloys"/>
+		</lootcontainer>
+		<lootcontainer name="rewardBigStrengthAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="BigStrengthAlloys"/>
+		</lootcontainer>
+		<lootcontainer name="rewardBigExperimentalAlloys" count="1" size="3,3" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="BigExperimentalAlloys"/>
+		</lootcontainer>
+		
+	</append>
+	
+</config>

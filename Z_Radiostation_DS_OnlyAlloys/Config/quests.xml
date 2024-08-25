@@ -1,0 +1,207 @@
+<config>
+	
+	 <append xpath="/quests" >
+	 
+		<!-- ULTRA LIGHT ALLOYS -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->		
+		<!-- Small -->		
+		<quest id="SmallCase01">
+			<property name="name_key" value="SmallCase_Name"/>
+			<property name="description_key" value="SmallCase01_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="offer_key" value="SmallCase01_Offer"/>
+			
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_UltraLightAlloys" phase="1"/>
+						
+			<reward type="Exp" value="1500"/>
+		</quest>
+		
+		<!-- Medium -->
+		<quest id="MediumCase01">
+			<property name="name_key" value="MediumCase_Name"/>
+			<property name="description_key" value="MediumCase01_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="login_rally_reset" value="false"/>
+			
+			<property name="offer_key" value="MediumCase01_Offer"/>
+					
+			<action type="GameEvent" id="action_spawn_reward_MediumCase_UltraLightAlloys" phase="1"/>
+			
+			<reward type="Exp" value="3000"/>
+		</quest>
+		
+		<!-- Big -->
+		<quest id="BigCase01">
+			<property name="name_key" value="BigCase_Name"/>
+			<property name="description_key" value="BigCase01_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="login_rally_reset" value="false"/>
+			
+			<property name="offer_key" value="BigCase01_Offer"/>
+			
+			<action type="GameEvent" id="action_spawn_reward_BigCase_UltraLightAlloys" phase="1"/>
+
+			<reward type="Exp" value="4500"/>
+		</quest>
+		
+		<!-- ULTRA STRENGHT ALLOYS -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<!-- Small -->
+		<quest id="SmallCase02">
+			<property name="name_key" value="SmallCase_Name"/>
+			<property name="description_key" value="SmallCase02_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="login_rally_reset" value="false"/>
+			
+			<property name="offer_key" value="SmallCase02_Offer"/>
+							
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_UltraStrengthAlloys" phase="1"/>
+
+			<reward type="Exp" value="1500"/>
+		</quest>
+		
+		<!-- Medium -->
+		<quest id="MediumCase02">
+			<property name="name_key" value="MediumCase_Name"/>
+			<property name="description_key" value="MediumCase02_Offer"/>
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="offer_key" value="MediumCase01_Offer"/>
+								
+			<action type="GameEvent" id="action_spawn_reward_MediumCase_UltraStrengthAlloys" phase="1"/>
+
+			<reward type="Exp" value="3000"/>
+		</quest>
+		
+		<!-- Big -->
+		<quest id="BigCase02">
+			<property name="name_key" value="BigCase_Name"/>
+			<property name="description_key" value="BigCase02_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="login_rally_reset" value="false"/>
+			
+			<property name="offer_key" value="BigCase01_Offer"/>
+						
+			<action type="GameEvent" id="action_spawn_reward_BigCase_UltraStrengthAlloys" phase="1"/>
+			
+			<reward type="Exp" value="4500"/>
+		</quest>
+		
+		<!-- EXPERIMENTAL ALLOYS -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<!-- Small -->
+		<quest id="SmallCase03">
+			<property name="name_key" value="SmallCase_Name"/>
+			<property name="description_key" value="SmallCase03_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			
+			<variable name="difficulty" value="3"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="login_rally_reset" value="false"/>
+			
+			<property name="offer_key" value="SmallCase03_Offer"/>
+					
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_ExperimentalAlloys" phase="1"/>
+
+			<reward type="Exp" value="1500"/>
+		</quest>
+		
+		<!-- Medium -->
+		<quest id="MediumCase03">
+			<property name="name_key" value="MediumCase_Name"/>
+			<property name="description_key" value="MediumCase03_Offer"/>
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="offer_key" value="MediumCase01_Offer"/>
+								
+			<action type="GameEvent" id="action_spawn_reward_MediumCase_ExperimentalAlloys" phase="1"/>
+			
+			<reward type="Exp" value="3000"/>
+		</quest>
+		
+		<!-- Big -->
+		<quest id="BigCase03">
+			<property name="name_key" value="BigCase_Name"/>
+			<property name="description_key" value="BigCase03_Offer"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="icon" value="ui_game_symbol_airdrop" />
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="category_key" value="challenge"/>	
+			<property name="login_rally_reset" value="false"/>
+			
+			<property name="offer_key" value="BigCase01_Offer"/>
+			
+			<action type="GameEvent" id="action_spawn_reward_BigCase_ExperimentalAlloys" phase="1"/>
+			
+			<reward type="Exp" value="4500"/>
+		</quest>
+			
+	</append>
+			
+</config>

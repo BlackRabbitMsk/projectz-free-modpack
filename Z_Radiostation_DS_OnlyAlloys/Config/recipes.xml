@@ -1,0 +1,167 @@
+<config>
+	<insertAfter xpath="/recipes/recipe[@name='armorParts']">
+		<recipe name="UniversalParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+	</insertAfter>
+	<append xpath="/recipes">
+		
+		<!-- Radio station -->
+		<recipe name="radioStation" craft_time="300" count="1" craft_area="workbench">
+			<ingredient name="carBattery" count="2"/>
+			<ingredient name="resourceElectricParts" count="200"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+		</recipe>
+		
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- RESOURS SET'S RECIPES -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="UniversalParts" count="50"/>
+		</recipe>
+		
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="casinoCoin" count="5000"/>
+		</recipe>
+				
+		<!-- Mining res -->
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceScrapIron" count="9000"/>
+		</recipe>
+		<!-- <recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench"> -->
+			<!-- <ingredient name="resourceWood" count="100"/> -->
+			<!-- <ingredient name="resourceNail" count="10"/> -->
+			<!-- <ingredient name="resourceScrapLead" count="9000"/> -->
+		<!-- </recipe> -->
+		<!-- <recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench"> -->
+			<!-- <ingredient name="resourceWood" count="100"/> -->
+			<!-- <ingredient name="resourceNail" count="10"/> -->
+			<!-- <ingredient name="resourceCoal" count="9000"/> -->
+		<!-- </recipe> -->
+		<!-- <recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench"> -->
+			<!-- <ingredient name="resourceWood" count="100"/> -->
+			<!-- <ingredient name="resourceNail" count="10"/> -->
+			<!-- <ingredient name="resourcePotassiumNitratePowder" count="9000"/> -->
+		<!-- </recipe> -->
+		<!-- <recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench"> -->
+			<!-- <ingredient name="resourceWood" count="100"/> -->
+			<!-- <ingredient name="resourceNail" count="10"/> -->
+			<!-- <ingredient name="resourceOilShale" count="9000"/> -->
+		<!-- </recipe> -->
+		
+		<!-- Farmer res -->
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="foodCropPotato" count="500"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="foodCropCorn" count="500"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="foodCropMushrooms" count="500"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="foodCropPumpkin" count="500"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="foodRawMeat" count="250"/>
+		</recipe>
+		
+		<!-- Harvest and scrap res -->
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceLeather" count="250"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceSpring" count="250"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="400"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceElectricParts" count="250"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="250"/>
+		</recipe>
+		
+		<!-- Ammo -->
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="ammo9mmBulletBall" count="900"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="ammo44MagnumBulletBall" count="900"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="ammo762mmBulletBall" count="600"/>
+		</recipe>
+		<recipe name="resourceResourceSet" craft_time="20" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="100"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="ammoShotgunShell" count="600"/>
+		</recipe>
+		
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- REQUEST SUPPORT RECIPES -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<recipe name="UltraLightAlloysSmall_Quest" craft_time="180" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="5"/>
+		</recipe>
+		<recipe name="requestUltraStrengthAlloysSmall" craft_time="180" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="5"/>
+		</recipe>
+		<recipe name="requestExperimentalAlloysSmall" craft_time="180" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="10"/>
+		</recipe>
+		<recipe name="requestUltraLightAlloysMedium" craft_time="360" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="22"/>
+		</recipe>
+		<recipe name="requestUltraStrengthAlloysMedium" craft_time="360" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="22"/>
+		</recipe>
+		<recipe name="requestExperimentalAlloysMedium" craft_time="360" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="45"/>
+		</recipe>
+		<recipe name="requestUltraLightAlloysBig" craft_time="720" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="40"/>
+		</recipe>
+		<recipe name="requesUltraStrengthAlloysBig" craft_time="720" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="40"/>
+		</recipe>
+		<recipe name="requestExperimentalAlloysBig" craft_time="720" count="1" craft_area="radioStation">
+			<ingredient name="resourceResourceSet" count="90"/>
+		</recipe>
+		
+	</append>
+	
+</config>

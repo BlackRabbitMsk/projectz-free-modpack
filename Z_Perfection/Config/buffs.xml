@@ -67,7 +67,6 @@
 	   <buff name="buffHeavyArmorSkillBonus" hidden="true">
             <stack_type value="ignore"/>
 			<effect_group>				
-                <passive_effect name="HealthMax" operation="base_add" value="@$HeavyArmorSkillHealthBonus"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="@$HeavyArmorSkillMeleeBonus">
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 				</passive_effect>

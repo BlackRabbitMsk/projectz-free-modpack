@@ -11,7 +11,7 @@
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqPerfectPoints03"/></level_requirements>
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="150" desc_key="reqPerfectPoints04"/></level_requirements>
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="200" desc_key="reqPerfectPoints05"/></level_requirements>
-			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="250" desc_key="reqPerfectPoints05"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="250" desc_key="reqPerfectPoints06"/></level_requirements>
 			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="300" desc_key="reqPerfectPoints07"/></level_requirements>
 			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="350" desc_key="reqPerfectPoints08"/></level_requirements>
 			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="400" desc_key="reqPerfectPoints09"/></level_requirements>
@@ -64,7 +64,7 @@
 			</level_requirements>
 
 			<effect_group>
-				<passive_effect name="PlayerExpGain" operation="perc_add" level="1,5" value=".1,.5"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1,5" value=".05,.25"/>
 			</effect_group>
 			
 			<effect_group name="XP Buff Bonus">
@@ -102,7 +102,7 @@
 			</level_requirements>
 
 			<effect_group>
-				<passive_effect name="LootStage" operation="perc_add" level="1,5" value=".1,.5"/>
+				<passive_effect name="LootStage" operation="perc_add" level="1,5" value=".05,.25"/>
 			</effect_group>
 
 			<effect_group>
@@ -403,6 +403,7 @@
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkSalvageOperations"/>
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="salvageHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" level="3,4,5" value="1,2,3" tags="HarvestRareRecources"/>
 			</effect_group>
 
 			<effect_group>
@@ -521,19 +522,19 @@
 			</effect_group>
 			
 			<effect_group name="Defence Bonus">
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".03">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".02">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="1"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".06">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".04">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="2"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".09">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".06">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="3"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".12">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".08">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="4"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".15">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$LightArmorSkillDefBonus" operation="set" value=".1">
 					<requirement name="ProgressionLevel" progression_name="perkArmorLight" operation="Equals" value="5"/>
 				</triggered_effect>
 			</effect_group>
@@ -589,19 +590,19 @@
 			</effect_group>
 			
 			<effect_group name="Defence Bonus">
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".04">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".02">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="Equals" value="1"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".08">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".04">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="Equals" value="2"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".12">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".06">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="Equals" value="3"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".15">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".08">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="Equals" value="4"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".2">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MediumArmorSkillDefBonus" operation="set" value=".1">
 					<requirement name="ProgressionLevel" progression_name="perkArmorMedium" operation="Equals" value="5"/>
 				</triggered_effect>
 			</effect_group>
@@ -655,39 +656,21 @@
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="5"/>
 				</triggered_effect>
 			</effect_group>
-			
-			<effect_group name="Health Bonus">
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillHealthBonus" operation="set" value="6">
+						
+			<effect_group name="Defence Bonus">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".02">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="1"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillHealthBonus" operation="set" value="12">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".04">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="2"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillHealthBonus" operation="set" value="18">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".06">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="3"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillHealthBonus" operation="set" value="24">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".08">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="4"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillHealthBonus" operation="set" value="30">
-					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="5"/>
-				</triggered_effect>
-			</effect_group>
-			
-			<effect_group name="Defence Bonus">
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".05">
-					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="1"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".1">
-					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="2"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".15">
-					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="3"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".2">
-					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="4"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$HeavyArmorSkillDefBonus" operation="set" value=".25">
 					<requirement name="ProgressionLevel" progression_name="perkArmorHeavy" operation="Equals" value="5"/>
 				</triggered_effect>
 			</effect_group>

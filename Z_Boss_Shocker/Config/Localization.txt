@@ -1,0 +1,18 @@
+Key,Source,Context,Changes,English,Russian
+
+BuffShockerAOE,buffs,Buff,,Shocker,Шокер
+BuffShockerAOEName,buffs,buff,,Shocker nearby, Шокер рядом
+BuffShockerAOETooltip,buffs,buff,,Shocker is on the hunt,Шокер вышел на охоту
+BuffShockerAOEIncDesc,buffs,Buff,,"What happens if you connect an irradiated zombie to the network. Apparently someone seriously asked this question!!!\nThis creature burns everything on its own near itself. Try not to get close to it, if possible.\n\nIt is difficult for you to overcome your fear. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Что получиться если подключить к сети облученного зомби. Видимо ктото всерьез задался этим вопросом!!!\nЭта тварь сжигает все на своем рядом с собой. Старайтель не сближаться с ней, если получиться.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffBossEnragePlayer,buffs,Buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerName,buffs,buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerTooltip,buffs,buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerIncDesc,buffs,Buff,,"You've driven Boss into a rage. Better run away!\nHis movement speed is increased by [DECEA3]50%[-], his attack speed is increased by [DECEA3]60%[-], and any of his attacks will knock you down.\n\nHowever, his damage resistance is decreased by [DECEA3]30%[-]","Вы довели Босса до приступа бешенства. Лучше убегайте!\nСкорость его передвижения увеличена на [DECEA3]50%[-], скорость атаки увеличена на [DECEA3]60%[-], также любая его атака собъет вас с ног.\n\nОднако сопротивление урону уменьшенно на [DECEA3]30%[-]"
+
+BuffBossHealthTheftPlayer,buffs,Buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerName,buffs,buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerTooltip,buffs,buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerIncDesc,buffs,Buff,,"The boss feeds on your adrenaline. You take damage over time and are slowed down. Try to wait it out and stay alive.","Босс питается вашим адреналином. Вы получаете периодический урон и замедлены\nПостарайтесь переждать и остаться в живых."
+
+bossShocker,entityclasses,Entity,,[FFB800]BOSS[-] SHOCKER,[FFB800]БОСС[-] ШОКЕР

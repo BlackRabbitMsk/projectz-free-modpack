@@ -1,0 +1,445 @@
+<configs>
+	
+	<append xpath="/buffs">  
+		
+		<!-- =============================== -->
+		<!-- SHOCKER -->
+		<buff name="BuffShockerself" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+						
+			<effect_group name="Phase CVar">				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BattlePhaseShocker" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BattlePhaseShocker" operation="set" value="2">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="125000"/>
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="100000"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BattlePhaseShocker" operation="set" value="3">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="100000"/>
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="75000"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BattlePhaseShocker" operation="set" value="4">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="75000"/>
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="50000"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BattlePhaseShocker" operation="set" value="5">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="50000"/>
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="25000"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BattlePhaseShocker" operation="set" value="6">
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="25000"/>
+					<requirement name="StatCompareCurrent" target="self" stat="health" operation="GT" value="0"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="BuffShockerAOE">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="BuffShockerMeleeAOE"/>
+			</effect_group>
+			
+			<effect_group name="Phase Buffs">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BuffShockerBattlePhase1">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BuffShockerBattlePhase2">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BuffShockerBattlePhase3">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BuffShockerBattlePhase4">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BuffShockerBattlePhase5">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="Equals" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BuffShockerBattlePhase6">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="Equals" value="6"/>
+				</triggered_effect>	
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$BattlePhaseShocker" operation="set" value="1"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffShockerBattlePhase1" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BuffShockerBattlePhase1">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="NotEquals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="BuffShockerBattlePhase2" hidden="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$phaseShocker" operation="set" value="randomint(1,2)"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossEnrage">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossHealthTheft">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$phaseShocker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="buffShocked,BuffBossShockerPhase">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BuffShockerBattlePhase2">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="NotEquals" value="2"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="BuffShockerBattlePhase3" hidden="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$phaseShocker" operation="set" value="randomint(1,2)"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossEnrage">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossHealthTheft">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$phaseShocker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="buffShocked,BuffBossShockerPhase">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BuffShockerBattlePhase3">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="NotEquals" value="3"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="BuffShockerBattlePhase4" hidden="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$phaseShocker" operation="set" value="randomint(1,2)"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossEnrage">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossHealthTheft">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$phaseShocker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="buffShocked,BuffBossShockerPhase">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BuffShockerBattlePhase4">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="NotEquals" value="4"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="BuffShockerBattlePhase5" hidden="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$phaseShocker" operation="set" value="randomint(1,2)"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossEnrage">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossHealthTheft">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$phaseShocker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="buffShocked,BuffBossShockerPhase">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BuffShockerBattlePhase5">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="NotEquals" value="5"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="BuffShockerBattlePhase6" hidden="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$phaseShocker" operation="set" value="randomint(1,2)"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossEnrage">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="BuffBossHealthTheft">
+					<requirement name="CVarCompare" cvar="$phaseShocker" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$phaseShocker"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="buffShocked,BuffBossShockerPhase">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,turret,drone"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BuffShockerBattlePhase6">
+					<requirement name="CVarCompare" cvar="$BattlePhaseShocker" operation="NotEquals" value="6"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<!-- Phase Bonus Bosses Buff's -->
+		<buff name="BuffBossShockerPhase" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="16"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$phaseBlur" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$phaseBlur" operation="add" value="1"/>
+				
+				<!-- Trippy effect -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity="1" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity="2" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity="1.6" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity="1.2" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity=".8" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity=".4" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity="0" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="7"/>
+				</triggered_effect>
+				
+				<!-- Blur effect -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="2" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="4" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="3.2" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="2.4" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="1.6" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity=".8" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="6"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1">
+					<requirement name="CVarCompare" cvar="$phaseBlur" operation="Equals" value="7"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+				
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="phaseBlur"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Trippy" intensity="0" fade="0"/>
+			</effect_group>
+		</buff>
+		
+		<!-- Shocker Melee -->
+		<buff name="BuffShockerMeleeAOE" hidden="true">
+			<damage_type value="electrical"/>
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffShocked">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="8"/>
+				</triggered_effect>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="1"/>		
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffShockerAOE" name_key="BuffShockerAOEName" tooltip_key="BuffShockerAOETooltip" description_key="BuffShockerAOEIncDesc" icon="ui_game_symbol_trex" icon_color="255,20,0">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<update_rate value="1"/>
+			<display_value_key value="BuffShockerAOE"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_bad_action"/>
+				<passive_effect name="Mobility" operation="base_add" value="-.1"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Greyscale" intensity=".6" fade="3"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Greyscale" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Greyscale" intensity="0" fade="3"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="FadeToBlack" intensity=".4" fade="3"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="FadeToBlack" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="FadeToBlack" intensity="0" fade="3"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Trippy" intensity=".3" fade="1"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Trippy" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Trippy" intensity="0" fade="1"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffShockerDeco" hidden="true">
+		<duration value="6000"/>
+						
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,0.12,0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Electrical/electric_fencePrefab" local_offset=".3,.4,0" local_rotation="0,0,-35" local_scale=".35,.35,.35" parent_transform="Spine2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Electrical/electric_fencePrefab" local_offset="-.3,.4,0" local_rotation="0,0,35" local_scale=".35,.35,.35" parent_transform="Spine3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Industrial/utilityElectricalBox_01Prefab" local_offset="0,.25,-.21" local_rotation="-75,0,0" local_scale=".25,.25,.25" parent_transform="Spine2"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" prefab="p_electric_shock" parent_transform="Spine1"/>
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_shock_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_shock_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_shock_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_shock_right" />
+				</triggered_effect>				
+			</effect_group>
+		</buff>
+		
+		<!-- =============================== -->
+		<!-- BUFF BOSSREGEN -->
+		<buff name="buffBossRegen" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="2000000000"/>
+			<update_rate value="2.5"/>
+
+			<effect_group>
+				<requirement name="!HasBuff" buff="buffBossRegenBlock"/>
+					<passive_effect name="HealthChangeOT" operation="base_add" value="1500"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBossRegen">
+					<requirement name="StatComparePercCurrentToMax" stat="health" operation="GTE" value=".95"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffBossRegenBlock" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="20"/>
+				<effect_group>		
+					<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffBossRegen"/>
+				</effect_group>
+		</buff>
+		
+		<buff name="buffInjuryStunnedBoss" name_key="buffInjuryStunned01Name" description_key="buffInjuryStunned01Desc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+			<damage_type value="stun"/>
+			<stack_type value="replace"/>
+			<duration value="4"/>
+			<display_value_key value="{0}"/>
+			<display_value value=".stunDisplay"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInjuryStunned01"/>
+				<!-- Remove other stun buffs if active -->
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned00"/>
+				<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned00"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned02"/>
+				<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned02"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryStunned03"/>
+				<triggered_effect trigger="onSelfBuffStack" action="RemoveBuff" buff="buffInjuryStunned03"/>
+				<!-- Decrease movement speed and ramp it back up over time -->
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,4"/>
+				<!-- Decrease attack speed and ramp it back up over time -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.5,0" duration="0,4">
+					<requirement name="!EntityTagCompare" tags="player"/>
+				</passive_effect>
+				<!-- Handlers for screen effects -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" fade="1" effect_name="Blur"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+				<!-- Handlers for playing sounds -->
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_stunned" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
+				<!-- Test and start cool down -->
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
+					<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveCVar" cvar=".shotgunSuppressCooldown"/>
+				<!-- Setup, start, reset display -->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar=".stunDisplay" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".stunDisplay" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".stunDisplay"/>
+				<!-- Handlers for camera shake -->
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="0.5" shake_amplitude="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0"/>
+				<!-- Handlers for audio mixer state -->
+				<triggered_effect trigger="onSelfBuffStart" action="SetAudioMixerState" state="Stunned" enabled="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetAudioMixerState" state="Stunned" enabled="false"/>
+			</effect_group>
+	</buff>
+		
+		<!-- =============================== -->
+		<!-- BOSSES Buff's -->
+		<buff name="BuffBossEnrage" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="8"/>
+			<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="base_add" value="100"/>
+				<passive_effect name="Mobility" operation="base_add" value=".5"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" value="-.3"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="BuffBossEnragePlayer">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffBossHealthTheft" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="5"/>
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="1800"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="20" buff="BuffBossHealthTheftPlayer">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffBossEnragePlayer" name_key="BuffBossEnragePlayerName" tooltip_key="BuffBossEnragePlayerTooltip" description_key="BuffBossEnragePlayerIncDesc" icon="ui_game_symbol_bull" icon_color="255,20,0" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="8"/>
+			<display_value_key value="BuffBossEnragePlayer"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_empower_zombies"/>
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="BuffBossHealthTheftPlayer" name_key="BuffBossHealthTheftPlayerName" tooltip_key="BuffBossHealthTheftPlayerTooltip" description_key="BuffBossHealthTheftPlayerIncDesc" icon="ui_game_symbol_traps" icon_color="255,20,0" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="5"/>
+			<display_value_key value="BuffBossHealthTheftPlayer"/>
+			<display_value value="xxx"/>
+				<effect_group>
+					<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_good_action"/>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" value="6"/>
+					<passive_effect name="Mobility" operation="base_add" value="-.4"/>
+				</effect_group>
+		</buff>
+		
+	</append>
+	
+</configs>

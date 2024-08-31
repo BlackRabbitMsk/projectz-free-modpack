@@ -1,0 +1,14 @@
+Key,Source,Context,Changes,English,Russian
+
+modJetPack,item_modifiers,mod,,JetPack Mod,Мод Реактивный ранец
+modJetPackDesc,item_modifiers,mod,,"Allows you to perform powerful jumps with a small cooldown. When disabled, reduces stamina consumption when jumping by [FFB800]30%[-]\n\nModifies the armor chest","Дает возможность совершать усиленные прыжки с небольшой перезарядкой. В выключенном режиме уменьшает расход выносливости при прыжках на [FFB800]30%[-]\n\nМодифицирует корпус брони"
+
+buffJetPackReloadName,buffs,buff,,Recharging the jetpack,Перезарядка реактивного ранца 
+buffJetPackReloadTooltip,buffs,buff,,Your jetpack is on recharge,Ваш реактивный ранец на перезарядке
+buffJetPackReloadIncDesc,buffs,Buff,,"Your jetpack is on recharge. Wait until it is complete before you can use it.\n\n[DECEA3]Duration: 7 seconds[-]","Ваш реативный ранец на перезарядки. Дождитесь ее завершения для возможности его использования.\n\n[DECEA3]Длительность: 7 секунд[-]"
+buffJetPackNormalName,buffs,buff,,JetPack [DECEA3]OFF[-],Реактивный ранец [DECEA3]ВЫКЛ[-]
+buffJetPackNormalTooltip,buffs,buff,,Your jetpack is disabled,Ваш реактивный ранец выключен
+buffJetPackNormalIncDesc,buffs,Buff,,"Your jetpack is disabled. You must activate it to use jump boosts.\n\nIn this mode, stamina consumption when jumping is reduced by [DECEA3]30%[-]","Ваш реативный ранец выключен. Для использования усиленных прыжком его необходимо активировать.\n\nВ этом режиме расход выносливости при прыжках уменьшено на [DECEA3]30%[-]"
+buffJetPackBoostName,buffs,buff,,JetPack [DECEA3]ON[-],Реактивный ранец [DECEA3]ВКЛ[-]
+buffJetPackBoostTooltip,buffs,buff,,Your jetpack is active,Ваш реактивный ранец активен
+buffJetPackBoostIncDesc,buffs,Buff,,"Your jetpack is active. Your next jump will be boosted by [DECEA3]300%[-]\n\n[DECEA3]After a boosted jump, your jetpack will go on recharge. Be careful not to break your legs[-]"Ваш реативный ранец активен. Следующий ваш прыжок будет усилен на [DECEA3]300%[-]\n\n[DECEA3]После усиленного прыжка ваш ранец уйдет на перезарядку. Будьте осторожны и не поломайте ноги[-]"

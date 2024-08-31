@@ -1,0 +1,15 @@
+<config>
+	
+	<append xpath="/recipes">
+				
+		<recipe name="modJetPack" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="smallEngine" count="2"/>
+			<ingredient name="ammoGasCan" count="500"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceElectricParts" count="150"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+		</recipe>
+		
+	</append>
+	
+</config>

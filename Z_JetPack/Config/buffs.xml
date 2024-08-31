@@ -1,0 +1,62 @@
+<config>
+		
+	<append xpath="/buffs">
+		
+		<buff name="buffJetPackReload" name_key="buffJetPackReloadName" tooltip_key="buffJetPackReloadTooltip" description_key="buffJetPackReloadIncDesc" icon="ui_game_symbol_parkour" icon_color="215,140,55">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".buffJetPackReloadDisplay"/>
+			<display_value_format value="time"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffJetPackReloadDuration" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffJetPackReloadDisplay" operation="set" value="@$buffJetPackReloadDuration"/>		
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffJetPackReload">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffJetPackBoost">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="LTE" value="0"/>
+					<requirement name="CVarCompare" cvar="$JetPackStatus" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffJetPackBoost">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="LTE" value="0"/>
+					<requirement name="CVarCompare" cvar="$JetPackStatus" operation="Equals" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffJetPackNormal" name_key="buffJetPackNormalName" tooltip_key="buffJetPackNormalTooltip" description_key="buffJetPackNormalIncDesc" icon="ui_game_symbol_parkour" icon_color="255,255,255">
+			<stack_type value="ignore"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffJetPackBoost"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="switch_up" play_in_head="true"/>
+				
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.3" tags="jumping"/>
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="buffJetPackBoost" name_key="buffJetPackBoostName" tooltip_key="buffJetPackBoostTooltip" description_key="buffJetPackBoostIncDesc" icon="ui_game_symbol_parkour" icon_color="60,180,70" icon_blink="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffJetPackNormal"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="switch_up" play_in_head="true"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="3">
+					<requirement name="!HasBuff" buff="buffJetPackReload"/>
+				</passive_effect>
+				<triggered_effect trigger="onSelfJump" action="RemoveBuff" buff="buffJetPackBoost"/>
+				<triggered_effect trigger="onSelfJump" action="PlaySound" sound="vehicle_turbo" play_in_head="true"/>
+				<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffJetPackReload"/>
+
+				<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$buffJetPackReloadDuration" operation="set" value="7"/>
+			</effect_group>
+		</buff>
+		
+	</append>
+		
+</config>

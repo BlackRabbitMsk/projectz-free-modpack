@@ -1,0 +1,23 @@
+<config>
+		
+	<!-- WASTELAND -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		bossVeteran, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		bossVeteran, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add" >
+		bossVeteran, .15
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']/text()" delim="\n" op="add" >
+		bossVeteran, .12
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']/text()" delim="\n" op="add" >
+		bossVeteran, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']/text()" delim="\n" op="add" >
+		bossVeteran, .1
+	</csv>
+	
+</config>

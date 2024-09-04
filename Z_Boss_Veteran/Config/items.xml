@@ -1,0 +1,79 @@
+<configs>
+	
+	<append xpath="/items">  
+
+		<item name="meleeHandVeteranBoss">
+			<property name="Extends" value="meleeHandMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property class="Action0">
+				<property name="Range" value="2.6"/>
+				<property name="DamageEntity" value="66"/>
+				<property name="DamageBlock" value="500"/>
+				<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalsolidhitorganic"/></property>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="Vomit"/>
+				<property name="Delay" value=".3"/>
+				<property name="Range" value="250"/>
+				<property name="Infinite_ammo" value="true"/>
+				<property name="Magazine_items" value="ammoProjectileZombieVeteran"/>
+				<property name="Sound_warning" value="demolitionzexplodewarning"/>
+				<property name="Sound_start" value="m136_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value=""/>
+				<property name="Sound_reload" value=""/></property>
+			<effect_group name="meleeHandZombieRocketPLUS" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="MaxRange" operation="base_set" value="250"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+				<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInjuryBleedingZombie"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInfectionCatch"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffInjuryStunned01"/>
+				<passive_effect name="TargetArmor" operation="base_set" value="-.4"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$IRradiationStatus" operation="add" value="7.5"/>
+			</effect_group>
+		</item>
+		
+		<item name="ammoProjectileZombieVeteran">
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="CreativeMode" value="None"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="DamageEntity" value="40"/>
+				<property name="DamageBlock" value="150"/>
+				<!--property name="Explosion.ParticleIndex" value="4"/-->
+				<property name="Explosion.ParticleIndex" value="5"/>
+				<!-- which Prefab/particle is used -->
+				<property name="Explosion.RadiusBlocks" value="4"/>
+				<!-- damage radius for blocks -->
+				<property name="Explosion.RadiusEntities" value="3"/>
+				<!-- damage radius for entities -->
+				<property name="Explosion.DamageBonus.water" value="0"/>
+				<property name="Explosion.DamageBonus.earth" value="0"/>
+				<property name="Velocity" value="100"/>
+				<property name="FlyTime" value="0.5"/>
+				<property name="LifeTime" value="4"/>
+				<property name="CollisionRadius" value="0.75"/>
+				<property name="DamageBonus.earth" value="0"/></property>
+			<effect_group name="ammoProjectileZombieRocketPLUS" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="metal"/>
+			</effect_group>
+		</item>
+		
+	</append>
+	
+</configs>

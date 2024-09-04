@@ -1,0 +1,17 @@
+<config>
+		
+	<append xpath="/gameevents">
+		
+		<action_sequence name="spawnerVeteranBrotherhood">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieDemolition,zombieSoldierFeral,zombieSoldierRadiated" param1="zombiename" />
+				<property name="spawn_count" value="2" param1="spawncount" />
+				<property name="max_distance" value="10" param1="maxdist" />
+				<property name="min_distance" value="10" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+	</append>
+	
+</config>

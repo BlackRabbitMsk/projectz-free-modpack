@@ -1,0 +1,331 @@
+<config>
+	
+	<append xpath="/lootcontainers">
+	
+		<!-- New sets of magazines -->
+		<lootgroup name="groupMagazinesTier3" count="3">
+			<item name="bowsSkillMagazine" count="3"/>
+			<item name="spearsSkillMagazine" count="3"/>
+			<item name="clubsSkillMagazine" count="3"/>
+			<item name="sledgehammersSkillMagazine" count="3"/>
+			<item name="harvestingToolsSkillMagazine" count="3"/>
+			<item name="knucklesSkillMagazine" count="3"/>
+			<item name="bladesSkillMagazine" count="3"/>
+			<item name="repairToolsSkillMagazine" count="3"/>
+			<item name="salvageToolsSkillMagazine" count="3"/>
+
+			<item name="handgunsSkillMagazine" count="3"/>
+			<item name="shotgunsSkillMagazine" count="3"/>
+			<item name="riflesSkillMagazine" count="3"/>
+			<item name="machineGunsSkillMagazine" count="3"/>
+			<item name="explosivesSkillMagazine" count="3"/>
+			<item name="armorSkillMagazine" count="3"/>
+			<item name="roboticsSkillMagazine" count="3"/>
+
+			<item name="workstationSkillMagazine" count="3"/>
+			<item name="medicalSkillMagazine" count="3"/>
+			<item name="foodSkillMagazine" count="3"/>
+			<item name="seedSkillMagazine" count="3"/>
+			<item name="vehiclesSkillMagazine" count="3"/>
+			<item name="electricianSkillMagazine" count="3"/>
+			<item name="trapsSkillMagazine" count="3"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMagazinesTier4" count="3">
+			<item name="bowsSkillMagazine" count="4"/>
+			<item name="spearsSkillMagazine" count="4"/>
+			<item name="clubsSkillMagazine" count="4"/>
+			<item name="sledgehammersSkillMagazine" count="4"/>
+			<item name="harvestingToolsSkillMagazine" count="4"/>
+			<item name="knucklesSkillMagazine" count="4"/>
+			<item name="bladesSkillMagazine" count="4"/>
+			<item name="repairToolsSkillMagazine" count="4"/>
+			<item name="salvageToolsSkillMagazine" count="4"/>
+
+			<item name="handgunsSkillMagazine" count="4"/>
+			<item name="shotgunsSkillMagazine" count="4"/>
+			<item name="riflesSkillMagazine" count="4"/>
+			<item name="machineGunsSkillMagazine" count="4"/>
+			<item name="explosivesSkillMagazine" count="4"/>
+			<item name="armorSkillMagazine" count="4"/>
+			<item name="roboticsSkillMagazine" count="4"/>
+
+			<item name="workstationSkillMagazine" count="4"/>
+			<item name="medicalSkillMagazine" count="4"/>
+			<item name="foodSkillMagazine" count="4"/>
+			<item name="seedSkillMagazine" count="4"/>
+			<item name="vehiclesSkillMagazine" count="4"/>
+			<item name="electricianSkillMagazine" count="4"/>
+			<item name="trapsSkillMagazine" count="4"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMagazinesTier5" count="3">
+			<item name="bowsSkillMagazine" count="5"/>
+			<item name="spearsSkillMagazine" count="5"/>
+			<item name="clubsSkillMagazine" count="5"/>
+			<item name="sledgehammersSkillMagazine" count="5"/>
+			<item name="harvestingToolsSkillMagazine" count="5"/>
+			<item name="knucklesSkillMagazine" count="5"/>
+			<item name="bladesSkillMagazine" count="5"/>
+			<item name="repairToolsSkillMagazine" count="5"/>
+			<item name="salvageToolsSkillMagazine" count="5"/>
+
+			<item name="handgunsSkillMagazine" count="5"/>
+			<item name="shotgunsSkillMagazine" count="5"/>
+			<item name="riflesSkillMagazine" count="5"/>
+			<item name="machineGunsSkillMagazine" count="5"/>
+			<item name="explosivesSkillMagazine" count="5"/>
+			<item name="armorSkillMagazine" count="5"/>
+			<item name="roboticsSkillMagazine" count="5"/>
+
+			<item name="workstationSkillMagazine" count="5"/>
+			<item name="medicalSkillMagazine" count="5"/>
+			<item name="foodSkillMagazine" count="5"/>
+			<item name="seedSkillMagazine" count="5"/>
+			<item name="vehiclesSkillMagazine" count="5"/>
+			<item name="electricianSkillMagazine" count="5"/>
+			<item name="trapsSkillMagazine" count="5"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMagazinesTier6" count="4">
+			<item name="bowsSkillMagazine" count="5"/>
+			<item name="spearsSkillMagazine" count="5"/>
+			<item name="clubsSkillMagazine" count="5"/>
+			<item name="sledgehammersSkillMagazine" count="5"/>
+			<item name="harvestingToolsSkillMagazine" count="5"/>
+			<item name="knucklesSkillMagazine" count="5"/>
+			<item name="bladesSkillMagazine" count="5"/>
+			<item name="repairToolsSkillMagazine" count="5"/>
+			<item name="salvageToolsSkillMagazine" count="5"/>
+
+			<item name="handgunsSkillMagazine" count="5"/>
+			<item name="shotgunsSkillMagazine" count="5"/>
+			<item name="riflesSkillMagazine" count="5"/>
+			<item name="machineGunsSkillMagazine" count="5"/>
+			<item name="explosivesSkillMagazine" count="5"/>
+			<item name="armorSkillMagazine" count="5"/>
+			<item name="roboticsSkillMagazine" count="5"/>
+
+			<item name="workstationSkillMagazine" count="5"/>
+			<item name="medicalSkillMagazine" count="5"/>
+			<item name="foodSkillMagazine" count="5"/>
+			<item name="seedSkillMagazine" count="5"/>
+			<item name="vehiclesSkillMagazine" count="5"/>
+			<item name="electricianSkillMagazine" count="5"/>
+			<item name="trapsSkillMagazine" count="5"/>
+		</lootgroup>
+		
+		<!-- loot group's -->
+		<lootgroup name="groupQuestRewardSkillMagazinesAllT3" count="all">
+			<item group="groupMagazinesTier3"/>
+		</lootgroup>
+		<lootgroup name="groupQuestRewardSkillMagazinesAllT4" count="all">
+			<item group="groupMagazinesTier4"/>
+		</lootgroup>
+		<lootgroup name="groupQuestRewardSkillMagazinesAllT5" count="all">
+			<item group="groupMagazinesTier5"/>
+		</lootgroup>
+		<lootgroup name="groupQuestRewardSkillMagazinesAllT6" count="all">
+			<item group="groupMagazinesTier6"/>
+		</lootgroup>
+		
+		<!-- New Big Quest Reward Bundle -->
+		<lootcontainer name="questContainerMagazinesT3" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardSkillMagazinesAllT3"/>
+		</lootcontainer>
+		<lootcontainer name="questContainerMagazinesT4" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardSkillMagazinesAllT4"/>
+		</lootcontainer>
+		<lootcontainer name="questContainerMagazinesT5" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardSkillMagazinesAllT5"/>
+		</lootcontainer>
+		<lootcontainer name="questContainerMagazinesT6" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardSkillMagazinesAllT6"/>
+		</lootcontainer>
+		
+		<!-- REWARD BOOK's and MAGAZINES -->
+		
+		<lootgroup name="groupBetterRewardBooksT3">
+			<item name="questRewardSkillMagazineBundleT3"/>
+			<item name="questRewardT1BookBundle"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardBooksT4">
+			<item name="questRewardSkillMagazineBundleT4" count="1"/>
+			<item name="questRewardT2BookBundle" count="1"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardBooksT5">
+			<item name="questRewardSkillMagazineBundleT5" count="1"/>
+			<item name="questRewardT3BookBundle" count="1"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardBooksT6">
+			<item name="questRewardSkillMagazineBundleT6" count="1"/>
+			<item name="questRewardT4BookBundle" count="1"/>
+		</lootgroup>
+		
+		<!-- Craft Resources -->
+		<lootgroup name="groupCraftT3">
+			<item name="resourceGlue" count="15"/>
+			<item name="resourceDuctTape" count="10"/>
+			<item name="resourceMechanicalParts" count="15"/>
+			<item name="resourceElectricParts" count="15"/>
+			<item name="resourceRepairKit" count="5"/>
+			<item name="resourceLockPick" count="15"/>
+			<item name="ammoGasCan" count="1500"/>
+			<item name="resourceArmorCraftingKit" count="3"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardCraftT3">
+			<item group="groupCraftT3" count="1" loot_prob_template="high"/>
+			<item name="questRewardVehicleBundleT3" count="1" prob=".12"/>
+		</lootgroup>
+		
+		<lootgroup name="groupCraftT4">
+			<item name="resourceGlue" count="30"/>
+			<item name="resourceDuctTape" count="20"/>
+			<item name="resourceMechanicalParts" count="30"/>
+			<item name="resourceElectricParts" count="30"/>
+			<item name="resourceRepairKit" count="15"/>
+			<item name="resourceAcid" count="2"/>
+			<item name="ammoGasCan" count="3000"/>
+			<item name="resourceArmorCraftingKit" count="6"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardCraftT4">
+			<item group="groupCraftT4" count="1" loot_prob_template="high"/>
+			<item name="questRewardVehicleBundleT4" count="1" prob=".12"/>
+		</lootgroup>
+		
+		<lootgroup name="groupCraftT5">
+			<item name="resourceGlue" count="45"/>
+			<item name="resourceDuctTape" count="30"/>
+			<item name="resourceMechanicalParts" count="50"/>
+			<item name="resourceElectricParts" count="50"/>
+			<item name="resourceRepairKit" count="25"/>
+			<item name="resourceAcid" count="6"/>
+			<item name="ammoGasCan" count="4500"/>
+			<item name="resourceArmorCraftingKit" count="9"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardCraftT5">
+			<item group="groupCraftT5" count="1" loot_prob_template="high"/>
+			<item name="questRewardVehicleBundleT5" count="1" prob=".12"/>
+		</lootgroup>
+		
+		<lootgroup name="groupCraftT6">
+			<item name="resourceGlue" count="60"/>
+			<item name="resourceDuctTape" count="45"/>
+			<item name="resourceMechanicalParts" count="75"/>
+			<item name="resourceElectricParts" count="75"/>
+			<item name="resourceRepairKit" count="40"/>
+			<item name="resourceAcid" count="10"/>
+			<item name="ammoGasCan" count="6000"/>
+			<item name="resourceArmorCraftingKit" count="12"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardCraftT6">
+			<item group="groupCraftT6" count="1" loot_prob_template="high"/>
+			<item name="questRewardVehicleBundleT6" count="1" prob=".12"/>
+		</lootgroup>
+		
+		<!-- FOOD -->
+		<lootgroup name="groupBetterRewardFoodT3">
+			<item name="questRewardFoodBundleT3"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardFoodT4">
+			<item name="questRewardFoodBundleT4"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardFoodT5">
+			<item name="questRewardFoodBundleT5"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardFoodT6">
+			<item name="questRewardFoodBundleT6"/>
+		</lootgroup>
+		
+		<!-- BUILD Resources -->
+		<lootgroup name="groupBetterRewardBuildingT3">
+			<item name="cobblestoneShapes:VariantHelper" count="50"/>
+			<item name="resourceCobblestones" count="750"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardBuildingT4">
+			<item name="cobblestoneShapes:VariantHelper" count="100"/>
+			<item name="resourceCobblestones" count="1500"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardBuildingT5">
+			<item name="concreteShapes:VariantHelper" count="75"/>
+			<item name="resourceConcreteMix" count="1000"/>
+			<item name="resourceCement" count="2000"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardBuildingT6">
+			<item name="steelShapes:VariantHelper" count="75"/>
+			<item name="concreteShapes:VariantHelper" count="150"/>
+			<item name="resourceConcreteMix" count="2000"/>
+			<item name="resourceCement" count="4000"/>
+		</lootgroup>
+		
+		<!-- METALS -->
+		<lootgroup name="groupBetterRewardMetalsT3">
+			<item name="resourceForgedSteel" count="30"/>
+			<item name="resourceForgedIron" count="60"/>
+			<item name="resourceGoldNugget" count="3"/>
+			<item name="resourceSilverNugget" count="6"/>
+			<item name="resourceRawDiamond" count="1"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardMetalsT4">
+			<item name="resourceForgedSteel" count="50"/>
+			<item name="resourceForgedIron" count="100"/>
+			<item name="resourceGoldNugget" count="5"/>
+			<item name="resourceSilverNugget" count="10"/>
+			<item name="resourceRawDiamond" count="2"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardMetalsT5">
+			<item name="resourceForgedSteel" count="75"/>
+			<item name="resourceForgedIron" count="150"/>
+			<item name="resourceGoldNugget" count="10"/>
+			<item name="resourceSilverNugget" count="20"/>
+			<item name="resourceRawDiamond" count="3"/>
+		</lootgroup>
+		<lootgroup name="groupBetterRewardMetalsT6">
+			<item name="resourceForgedSteel" count="125"/>
+			<item name="resourceForgedIron" count="250"/>
+			<item name="resourceGoldNugget" count="15"/>
+			<item name="resourceSilverNugget" count="30"/>
+			<item name="resourceRawDiamond" count="5"/>
+		</lootgroup>
+		
+		<!-- MEDICAL -->
+		<lootgroup name="groupBetterRewardMedicalT3">
+			<item name="drugVitamins" count="4"/>
+			<item name="foodHoney" count="5"/>
+			<item name="medicalFirstAidBandage" count="8"/>
+			<item name="drugPainkillers" count="4"/>
+			<item name="drugHerbalAntibiotics" count="2"/>
+			<item name="toolBeaker" count="1"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardMedicalT4">
+			<item name="drugVitamins" count="8"/>
+			<item name="drugPainkillers" count="8"/>
+			<item name="drugHerbalAntibiotics" count="4"/>
+			<item name="medicalFirstAidKit" count="3"/>
+			<item name="drugAntibiotics" count="2"/>
+			<item name="toolBeaker" count="2"/>			
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardMedicalT5">
+			<item name="drugFortBites" count="3"/>
+			<item name="drugRecog" count="3"/>
+			<item name="drugHerbalAntibiotics" count="8"/>
+			<item name="medicalFirstAidKit" count="6"/>
+			<item name="drugAntibiotics" count="4"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBetterRewardMedicalT6">
+			<item name="drugFortBites" count="6"/>
+			<item name="drugRecog" count="6"/>
+			<item name="medicalFirstAidKit" count="12"/>
+			<item name="drugAntibiotics" count="6"/>
+		</lootgroup>
+		
+	</append>
+	
+</config>

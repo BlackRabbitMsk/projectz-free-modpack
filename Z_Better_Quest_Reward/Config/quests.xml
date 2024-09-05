@@ -1,0 +1,61 @@
+<config>
+
+	<remove xpath="/quests/quest[starts-with(@id, 'tier3')]/reward[@type='LootItem']"/>
+	<remove xpath="/quests/quest[starts-with(@id, 'tier4')]/reward[@type='LootItem']"/>
+	<remove xpath="/quests/quest[starts-with(@id, 'tier5')]/reward[@type='LootItem']"/>
+	<remove xpath="/quests/quest[starts-with(@id, 'tier6')]/reward[@type='LootItem']"/>
+	
+	<set xpath="/quests/quest[starts-with(@id, 'tier6')]/reward[@id='resourceLegendaryParts']/@value">3</set>
+	
+	<!-- TIER 3 REWARD -->
+		
+	<append xpath="/quests/quest[starts-with(@id, 'tier3')]">
+	
+		<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+		<reward type="LootItem" id="groupBetterRewardCraftT3" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupBetterRewardBooksT3" ischosen="true" value="3"/>
+		
+	</append>
+	
+	<!-- TIER 4 REWARD -->
+	<append xpath="/quests/quest[starts-with(@id, 'tier4')]">
+		
+		<reward type="Item" id="resourceLegendaryParts" ischosen="true" isfixed="true" value="1"/>
+		<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+		<reward type="LootItem" id="groupBetterRewardCraftT4" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupBetterRewardBooksT4" ischosen="true" value="4"/>
+		
+	</append>
+	
+	<!-- TIER 5 REWARD -->
+	<append xpath="/quests/quest[starts-with(@id, 'tier5')]">
+		
+		<reward type="Item" id="resourceLegendaryParts" ischosen="true" isfixed="true" value="2"/>
+		<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+		<reward type="LootItem" id="groupBetterRewardCraftT5" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupBetterRewardBooksT5" ischosen="true" value="5"/>
+		
+	</append>
+	
+	<!-- TIER 6 REWARD -->
+	<append xpath="/quests/quest[starts-with(@id, 'tier6')]">
+	
+		<reward type="LootItem" id="groupBetterRewardFoodT6,groupBetterRewardBuildingT6,groupBetterRewardMetalsT6" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupBetterRewardFoodT6,groupBetterRewardBuildingT6,groupBetterRewardMetalsT6" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT6,groupBetterRewardBuildingT6,groupBetterRewardMetalsT6" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupBetterRewardMedicalT6,groupBetterRewardBuildingT6,groupBetterRewardMetalsT6" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupBetterRewardCraftT6" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupBetterRewardBooksT6" ischosen="true" value="6"/>
+		
+	</append>
+			
+</config>

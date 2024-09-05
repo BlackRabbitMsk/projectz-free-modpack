@@ -1,0 +1,222 @@
+<config>
+	
+	<set xpath="/items/item[@name='questRewardT1SkillMagazineBundle']/property[@name='CustomIconTint']/@value">CF7F29</set>
+	
+	<insertAfter xpath="/items/item[@name='questRewardT1SkillMagazineBundle']">
+	
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- MAGAZINE_BUNDLES -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+		<item name="questRewardSkillMagazineBundleT3">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleBooks"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardMagazineBundleT3Desc"/>
+			<property class="Action0">
+				<property name="Class" value="OpenLootBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="LootList" value="questContainerMagazinesT3"/>
+			</property>
+		</item>
+	
+		<item name="questRewardSkillMagazineBundleT4">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleBooks"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardMagazineBundleT4Desc"/>
+			<property class="Action0">
+				<property name="Class" value="OpenLootBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="LootList" value="questContainerMagazinesT4"/>
+			</property>
+		</item>
+	
+		<item name="questRewardSkillMagazineBundleT5">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleBooks"/>
+			<property name="CustomIconTint" value="5096FF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardMagazineBundleT5Desc"/>
+			<property class="Action0">
+				<property name="Class" value="OpenLootBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="LootList" value="questContainerMagazinesT5"/>
+			</property>
+		</item>
+	
+		<item name="questRewardSkillMagazineBundleT6">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleBooks"/>
+			<property name="CustomIconTint" value="A42ACC"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardMagazineBundleT6Desc"/>
+			<property class="Action0">
+				<property name="Class" value="OpenLootBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="LootList" value="questContainerMagazinesT6"/>
+			</property>
+		</item>
+		
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='questRewardT4FoodBundle']">
+	
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- FOOD_BUNDLES -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<item name="questRewardFoodBundleT3">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleT3Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="drinkJarBoiledWater"/>
+				<property name="Create_item_count" value="2"/>
+				<property name="Random_item" value="foodVegetableStew,foodBaconAndEggs"/>
+				<property name="Random_item_count" value="4,4"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		
+		<item name="questRewardFoodBundleT4">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleT4Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="foodSkillMagazine,drinkJarYuccaJuice"/>
+				<property name="Create_item_count" value="1,2"/>
+				<property name="Random_item" value="foodFishTacos,foodChiliDog"/>
+				<property name="Random_item_count" value="4,4"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		
+		<item name="questRewardFoodBundleT5">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="5096FF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleT5Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="foodSkillMagazine,drinkJarPureMineralWater"/>
+				<property name="Create_item_count" value="2,2"/>
+				<property name="Random_item" value="foodMeatStew,foodHoboStew,foodSteakAndPotato"/>
+				<property name="Random_item_count" value="4,4,4"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		
+		<item name="questRewardFoodBundleT6">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="A42ACC"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleT6Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="foodSkillMagazine,drinkYuccaJuiceSmoothie"/>
+				<property name="Create_item_count" value="3,2"/>
+				<property name="Random_item" value="foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast"/>
+				<property name="Random_item_count" value="4,4,4,4"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+	</insertAfter>
+	
+	<insertAfter xpath="/items/item[@name='questRewardGyrocopterPartsBundle']">
+	
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- VEHICLE_BUNDLES -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		
+		<item name="questRewardVehicleBundleT3">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicleMiniBike"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleT3Desc"/>
+			<property class="Action0">
+				<property name="Random_item" value="vehicleMinibikeChassis,vehicleMinibikeHandlebars"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		
+		<item name="questRewardVehicleBundleT4">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicleMotorCycle"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleT4Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine"/>
+				<property name="Create_item_count" value="1"/>
+				<property name="Random_item" value="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		
+		<item name="questRewardVehicleBundleT5">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicle4x4"/>
+			<property name="CustomIconTint" value="5096FF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleT5Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine"/>
+				<property name="Create_item_count" value="2"/>
+				<property name="Random_item" value="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		
+		<item name="questRewardVehicleBundleT6">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicleGyro"/>
+			<property name="CustomIconTint" value="A42ACC"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleT6Desc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine"/>
+				<property name="Create_item_count" value="3"/>
+				<property name="Random_item" value="vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+	</insertAfter>
+	
+</config>

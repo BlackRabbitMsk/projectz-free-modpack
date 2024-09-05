@@ -1,0 +1,31 @@
+Key,Source,Context,Changes,English,Russian
+
+questRewardSkillMagazineBundleT3,items,item,,Crafting Skill Magazine [DECEA3]Bundle Small[-],Журналы по навыкам изготовления [DECEA3]Малый комплект[-]
+questRewardSkillMagazineBundleT4,items,item,,Crafting Skill Magazine [DECEA3]Bundle Medium[-],Журналы по навыкам изготовления [DECEA3]Средный комплект[-]
+questRewardSkillMagazineBundleT5,items,item,,Crafting Skill Magazine [DECEA3]Bundle Big[-],Журналы по навыкам изготовления [DECEA3]Большой комплект[-]
+questRewardSkillMagazineBundleT6,items,item,,Crafting Skill Magazine [DECEA3]Bundle Huge[-],Журналы по навыкам изготовления [DECEA3]Огромный комплект[-]
+
+questRewardFoodBundleT3,items,item,,Food and water [DECEA3]Bundle Small[-],Еда и вода [DECEA3]Малый комплект[-]
+questRewardFoodBundleT4,items,item,,Food and water [DECEA3]Bundle Medium[-],Еда и вода [DECEA3]Средный комплект[-]
+questRewardFoodBundleT5,items,item,,Food and water [DECEA3]Bundle Big[-],Еда и вода [DECEA3]Большой комплект[-]
+questRewardFoodBundleT6,items,item,,Food and water [DECEA3]Bundle Huge[-],Еда и вода [DECEA3]Огромный комплект[-]
+
+questRewardVehicleBundleT3,items,item,,Minibike parts,Части минибайка
+questRewardVehicleBundleT4,items,item,,Motorcycle parts,Части мотоцикла
+questRewardVehicleBundleT5,items,item,,Truck4x4 parts,Части джипа 4х4
+questRewardVehicleBundleT6,items,item,,Gyroсopter parts,Части автожира
+
+questRewardMagazineBundleT3Desc,items,item,,A small bundle of [DECEA3]3[-] random crafting skill magazines.\n[DECEA3]3[-] pieces of each magazine.,Малый комплект из [DECEA3]3[-] случайных журналов по навыкам изготовления.\nПо [DECEA3]3[-] штуки каждого журнала.
+questRewardMagazineBundleT4Desc,items,item,,A medium bundle of [DECEA3]3[-] random crafting skill magazines.\n[DECEA3]4[-] pieces of each magazine.,Средний комплект из [DECEA3]3[-] случайных журналов по навыкам изготовления.\nПо [DECEA3]4[-] штуки каждого журнала.
+questRewardMagazineBundleT5Desc,items,item,,A big bundle of [DECEA3]3[-] random crafting skill magazines.\n[DECEA3]5[-] pieces of each magazine.,Большой комплект из [DECEA3]3[-] случайных журналов по навыкам изготовления.\nПо [DECEA3]5[-] штук каждого журнала.
+questRewardMagazineBundleT6Desc,items,item,,A huge bundle of [DECEA3]4[-] random crafting skill magazines.\n[DECEA3]5[-] pieces of each magazine.,Огромный комплект из [DECEA3]4[-] случайных журналов по навыкам изготовления.\nПо [DECEA3]5[-] штук каждого журнала.
+
+questRewardFoodBundleT3Desc,items,item,,A small bundle of food and water.,Малый комплект еды и воды.
+questRewardFoodBundleT4Desc,items,item,,"A medium bundle of Home Cooking Weekly magazines, food and water.","Средний комплект журналов «Еженедельника домашней готовки», еды и воды."
+questRewardFoodBundleT5Desc,items,item,,"A big bundle of Home Cooking Weekly magazines, food and water.","Большой комплект журналов «Еженедельника домашней готовки», еды и воды."
+questRewardFoodBundleT6Desc,items,item,,"A huge bundle of Home Cooking Weekly magazines, food and water.","Огромный комплект журналов «Еженедельника домашней готовки», еды и воды."
+
+questRewardVehicleBundleT3Desc,items,item,,"One of the parts of the minibike.","Одна из частей минибайка."
+questRewardVehicleBundleT4Desc,items,item,,"One of the parts of the motorcycle.","Одна из частей мотоцикла."
+questRewardVehicleBundleT5Desc,items,item,,"One of the parts of the truck4x4.","Одна из частей джипа 4х4."
+questRewardVehicleBundleT6Desc,items,item,,"One of the parts of the gyroсopter.","Одна из частей автожира."

@@ -3,15 +3,300 @@
 	<!-- Corrections -->
 	<remove xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@value='@$minerBootFallDMG']"/>
 	
-	
+	<!-- Semi Set Check -->
+	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
+		<!-- *** LUMBERJACK_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLumberjackSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupLumberjack" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffLumberjackSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLumberjackSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupLumberjack" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffLumberjackSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLumberjackSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupLumberjack" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffLumberjackSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffLumberjackSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** PREACHER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPreacherSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffPreacherSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPreacherSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffPreacherSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPreacherSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffPreacherSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffPreacherSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** ROGUE_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRogueSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRogue" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffRogueSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRogueSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRogue" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffRogueSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRogueSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRogue" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffRogueSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffRogueSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** ATHLETIC_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAthleticSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAthletic" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffAthleticSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAthleticSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAthletic" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffAthleticSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAthleticSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAthletic" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffAthleticSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffAthleticSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** ENFORCER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffEnforcerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupEnforcer" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffEnforcerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffEnforcerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupEnforcer" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffEnforcerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffEnforcerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupEnforcer" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffEnforcerSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffEnforcerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** FARMER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFarmerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupFarmer" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffFarmerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFarmerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupFarmer" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffFarmerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFarmerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupFarmer" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffFarmerSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffFarmerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** BIKER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBikerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupBiker" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffBikerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBikerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupBiker" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffBikerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBikerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupBiker" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffBikerSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffBikerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** SCAVENGER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffScavengerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupScavenger" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffScavengerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffScavengerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupScavenger" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffScavengerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffScavengerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupScavenger" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffScavengerSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffScavengerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** RANGER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRangerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRanger" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffRangerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRangerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRanger" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffRangerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRangerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRanger" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffRangerSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffRangerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** COMMANDO_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffCommandoSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupCommando" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffCommandoSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffCommandoSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupCommando" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffCommandoSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffCommandoSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupCommando" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffCommandoSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffCommandoSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** ASSASSIN_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAssassinSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAssassin" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffAssassinSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAssassinSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAssassin" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffAssassinSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAssassinSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAssassin" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffAssassinSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffAssassinSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** MINER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffMinerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupMiner" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffMinerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffMinerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupMiner" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffMinerSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMinerSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupMiner" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffMinerSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffMinerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** NOMAD_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNomadSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNomad" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffNomadSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNomadSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNomad" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffNomadSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNomadSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNomad" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffNomadSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffNomadSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** NERD_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNerdSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNerd" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffNerdSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNerdSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNerd" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffNerdSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNerdSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNerd" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffNerdSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffNerdSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		<!-- *** RAIDER_SEMI_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRaiderSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRaider" operation="LTE" value="1" />
+				<requirement name="HasBuff" buff="buffRaiderSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If player have fullset bonus, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRaiderSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRaider" operation="Equals" value="4" />
+				<requirement name="HasBuff" buff="buffRaiderSemiSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRaiderSemiSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRaider" operation="GTE" value="2" />
+				<requirement name="!HasBuff" buff="buffRaiderSemiSetBonus"/>
+				<requirement name="!HasBuff" buff="buffRaiderSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
 	
 	<!-- LIGHT ARMOR -->
 	
 	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 	<!-- LIGHT ARMOR CLASS BONUS -->
 	<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-		
-
 	
 	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
         <effect_group>
@@ -26,9 +311,8 @@
                 <requirement name="!HasBuff" buff="buffLightArmorSetBonus"/>
             </triggered_effect>
         </effect_group>
-		
-		
     </append>
+	
     <append xpath="/buffs">
         <buff name="buffLightArmorSetBonus" name_key="buffLightArmorSetBonusName" description_key="buffLightArmorSetBonusDesc" tooltip_key="buffLightArmorSetBonusTooltip" icon="ui_game_symbol_agility" icon_color="180,180,180">
             <stack_type value="ignore"/>
@@ -44,7 +328,94 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffLumberjackSetBonus']/@icon">ui_game_symbol_light_armor</set>
-	<set xpath="/buffs/buff[@name='buffLumberjackSetBonus']/display_value_key/@value">Lumberjack</set>
+	<set xpath="/buffs/buff[@name='buffLumberjackSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffLumberjackSetBonus']/display_value_key/@value">buffLumberjackSetBonus</set>
+	
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffLumberjackSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffLumberjackSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffLumberjackSemiSetBonusDesc" tooltip_key="buffLumberjackSemiSetBonusTooltip" icon="ui_game_symbol_light_armor" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffLumberjackSetBonus"/>
+			<display_value value="xxx"/>
+
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiLumberjackFSBDisplay01"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".025" tags="lumberjackHarvest">
+						<requirement name="HoldingItemHasTags" tags="tool"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiLumberjackFSBDisplay01"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".05" tags="lumberjackHarvest">
+						<requirement name="HoldingItemHasTags" tags="tool"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiLumberjackFSBDisplay01"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".075" tags="lumberjackHarvest">
+						<requirement name="HoldingItemHasTags" tags="tool"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiLumberjackFSBDisplay01"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".1" tags="lumberjackHarvest">
+						<requirement name="HoldingItemHasTags" tags="tool"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiLumberjackFSBDisplay01"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".125" tags="lumberjackHarvest">
+						<requirement name="HoldingItemHasTags" tags="tool"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupLumberjack" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiLumberjackFSBDisplay01" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiLumberjackFSBDisplay01"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".25" tags="lumberjackHarvest">
+						<requirement name="HoldingItemHasTags" tags="tool"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffLumberjackSetBonus']">
 		<effect_group>
 			<requirements>
@@ -119,7 +490,94 @@
 	<remove xpath="/buffs/buff[@name='buffPreacherSetBonus']/effect_group"/>
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffPreacherSetBonus']/@icon">ui_game_symbol_light_armor</set>
-	<set xpath="/buffs/buff[@name='buffPreacherSetBonus']/display_value_key/@value">Preacher</set>
+	<set xpath="/buffs/buff[@name='buffPreacherSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffPreacherSetBonus']/display_value_key/@value">buffPreacherSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffPreacherSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffPreacherSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffPreacherSemiSetBonusDesc" tooltip_key="buffPreacherSemiSetBonusTooltip" icon="ui_game_symbol_light_armor" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffPreacherSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiPreacherFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".025">
+						<requirement name="InBiome" biome="8"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiPreacherFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".05">
+						<requirement name="InBiome" biome="8"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiPreacherFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".075">
+						<requirement name="InBiome" biome="8"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiPreacherFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".1">
+						<requirement name="InBiome" biome="8"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiPreacherFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiPreacherFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".125">
+						<requirement name="InBiome" biome="8"/>
+					</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorPreacherFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorPreacherFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorPreacherFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".2">
+						<requirement name="InBiome" biome="8"/>
+					</passive_effect>
+			</effect_group>
+			
+		</buff>
+		
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffPreacherSetBonus']">
 		<effect_group>
 			<requirements>
@@ -200,7 +658,82 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffRogueSetBonus']/@icon">ui_game_symbol_light_armor</set>
-	<set xpath="/buffs/buff[@name='buffRogueSetBonus']/display_value_key/@value">Rogue</set>
+	<set xpath="/buffs/buff[@name='buffRogueSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffRogueSetBonus']/display_value_key/@value">buffRogueSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffRogueSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffRogueSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffRogueSemiSetBonusDesc" tooltip_key="buffRogueSemiSetBonusTooltip" icon="ui_game_symbol_light_armor" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffRogueSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="4"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="4"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRogueFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".04"  tags="perkArchery"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="8"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="8"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRogueFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".08"  tags="perkArchery"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="12"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="12"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRogueFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".12"  tags="perkArchery"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="16"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="16"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRogueFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".16"  tags="perkArchery"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRogueFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".2"  tags="perkArchery"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRogue" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="37.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRogueFSBDisplay" operation="set" value="37.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRogueFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".375"  tags="perkArchery"/>
+			</effect_group>
+			
+		</buff>	
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffRogueSetBonus']">
 		<effect_group>
 			<requirements>
@@ -269,7 +802,76 @@
 	
 	<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffAthleticSetBonus']/@icon">ui_game_symbol_light_armor</set>
-	<set xpath="/buffs/buff[@name='buffAthleticSetBonus']/display_value_key/@value">Athletic</set>
+	<set xpath="/buffs/buff[@name='buffAthleticSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffAthleticSetBonus']/display_value_key/@value">buffAthleticSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffAthleticSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffAthleticSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffAthleticSemiSetBonusDesc" tooltip_key="buffAthleticSemiSetBonusTooltip" icon="ui_game_symbol_light_armor" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffAthleticSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="1"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="1"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAthleticFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".01"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="2"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="2"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAthleticFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".02"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="3"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="3"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAthleticFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".03"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="4"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="4"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAthleticFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".04"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAthleticFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".05"/>
+			</effect_group>
+					<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAthletic" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAthleticFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAthleticFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+			</effect_group>			
+		</buff>	
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffAthleticSetBonus']">
 		<effect_group>
 			<requirements>
@@ -333,7 +935,76 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffEnforcerSetBonus']/@icon">ui_game_symbol_light_armor</set>
-	<set xpath="/buffs/buff[@name='buffEnforcerSetBonus']/display_value_key/@value">Enforcer</set>
+	<set xpath="/buffs/buff[@name='buffEnforcerSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffEnforcerSetBonus']/display_value_key/@value">buffEnforcerSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffEnforcerSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffEnforcerSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffEnforcerSemiSetBonusDesc" tooltip_key="buffEnforcerSemiSetBonusTooltip" icon="ui_game_symbol_light_armor" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffEnforcerSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiEnforcerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".025"  tags="perkGunslinger"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiEnforcerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".05"  tags="perkGunslinger"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiEnforcerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".075"  tags="perkGunslinger"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiEnforcerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1"  tags="perkGunslinger"/>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiEnforcerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".125"  tags="perkGunslinger"/>
+			</effect_group>
+					<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiEnforcerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiEnforcerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".25"  tags="perkGunslinger"/>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffEnforcerSetBonus']">
 		<effect_group>
 			<requirements>
@@ -427,7 +1098,88 @@
 				
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffFarmerSetBonus']/@icon">ui_game_symbol_light_armor2</set>
-	<set xpath="/buffs/buff[@name='buffFarmerSetBonus']/display_value_key/@value">Farmer</set>
+	<set xpath="/buffs/buff[@name='buffFarmerSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffFarmerSetBonus']/display_value_key/@value">buffFarmerSetBonus</set>
+	
+	<append xpath="/buffs">
+		
+		<!-- *** buffFarmerSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffFarmerSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffFarmerSemiSetBonusDesc" tooltip_key="buffFarmerSemiSetBonusTooltip" icon="ui_game_symbol_light_armor2" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffFarmerSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiFarmerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiFarmerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiFarmerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiFarmerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiFarmerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiFarmerFSBDisplay" operation="set" value="50"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiFarmerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusHarvest">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+					</passive_effect>
+			</effect_group>	
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffFarmerSetBonus']">
 		<effect_group>
 			<requirements>
@@ -501,14 +1253,95 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffBikerSetBonus']/@icon">ui_game_symbol_light_armor2</set>
-	<set xpath="/buffs/buff[@name='buffBikerSetBonus']/display_value_key/@value">Biker</set>
+	<set xpath="/buffs/buff[@name='buffBikerSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffBikerSetBonus']/display_value_key/@value">buffBikerSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffBikerSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffBikerSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffBikerSemiSetBonusDesc" tooltip_key="buffBikerSemiSetBonusTooltip" icon="ui_game_symbol_light_armor2" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffBikerSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiBikerFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".025" tags="Kill">
+						<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiBikerFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".05" tags="Kill">
+						<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiBikerFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".075" tags="Kill">
+						<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiBikerFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".1" tags="Kill">
+						<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiBikerFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".125" tags="Kill">
+						<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiBikerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiBikerFSBDisplay"/>
+					<passive_effect name="PlayerExpGain" operation="perc_add" value=".25" tags="Kill">
+						<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffBikerSetBonus']">
 		<effect_group>
 			<requirements>
 				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="5"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay"/>
 				<passive_effect name="PlayerExpGain" operation="perc_add" value=".05" tags="Kill">
 					<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
@@ -529,8 +1362,8 @@
 			<requirements>
 				<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="20"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorBikerFSBDisplay" operation="set" value="15"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorBikerFSBDisplay"/>
 				<passive_effect name="PlayerExpGain" operation="perc_add" value=".15" tags="Kill">
 					<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
@@ -568,7 +1401,6 @@
 				<passive_effect name="PlayerExpGain" operation="perc_add" value=".5" tags="Kill">
 					<requirement name="EntityTagCompare" target="other" tags="feral,radiated"/>
 				</passive_effect>
-				
 		</effect_group>
 	</append>
 		
@@ -578,7 +1410,81 @@
 	
 	<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffScavengerSetBonus']/@icon">ui_game_symbol_light_armor2</set>
-	<set xpath="/buffs/buff[@name='buffScavengerSetBonus']/display_value_key/@value">Scavenger</set>
+	<set xpath="/buffs/buff[@name='buffScavengerSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffScavengerSetBonus']/display_value_key/@value">buffScavengerSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffScavengerSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffScavengerSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffScavengerSemiSetBonusDesc" tooltip_key="buffScavengerSemiSetBonusTooltip" icon="ui_game_symbol_light_armor2" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffScavengerSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="1.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="1.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiScavengerFSBDisplay"/>
+					<passive_effect name="LootStage" operation="perc_add" value=".015"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="3"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="3"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiScavengerFSBDisplay"/>
+					<passive_effect name="LootStage" operation="perc_add" value=".03"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="4.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="4.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiScavengerFSBDisplay"/>
+					<passive_effect name="LootStage" operation="perc_add" value=".045"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="6"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="6"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiScavengerFSBDisplay"/>
+					<passive_effect name="LootStage" operation="perc_add" value=".06"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiScavengerFSBDisplay"/>
+					<passive_effect name="LootStage" operation="perc_add" value=".075"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupScavenger" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiScavengerFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiScavengerFSBDisplay"/>
+					<passive_effect name="LootStage" operation="perc_add" value=".15"/>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffScavengerSetBonus']">
 		<effect_group>
 			<requirements>
@@ -647,7 +1553,88 @@
 	
 	<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffRangerSetBonus']/@icon">ui_game_symbol_light_armor2</set>
-	<set xpath="/buffs/buff[@name='buffRangerSetBonus']/display_value_key/@value">Ranger</set>
+	<set xpath="/buffs/buff[@name='buffRangerSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffRangerSetBonus']/display_value_key/@value">buffRangerSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffRangerSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffRangerSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffRangerSemiSetBonusDesc" tooltip_key="buffRangerSemiSetBonusTooltip" icon="ui_game_symbol_light_armor2" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffRangerSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="2"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="2"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRangerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".02">
+						<requirement name="HoldingItemHasTags" tags="ranged"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="4"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="4"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRangerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".04">
+						<requirement name="HoldingItemHasTags" tags="ranged"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="6"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="6"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRangerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".06">
+						<requirement name="HoldingItemHasTags" tags="ranged"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="8"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="8"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRangerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".08">
+						<requirement name="HoldingItemHasTags" tags="ranged"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRangerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="ranged"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRangerFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRangerFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+						<requirement name="HoldingItemHasTags" tags="ranged"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffRangerSetBonus']">
 		<effect_group>
 			<requirements>
@@ -724,7 +1711,88 @@
 	
 	<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffCommandoSetBonus']/@icon">ui_game_symbol_light_armor2</set>
-	<set xpath="/buffs/buff[@name='buffCommandoSetBonus']/display_value_key/@value">Commando</set>
+	<set xpath="/buffs/buff[@name='buffCommandoSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffCommandoSetBonus']/display_value_key/@value">buffCommandoSetBonus</set>
+	
+		<append xpath="/buffs">
+		
+		<!-- *** buffCommandoSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffCommandoSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffCommandoSemiSetBonusDesc" tooltip_key="buffCommandoSemiSetBonusTooltip" icon="ui_game_symbol_light_armor2" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffCommandoSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiCommandoFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".025">
+						<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiCommandoFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+						<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiCommandoFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".075">
+						<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiCommandoFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiCommandoFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".125">
+						<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiCommandoFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiCommandoFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+						<requirement name="HoldingItemHasTags" tags="perkMachineGunner"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffCommandoSetBonus']">
 		<effect_group>
 			<requirements>
@@ -800,7 +1868,88 @@
 	
 	<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffAssassinSetBonus']/@icon">ui_game_symbol_light_armor2</set>
-	<set xpath="/buffs/buff[@name='buffAssassinSetBonus']/display_value_key/@value">Assassin</set>
+	<set xpath="/buffs/buff[@name='buffAssassinSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffAssassinSetBonus']/display_value_key/@value">buffAssassinSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffAssassinSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffAssassinSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffAssassinSemiSetBonusDesc" tooltip_key="buffAssassinSemiSetBonusTooltip" icon="ui_game_symbol_light_armor2" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffAssassinSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAssassinFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".025">
+						<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAssassinFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+						<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAssassinFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".075">
+						<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAssassinFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAssassinFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".125">
+						<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupAssassin" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiAssassinFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiAssassinFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+						<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffAssassinSetBonus']">
 		<effect_group>
 			<requirements>
@@ -907,7 +2056,88 @@
 	
 	<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffMinerSetBonus']/@icon">ui_game_symbol_armor_iron</set>
-	<set xpath="/buffs/buff[@name='buffMinerSetBonus']/display_value_key/@value">Miner</set>
+	<set xpath="/buffs/buff[@name='buffMinerSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffMinerSetBonus']/display_value_key/@value">buffMinerSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffMinerSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffMinerSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffMinerSemiSetBonusDesc" tooltip_key="buffMinerSemiSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffMinerSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiMinerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".025">
+						<requirement name="HoldingItemHasTags" tags="miningTool"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiMinerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".05">
+						<requirement name="HoldingItemHasTags" tags="miningTool"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiMinerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".075">
+						<requirement name="HoldingItemHasTags" tags="miningTool"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiMinerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="miningTool"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiMinerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".125">
+						<requirement name="HoldingItemHasTags" tags="miningTool"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupMiner" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiMinerFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiMinerFSBDisplay"/>
+					<passive_effect name="HarvestCount" operation="perc_add" value=".25">
+						<requirement name="HoldingItemHasTags" tags="miningTool"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffMinerSetBonus']">
 		<effect_group>
 			<requirements>
@@ -989,7 +2219,88 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffNomadSetBonus']/@icon">ui_game_symbol_armor_iron</set>
-	<set xpath="/buffs/buff[@name='buffNomadSetBonus']/display_value_key/@value">Nomad</set>
+	<set xpath="/buffs/buff[@name='buffNomadSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffNomadSetBonus']/display_value_key/@value">buffNomadSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffNomadSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffNomadSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffNomadSemiSetBonusDesc" tooltip_key="buffNomadSemiSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffNomadSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNomadFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".025">
+						<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNomadFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNomadFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+						<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNomadFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNomadFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".125">
+						<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNomad" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNomadFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNomadFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+						<requirement name="HoldingItemHasTags" tags="perkBoomstick"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffNomadSetBonus']">
 		
 		<effect_group>
@@ -1072,7 +2383,88 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffNerdSetBonus']/@icon">ui_game_symbol_armor_iron</set>
-	<set xpath="/buffs/buff[@name='buffNerdSetBonus']/display_value_key/@value">Nerd</set>
+	<set xpath="/buffs/buff[@name='buffNerdSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffNerdSetBonus']/display_value_key/@value">buffNerdSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffNerdSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffNerdSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffNerdSemiSetBonusDesc" tooltip_key="buffNerdSemiSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffNerdSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="2.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNerdFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".025">
+						<requirement name="HoldingItemHasTags" tags="attIntellect"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNerdFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+						<requirement name="HoldingItemHasTags" tags="attIntellect"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="7.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNerdFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".075">
+						<requirement name="HoldingItemHasTags" tags="attIntellect"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNerdFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="attIntellect"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="12.5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNerdFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".125">
+						<requirement name="HoldingItemHasTags" tags="attIntellect"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupNerd" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiNerdFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiNerdFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+						<requirement name="HoldingItemHasTags" tags="attIntellect"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffNerdSetBonus']">
 		<effect_group>
 			<requirements>
@@ -1147,7 +2539,88 @@
 	
 		<!-- Add new bonus -->
 	<set xpath="/buffs/buff[@name='buffRaiderSetBonus']/@icon">ui_game_symbol_armor_iron</set>
-	<set xpath="/buffs/buff[@name='buffRaiderSetBonus']/display_value_key/@value">Raider</set>
+	<set xpath="/buffs/buff[@name='buffRaiderSetBonus']/@name_key">buffSetBonusName</set>
+	<set xpath="/buffs/buff[@name='buffRaiderSetBonus']/display_value_key/@value">buffRaiderSetBonus</set>
+	
+	<append xpath="/buffs">
+	
+		<!-- *** buffRaiderSemiSetBonus -->
+		<!-- TRIGGERED_BY: Buffs = buffStatusCheck02 -->
+		<buff name="buffRaiderSemiSetBonus" name_key="buffSemiSetBonusName" description_key="buffRaiderSemiSetBonusDesc" tooltip_key="buffRaiderSemiSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="180,180,180">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffRaiderSetBonus"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="5"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRaiderFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".05">
+						<requirement name="HoldingItemHasTags" tags="melee"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRaiderFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+						<requirement name="HoldingItemHasTags" tags="melee"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRaiderFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+						<requirement name="HoldingItemHasTags" tags="melee"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRaiderFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+						<requirement name="HoldingItemHasTags" tags="melee"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="25"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRaiderFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".25">
+						<requirement name="HoldingItemHasTags" tags="melee"/>
+					</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRaider" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorSemiRaiderFSBDisplay" operation="set" value="50"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorSemiRaiderFSBDisplay"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+						<requirement name="HoldingItemHasTags" tags="melee"/>
+					</passive_effect>
+			</effect_group>
+		</buff>
+	
+	</append>
+	
 	<append xpath="/buffs/buff[@name='buffRaiderSetBonus']">
 		<effect_group>
 			<requirements>

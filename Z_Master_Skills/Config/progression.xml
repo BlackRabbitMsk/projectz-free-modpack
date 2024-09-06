@@ -469,12 +469,5 @@
 		
 		
 	</append>
-	 
-	<!-- <append xpath="/progression/crafting_skills/crafting_skill[@name='MasterElectrician']">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="solarCell" />
-			<passive_effect name="CraftingTier" operation="base_add" level="7,9,11,13,15,20" value="1,2,3,4,5,5" tags="solarCell" />
-		</effect_group>
-	</append> -->
-
+	
 </config>

@@ -543,12 +543,12 @@
 	
 		<!-- Add new property -->
 	<append xpath="/items/item[@name='armorMinerOutfit']/effect_group[@name='MinerOutfit']">
-		<display_value name="dDegradationPerUse" value="-.05,-.1,-.15,-.2,-.25,-.4" tier="1,2,3,4,5,6"/>		
+		<display_value name="dDegradationPerUse" value="-.1,-.15,-.2,-.25,-.3,-.5" tier="1,2,3,4,5,6"/>		
 	</append>
 	
 	<insertAfter xpath="/items/item[@name='armorMinerOutfit']/effect_group[@name='MinerOutfit']">
 		<effect_group>
-			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2,-.4" tier="1,2,3,4,5,6">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.1,-.15,-.2,-.25,-.3,-.5" tier="1,2,3,4,5,6">
 			<requirement name="HoldingItemHasTags" tags="miningTool"/>
 			</passive_effect>
 		</effect_group>

@@ -1,0 +1,23 @@
+Key,Source,Context,Changes,English,Russian
+
+BuffBullAOE,buffs,Buff,,Bull,Бугай
+BuffBullAOEName,buffs,buff,,Bull nearby, Бугай рядом
+BuffBullAOETooltip,buffs,buff,,Bull is on the hunt,Бугай вышел на охоту
+BuffBullAOEIncDesc,buffs,Buff,,"What do you get when you cross a strongman and a bull? Nothing good!!!\nThis creature knows no fatigue, and its blows are capable of turning any fortification into crumbs. An extremely dangerous opponent. If you get hit by its blow, you will most likely die. Think three times before engaging it in battle.\n\nYour fear is difficult to overcome. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Что получиться если скрестить силача и быка. Ничего хорого!!!\nЭта тварь не знает усталостии, а его удары способны превратить в крошку любое укрепрение. Крайне опасный противник. Если вы попадете под его удар, вы скорее всего умрете. Подумайте трижды прежде чем ввязываться с ним в бой.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffBossEnragePlayer,buffs,Buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerName,buffs,buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerTooltip,buffs,buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerIncDesc,buffs,Buff,,"You've driven Boss into a rage. Better run away!\nHis movement speed is increased by [DECEA3]50%[-], his attack speed is increased by [DECEA3]60%[-], and any of his attacks will knock you down.\n\nHowever, his damage resistance is decreased by [DECEA3]30%[-]","Вы довели Босса до приступа бешенства. Лучше убегайте!\nСкорость его передвижения увеличена на [DECEA3]50%[-], скорость атаки увеличена на [DECEA3]60%[-], также любая его атака собъет вас с ног.\n\nОднако сопротивление урону уменьшенно на [DECEA3]30%[-]"
+
+BuffBossImmortalPlayer,buffs,Buff,,Boss is invulnerable,Босс неуязвим
+BuffBossImmortalPlayerName,buffs,buff,,Boss is invulnerable,Босс неуязвим
+BuffBossImmortalPlayerTooltip,buffs,buff,,Boss is invulnerable,Босс неуязвим
+BuffBossImmortalPlayerIncDesc,buffs,Buff,,"The Boss has gone into deep defense. He emits strong radiation, be careful!\nIt's better to hit him for now. He is invulnerable to any type of damage.","Босс ушел в глухую оборону. Он излучает сильную радиацию, будьте осторожны!\nПока лучше его бить. Оне неуязвим к любому типу урона."
+
+BuffBossHealthTheftPlayer,buffs,Buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerName,buffs,buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerTooltip,buffs,buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerIncDesc,buffs,Buff,,"The boss feeds on your adrenaline. You take damage over time and are slowed down. Try to wait it out and stay alive.","Босс питается вашим адреналином. Вы получаете периодический урон и замедлены\nПостарайтесь переждать и остаться в живых."
+
+bossBull,entityclasses,Entity,,[FFB800]BOSS[-] BULL,[FFB800]БОСС[-] БУГАЙ

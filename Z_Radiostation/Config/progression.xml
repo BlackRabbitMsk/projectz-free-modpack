@@ -1,0 +1,37 @@
+<config>
+	 
+	<!-- Radios Station -->
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cementMixer']"/>
+	
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='workbench,resourceLockPick,toolBellows,toolAnvil']">
+		<display_entry icon="cementMixer,radioHam" name_key="workstationsT3-1,workstationsT3-2" has_quality="false" unlock_level="30,40" >
+			<unlock_entry item="cementMixer" unlock_tier="1" />
+			<unlock_entry item="radioStation" unlock_tier="2" />
+		</display_entry>
+	</insertAfter>
+	
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@name='RecipeTagUnlocked' and contains(@tags,'cementMixer')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="radioStation"/>
+	</insertAfter>
+	
+	<append xpath="/progression/perks/perk[@name='perkDaringAdventurer']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,4" value="1" tags="notes_restore_power3_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,4" value="1" tags="notes_fetch3_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,4" value="1" tags="notes_clear3_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,4" value="1" tags="notes_infested3_Quest"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,4" value="1" tags="notes_restore_power4_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,4" value="1" tags="notes_fetch4_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,4" value="1" tags="notes_clear4_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,4" value="1" tags="notes_infested4_Quest"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,4" value="1" tags="notes_fetch5_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,4" value="1" tags="notes_clear5_Quest"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,4" value="1" tags="notes_infested5_Quest"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,4" value="1" tags="notes_infested6_Quest"/>
+		</effect_group>
+	</append>
+
+</config>

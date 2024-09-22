@@ -1,0 +1,234 @@
+<configs>
+	
+	<append xpath="/entity_classes">  
+		
+		<!-- SmallCase -->
+		<entity_class name="dropSmallLightAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardSmallLightAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<entity_class name="dropSmallStrengthAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardSmallStrengthAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<entity_class name="dropSmallExperimentalAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardSmallExperimentalAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<!-- MediumCase -->
+		<entity_class name="dropMediumLightAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardMediumLightAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<entity_class name="dropMediumStrengthAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardMediumStrengthAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<entity_class name="dropMediumExperimentalAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardMediumExperimentalAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<!-- BigCase -->
+		<entity_class name="dropBigLightAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardBigLightAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<entity_class name="dropBigStrengthAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardBigStrengthAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+		<entity_class name="dropBigExperimentalAlloys">
+			<property name="Class" value="EntitySupplyCrate"/>
+			<property name="Parent" value="SupplyCrates"/>
+			<property name="Prefab" value="SupplyCrate"/>
+			<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+			<property name="ModelType" value="SupplyCrate"/>
+			<property name="Faction" value="none"/>
+			<property name="MaxHealth" value="200"/>
+			<property name="Weight" value="100"/>
+			<property name="HasRagdoll" value="false"/>
+			<property name="SurfaceCategory" value="wood"/>
+			<property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+			<property name="LootListAlive" value="rewardBigExperimentalAlloys"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+			<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+			<property name="TimeStayAfterDeath" value="0"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+			<property name="NavObject" value="supply_drop" />
+			<!-- If set this entity shows on the map -->
+			<property name="MapIcon" value="map_supply_crate"/>
+		</entity_class>
+		
+	</append>
+</configs>

@@ -1,0 +1,73 @@
+<config>
+	
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		
+		<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="action_failquest"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="Buff_SmallCase_Spawner">
+			<requirement name="HasBuff" buff="Buff_SmallCase_Spawner"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="Buff_MediumCase_Spawner">
+			<requirement name="HasBuff" buff="Buff_MediumCase_Spawner"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="Buff_BigCase_Spawner">
+			<requirement name="HasBuff" buff="Buff_BigCase_Spawner"/>
+		</triggered_effect>
+		
+		
+	</append>
+	
+	<append xpath="/buffs">
+		
+		<!-- Launching a wave of small cases -->
+		
+		<buff name="Buff_SmallCase_Spawner" hidden="true" remove_on_death="true">
+			<duration value="90"/>
+			<stack_type value="replace"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$SmallCase_Status" operation="set" value="0"/>
+			</effect_group>
+
+		</buff>
+		
+		<!-- Launching a wave of medium cases -->
+		<buff name="Buff_MediumCase_Spawner" hidden="true" remove_on_death="true">
+			<duration value="150"/>
+			<stack_type value="replace"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$MediumCase_Status" operation="set" value="0"/>
+			</effect_group>
+
+		</buff>
+		
+		<!-- Launching a wave of Big cases -->
+		<!-- <buff name="Buff_BigCase_Spawner" name_key="Buff_BigCase_SpawnerName" tooltip_key="Buff_BigCase_SpawnerTooltip" description_key="Buff_BigCase_SpawnerIncDesc" icon="ui_game_symbol_quest" icon_color="255,20,0" icon_blink="true"> -->
+		<buff name="Buff_BigCase_Spawner" hidden="true" remove_on_death="true">
+			<duration value="240"/>
+			<stack_type value="replace"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BigCase_Status" operation="set" value="0"/>
+			</effect_group>
+
+		</buff>
+		
+		<!-- Zombie Buffs -->
+		<buff name="EnemyDot_Buff">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="SetNavObject" nav_object="EnemyDot" add="true" />	
+			</effect_group>
+		</buff>
+		
+		<buff name="Zombie_BlockDamage_Buff">
+			<stack_type value="replace"/>
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="base_add" value="300"/>	    
+			</effect_group>
+		</buff>
+		
+	</append>
+	
+</config>

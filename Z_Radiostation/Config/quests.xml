@@ -1,0 +1,843 @@
+<config>
+	
+	<append xpath="/quests" >
+	 
+		<!-- ULTRA LIGHT ALLOYS -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->		
+		<!-- Small -->		
+		<quest id="SmallCase01">
+			<property name="name_key" value="SmallCase_Name" />
+			<property name="offer_key" value="SmallCase01_Offer"/>
+			<property name="description_key" value="SmallCase01_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="3" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_small_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="1" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeFaint" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeFaint" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="SmallCase_Event" phase="4"/>
+
+			<objective type="EntityKill" value="15" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="90"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_UltraLightAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="7500"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT3" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT3" ischosen="true" value="3"/>
+		</quest>
+		
+		<!-- Medium -->
+		<quest id="MediumCase01">
+			<property name="name_key" value="MediumCase_Name" />
+			<property name="offer_key" value="MediumCase01_Offer"/>
+			<property name="description_key" value="MediumCase01_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="4" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_medium_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="2" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeMedium" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeMedium" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="MediumCase_Event" phase="4"/>
+
+			<objective type="EntityKill" value="25" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="150"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_UltraLightAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="15000"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT4" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT4" ischosen="true" value="4"/>
+		</quest>
+		
+		<!-- Big -->
+		<quest id="BigCase01">
+			<property name="name_key" value="BigCase_Name" />
+			<property name="offer_key" value="BigCase01_Offer"/>
+			<property name="description_key" value="BigCase01_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="5" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_big_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="3" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeStrong" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeStrong" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="BigCase_Event" phase="4"/>
+
+			<objective type="EntityKill" value="50" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="240"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_BigCase_UltraLightAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="30000"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT5" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT5" ischosen="true" value="5"/>
+		</quest>
+		
+		<!-- ULTRA STRENGHT ALLOYS -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<!-- Small -->
+		<quest id="SmallCase02">
+			<property name="name_key" value="SmallCase_Name" />
+			<property name="offer_key" value="SmallCase02_Offer"/>
+			<property name="description_key" value="SmallCase02_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="3" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_small_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="1" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeFaint" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeFaint" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="Spawner_SmallCase_Start" phase="4"/>
+
+			<objective type="EntityKill" value="15" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="90"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_UltraStrengthAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="7500"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT3" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT3" ischosen="true" value="3"/>
+		</quest>
+		
+		<!-- Medium -->
+		<quest id="MediumCase02">
+			<property name="name_key" value="MediumCase_Name" />
+			<property name="offer_key" value="MediumCase02_Offer"/>
+			<property name="description_key" value="MediumCase02_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="4" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_medium_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="2" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeMedium" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeMedium" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+
+			<objective type="EntityKill" value="25" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="180"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_MediumCase_UltraStrengthAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="15000"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT4" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT4" ischosen="true" value="4"/>
+		</quest>
+		
+		<!-- Big -->
+		<quest id="BigCase02">
+			<property name="name_key" value="BigCase_Name" />
+			<property name="offer_key" value="BigCase02_Offer"/>
+			<property name="description_key" value="BigCase02_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="5" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_big_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="3" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeStrong" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeStrong" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+
+			<objective type="EntityKill" value="50" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="300"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_BigCase_UltraStrengthAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="30000"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT5" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT5" ischosen="true" value="5"/>
+		</quest>
+		
+		<!-- EXPERIMENTAL ALLOYS -->
+		<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		
+		<!-- Small -->
+		<quest id="SmallCase03">
+			<property name="name_key" value="SmallCase_Name" />
+			<property name="offer_key" value="SmallCase03_Offer"/>
+			<property name="description_key" value="SmallCase03_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="3" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_small_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="1" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeFaint" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeFaint" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="Spawner_SmallCase_Start" phase="4"/>
+
+			<objective type="EntityKill" value="15" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="90"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_SmallCase_ExperimentalAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="7500"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT3,groupBetterRewardBuildingT3,groupBetterRewardMetalsT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT3" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT3" ischosen="true" value="3"/>
+		</quest>
+				
+		<!-- Medium -->
+		<quest id="MediumCase03">
+			<property name="name_key" value="MediumCase_Name" />
+			<property name="offer_key" value="MediumCase03_Offer"/>
+			<property name="description_key" value="MediumCase03_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="4" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_medium_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="2" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeMedium" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeMedium" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+
+			<objective type="EntityKill" value="25" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="180"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_MediumCase_ExperimentalAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="15000"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT4,groupBetterRewardBuildingT4,groupBetterRewardMetalsT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT4" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT4" ischosen="true" value="4"/>
+		</quest>
+		
+		<!-- Big -->
+		<quest id="BigCase03">
+			<property name="name_key" value="BigCase_Name" />
+			<property name="offer_key" value="BigCase03_Offer"/>
+			<property name="description_key" value="BigCase03_Offer"/>
+			<property name="statement_key" value="quest_support_statement"/>
+			<property name="response_key" value="quest_support_response"/>
+			<property name="subtitle_key" value="quest_support_subtitle"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="icon" value="ui_game_symbol_airdrop"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>  <!-- challenge -->
+			<property name="difficulty" value="hard"/>
+			<property name="difficulty_tier" value="5" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="3" />
+			<property name="extra_tags" value="" />
+			<property name="add_to_tier_complete" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_alloys_big_case"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="3" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<!-- 3 -->
+			<action type="GameEvent" id="action_give_SignalSmokeStrong" phase="3"/>
+			<objective type="BlockPlace" id="SignalSmokeStrong" value="1" phase="3"/>
+			
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+				<property name="optional" value="true"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 4 -->					
+			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+
+			<objective type="EntityKill" value="50" phase="4"/>
+			
+			<objective type="Time">
+				<property name="phase" value="4"/>
+				<property name="time" value="300"/>
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="50"/>
+			</objective>
+			
+			<!-- 5 -->
+			<action type="UnlockPOI" >
+				<property name="phase" value="5"/>
+			</action>
+			
+			<action type="GameEvent" id="action_spawn_reward_BigCase_ExperimentalAlloys" phase="5"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<!-- Reward -->
+			<reward type="Exp" value="30000"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardFoodT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardMedicalT5,groupBetterRewardBuildingT5,groupBetterRewardMetalsT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupBetterRewardCraftT5" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBetterRewardBooksT5" ischosen="true" value="5"/>
+		</quest>
+				
+	</append>
+			
+</config>

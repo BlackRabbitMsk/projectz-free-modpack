@@ -334,7 +334,7 @@
 			</objective>
 			
 			<!-- 4 -->					
-			<action type="GameEvent" id="Spawner_SmallCase_Start" phase="4"/>
+			<action type="GameEvent" id="SmallCase_Event" phase="4"/>
 
 			<objective type="EntityKill" value="15" phase="4"/>
 			
@@ -426,7 +426,7 @@
 			</objective>
 			
 			<!-- 4 -->					
-			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+			<action type="GameEvent" id="MediumCase_Event" phase="4"/>
 
 			<objective type="EntityKill" value="25" phase="4"/>
 			
@@ -518,7 +518,7 @@
 			</objective>
 			
 			<!-- 4 -->					
-			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+			<action type="GameEvent" id="BigCase_Event" phase="4"/>
 
 			<objective type="EntityKill" value="50" phase="4"/>
 			
@@ -613,7 +613,7 @@
 			</objective>
 			
 			<!-- 4 -->					
-			<action type="GameEvent" id="Spawner_SmallCase_Start" phase="4"/>
+			<action type="GameEvent" id="SmallCase_Event" phase="4"/>
 
 			<objective type="EntityKill" value="15" phase="4"/>
 			
@@ -705,7 +705,7 @@
 			</objective>
 			
 			<!-- 4 -->					
-			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+			<action type="GameEvent" id="MediumCase_Event" phase="4"/>
 
 			<objective type="EntityKill" value="25" phase="4"/>
 			
@@ -797,7 +797,7 @@
 			</objective>
 			
 			<!-- 4 -->					
-			<action type="GameEvent" id="Spawner_MediumCase_Start" phase="4"/>
+			<action type="GameEvent" id="BigCase_Event" phase="4"/>
 
 			<objective type="EntityKill" value="50" phase="4"/>
 			

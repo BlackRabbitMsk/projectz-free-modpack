@@ -1,0 +1,17 @@
+<config>
+	
+	<append xpath="/ui_display_info/crafting_category_display">
+		
+		<crafting_category_list display_type="HydroponicStation">
+			<crafting_category name="Plants" icon="ui_game_symbol_crops" display_name="lblCategoryPlants" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="farmerStation">
+			<crafting_category name="Seedling" icon="ui_game_symbol_foliage" display_name="lblCategorySeedling" />
+			<crafting_category name="Selection" icon="ui_game_symbol_block_repair" display_name="lblCategorySelection" />
+			<crafting_category name="AdvSelection" icon="ui_game_symbol_block_upgrade" display_name="lblCategoryAdvSelection" />
+		</crafting_category_list>
+		
+	</append>
+	
+</config>

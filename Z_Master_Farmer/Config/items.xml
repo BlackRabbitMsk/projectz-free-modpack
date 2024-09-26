@@ -1,0 +1,136 @@
+<config>
+	
+	<append xpath="/items">
+	
+	<item name="resourceFertilizer">
+		<property name="CustomIcon" value="resourceCropCoffeeBeans"/>
+		<property name="CustomIconTint" value="9DEF5D"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Mfarmland"/>
+		<property name="Stacknumber" value="1000"/>
+		<property name="Group" value="Resources"/>
+		<property name="UnlockedBy" value="craftingSeeds"/>
+	</item>
+	
+	<!-- Hydroponic Bundles -->
+	<item name="Mushroom_Bundle">
+		<property name="CustomIcon" value="foodCropMushrooms"/>
+		<property name="ItemTypeIcon" value="bundle"/>
+		<property name="DescriptionKey" value="Mushroom_BundleDesc"/>
+		<property name="HoldType" value="45"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceCrop"/>
+		<property name="Group" value="Plants"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Delay" value="0"/>
+			<property name="Create_item" value="foodCropMushrooms"/>
+			<property name="Create_item_count" value="25"/>
+		</property>
+	</item>
+	<item name="Yucca_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="foodCropYuccaFruit"/>
+		<property name="DescriptionKey" value="Yucca_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="foodCropYuccaFruit"/>
+		</property>
+	</item>
+	<item name="Cotton_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="plantedCotton3Harvest"/>
+		<property name="DescriptionKey" value="Cotton_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="resourceCropCottonPlant"/>
+		</property>
+	</item>
+	<item name="Coffee_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="resourceCropCoffeeBeans"/>
+		<property name="DescriptionKey" value="Coffee_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="resourceCropCoffeeBeans"/>
+		</property>
+	</item>
+	<item name="Goldenrod_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="plantedGoldenrod3HarvestPlayer"/>
+		<property name="DescriptionKey" value="Goldenrod_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="resourceCropGoldenrodPlant"/>
+		</property>
+	</item>
+	<item name="Aloe_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="resourceCropAloeLeaf"/>
+		<property name="DescriptionKey" value="Aloe_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="resourceCropAloeLeaf"/>
+		</property>
+	</item>
+	<item name="Blueberry_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="foodCropBlueberries"/>
+		<property name="DescriptionKey" value="Blueberry_BundleDesc"/>
+		<property class="Action0">
+			<property name="Create_item" value="foodCropBlueberries"/>
+		</property>
+	</item>
+	<item name="Potato_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="foodCropPotato"/>
+		<property name="DescriptionKey" value="Potato_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="foodCropPotato"/>
+		</property>
+	</item>
+	<item name="Chrysanthemum_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
+		<property name="DescriptionKey" value="Chrysanthemum_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="resourceCropChrysanthemumPlant"/>
+		</property>
+	</item>
+	<item name="Corn_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="foodCropCorn"/>
+		<property name="DescriptionKey" value="Corn_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="foodCropCorn"/>
+		</property>
+	</item>
+	<item name="Hop_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="plantedHop3Harvest"/>
+		<property name="DescriptionKey" value="Hop_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="resourceCropHopsFlower"/>
+		</property>
+	</item>
+	<item name="Pumpkin_Bundle">
+		<property name="Extends" value="Mushroom_Bundle"/>
+		<property name="CustomIcon" value="plantedPumpkin3Harvest"/>
+		<property name="DescriptionKey" value="Pumpkin_BundleDesc"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Create_item" value="foodCropPumpkin"/>
+		</property>
+	</item>
+	
+	</append>
+	
+</config>

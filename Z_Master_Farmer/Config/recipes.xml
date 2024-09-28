@@ -1,0 +1,323 @@
+ <config>
+	
+	<append xpath="/recipes">
+		
+		<recipe name="resourceFertilizer" count="1" craft_time="8" craft_area="cementMixer" tags="learnable,cementMixerCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="10"/>
+			<ingredient name="foodRottingFlesh" count="2"/>
+			<ingredient name="resourceClayLump" count="15"/>
+		</recipe>
+		
+		<!-- farmer Station -->
+		<recipe name="farmerStation" count="1" craft_time="600" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceClayLump" count="500"/>
+			<ingredient name="resourceMetalPipe" count="100"/>
+			<ingredient name="resourceForgedIron" count="250"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+		</recipe>
+		<!-- Hydroponic Station -->
+		<recipe name="HydroponicStation" count="1" craft_time="900" craft_area="workbench" tags="learnable">
+			<ingredient name="carBattery" count="3"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMetalPipe" count="250"/>
+			<ingredient name="resourceHeadlight" count="20"/>
+			<ingredient name="resourceElectricParts" count="50"/>
+		</recipe>
+		
+		<!-- SEEDLING -->
+		<recipe name="SeedlingMushroom" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="foodCropMushrooms"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingYucca" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="foodCropYuccaFruit" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="foodCropYuccaFruit"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingCotton" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="resourceCropCottonPlant" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="resourceCropCottonPlant"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingCoffee" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="resourceCropCoffeeBeans" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="resourceCropCoffeeBeans"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingGoldenrod" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="resourceCropGoldenrodPlant" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="resourceCropGoldenrodPlant"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingAloe" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="resourceCropAloeLeaf" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="resourceCropAloeLeaf"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingBlueberry" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="foodCropBlueberries" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="foodCropBlueberries"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingPotato" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="foodCropPotato"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingChrysanthemum" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="resourceCropChrysanthemumPlant"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingCorn" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="foodCropCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingHop" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="resourceCropHopsFlower" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="resourceCropHopsFlower"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="SeedlingPumpkin" count="1" craft_time="5" craft_area="farmerStation" tags="perkLivingOffTheLandCrafting,learnable">
+			<ingredient name="foodCropPumpkin" count="2"/>
+			<ingredient name="resourceFertilizer" count="3"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-1" tags="foodCropPumpkin"/>
+				<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-1" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- Hydroponic -->
+		<recipe name="Mushroom_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedMushroom1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Yucca_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedYucca1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Cotton_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedCotton1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Coffee_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedCoffee1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Goldenrod_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedGoldenrod1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Aloe_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedAloe1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Blueberry_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedBlueberry1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Potato_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedPotato1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Chrysanthemum_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedChrysanthemum1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Corn_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedCorn1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Hop_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedHop1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		<recipe name="Pumpkin_Bundle" count="1" craft_time="300" craft_area="HydroponicStation" tags="perkLivingOffTheLandCrafting">
+			<ingredient name="plantedPumpkin1" count="5"/>
+			<ingredient name="resourceFertilizer" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-6" tags="resourceFertilizer"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- Selection -->
+		<recipe name="plantedMushroom1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedMushroom1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedMushroom1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedMushroom1Sel1" count="5"/>
+			<ingredient name="plantedMushroom1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedYucca1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedYucca1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedYucca1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedYucca1Sel1" count="5"/>
+			<ingredient name="plantedYucca1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedCotton1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedCotton1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedCotton1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedCotton1Sel1" count="5"/>
+			<ingredient name="plantedCotton1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedCoffee1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedCoffee1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedCoffee1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedCoffee1Sel1" count="5"/>
+			<ingredient name="plantedCoffee1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedGoldenrod1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedGoldenrod1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedGoldenrod1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedGoldenrod1Sel1" count="5"/>
+			<ingredient name="plantedGoldenrod1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedAloe1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedAloe1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedAloe1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedAloe1Sel1" count="5"/>
+			<ingredient name="plantedAloe1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedBlueberry1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedBlueberry1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedBlueberry1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedBlueberry1Sel1" count="5"/>
+			<ingredient name="plantedBlueberry1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedPotato1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedPotato1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedPotato1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedPotato1Sel1" count="5"/>
+			<ingredient name="plantedPotato1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedChrysanthemum1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedChrysanthemum1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedChrysanthemum1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedChrysanthemum1Sel1" count="5"/>
+			<ingredient name="plantedChrysanthemum1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedCorn1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedCorn1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedCorn1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedCorn1Sel1" count="5"/>
+			<ingredient name="plantedCorn1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedHop1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedHop1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedHop1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedHop1Sel1" count="5"/>
+			<ingredient name="plantedHop1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		<recipe name="plantedPumpkin1Sel1" count="1" craft_time="300" craft_area="farmerStation">
+			<ingredient name="plantedPumpkin1" count="5"/>
+			<ingredient name="resourceFertilizer" count="15"/>
+		</recipe>
+		<recipe name="plantedPumpkin1Sel2" count="1" craft_time="1500" craft_area="farmerStation">
+			<ingredient name="plantedPumpkin1Sel1" count="5"/>
+			<ingredient name="plantedPumpkin1" count="25"/>
+			<ingredient name="resourceFertilizer" count="75"/>
+		</recipe>
+		
+	</append>
+	
+</config>

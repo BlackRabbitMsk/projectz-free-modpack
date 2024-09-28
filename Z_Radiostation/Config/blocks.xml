@@ -1,0 +1,103 @@
+<config>
+	
+	<append xpath="/blocks">
+	 
+	<block name="radioStation">
+		<!-- Class -->
+		<property name="Class" value="Workstation"/>
+		<property class="Workstation">
+			<property name="Modules" value="output"/>
+			<property name="CraftingAreaRecipes" value="radioStation"/>
+		</property>
+		<property name="UnlockedBy" value="craftingWorkstations"/>
+		<property name="EconomicValue" value="5000"/>
+		<!-- UI_Info -->
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="radioStationDesc"/>
+		<property name="WorkstationIcon" value="ui_game_symbol_quest"/>
+		<property name="Stacknumber" value="1"/>
+		<!-- Visual -->
+		<property name="CustomIcon" value="radioHam"/>
+		<property name="CustomIconTint" value="D0C986"/>
+		<property name="Material" value="Mmetal"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Electrical/radioHamPrefab"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
+		<!-- Placement -->
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="StabilitySupport" value="false"/>
+		<!-- Interaction -->
+		<property name="MaxDamage" value="500"/>
+		<property name="HeatMapStrength" value="5"/>
+		<property name="HeatMapTime" value="2500"/>
+		<property name="HeatMapFrequency" value="1000"/>
+		<property name="OpenSound" value="open_workbench"/>
+		<property name="CloseSound" value="close_workbench"/>	
+		<property name="TakeDelay" value="15"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="25"/>
+			<property name="resourceElectricParts" value="20"/>
+			<property name="resourceSpring" value="50"/>
+		</property>
+		<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="8" tag="salvageHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+		<!-- Sorting -->
+		<property name="SortOrder1" value="B281"/>
+		<property name="SortOrder2" value="0300"/>
+		<property name="Group" value="Building,TCScience,advBuilding"/>
+		<property name="Tags" value="radioStationSkill,twitch_radioStation"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	</block>	
+
+
+	<!-- Signal smoke to start the quest -->
+	<block name="SignalSmokeFaint">
+		<property name="DescriptionKey" value="SignalSmokeFaintDesc"/>
+		<property name="CustomIcon" value="capChimney"/>	
+		<property name="CustomIconTint" value="#8692FF"/>
+		<property name="TintColor" value="#8692FF"/>
+        <property name="Material" value="Mmetal_weak"/>
+        <property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="Entities/Buildings/capChimneyLargeSmokePrefab"/>
+        <property name="DisplayType" value="blockHardened"/>
+        <property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="87"/>
+        <property name="WaterFlow" value="permitted"/>
+        <property class="RepairItems">
+			<property name="resourceScrapIron" value="10"/>
+        </property>
+        <drop event="Harvest" name="UniversalParts" count="12" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="50" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+        <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+        <property name="SortOrder1" value="B650"/>
+        <property name="SortOrder2" value="0002"/>
+        <property name="Group" value="QuestItems"/>
+        <property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,A21_NEW"/>
+	</block>
+	
+	<block name="SignalSmokeMedium">
+		<property name="Extends" value="SignalSmokeFaint"/>
+			<property name="DescriptionKey" value="SignalSmokeMediumDesc"/>
+			<property name="CustomIconTint" value="#FFA234"/>
+			<property name="TintColor" value="#FFA234"/>
+	</block>
+	
+	<block name="SignalSmokeStrong">
+		<property name="Extends" value="SignalSmokeFaint"/>
+			<property name="DescriptionKey" value="SignalSmokeStrongDesc"/>
+			<property name="CustomIconTint" value="#FF2F13"/>
+			<property name="TintColor" value="#FF2F13"/>
+	</block>
+
+	</append>
+	
+</config>

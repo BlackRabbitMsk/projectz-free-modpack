@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English,Russian
+
+statPlayerExpGainRepairTool,ui_display,Item stat,,"XP Gain, Construction","Получаемый опыт, Строительство"
+
+
+
+
+
+
+

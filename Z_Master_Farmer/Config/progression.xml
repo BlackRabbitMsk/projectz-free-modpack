@@ -1,0 +1,45 @@
+<config>
+		
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/@max_level">50</set>
+	
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[@unlock_level='12,14,16,18,20']">
+		
+		<display_entry icon="resourceCropCoffeeBeans,plantedCotton1,plantedGoldenrod1,plantedCoffee1,plantedYucca1,plantedAloe1,plantedBlueberry1,plantedHop1,plantedPumpkin1,plantedMushroom1,plantedCorn1,plantedPotato1" name_key="seedsT3-1,seedsT3-2,seedsT3-3,seedsT3-4,seedsT3-5,seedsT3-6,seedsT3-7,seedsT3-8,seedsT3-9,seedsT3-10,seedsT3-11,seedsT3-12" has_quality="false" unlock_level="22,26,28,30,32,34,36,38,40,42,44,46" >
+			<unlock_entry item="resourceFertilizer" unlock_tier="1" />
+			<unlock_entry item="SeedlingCotton" unlock_tier="2" />
+			<unlock_entry item="SeedlingGoldenrod,SeedlingChrysanthemum" unlock_tier="3" />
+			<unlock_entry item="SeedlingCoffee" unlock_tier="4" />
+			<unlock_entry item="SeedlingYucca" unlock_tier="5" />
+			<unlock_entry item="SeedlingAloe" unlock_tier="6" />
+			<unlock_entry item="SeedlingBlueberry" unlock_tier="7" />
+			<unlock_entry item="SeedlingHop" unlock_tier="8" />
+			<unlock_entry item="SeedlingPumpkin" unlock_tier="9" />
+			<unlock_entry item="SeedlingMushroom" unlock_tier="10" />
+			<unlock_entry item="SeedlingCorn" unlock_tier="11" />
+			<unlock_entry item="SeedlingPotato" unlock_tier="12" />
+		</display_entry>
+		<display_entry icon="plantHydroponicAloe" name_key="seedsT4-1" has_quality="false" unlock_level="24" >
+			<unlock_entry item="farmerStation" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="plantHydroponicVertical" name_key="seedsT5-1" has_quality="false" unlock_level="50" >
+			<unlock_entry item="HydroponicStation" unlock_tier="1" />
+		</display_entry>
+	</insertAfter>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="resourceFertilizer"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="farmerStation"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="SeedlingCotton"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="28,100" value="1" tags="SeedlingGoldenrod,SeedlingChrysanthemum"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="SeedlingCoffee"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="SeedlingYucca"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="34,100" value="1" tags="SeedlingAloe"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,100" value="1" tags="SeedlingBlueberry"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="38,100" value="1" tags="SeedlingHop"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="SeedlingPumpkin"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="42,100" value="1" tags="SeedlingMushroom"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="44,100" value="1" tags="SeedlingCorn"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="46,100" value="1" tags="SeedlingPotato"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="HydroponicStation"/>	
+	</append>	 
+
+</config>

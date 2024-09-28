@@ -1,0 +1,64 @@
+<configs>
+	
+	<append xpath="/entity_classes">  
+
+		<!-- BULL -->
+		<entity_class name="bossBull" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="1.55"/>
+			<property name="Tags" value="entity,zombie,walker,boss,bossBull"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBikerFeral.prefab"/>
+			<property name="Mass" value="1200"/>
+			<property name="WalkType" value="7"/>
+			<property name="TimeStayAfterDeath" value="300"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+
+			<!-- Gameplay zombieBiker -->
+			<property name="MoveSpeedAggro" value="1.5, 1.8"/> <!-- strong, regular -->
+			<property name="JumpMaxDistance" value="4, 6"/>
+			<property name="HandItem" value="meleeHandBullBoss"/>
+			<property name="ExperienceGain" value="20000"/><!-- XP strong -->
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="1"/>
+			
+
+			<!-- Without dismemberment -->
+			<property name="DismemberMultiplierHead" value="0"/>
+			<property name="DismemberMultiplierArms" value="0"/>
+			<property name="DismemberMultiplierLegs" value="0"/>
+			<property name="PainResistPerHit" value=".75"/>
+			
+			<drop event="Harvest" name="resourceMutationSamples" tag="butcherHarvestMutation" count="100"/>
+			
+			<effect_group name="Base Effects">
+				<!-- Static health pool -->
+				<passive_effect name="HealthMax" operation="base_set" value="180000"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="DismemberSelfChance" operation="base_set" value="0" />
+				<!-- Increased damage when shooting at legs -->
+				<passive_effect name="DamageModifier" operation="perc_set" value=".2" tags="head"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".5" tags="legs"/>
+				<!-- Physical Damage Resistance -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BuffBullself,buffBullDeco,BuffEliteHands"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffBossRegenBlock"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffInjuryKnockdown01,buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurningMolotov,buffBurning,buffWeaponBleeding,buffWeaponShock,buffMeleeWeaponBleeding"/>
+				<!-- Remove Phase Buff's -->
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="BuffBossImmortalPlayer">
+					<requirement name="HasBuff" buff="BuffBossImmortalPlayer"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="BuffBossEnragePlayer">
+					<requirement name="HasBuff" buff="BuffBossEnragePlayer"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="BuffBossHealthTheftPlayer">
+					<requirement name="HasBuff" buff="BuffBossHealthTheftPlayer"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="BuffBullself"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveCVar" cvar="$phaseBuff"/>
+			</effect_group>
+
+		</entity_class>
+		
+	</append>
+	
+</configs>

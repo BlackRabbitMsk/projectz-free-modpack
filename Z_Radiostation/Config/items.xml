@@ -1,0 +1,420 @@
+<config>
+	
+	<insertAfter xpath="/items/item[(starts-with(@name, 'book'))]/property[@name='Extends']">
+		<property name="Material" value="MQuestNotes"/>
+		<property name="Weight" value="1"/>
+	</insertAfter>
+	
+	<append xpath="/items">
+	
+		<item name="resourceResourceSet">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceWood"/>
+			<property name="Stacknumber" value="50"/> <!-- STK resource -->
+			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="D0C986"/>
+		</item>
+		
+		<item name="QuestNotes">
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="50"/> <!-- STK resource -->
+			<property name="Group" value="Resources"/>
+			<property name="EconomicValue" value="75"/>
+			<property name="NoScrapping" value="true" />
+		</item>
+		
+		<!-- NOTES QUEST'S -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- TIER 3 -->
+		<item name="notes_restore_power3_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_restore_power3_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier3_restore_power"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_fetch3_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_fetch3_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier3_fetch"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_clear3_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_clear3_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier3_clear"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_infested3_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="FFFF00"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_infested3_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier3_clear_infested"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		
+		<!-- TIER 4 -->
+		<item name="notes_restore_power4_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_restore_power4_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier4_restore_power"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_fetch4_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_fetch4_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier4_fetch"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_clear4_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_clear4_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier4_clear"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_infested4_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="42C234"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_infested4_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier4_clear_infested"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		
+		<!-- TIER 5 -->
+		<item name="notes_fetch5_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="5096FF"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_fetch5_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier5_fetch"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_clear5_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="5096FF"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_clear4_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier5_clear"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<item name="notes_infested5_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="5096FF"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_infested5_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier5_clear_infested"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		
+		<!-- TIER 6 -->
+		<item name="notes_infested6_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="A42ACC"/>
+			<property name="ItemTypeIcon" value="quest"/>
+			<property name="DescriptionKey" value="notes_infested6_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MQuestNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="UnlockedBy" value="perkDaringAdventurer"/>
+			<property name="Group" value="Notes"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier6_clear_infested"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		
+		<!-- REQUEST SUPPORT CASE'S -->
+		<!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+		<!-- request Ultra-Light Alloys -->
+		<item name="UltraLightAlloysSmall_Quest">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="cntWoodenChestMilitaryClosed"/>
+			<property name="CustomIconTint" value="59F5FF"/>
+			<property name="ItemTypeIcon" value="airdrop"/>
+			<property name="DescriptionKey" value="UltraLightAlloysSmall_QuestDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Group" value="Request"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="SmallCase01"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		
+		<item name="requestUltraLightAlloysMedium">
+			<property name="Extends" value="UltraLightAlloysSmall_Quest"/>
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="DescriptionKey" value="requestUltraLightAlloysMediumDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="MediumCase01"/>
+			</property>
+		</item>	
+		
+		<item name="requestUltraLightAlloysBig">
+			<property name="Extends" value="UltraLightAlloysSmall_Quest"/>
+			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+			<property name="DescriptionKey" value="requestUltraLightAlloysBigDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="BigCase01"/>
+			</property>
+		</item>
+		
+		<!-- request Ultra Strength Alloys -->
+		<item name="requestUltraStrengthAlloysSmall">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="cntWoodenChestMilitaryClosed"/>
+			<property name="CustomIconTint" value="E9653B"/>
+			<property name="ItemTypeIcon" value="airdrop"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="DescriptionKey" value="requestUltraStrengthAlloysSmallDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Group" value="Request"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="SmallCase02"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		
+		<item name="requestUltraStrengthAlloysMedium">
+			<property name="Extends" value="requestUltraStrengthAlloysSmall"/>
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="DescriptionKey" value="requestUltraStrengthAlloysMediumDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="MediumCase02"/>
+			</property>
+		</item>
+		
+		<item name="requesUltraStrengthAlloysBig">
+			<property name="Extends" value="requestUltraStrengthAlloysSmall"/>
+			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+			<property name="DescriptionKey" value="requesUltraStrengthAlloysBigDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="BigCase02"/>
+			</property>
+		</item>
+		
+		<!-- request Experimental Alloys -->
+		<item name="requestExperimentalAlloysSmall">
+			<property name="Tags" value="requestStation"/>
+			<property name="CustomIcon" value="cntWoodenChestMilitaryClosed"/>
+			<property name="CustomIconTint" value="882FA7"/>
+			<property name="ItemTypeIcon" value="airdrop"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="DescriptionKey" value="requestExperimentalAlloysSmallDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Group" value="Request"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="SmallCase03"/>
+				<property name="Delay" value="0.5"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+				
+		<item name="requestExperimentalAlloysMedium">
+			<property name="Extends" value="requestExperimentalAlloysSmall"/>
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="DescriptionKey" value="requestExperimentalAlloysMediumDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="MediumCase03"/>
+			</property>
+		</item>
+				
+		<item name="requestExperimentalAlloysBig">
+			<property name="Extends" value="requestExperimentalAlloysSmall"/>
+			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+			<property name="DescriptionKey" value="requestExperimentalAlloysBigDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="BigCase03"/>
+			</property>
+		</item>
+
+	</append>
+	
+</config>

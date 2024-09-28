@@ -1,0 +1,11 @@
+<config>
+	
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']">
+		<display_entry name="dPlayerExpGainRepairToolMelee"  title_key="statPlayerExpGainRepairTool" display_type="Percent" display_leading_plus="true"/>
+	</append>
+	
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedRepairTool']">
+		<display_entry name="dPlayerExpGainRepairToolRange"  title_key="statPlayerExpGainRepairTool" display_type="Percent" display_leading_plus="true"/>
+	</append>
+	
+</config>

@@ -1,159 +1,155 @@
-Key,Source,Context,Changes,English,Russian
+Key,Source,Context,Changes,English,Russian,TChinese
 
-farmerStation,blocks,Workstation,,Farmer Station,Фермерская станция
-farmerStationDesc,blocks,Workstation,,"This station allows you to grow seedlings of any plants that mature much faster and save your resources. You can also conduct plant selection and get more advanced varieties that are unpretentious to external conditions, mature faster and do not require sowing","Эта станция позволяет выращивать рассаду любых растений, которые созревают значительно быстрее и экономят ваши ресурсы. Так же вы можете проводить селекцию растений и получить более совершенные сорта которые неприхотливы к внешним условия, быстрее созревают и не требуют посевной"
-HydroponicStation,blocks,Workstation,,Hydroponic station,Гидропонная станция
-HydroponicStationDesc,blocks,Workstation,,"This station allows you to grow any plants in a short time","Эта станция позволяет выращивать любые растения за короткий срок"
+farmerStation,blocks,Workstation,,Farmer Station,Фермерская станция,農夫工作站
+farmerStationDesc,blocks,Workstation,,"This station allows you to grow seedlings of any plants that mature much faster and save your resources. You can also conduct plant selection and get more advanced varieties that are unpretentious to external conditions, mature faster and do not require sowing","Эта станция позволяет выращивать рассаду любых растений, которые созревают значительно быстрее и экономят ваши ресурсы. Так же вы можете проводить селекцию растений и получить более совершенные сорта которые неприхотливы к внешним условия, быстрее созревают и не требуют посевной","這個工作站允許你種植任何植物的幼苗，這些幼苗成熟得更快並節省你的資源。你還可以進行植物選種，獲得更先進的品種，這些品種對外部條件不挑剔，成熟更快，不需要播種"
+HydroponicStation,blocks,Workstation,,Hydroponic station,Гидропонная станция,水耕站
+HydroponicStationDesc,blocks,Workstation,,"This station allows you to grow any plants in a short time","Эта станция позволяет выращивать любые растения за короткий срок","這個站點允許你在短時間內種植任何植物"
 
-seedsT3-1,progression,Attribute,,Tier 3: Fertilizer,Уровень 3: Удобрение
-seedsT3-2,progression,Attribute,,Tier 3: Cotton [DECEA3]Seedling[-],Уровень 3: Хлопок [DECEA3]Рассада[-]
-seedsT3-3,progression,Attribute,,Tier 3: Goldenrod and Chrysanthemum [DECEA3]Seedling[-],Уровень 3: Золотарник и Хризантема [DECEA3]Рассада[-]
-seedsT3-4,progression,Attribute,,Tier 3: Coffee [DECEA3]Seedling[-],Уровень 3: Кофе [DECEA3]Рассада[-]
-seedsT3-5,progression,Attribute,,Tier 3: Yucca [DECEA3]Seedling[-],Уровень 3: Юкка [DECEA3]Рассада[-]
-seedsT3-6,progression,Attribute,,Tier 3: Aloe [DECEA3]Seedling[-],Уровень 3: Алое [DECEA3]Рассада[-]
-seedsT3-7,progression,Attribute,,Tier 3: Blueberry [DECEA3]Seedling[-],Уровень 3: Черника [DECEA3]Рассада[-]
-seedsT3-8,progression,Attribute,,Tier 3: Hop [DECEA3]Seedling[-],Уровень 3: Хмель [DECEA3]Рассада[-]
-seedsT3-9,progression,Attribute,,Tier 3: Pumpkin [DECEA3]Seedling[-],Уровень 3: Тыква [DECEA3]Рассада[-]
-seedsT3-10,progression,Attribute,,Tier 3: Mushroom [DECEA3]Seedling[-],Уровень 3: Грибы [DECEA3]Рассада[-]
-seedsT3-11,progression,Attribute,,Tier 3: Corn [DECEA3]Seedling[-],Уровень 3: Кукуруза [DECEA3]Рассада[-]
-seedsT3-12,progression,Attribute,,Tier 3: Potato [DECEA3]Seedling[-],Уровень 3: Картошка [DECEA3]Рассада[-]
+seedsT3-1,progression,Attribute,,Tier 3: Fertilizer,Уровень 3: Удобрение,等級3：肥料
+seedsT3-2,progression,Attribute,,Tier 3: Cotton [DECEA3]Seedling[-],Уровень 3: Хлопок [DECEA3]Рассада[-],等級3：棉花[DECEA3]幼苗[-]
+seedsT3-3,progression,Attribute,,Tier 3: Goldenrod and Chrysanthemum [DECEA3]Seedling[-],Уровень 3: Золотарник и Хризантема [DECEA3]Рассада[-],等級3：一枝黃花和菊花[DECEA3]幼苗[-]
+seedsT3-4,progression,Attribute,,Tier 3: Coffee [DECEA3]Seedling[-],Уровень 3: Кофе [DECEA3]Рассада[-],等級3：咖啡[DECEA3]幼苗[-]
+seedsT3-5,progression,Attribute,,Tier 3: Yucca [DECEA3]Seedling[-],Уровень 3: Юкка [DECEA3]Рассада[-],等級3：絲蘭[DECEA3]幼苗[-]
+seedsT3-6,progression,Attribute,,Tier 3: Aloe [DECEA3]Seedling[-],Уровень 3: Алое [DECEA3]Рассада[-],等級3：蘆薈[DECEA3]幼苗[-]
+seedsT3-7,progression,Attribute,,Tier 3: Blueberry [DECEA3]Seedling[-],Уровень 3: Черника [DECEA3]Рассада[-],等級3：藍莓[DECEA3]幼苗[-]
+seedsT3-8,progression,Attribute,,Tier 3: Hop [DECEA3]Seedling[-],Уровень 3: Хмель [DECEA3]Рассада[-],等級3：啤酒花[DECEA3]幼苗[-]
+seedsT3-9,progression,Attribute,,Tier 3: Pumpkin [DECEA3]Seedling[-],Уровень 3: Тыква [DECEA3]Рассада[-],等級3：南瓜[DECEA3]幼苗[-]
+seedsT3-10,progression,Attribute,,Tier 3: Mushroom [DECEA3]Seedling[-],Уровень 3: Грибы [DECEA3]Рассада[-],等級3：蘑菇[DECEA3]幼苗[-]
+seedsT3-11,progression,Attribute,,Tier 3: Corn [DECEA3]Seedling[-],Уровень 3: Кукуруза [DECEA3]Рассада[-],等級3：玉米[DECEA3]幼苗[-]
+seedsT3-12,progression,Attribute,,Tier 3: Potato [DECEA3]Seedling[-],Уровень 3: Картошка [DECEA3]Рассада[-],等級3：馬鈴薯[DECEA3]幼苗[-]
 
-seedsT4-1,progression,Attribute,,Tier 4: Farmer Station,Уровень 4: Фермерская станция
-seedsT5-1,progression,Attribute,,Tier 5: Hydroponic station,Уровень 5: Гидропонная станция
+seedsT4-1,progression,Attribute,,Tier 4: Farmer Station,Уровень 4: Фермерская станция,等級4：農夫工作站
+seedsT5-1,progression,Attribute,,Tier 5: Hydroponic station,Уровень 5: Гидропонная станция,等級5：水耕站
 
-lblCategoryPlants,UI,Tooltip,,Plants,Растения
-lblCategorySeedling,UI,Tooltip,,Seedling,Рассада
-lblCategorySelection,UI,Tooltip,,Selection,Селекция
-lblCategoryAdvSelection,UI,Tooltip,,Advanced Selection,Продвинутая селекция
+lblCategoryPlants,UI,Tooltip,,Plants,Растения,植物
+lblCategorySeedling,UI,Tooltip,,Seedling,Рассада,幼苗
+lblCategorySelection,UI,Tooltip,,Selection,Селекция,選種
+lblCategoryAdvSelection,UI,Tooltip,,Advanced Selection,Продвинутая селекция,進階選種
 
-Mushroom_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Mushroom,Грибы [DECEA3]Гидропоника[-]
-Mushroom_BundleDesc,items,Plants,,"Mushroom Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай грибов с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Yucca_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Yucca,Юкка [DECEA3]Гидропоника[-]
-Yucca_BundleDesc,items,Plants,,"Yucca Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай юкки с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Cotton_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Cotton,Хлопок [DECEA3]Гидропоника[-]
-Cotton_BundleDesc,items,Plants,,"Cotton Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай хлопка с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Coffee_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Coffee,Кофе [DECEA3]Гидропоника[-]
-Coffee_BundleDesc,items,Plants,,"Coffee Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай кофе с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Goldenrod_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Goldenrod,Золотарник [DECEA3]Гидропоника[-]
-Goldenrod_BundleDesc,items,Plants,,"Goldenrod Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай золотарника с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Aloe_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Aloe,Алое [DECEA3]Гидропоника[-]
-Aloe_BundleDesc,items,Plants,,"Aloe Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай алое с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Blueberry_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Blueberry,Черника [DECEA3]Гидропоника[-]
-Blueberry_BundleDesc,items,Plants,,"Blueberry Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай черники с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Potato_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Potato,Картошка [DECEA3]Гидропоника[-]
-Potato_BundleDesc,items,Plants,,"Potato Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай картошки с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Chrysanthemum_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Chrysanthemum,Хризантема [DECEA3]Гидропоника[-]
-Chrysanthemum_BundleDesc,items,Plants,,"Chrysanthemum Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай хризантемы с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Corn_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Corn,Кукуруза [DECEA3]Гидропоника[-]
-Corn_BundleDesc,items,Plants,,"Corn Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай кукурузы с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Hop_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Hop,Хмель [DECEA3]Гидропоника[-]
-Hop_BundleDesc,items,Plants,,"Hop Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай хмеля с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
-Pumpkin_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Pumpkin,Тыква [DECEA3]Гидропоника[-]
-Pumpkin_BundleDesc,items,Plants,,"Pumpkin Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай тыквы с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения"
+Mushroom_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Mushroom,Грибы [DECEA3]Гидропоника[-],[DECEA3]水耕[-]蘑菇
+Mushroom_BundleDesc,items,Plants,,"Mushroom Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай грибов с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的蘑菇\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Yucca_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Yucca,Юкка [DECEA3]Гидропоника[-],[DECEA3]水耕[-]絲蘭
+Yucca_BundleDesc,items,Plants,,"Yucca Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай юкки с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的絲蘭\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Cotton_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Cotton,Хлопок [DECEA3]Гидропоника[-],[DECEA3]水耕[-]棉花
+Cotton_BundleDesc,items,Plants,,"Cotton Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай хлопка с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的棉花\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Coffee_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Coffee,Кофе [DECEA3]Гидропоника[-],[DECEA3]水耕[-]咖啡
+Coffee_BundleDesc,items,Plants,,"Coffee Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай кофе с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的咖啡\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Goldenrod_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Goldenrod,Золотарник [DECEA3]Гидропоника[-],[DECEA3]水耕[-]一枝黃花
+Goldenrod_BundleDesc,items,Plants,,"Goldenrod Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай золотарника с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的一枝黃花\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Aloe_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Aloe,Алое [DECEA3]Гидропоника[-],[DECEA3]水耕[-]蘆薈
+Aloe_BundleDesc,items,Plants,,"Aloe Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай алое с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的蘆薈\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Blueberry_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Blueberry,Черника [DECEA3]Гидропоника[-],[DECEA3]水耕[-]藍莓
+Blueberry_BundleDesc,items,Plants,,"Blueberry Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай черники с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的藍莓\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Potato_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Potato,Картошка [DECEA3]Гидропоника[-],[DECEA3]水耕[-]馬鈴薯
+Potato_BundleDesc,items,Plants,,"Potato Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай картошки с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的馬鈴薯\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Chrysanthemum_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Chrysanthemum,Хризантема [DECEA3]Гидропоника[-],[DECEA3]水耕[-]菊花
+Chrysanthemum_BundleDesc,items,Plants,,"Chrysanthemum Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай хризантемы с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的菊花\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Corn_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Corn,Кукуруза [DECEA3]Гидропоника[-],[DECEA3]水耕[-]玉米
+Corn_BundleDesc,items,Plants,,"Corn Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай кукурузы с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的玉米\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Hop_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Hop,Хмель [DECEA3]Гидропоника[-],[DECEA3]水耕[-]啤酒花
+Hop_BundleDesc,items,Plants,,"Hop Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай хмеля с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的啤酒花\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
+Pumpkin_Bundle,items,Plants,,[DECEA3]Hydroponic[-] Pumpkin,Тыква [DECEA3]Гидропоника[-],[DECEA3]水耕[-]南瓜
+Pumpkin_BundleDesc,items,Plants,,"Pumpkin Harvest from Hydroponic Station\n\nUnpack the kit to get [DECEA3]25[-] units of plant","Урожай тыквы с гидропонной станции\n\nРаспокуйте набор чтобы получить [DECEA3]25[-] единиц растения","從水耕站收穫的南瓜\n\n拆開套件以獲得[DECEA3]25[-]單位的植物"
 
-SeedlingMushroom,blocks,Farming,,Mushroom (Seedling),Грибы (Рассада)
-SeedlingYucca,blocks,Farming,,Yucca (Seedling),>Юкка (Рассада)
-SeedlingCotton,blocks,Farming,,Cotton (Seedling),>Хлопок (Рассада)
-SeedlingCoffee,blocks,Farming,,Coffee (Seedling),>Кофе (Рассада)
-SeedlingGoldenrod,blocks,Farming,,Goldenrod (Seedling),>Золотарник (Рассада)
-SeedlingAloe,blocks,Farming,,Aloe (Seedling),>Алое (Рассада)
-SeedlingBlueberry,blocks,Farming,,Blueberry (Seedling),Черника (Рассада)
-SeedlingPotato,blocks,Farming,,Potato (Seedling),Картошка (Рассада)
-SeedlingChrysanthemum,blocks,Farming,,Chrysanthemum (Seedling),Хризантема (Рассада)
-SeedlingCorn,blocks,Farming,,Corn (Seedling),Кукуруза (Рассада)
-SeedlingHop,blocks,Farming,,Hop (Seedling),Хмель (Рассада)
-SeedlingPumpkin,blocks,Farming,,Pumpkin (Seedling),Тыква (Рассада)
+SeedlingMushroom,blocks,Farming,,Mushroom (Seedling),Грибы (Рассада),蘑菇（幼苗）
+SeedlingYucca,blocks,Farming,,Yucca (Seedling),>Юкка (Рассада),絲蘭（幼苗）
+SeedlingCotton,blocks,Farming,,Cotton (Seedling),>Хлопок (Рассада),棉花（幼苗）
+SeedlingCoffee,blocks,Farming,,Coffee (Seedling),>Кофе (Рассада),咖啡（幼苗）
+SeedlingGoldenrod,blocks,Farming,,Goldenrod (Seedling),>Золотарник (Рассада),一枝黃花（幼苗）
+SeedlingAloe,blocks,Farming,,Aloe (Seedling),>Алое (Рассада),蘆薈（幼苗）
+SeedlingBlueberry,blocks,Farming,,Blueberry (Seedling),Черника (Рассада),藍莓（幼苗）
+SeedlingPotato,blocks,Farming,,Potato (Seedling),Картошка (Рассада),馬鈴薯（幼苗）
+SeedlingChrysanthemum,blocks,Farming,,Chrysanthemum (Seedling),Хризантема (Рассада),菊花（幼苗）
+SeedlingCorn,blocks,Farming,,Corn (Seedling),Кукуруза (Рассада),玉米（幼苗）
+SeedlingHop,blocks,Farming,,Hop (Seedling),Хмель (Рассада),啤酒花（幼苗）
+SeedlingPumpkin,blocks,Farming,,Pumpkin (Seedling),Тыква (Рассада),南瓜（幼苗）
 
-resourceFertilizer,items,Resources,,Fertilizer,Удобрение
-resourceFertilizerDesc,items,Resources,,"A good fertilizer can significantly increase your harvest\n\nUsed in hydroponics and farm station","Хорошее удобрение позволяет значительно увеличить ваш урожай\n\nИспользуется в гидропонике и фермерской станции"
+resourceFertilizer,items,Resources,,Fertilizer,Удобрение,肥料
+resourceFertilizerDesc,items,Resources,,"A good fertilizer can significantly increase your harvest\n\nUsed in hydroponics and farm station","Хорошее удобрение позволяет значительно увеличить ваш урожай\n\nИспользуется в гидропонике и фермерской станции","一個好的肥料可以顯著增加你的收成\n\n用於水耕和農場站"
 
-plantedSeedSelectionDesc,blocks,Farming,,"Due to selection, the variety leaves its root system and does not require a new sowing for harvest. Also, the speed of plant maturation has been increased\n\nPlant these seeds in a farm plot to grow a plant and harvest","Благодаря селекции, сорт оставляет свою корневую систему и не требует новой посевной для урожая. Также увеличена скорость созревания растения\n\nПосадите эти семена на фермерской делянке, чтобы вырастить растение и собрать урожай"
-plantedSeedAdvSelectionDesc,blocks,Farming,,"Thanks to advanced selection, the variety leaves its root system and does not require a new sowing for harvest. This variety germinates anywhere and does not require a farm plot for planting, the plant can also be grown indoors and its ripening speed is significantly increased","Благодаря продвинутой селекции, сорт оставляет свою корневую систему и не требует новой посевной для урожая. Этот сорт прорастает где угодно и не требует фермерской делянки для посадка, также растение можно выращивать в закрытых помещениях и скорость его созревания значительно увеличена"
+plantedSeedSelectionDesc,blocks,Farming,,"Due to selection, the variety leaves its root system and does not require a new sowing for harvest. Also, the speed of plant maturation has been increased\n\nPlant these seeds in a farm plot to grow a plant and harvest","Благодаря селекции, сорт оставляет свою корневую систему и не требует новой посевной для урожая. Также увеличена скорость созревания растения\n\nПосадите эти семена на фермерской делянке, чтобы вырастить растение и собрать урожай","由於選種，這個品種保留了其根系，不需要重新播種就能收穫。同時，植物成熟的速度也有所提高\n\n將這些種子種植在農場地塊上以種植和收穫植物"
+plantedSeedAdvSelectionDesc,blocks,Farming,,"Thanks to advanced selection, the variety leaves its root system and does not require a new sowing for harvest. This variety germinates anywhere and does not require a farm plot for planting, the plant can also be grown indoors and its ripening speed is significantly increased","Благодаря продвинутой селекции, сорт оставляет свою корневую систему и не требует новой посевной для урожая. Этот сорт прорастает где угодно и не требует фермерской делянки для посадка, также растение можно выращивать в закрытых помещениях и скорость его созревания значительно увеличена","感謝進階選種，這個品種保留了其根系，不需要重新播種就能收穫。這個品種可以在任何地方發芽，不需要農場地塊來種植，植物也可以在室內種植，其成熟速度顯著增加"
 
-plantedMushroom1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Mushroom (Seed),[9DEF5D]Селекционные[-] Грибы (семя)
-plantedMushroom2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Mushroom (Growing),[9DEF5D]Селекционные[-] Грибы (растет)
-plantedMushroom3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Mushroom,[9DEF5D]Селекционные[-] Грибы
-plantedMushroom1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Mushroom (Seed),[FFA927]Прод. Селекционные[-] Грибы (семя)
-plantedMushroom2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Mushroom (Growing),[FFA927]Прод. Селекционные[-] Грибы (растет)
-plantedMushroom3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Mushroom,[FFA927]Прод. Селекционные[-] Грибы
+plantedMushroom1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Mushroom (Seed),[9DEF5D]Селекционные[-] Грибы (семя),[9DEF5D]選種[-]蘑菇（種子）
+plantedMushroom2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Mushroom (Growing),[9DEF5D]Селекционные[-] Грибы (растет),[9DEF5D]選種[-]蘑菇（生長中）
+plantedMushroom3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Mushroom,[9DEF5D]Селекционные[-] Грибы,[9DEF5D]選種[-]蘑菇
+plantedMushroom1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Mushroom (Seed),[FFA927]Прод. Селекционные[-] Грибы (семя),[FFA927]進階選種[-]蘑菇（種子）
+plantedMushroom2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Mushroom (Growing),[FFA927]Прод. Селекционные[-] Грибы (растет),[FFA927]進階選種[-]蘑菇（生長中）
+plantedMushroom3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Mushroom,[FFA927]Прод. Селекционные[-] Грибы,[FFA927]進階選種[-]蘑菇
 
-plantedYucca1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Yucca (Seed),[9DEF5D]Селекционная[-] Юкка (семя)
-plantedYucca2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Yucca (Growing),[9DEF5D]Селекционная[-] Юкка (растет)
-plantedYucca3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Yucca,[9DEF5D]Селекционная[-] Юкка
-plantedYucca1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Yucca (Seed),[FFA927]Прод. Селекционная[-] Юкка (семя)
-plantedYucca2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Yucca (Growing),[FFA927]Прод. Селекционная[-] Юкка (растет)
-plantedYucca3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Yucca,[FFA927]Прод. Селекционная[-] Юкка
+plantedYucca1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Yucca (Seed),[9DEF5D]Селекционная[-] Юкка (семя),[9DEF5D]選種[-]絲蘭（種子）
+plantedYucca2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Yucca (Growing),[9DEF5D]Селекционная[-] Юкка (растет),[9DEF5D]選種[-]絲蘭（生長中）
+plantedYucca3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Yucca,[9DEF5D]Селекционная[-] Юкка,[9DEF5D]選種[-]絲蘭
+plantedYucca1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Yucca (Seed),[FFA927]Прод. Селекционная[-] Юкка (семя),[FFA927]進階選種[-]絲蘭（種子）
+plantedYucca2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Yucca (Growing),[FFA927]Прод. Селекционная[-] Юкка (растет),[FFA927]進階選種[-]絲蘭（生長中）
+plantedYucca3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Yucca,[FFA927]Прод. Селекционная[-] Юкка,[FFA927]進階選種[-]絲蘭
 
-plantedCotton1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Cotton (Seed),[9DEF5D]Селекционный[-] Хлопок (семя)
-plantedCotton2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Cotton (Growing),[9DEF5D]Селекционный[-] Хлопок (растет)
-plantedCotton3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Cotton,[9DEF5D]Селекционный[-] Хлопок
-plantedCotton1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Cotton (Seed),[FFA927]Прод. Селекционный[-] Хлопок (семя)
-plantedCotton2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Cotton (Growing),[FFA927]Прод. Селекционный[-] Хлопок (растет)
-plantedCotton3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Cotton,[FFA927]Прод. Селекционный[-] Хлопок
+plantedCotton1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Cotton (Seed),[9DEF5D]Селекционный[-] Хлопок (семя),[9DEF5D]選種[-]棉花（種子）
+plantedCotton2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Cotton (Growing),[9DEF5D]Селекционный[-] Хлопок (растет),[9DEF5D]選種[-]棉花（生長中）
+plantedCotton3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Cotton,[9DEF5D]Селекционный[-] Хлопок,[9DEF5D]選種[-]棉花
+plantedCotton1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Cotton (Seed),[FFA927]Прод. Селекционный[-] Хлопок (семя),[FFA927]進階選種[-]棉花（種子）
+plantedCotton2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Cotton (Growing),[FFA927]Прод. Селекционный[-] Хлопок (растет),[FFA927]進階選種[-]棉花（生長中）
+plantedCotton3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Cotton,[FFA927]Прод. Селекционный[-] Хлопок,[FFA927]進階選種[-]棉花
 
-plantedCoffee1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Coffee (Seed),[9DEF5D]Селекционный[-] Кофе (семя)
-plantedCoffee2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Coffee (Growing),[9DEF5D]Селекционный[-] Кофе (растет)
-plantedCoffee3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Coffee,[9DEF5D]Селекционный[-] Кофе
-plantedCoffee1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Coffee (Seed),[FFA927]Прод. Селекционный[-] Кофе (семя)
-plantedCoffee2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Coffee (Growing),[FFA927]Прод. Селекционный[-] Кофе (растет)
-plantedCoffee3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Coffee,[FFA927]Прод. Селекционный[-] Кофе
+plantedCoffee1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Coffee (Seed),[9DEF5D]Селекционный[-] Кофе (семя),[9DEF5D]選種[-]咖啡（種子）
+plantedCoffee2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Coffee (Growing),[9DEF5D]Селекционный[-] Кофе (растет),[9DEF5D]選種[-]咖啡（生長中）
+plantedCoffee3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Coffee,[9DEF5D]Селекционный[-] Кофе,[9DEF5D]選種[-]咖啡
+plantedCoffee1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Coffee (Seed),[FFA927]Прод. Селекционный[-] Кофе (семя),[FFA927]進階選種[-]咖啡（種子）
+plantedCoffee2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Coffee (Growing),[FFA927]Прод. Селекционный[-] Кофе (растет),[FFA927]進階選種[-]咖啡（生長中）
+plantedCoffee3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Coffee,[FFA927]Прод. Селекционный[-] Кофе,[FFA927]進階選種[-]咖啡
 
-plantedGoldenrod1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Goldenrod (Seed),[9DEF5D]Селекционный[-] Золотарник (семя)
-plantedGoldenrod2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Goldenrod (Growing),[9DEF5D]Селекционный[-] Золотарник (растет)
-plantedGoldenrod3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Goldenrod,[9DEF5D]Селекционный[-] Золотарник
-plantedGoldenrod1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Goldenrod (Seed),[FFA927]Прод. Селекционный[-] Золотарник (семя)
-plantedGoldenrod2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Goldenrod (Growing),[FFA927]Прод. Селекционный[-] Золотарник (растет)
-plantedGoldenrod3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Goldenrod,[FFA927]Прод. Селекционный[-] Золотарник
+plantedGoldenrod1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Goldenrod (Seed),[9DEF5D]Селекционный[-] Золотарник (семя),[9DEF5D]選種[-]一枝黃花（種子）
+plantedGoldenrod2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Goldenrod (Growing),[9DEF5D]Селекционный[-] Золотарник (растет),[9DEF5D]選種[-]一枝黃花（生長中）
+plantedGoldenrod3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Goldenrod,[9DEF5D]Селекционный[-] Золотарник,[9DEF5D]選種[-]一枝黃花
+plantedGoldenrod1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Goldenrod (Seed),[FFA927]Прод. Селекционный[-] Золотарник (семя),[FFA927]進階選種[-]一枝黃花（種子）
+plantedGoldenrod2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Goldenrod (Growing),[FFA927]Прод. Селекционный[-] Золотарник (растет),[FFA927]進階選種[-]一枝黃花（生長中）
+plantedGoldenrod3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Goldenrod,[FFA927]Прод. Селекционный[-] Золотарник,[FFA927]進階選種[-]一枝黃花
 
-plantedAloe1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Aloe (Seed),[9DEF5D]Селекционное[-] Алое (семя)
-plantedAloe2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Aloe (Growing),[9DEF5D]Селекционное[-] Алое (растет)
-plantedAloe3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Aloe,[9DEF5D]Селекционное[-] Алое
-plantedAloe1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Aloe (Seed),[FFA927]Прод. Селекционное[-] Алое (семя)
-plantedAloe2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Aloe (Growing),[FFA927]Прод. Селекционное[-] Алое (растет)
-plantedAloe3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Aloe,[FFA927]Прод. Селекционное[-] Алое
+plantedAloe1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Aloe (Seed),[9DEF5D]Селекционное[-] Алое (семя),[9DEF5D]選種[-]蘆薈（種子）
+plantedAloe2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Aloe (Growing),[9DEF5D]Селекционное[-] Алое (растет),[9DEF5D]選種[-]蘆薈（生長中）
+plantedAloe3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Aloe,[9DEF5D]Селекционное[-] Алое,[9DEF5D]選種[-]蘆薈
+plantedAloe1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Aloe (Seed),[FFA927]Прод. Селекционное[-] Алое (семя),[FFA927]進階選種[-]蘆薈（種子）
+plantedAloe2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Aloe (Growing),[FFA927]Прод. Селекционное[-] Алое (растет),[FFA927]進階選種[-]蘆薈（生長中）
+plantedAloe3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Aloe,[FFA927]Прод. Селекционное[-] Алое,[FFA927]進階選種[-]蘆薈
 
-plantedBlueberry1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Blueberry (Seed),[9DEF5D]Селекционная[-] Черника (семя)
-plantedBlueberry2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Blueberry (Growing),[9DEF5D]Селекционная[-] Черника (растет)
-plantedBlueberry3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Blueberry,[9DEF5D]Селекционная[-] Черника
-plantedBlueberry1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Blueberry (Seed),[FFA927]Прод. Селекционная[-] Черника (семя)
-plantedBlueberry2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Blueberry (Growing),[FFA927]Прод. Селекционная[-] Черника (растет)
-plantedBlueberry3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Blueberry,[FFA927]Прод. Селекционная[-] Черника
+plantedBlueberry1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Blueberry (Seed),[9DEF5D]Селекционная[-] Черника (семя),[9DEF5D]選種[-]藍莓（種子）
+plantedBlueberry2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Blueberry (Growing),[9DEF5D]Селекционная[-] Черника (растет),[9DEF5D]選種[-]藍莓（生長中）
+plantedBlueberry3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Blueberry,[9DEF5D]Селекционная[-] Черника,[9DEF5D]選種[-]藍莓
+plantedBlueberry1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Blueberry (Seed),[FFA927]Прод. Селекционная[-] Черника (семя),[FFA927]進階選種[-]藍莓（種子）
+plantedBlueberry2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Blueberry (Growing),[FFA927]Прод. Селекционная[-] Черника (растет),[FFA927]進階選種[-]藍莓（生長中）
+plantedBlueberry3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Blueberry,[FFA927]Прод. Селекционная[-] Черника,[FFA927]進階選種[-]藍莓
 
-plantedPotato1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Potato (Seed),[9DEF5D]Селекционная[-] Картошка (семя)
-plantedPotato2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Potato (Growing),[9DEF5D]Селекционная[-] Картошка (растет)
-plantedPotato3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Potato,[9DEF5D]Селекционная[-] Картошка
-plantedPotato1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Potato (Seed),[FFA927]Прод. Селекционная[-] Картошка (семя)
-plantedPotato2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Potato (Growing),[FFA927]Прод. Селекционная[-] Картошка (растет)
-plantedPotato3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Potato,[FFA927]Прод. Селекционная[-] Картошка
+plantedPotato1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Potato (Seed),[9DEF5D]Селекционная[-] Картошка (семя),[9DEF5D]選種[-]馬鈴薯（種子）
+plantedPotato2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Potato (Growing),[9DEF5D]Селекционная[-] Картошка (растет),[9DEF5D]選種[-]馬鈴薯（生長中）
+plantedPotato3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Potato,[9DEF5D]Селекционная[-] Картошка,[9DEF5D]選種[-]馬鈴薯
+plantedPotato1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Potato (Seed),[FFA927]Прод. Селекционная[-] Картошка (семя),[FFA927]進階選種[-]馬鈴薯（種子）
+plantedPotato2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Potato (Growing),[FFA927]Прод. Селекционная[-] Картошка (растет),[FFA927]進階選種[-]馬鈴薯（生長中）
+plantedPotato3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Potato,[FFA927]Прод. Селекционная[-] Картошка,[FFA927]進階選種[-]馬鈴薯
 
-plantedChrysanthemum1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Chrysanthemum (Seed),[9DEF5D]Селекционная[-] Хризантема (семя)
-plantedChrysanthemum2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Chrysanthemum (Growing),[9DEF5D]Селекционная[-] Хризантема (растет)
-plantedChrysanthemum3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Chrysanthemum,[9DEF5D]Селекционная[-] Хризантема
-plantedChrysanthemum1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Chrysanthemum (Seed),[FFA927]Прод. Селекционная[-] Хризантема (семя)
-plantedChrysanthemum2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Chrysanthemum (Growing),[FFA927]Прод. Селекционная[-] Хризантема (растет)
-plantedChrysanthemum3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Chrysanthemum,[FFA927]Прод. Селекционная[-] Хризантема
+plantedChrysanthemum1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Chrysanthemum (Seed),[9DEF5D]Селекционная[-] Хризантема (семя),[9DEF5D]選種[-]菊花（種子）
+plantedChrysanthemum2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Chrysanthemum (Growing),[9DEF5D]Селекционная[-] Хризантема (растет),[9DEF5D]選種[-]菊花（生長中）
+plantedChrysanthemum3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Chrysanthemum,[9DEF5D]Селекционная[-] Хризантема,[9DEF5D]選種[-]菊花
+plantedChrysanthemum1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Chrysanthemum (Seed),[FFA927]Прод. Селекционная[-] Хризантема (семя),[FFA927]進階選種[-]菊花（種子）
+plantedChrysanthemum2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Chrysanthemum (Growing),[FFA927]Прод. Селекционная[-] Хризантема (растет),[FFA927]進階選種[-]菊花（生長中）
+plantedChrysanthemum3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Chrysanthemum,[FFA927]Прод. Селекционная[-] Хризантема,[FFA927]進階選種[-]菊花
 
-plantedCorn1Sel1,blocks,Farming,,[9DEF5D]Selection[-] corn (Seed),[9DEF5D]Селекционная[-] кукуруза (семя)
-plantedCorn2Sel1,blocks,Farming,,[9DEF5D]Selection[-] corn (Growing),[9DEF5D]Селекционная[-] кукуруза (растет)
-plantedCorn3HarvestSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] corn,[9DEF5D]Селекционная[-] кукуруза
-plantedCorn1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] corn (Seed),[FFA927]Прод. селекционная[-] кукуруза (семя)
-plantedCorn2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] corn (Growing),[FFA927]Прод. селекционная[-] кукуруза (растет)
-plantedCorn3HarvestSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] corn,[FFA927]Прод. селекционная[-] кукуруза
+plantedCorn1Sel1,blocks,Farming,,[9DEF5D]Selection[-] corn (Seed),[9DEF5D]Селекционная[-] кукуруза (семя),[9DEF5D]選種[-]玉米（種子）
+plantedCorn2Sel1,blocks,Farming,,[9DEF5D]Selection[-] corn (Growing),[9DEF5D]Селекционная[-] кукуруза (растет),[9DEF5D]選種[-]玉米（生長中）
+plantedCorn3HarvestSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] corn,[9DEF5D]Селекционная[-] кукуруза,[9DEF5D]選種[-]玉米
+plantedCorn1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] corn (Seed),[FFA927]Прод. селекционная[-] кукуруза (семя),[FFA927]進階選種[-]玉米（種子）
+plantedCorn2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] corn (Growing),[FFA927]Прод. селекционная[-] кукуруза (растет),[FFA927]進階選種[-]玉米（生長中）
+plantedCorn3HarvestSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] corn,[FFA927]Прод. селекционная[-] кукуруза,[FFA927]進階選種[-]玉米
 
-plantedHop1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Hops (Seed),[9DEF5D]Селекционный[-] Хмель (семя)
-plantedHop2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Hops (Growing),[9DEF5D]Селекционный[-] Хмель (растет)
-plantedHop3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Hops,[9DEF5D]Селекционный[-] Хмель
-plantedHop1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Hops (Seed),[FFA927]Прод. Селекционный[-] Хмель (семя)
-plantedHop2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Hops (Growing),[FFA927]Прод. Селекционный[-] Хмель (растет)
-plantedHop3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Hops,[FFA927]Прод. Селекционный[-] Хмель
+plantedHop1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Hops (Seed),[9DEF5D]Селекционный[-] Хмель (семя),[9DEF5D]選種[-]啤酒花（種子）
+plantedHop2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Hops (Growing),[9DEF5D]Селекционный[-] Хмель (растет),[9DEF5D]選種[-]啤酒花（生長中）
+plantedHop3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Hops,[9DEF5D]Селекционный[-] Хмель,[9DEF5D]選種[-]啤酒花
+plantedHop1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Hops (Seed),[FFA927]Прод. Селекционный[-] Хмель (семя),[FFA927]進階選種[-]啤酒花（種子）
+plantedHop2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Hops (Growing),[FFA927]Прод. Селекционный[-] Хмель (растет),[FFA927]進階選種[-]啤酒花（生長中）
+plantedHop3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Hops,[FFA927]Прод. Селекционный[-] Хмель,[FFA927]進階選種[-]啤酒花
 
-plantedPumpkin1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Pumpkin (Seed),[9DEF5D]Селекционная[-] Тыква (семя)
-plantedPumpkin2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Pumpkin (Growing),[9DEF5D]Селекционная[-] Тыква (растет)
-plantedPumpkin3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Pumpkin,[9DEF5D]Селекционная[-] Тыква
-plantedPumpkin1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Pumpkin (Seed),[FFA927]Прод. Селекционная[-] Тыква (семя)
-plantedPumpkin2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Pumpkin (Growing),[FFA927]Прод. Селекционная[-] Тыква (растет)
-plantedPumpkin3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Pumpkin,[FFA927]Прод. Селекционная[-] Тыква
-
-
-
-
+plantedPumpkin1Sel1,blocks,Farming,,[9DEF5D]Selection[-] Pumpkin (Seed),[9DEF5D]Селекционная[-] Тыква (семя),[9DEF5D]選種[-]南瓜（種子）
+plantedPumpkin2Sel1,blocks,Farming,,[9DEF5D]Selection[-] Pumpkin (Growing),[9DEF5D]Селекционная[-] Тыква (растет),[9DEF5D]選種[-]南瓜（生長中）
+plantedPumpkin3HarvestPlayerSel1Desc,blocks,Farming,,[9DEF5D]Selection[-] Pumpkin,[9DEF5D]Селекционная[-] Тыква,[9DEF5D]選種[-]南瓜
+plantedPumpkin1Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Pumpkin (Seed),[FFA927]Прод. Селекционная[-] Тыква (семя),[FFA927]進階選種[-]南瓜（種子）
+plantedPumpkin2Sel2,blocks,Farming,,[FFA927]Advanced selection[-] Pumpkin (Growing),[FFA927]Прод. Селекционная[-] Тыква (растет),[FFA927]進階選種[-]南瓜（生長中）
+plantedPumpkin3HarvestPlayerSel2Desc,blocks,Farming,,[FFA927]Advanced selection[-] Pumpkin,[FFA927]Прод. Селекционная[-] Тыква,[FFA927]進階選種[-]南瓜

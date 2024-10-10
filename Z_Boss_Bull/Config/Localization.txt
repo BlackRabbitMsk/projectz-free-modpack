@@ -1,23 +1,23 @@
-Key,Source,Context,Changes,English,Russian
+Key,Source,Context,Changes,English,Russian,TChinese
 
-BuffBullAOE,buffs,Buff,,Bull,Бугай
-BuffBullAOEName,buffs,buff,,Bull nearby, Бугай рядом
-BuffBullAOETooltip,buffs,buff,,Bull is on the hunt,Бугай вышел на охоту
-BuffBullAOEIncDesc,buffs,Buff,,"What do you get when you cross a strongman and a bull? Nothing good!!!\nThis creature knows no fatigue, and its blows are capable of turning any fortification into crumbs. An extremely dangerous opponent. If you get hit by its blow, you will most likely die. Think three times before engaging it in battle.\n\nYour fear is difficult to overcome. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Что получиться если скрестить силача и быка. Ничего хорого!!!\nЭта тварь не знает усталостии, а его удары способны превратить в крошку любое укрепрение. Крайне опасный противник. Если вы попадете под его удар, вы скорее всего умрете. Подумайте трижды прежде чем ввязываться с ним в бой.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+BuffBullAOE,buffs,Buff,,Bull,Бугай,公牛
+BuffBullAOEName,buffs,buff,,Bull nearby,Бугай рядом,公牛附近
+BuffBullAOETooltip,buffs,buff,,Bull is on the hunt,Бугай вышел на охоту,公牛正在獵捕中
+BuffBullAOEIncDesc,buffs,Buff,,"What do you get when you cross a strongman and a bull? Nothing good!!!\nThis creature knows no fatigue, and its blows are capable of turning any fortification into crumbs. An extremely dangerous opponent. If you get hit by its blow, you will most likely die. Think three times before engaging it in battle.\n\nYour fear is difficult to overcome. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Что получиться если скрестить силача и быка. Ничего хорого!!!\nЭта тварь не знает усталостии, а его удары способны превратить в крошку любое укрепрение. Крайне опасный противник. Если вы попадете под его удар, вы скорее всего умрете. Подумайте трижды прежде чем ввязываться с ним в бой.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]","當你將力士和公牛結合在一起會得到什麼？沒有好事！！！\n這個生物不知疲倦，它的攻擊能將任何防禦工事粉碎。一個極度危險的對手。如果你被它擊中，你很可能會死亡。在與之交戰前請三思。\n\n你很難克服恐懼。你的視線變暗，一切都在搖晃。但你仍然可以逃跑！！！\n你的機動性降低了[FFB800]10%[-]"
 
-BuffBossEnragePlayer,buffs,Buff,,Boss in rage,Босс в бешенстве
-BuffBossEnragePlayerName,buffs,buff,,Boss in rage,Босс в бешенстве
-BuffBossEnragePlayerTooltip,buffs,buff,,Boss in rage,Босс в бешенстве
-BuffBossEnragePlayerIncDesc,buffs,Buff,,"You've driven Boss into a rage. Better run away!\nHis movement speed is increased by [DECEA3]50%[-], his attack speed is increased by [DECEA3]60%[-], and any of his attacks will knock you down.\n\nHowever, his damage resistance is decreased by [DECEA3]30%[-]","Вы довели Босса до приступа бешенства. Лучше убегайте!\nСкорость его передвижения увеличена на [DECEA3]50%[-], скорость атаки увеличена на [DECEA3]60%[-], также любая его атака собъет вас с ног.\n\nОднако сопротивление урону уменьшенно на [DECEA3]30%[-]"
+BuffBossEnragePlayer,buffs,Buff,,Boss in rage,Босс в бешенстве,Boss暴怒中
+BuffBossEnragePlayerName,buffs,buff,,Boss in rage,Босс в бешенстве,Boss暴怒中
+BuffBossEnragePlayerTooltip,buffs,buff,,Boss in rage,Босс в бешенстве,Boss暴怒中
+BuffBossEnragePlayerIncDesc,buffs,Buff,,"You've driven Boss into a rage. Better run away!\nHis movement speed is increased by [DECEA3]50%[-], his attack speed is increased by [DECEA3]60%[-], and any of his attacks will knock you down.\n\nHowever, his damage resistance is decreased by [DECEA3]30%[-]","Вы довели Босса до приступа бешенства. Лучше убегайте!\nСкорость его передвижения увеличена на [DECEA3]50%[-], скорость атаки увеличена на [DECEA3]60%[-], также любая его атака собъет вас с ног.\n\nОднако сопротивление урону уменьшенно на [DECEA3]30%[-]","你激怒了Boss。最好快跑！\n他的移動速度增加了[DECEA3]50%[-]，攻擊速度增加了[DECEA3]60%[-]，他的任何攻擊都會將你擊倒。\n\n然而，他的傷害抗性降低了[DECEA3]30%[-]"
 
-BuffBossImmortalPlayer,buffs,Buff,,Boss is invulnerable,Босс неуязвим
-BuffBossImmortalPlayerName,buffs,buff,,Boss is invulnerable,Босс неуязвим
-BuffBossImmortalPlayerTooltip,buffs,buff,,Boss is invulnerable,Босс неуязвим
-BuffBossImmortalPlayerIncDesc,buffs,Buff,,"The Boss has gone into deep defense. He emits strong radiation, be careful!\nIt's better to hit him for now. He is invulnerable to any type of damage.","Босс ушел в глухую оборону. Он излучает сильную радиацию, будьте осторожны!\nПока лучше его бить. Оне неуязвим к любому типу урона."
+BuffBossImmortalPlayer,buffs,Buff,,Boss is invulnerable,Босс неуязвим,Boss無敵中
+BuffBossImmortalPlayerName,buffs,buff,,Boss is invulnerable,Босс неуязвим,Boss無敵中
+BuffBossImmortalPlayerTooltip,buffs,buff,,Boss is invulnerable,Босс неуязвим,Boss無敵中
+BuffBossImmortalPlayerIncDesc,buffs,Buff,,"The Boss has gone into deep defense. He emits strong radiation, be careful!\nIt's better to hit him for now. He is invulnerable to any type of damage.","Босс ушел в глухую оборону. Он излучает сильную радиацию, будьте осторожны!\nПока лучше его бить. Оне неуязвим к любому типу урона.","Boss進入了深度防禦狀態。他發出強烈的輻射，請小心！\n現在最好還是攻擊他。他對任何類型的傷害都無敵。"
 
-BuffBossHealthTheftPlayer,buffs,Buff,,Boss steals health,Босс крадет здоровье
-BuffBossHealthTheftPlayerName,buffs,buff,,Boss steals health,Босс крадет здоровье
-BuffBossHealthTheftPlayerTooltip,buffs,buff,,Boss steals health,Босс крадет здоровье
-BuffBossHealthTheftPlayerIncDesc,buffs,Buff,,"The boss feeds on your adrenaline. You take damage over time and are slowed down. Try to wait it out and stay alive.","Босс питается вашим адреналином. Вы получаете периодический урон и замедлены\nПостарайтесь переждать и остаться в живых."
+BuffBossHealthTheftPlayer,buffs,Buff,,Boss steals health,Босс крадет здоровье,Boss偷取生命值
+BuffBossHealthTheftPlayerName,buffs,buff,,Boss steals health,Босс крадет здоровье,Boss偷取生命值
+BuffBossHealthTheftPlayerTooltip,buffs,buff,,Boss steals health,Босс крадет здоровье,Boss偷取生命值
+BuffBossHealthTheftPlayerIncDesc,buffs,Buff,,"The boss feeds on your adrenaline. You take damage over time and are slowed down. Try to wait it out and stay alive.","Босс питается вашим адреналином. Вы получаете периодический урон и замедлены\nПостарайтесь переждать и остаться в живых.","Boss以你的腎上腺素為食。你會隨時間受到傷害並被減速。試著等待並保持存活。"
 
-bossBull,entityclasses,Entity,,[FFB800]BOSS[-] BULL,[FFB800]БОСС[-] БУГАЙ
+bossBull,entityclasses,Entity,,[FFB800]BOSS[-] BULL,[FFB800]БОСС[-] БУГАЙ,[FFB800]BOSS[-] 公牛

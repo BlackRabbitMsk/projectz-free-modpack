@@ -1,0 +1,14 @@
+<config>
+		
+	<append xpath="/materials">
+	
+		<material id="MQuestNotes">
+			<property name="damage_category" value="cloth"/>
+			<property name="surface_category" value="cloth"/>
+			<property name="forge_category" value="QuestNotes"/>
+			<property name="Experience" value="4"/>
+		</material>
+	
+	</append>
+	
+</config>

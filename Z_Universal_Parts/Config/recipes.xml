@@ -53,6 +53,7 @@
 	<recipe name="armorParts" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="UniversalParts" count="3"/>
 	</recipe>
+
 	</append>
 	
 </config>

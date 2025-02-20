@@ -1,0 +1,28 @@
+<config>
+		
+	<append xpath="/gameevents">
+				
+		<!-- Launching start bleeding buff -->				
+		<action_sequence name="EventStartBleeding">
+
+			<action class="AddBuff">
+				<property name="buff_name" value="buffStartBleeding" />
+				<property name="phase" value="0"/>
+			</action>
+			
+		</action_sequence>
+		
+		<!-- Spawn start zombie -->
+		<action_sequence name="Spawner_startZombie">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieBoe" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="air_spawn" value="true"/>
+				<property name="max_distance" value="30" param1="maxdist" />
+				<property name="min_distance" value="20" param1="mindist" />
+			</action>	
+		</action_sequence>
+	
+	</append>
+	
+</config>

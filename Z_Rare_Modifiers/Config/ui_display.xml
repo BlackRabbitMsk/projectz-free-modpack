@@ -1,0 +1,22 @@
+<config>
+	
+	<append xpath="/ui_display_info/item_display">
+	
+		<item_display_info display_type="SmartGlass" display_group="groupAttire">
+			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dLootStage" title_key="statLootStage" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dTreasureBlocksPerReduction" title_key="statTreasureRadius" display_leading_plus="true" negative_preferred="true"/>
+		</item_display_info>
+		<item_display_info display_type="modArmorHeadset" display_group="groupAttire">
+			<display_entry name="dStaminaChangeOT" title_key="statStaminaChangeOT" display_type="Decimal2" display_leading_plus="true"/>
+			<display_entry name="dMobility" title_key="statMobility" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dNoiseMultiplier" title_key="statNoiseReduction" display_type="Percent" display_leading_plus="true"/>
+		</item_display_info>
+		<item_display_info display_type="BandolierImp" display_group="groupAttire">
+			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_type="Decimal1" display_leading_plus="true"/>
+			<display_entry name="dReloadSpeedMultiplier" title_key="statReloadSpeed" display_type="Percent" display_leading_plus="true"/>
+		</item_display_info>
+		
+	</append>
+	
+</config>

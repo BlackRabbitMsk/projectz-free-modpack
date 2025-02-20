@@ -5,7 +5,7 @@
 		<material id="MUniversalParts">
 			<property name="damage_category" value="metal"/>
 			<property name="surface_category" value="metal"/>
-			<property name="forge_category" value="UniversalParts"/>
+			<property name="forge_category" value="resourceQuestNotes"/>
 			<property name="Experience" value="100"/>
 		</material>
 	

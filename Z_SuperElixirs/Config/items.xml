@@ -10,7 +10,7 @@
 			<property name="Material" value="Mglass"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,DonateFood"/>
 			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="SoundPickup" value="grandpas_learnin_grab"/>
 			<property name="SoundPlace" value="grandpas_learnin_place"/>
@@ -54,6 +54,54 @@
 					<requirement name="CVarCompare" cvar="$buffPumpkinCheesecakeDuration" operation="GT" value="1263"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPumpkinCheesecake"/>
 			</effect_group>
+			
+			<effect_group name="Rescuer Set" tiered="false">
+				<requirement name="HasBuff" buff="buffRescuerSetBonus"/>
+					<!-- Add buff XP -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrunkGrandpasLearningElixir">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- AwesomeSauce -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrunkGrandpasAwesomeSauce">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasAwesomeSauceDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffGrandpasAwesomeSauceDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Agg buff SugarButts -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugSugarButts">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSugarButtsDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSugarButtsDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugSugarButtsDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Add buff cheesecake -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffPumpkinCheesecake">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffPumpkinCheesecakeDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffPumpkinCheesecakeDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffPumpkinCheesecakeDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+			</effect_group>
 		</item>
 		
 		<item name="superElixirQuestRunner">
@@ -64,7 +112,7 @@
 			<property name="Material" value="Mglass"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,DonateFood"/>
 			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="SoundPickup" value="grandpas_learnin_grab"/>
 			<property name="SoundPlace" value="grandpas_learnin_place"/>
@@ -109,6 +157,54 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSteroids"/>
 			</effect_group>
 			
+			<effect_group name="Rescuer Set" tiered="false">
+				<requirement name="HasBuff" buff="buffRescuerSetBonus"/>
+					<!-- Add buff XP -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrunkGrandpasLearningElixir">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Add buff Eye Kandy -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugEyeKandy">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugEyeKandyDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugEyeKandyDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugEyeKandyDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Agg buff Hackers -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugHackers">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugHackersDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugHackersDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugHackersDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Agg buff Steroid Small -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugSteroids">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSteroidsDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSteroidsDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugSteroidsDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+			</effect_group>
+			
 		</item>
 		
 		<item name="superElixirHordeExpert">
@@ -119,7 +215,7 @@
 			<property name="Material" value="Mglass"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,DonateFood"/>
 			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="SoundPickup" value="grandpas_learnin_grab"/>
 			<property name="SoundPlace" value="grandpas_learnin_place"/>
@@ -155,6 +251,43 @@
 					<requirement name="CVarCompare" cvar="$buffDrugFortBitesDuration" operation="GT" value="1263"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugFortBites"/>
 			</effect_group>	
+			
+			<effect_group name="Rescuer Set" tiered="false">
+				<requirement name="HasBuff" buff="buffRescuerSetBonus"/>
+					<!-- Add buff XP -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrunkGrandpasLearningElixir">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Add buff Recog -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugRecog">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRecogDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRecogDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugRecogDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Agg buff FortBites -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugFortBites">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugFortBitesDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugFortBitesDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugFortBitesDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+			</effect_group>
 		</item>
 		
 		<item name="superElixirMeleeMaster">
@@ -165,7 +298,7 @@
 			<property name="Material" value="Mglass"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,DonateFood"/>
 			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="SoundPickup" value="grandpas_learnin_grab"/>
 			<property name="SoundPlace" value="grandpas_learnin_place"/>
@@ -201,6 +334,43 @@
 					<requirement name="CVarCompare" cvar="$buffDrugFortBitesDuration" operation="GT" value="1263"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugFortBites"/>
 			</effect_group>	
+			
+			<effect_group name="Rescuer Set" tiered="false">
+				<requirement name="HasBuff" buff="buffRescuerSetBonus"/>
+					<!-- Add buff XP -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrunkGrandpasLearningElixir">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Add buff Skull Crushers -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugSkullCrushers">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSkullCrushersDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSkullCrushersDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugSkullCrushersDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Agg buff FortBites -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugFortBites">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugFortBitesDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugFortBitesDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugFortBitesDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+			</effect_group>
 		</item>
 		
 		<item name="superElixirMinerMaster">
@@ -211,7 +381,7 @@
 			<property name="Material" value="Mglass"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,DonateFood"/>
 			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="SoundPickup" value="grandpas_learnin_grab"/>
 			<property name="SoundPlace" value="grandpas_learnin_place"/>
@@ -247,6 +417,43 @@
 					<requirement name="CVarCompare" cvar="$buffCoffeeBSDuration" operation="GT" value="1263"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffBlackStrapCoffee"/>
 			</effect_group>	
+			
+			<effect_group name="Rescuer Set" tiered="false">
+				<requirement name="HasBuff" buff="buffRescuerSetBonus"/>
+					<!-- Add buff XP -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrunkGrandpasLearningElixir">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandpasLearningElixirDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffGrandpasLearningElixirDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Add buff Rock Busters -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffDrugRockBusters">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRockBustersDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRockBustersDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffDrugRockBustersDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<!-- Agg buff Strap Coffee -->
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="30" buff="buffProcessConsumables,buffBlackStrapCoffee">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeBSDuration" target="selfAOE" range="30" operation="add" value="423">
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeBSDuration" target="selfAOE" range="30" operation="set" value="1263">
+						<requirement name="CVarCompare" cvar="$buffCoffeeBSDuration" target="other" operation="GT" value="1263"/>
+						<requirement name="HasBuff" buff="buffGroupCheck"/>
+					</triggered_effect>
+			</effect_group>
 		</item>
 		
 	</append>

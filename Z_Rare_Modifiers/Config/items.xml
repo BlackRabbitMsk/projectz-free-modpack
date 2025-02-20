@@ -1,0 +1,43 @@
+<config>
+	
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,ImprovedParsing</set>
+	
+	<set xpath="/items/item[@name='vehicleGyrocopterPlaceable']/property[@name='Tags']/@value">vehicle,varmor,vengine,vfuel,vlight,canHaveCosmetic,GyroCharger</set>
+	
+	<append xpath="/items">
+		<item name="modSurgicalBladeSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modMeleeSerratedBlade"/>
+			<property name="CustomIconTint" value="59F5FF"/>
+			<property name="Unlocks" value="modSurgicalBlade"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modSurgicalBlade" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
+		<item name="NerdNotes">
+			<property name="Tags" value="workstationSkill"/>
+			<property name="CustomIcon" value="cntBookPile09"/>
+			<property name="TintColor" value="90,255,117"/>
+			<property name="CustomIconTint" value="5AFF75"/>
+			<property name="ItemTypeIcon" value="chemistry"/>
+			<property name="DescriptionKey" value="NerdNotesDesc"/>
+			<property name="SoundPickup" value="magazine_grab"/>
+			<property name="SoundPlace" value="magazine_place"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Group" value="RareMods"/>
+			<effect_group tiered="false">
+				<requirement name="!HoldingItemHasTags" tags="NerdNotes"/>
+					<passive_effect name="CraftingTime" operation="perc_add" value="-.150"/>
+					<display_value name="dCraftingTime" value="1"/>
+			</effect_group>
+		</item>
+		
+	</append>
+</config>

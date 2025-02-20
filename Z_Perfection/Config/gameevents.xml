@@ -1,0 +1,15 @@
+<config>
+		
+	<append xpath="/gameevents">
+				
+		<action_sequence name="action_1Skillpont">
+
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="1" />
+			</action>
+
+		</action_sequence>
+	
+	</append>
+	
+</config>

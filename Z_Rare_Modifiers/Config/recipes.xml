@@ -1,0 +1,269 @@
+<config>
+	
+	<append xpath="/recipes">
+		
+		<recipe name="modSurgicalBlade" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceExperimentalAlloys" count="10"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+		</recipe>
+		
+		<recipe name="modMotorBooster" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="smallEngine" count="5"/>
+			<ingredient name="ammoGasCan" count="1000"/>
+			<ingredient name="resourceElectricPartsImp" count="10"/>
+			<ingredient name="resourceMechanicalPartsImp" count="10"/>
+		</recipe>
+		
+		<recipe name="modReactorBooster" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="PortableReactor" count="1"/>
+			<ingredient name="carBattery" count="5"/>
+			<ingredient name="resourceElectricPartsImp" count="10"/>
+			<ingredient name="resourceMechanicalPartsImp" count="10"/>
+		</recipe>
+		
+		<recipe name="modIncreasedBattery" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="carBattery" count="10"/>
+			<ingredient name="resourceElectricPartsImp" count="5"/>
+		</recipe>
+		
+		<recipe name="modReactorElectric" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricPartsImp" count="5"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="30"/>
+		</recipe>
+		
+		<recipe name="modElongatedCore" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceUltraLightAlloys" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+		</recipe>
+		
+		<recipe name="modReinforcedParts" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="25"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+		</recipe>
+		
+		<recipe name="modEnhancedMechanisms" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="100"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="10"/>
+			<ingredient name="resourceMechanicalPartsImp" count="5"/>
+		</recipe>
+		
+		<recipe name="modFastMechanisms" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="100"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="10"/>
+			<ingredient name="resourceMechanicalPartsImp" count="5"/>
+		</recipe>
+		
+		<recipe name="modSpareBox" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceMechanicalPartsImp" count="5"/>
+		</recipe>
+		
+		<recipe name="modJetPack" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="smallEngine" count="2"/>
+			<ingredient name="ammoGasCan" count="500"/>
+			<ingredient name="resourceUltraLightAlloys" count="5"/>
+			<ingredient name="resourceElectricPartsImp" count="15"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+		</recipe>
+		
+		<recipe name="modLuckyMining" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceUltraLightAlloys" count="15"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="15"/>
+		</recipe>
+		
+		<!-- Vehicle Mods -->
+		<recipe name="modVehicleFuelSaverImp" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="modVehicleFuelSaver" count="1"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceUltraLightAlloys" count="15"/>
+		</recipe>
+		
+		<recipe name="modVehicleReserveFuelTankImp" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="modVehicleReserveFuelTank" count="1"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceUltraLightAlloys" count="15"/>
+		</recipe>
+		
+		<recipe name="modVehicleArmorImp" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="modVehicleArmor" count="1"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="30"/>
+			<ingredient name="resourceForgedSteel" count="200"/>
+		</recipe>
+		
+		<recipe name="modVehicleSuperChargerImp" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="modVehicleSuperCharger" count="1"/>
+			<ingredient name="resourceElectricPartsImp" count="10"/>
+			<ingredient name="resourceMechanicalPartsImp" count="10"/>
+		</recipe>
+		
+		<recipe name="modReactorAcceleratorExp" count="1" craft_time="300" tags="learnable,workbenchCrafting">
+			<ingredient name="modVehicleSuperChargerUnique" count="1"/>
+			<ingredient name="PortableReactor" count="1"/>
+			<ingredient name="resourceElectricPartsImp" count="5"/>
+			<ingredient name="resourceMechanicalPartsImp" count="5"/>
+		</recipe>
+		
+		<!-- Mods -->
+		<recipe name="modRareArmorARResistHelmet" count="1" craft_time="90" tags="learnable,workbenchCrafting" craft_tool="toolImprovedTools">
+			<ingredient name="modArmorARResistHelmet" count="1"/>
+			<ingredient name="modArmorPlatingReinforced" count="1"/>
+			<ingredient name="modArmorInsulatedLiner" count="1"/>
+			<ingredient name="modArmorCoolingMesh" count="1"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modRareArmorARResistOutfit" count="1" craft_time="90" tags="learnable,workbenchCrafting" craft_tool="toolImprovedTools">
+			<ingredient name="modArmorAROutfit" count="1"/>
+			<ingredient name="modArmorPlatingReinforced" count="1"/>
+			<ingredient name="modArmorInsulatedLiner" count="1"/>
+			<ingredient name="modArmorCoolingMesh" count="1"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modRareArmorARResistGloves" count="1" craft_time="90" tags="learnable,workbenchCrafting" craft_tool="toolImprovedTools">
+			<ingredient name="modArmorARGloves" count="1"/>
+			<ingredient name="modArmorPlatingReinforced" count="1"/>
+			<ingredient name="modArmorInsulatedLiner" count="1"/>
+			<ingredient name="modArmorCoolingMesh" count="1"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modRareArmorARResistBoots" count="1" craft_time="90" tags="learnable,workbenchCrafting" craft_tool="toolImprovedTools">
+			<ingredient name="modArmorARBoots" count="1"/>
+			<ingredient name="modArmorPlatingReinforced" count="1"/>
+			<ingredient name="modArmorInsulatedLiner" count="1"/>
+			<ingredient name="modArmorCoolingMesh" count="1"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modArmorLSSHelmet" count="1" craft_time="90" tags="learnable,workbenchCrafting">
+			<ingredient name="modArmorWaterPurifier" count="1"/>
+			<ingredient name="modWetBandage" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modArmorLSSOutfit" count="1" craft_time="90" tags="learnable,workbenchCrafting">
+			<ingredient name="medicalFirstAidKit" count="25"/>
+			<ingredient name="resourceUltraLightAlloys" count="15"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modArmorLSSGloves" count="1" craft_time="90" tags="learnable,workbenchCrafting">
+			<ingredient name="casinoCoin" count="10000"/>
+			<ingredient name="drinkJarPureMineralWater" count="25"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modArmorLSSBoots" count="1" craft_time="90" tags="learnable,workbenchCrafting">
+			<ingredient name="modArmorImpactBracing" count="1"/>
+			<ingredient name="resourceSpring" count="30"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="15"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+		</recipe>
+		
+		<recipe name="modArmorHeadset" count="1" craft_time="90" tags="learnable,workbenchCrafting">
+			<ingredient name="modArmorAdvancedMuffledConnectors" count="1"/>
+			<ingredient name="modArmorCustomizedFittings" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+		</recipe>
+		
+		<!-- Weapon mods -->
+		<recipe name="modGunDrumMagazineExtenderImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunDrumMagazineExtender" count="1"/>
+			<ingredient name="resourceMechanicalPartsImp" count="10"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="20"/>
+			<ingredient name="resourceOil" count="25"/>
+		</recipe>
+		
+		<recipe name="modGunMagazineExtenderImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunMagazineExtender" count="1"/>
+			<ingredient name="resourceMechanicalPartsImp" count="5"/>
+			<ingredient name="resourceUltraLightAlloys" count="40"/>
+			<ingredient name="resourceGlue" count="30"/>
+		</recipe>
+		
+		<recipe name="modGunMeleeRadRemoverImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunMeleeRadRemover" count="1"/>
+			<ingredient name="resourcePreciousMetals" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="250"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+		</recipe>
+		
+		<recipe name="modGunCrippleEmImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunCrippleEm" count="1"/>
+			<ingredient name="resourceMechanicalPartsImp" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="150"/>
+			<ingredient name="resourceSpring" count="10"/>
+		</recipe>
+		
+		<recipe name="modGunRiflePartsImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="25"/>
+			<ingredient name="resourceExperimentalAlloys" count="12"/>
+			<ingredient name="resourceUltraLightAlloys" count="6"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="6"/>
+		</recipe>
+		
+		<recipe name="modGunPistolPartsImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="gunHandgunT1PistolParts" count="25"/>
+			<ingredient name="resourceExperimentalAlloys" count="12"/>
+			<ingredient name="resourceUltraLightAlloys" count="6"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="6"/>
+		</recipe>
+		
+		<recipe name="modGunM60PartsImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="gunMGT1AK47Parts" count="25"/>
+			<ingredient name="resourceExperimentalAlloys" count="12"/>
+			<ingredient name="resourceUltraLightAlloys" count="6"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="6"/>
+		</recipe>
+		
+		<recipe name="modGunShotgunPartsImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="25"/>
+			<ingredient name="resourceExperimentalAlloys" count="12"/>
+			<ingredient name="resourceUltraLightAlloys" count="6"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="6"/>
+		</recipe>
+		
+		<recipe name="modGunForegripImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunForegrip" count="1"/>
+			<ingredient name="resourceUltraLightAlloys" count="25"/>
+			<ingredient name="resourceDuctTape" count="50"/>
+		</recipe>
+		
+		<recipe name="modGunBipodImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunBipod" count="1"/>
+			<ingredient name="resourceUltraStrengthAlloys" count="25"/>
+			<ingredient name="resourceDuctTape" count="50"/>
+		</recipe>
+		
+		<recipe name="modGunSoundSuppressorSilencerImp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="modGunSoundSuppressorSilencer" count="1"/>
+			<ingredient name="resourceUltraLightAlloys" count="25"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+		</recipe>
+		
+		<recipe name="modGunBoosterExp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricPartsImp" count="5"/>
+			<ingredient name="resourceMechanicalPartsImp" count="15"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+			<ingredient name="resourceExperimentalAlloys" count="10"/>
+		</recipe>
+		
+		<recipe name="modGunDamageAccumulatorExp" count="1" craft_time="180" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricPartsImp" count="15"/>
+			<ingredient name="resourceMechanicalPartsImp" count="5"/>
+			<ingredient name="resourcePreciousMetals" count="5"/>
+			<ingredient name="resourceExperimentalAlloys" count="10"/>
+		</recipe>
+		
+	</append>
+	
+</config>

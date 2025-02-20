@@ -1,0 +1,291 @@
+<config>
+	
+	<append xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group">
+				
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LSSCount" operation="set" value="0"/>
+		<!-- Calculation LSS count -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LSSCount" operation="add" value="@$armorHeadLSS"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LSSCount" operation="add" value="@$armorChestLSS"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LSSCount" operation="add" value="@$armorHandsLSS"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LSSCount" operation="add" value="@$armorFeetLSS"/>
+		<!-- Add or Remove LSS Buff -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLSSset">
+			<requirement name="CVarCompare" cvar="$LSSCount" operation="Equals" value="4"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLSSset">
+			<requirement name="CVarCompare" cvar="$LSSCount" operation="NotEquals" value="4"/>
+		</triggered_effect>
+	
+	</append>
+	
+	<append xpath="/buffs">
+		
+		<buff name="buffJetPackReload" name_key="buffJetPackReloadName" tooltip_key="buffJetPackReloadTooltip" description_key="buffJetPackReloadIncDesc" icon="ui_game_symbol_parkour" icon_color="215,140,55">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value=".buffJetPackReloadDisplay"/>
+			<display_value_format value="time"/>
+			
+			<effect_group tiered="false">
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffJetPackReloadDuration" operation="set" value="7"/> -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffJetPackReloadDuration" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffJetPackReloadDisplay" operation="set" value="@$buffJetPackReloadDuration"/>		
+			</effect_group>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffJetPackReload">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffJetPackBoost">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="LTE" value="0"/>
+					<requirement name="CVarCompare" cvar="$JetPackStatus" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffJetPackBoost">
+					<requirement name="CVarCompare" cvar="$buffJetPackReloadDuration" operation="LTE" value="0"/>
+					<requirement name="CVarCompare" cvar="$JetPackStatus" operation="Equals" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffJetPackNormal" name_key="buffJetPackNormalName" tooltip_key="buffJetPackNormalTooltip" description_key="buffJetPackNormalIncDesc" icon="ui_game_symbol_parkour" icon_color="255,255,255">
+			<stack_type value="ignore"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffJetPackBoost"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="switch_up" play_in_head="true"/>
+				
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.3" tags="jumping"/>
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="buffJetPackBoost" name_key="buffJetPackBoostName" tooltip_key="buffJetPackBoostTooltip" description_key="buffJetPackBoostIncDesc" icon="ui_game_symbol_parkour" icon_color="60,180,70" icon_blink="true">
+			<stack_type value="ignore"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffJetPackNormal"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="switch_up" play_in_head="true"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="3">
+					<requirement name="!HasBuff" buff="buffJetPackReload"/>
+				</passive_effect>
+				<triggered_effect trigger="onSelfJump" action="RemoveBuff" buff="buffJetPackBoost"/>
+				<triggered_effect trigger="onSelfJump" action="PlaySound" sound="vehicle_turbo" play_in_head="true"/>
+				<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffJetPackReload"/>
+
+				<triggered_effect trigger="onSelfJump" action="ModifyCVar" cvar="$buffJetPackReloadDuration" operation="set" value="7"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffMotorBooster" name_key="buffMotorBoosterName" tooltip_key="buffMotorBoosterTooltip" description_key="buffMotorBoosterIncDesc" icon="ui_game_symbol_electric_max_power" icon_color="70,90,255" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="vehicle_turbo" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="switch_up" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="PlaySound" sound="suv_turbo" play_in_head="true"/> <!-- suv_turbo -->
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="3"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="-.7"/>	
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.5" tags="Harvesting"/>				
+			</effect_group>
+			
+		</buff>
+		
+		<buff name="bufftreatedLSS" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="add" value="1"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffLSSset" name_key="buffLSSsetName" tooltip_key="buffLSSsetTooltip" description_key="buffLSSsetIncDesc" icon="ui_game_symbol_cardio" icon_color="61,162,255">
+			<stack_type value="ignore"/>
+			
+			<effect_group name="Health">
+				<passive_effect name="HealthMax" operation="base_add" value="50"/>
+				<passive_effect name="StaminaMax" operation="base_add" value="50"/>
+				
+				<passive_effect name="FoodMax" operation="base_add" value="50"/>
+				<passive_effect name="WaterMax" operation="base_add" value="50"/>
+			</effect_group>
+			
+			<effect_group name="CO2">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StrangulationResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$StrangulationStatus" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$StrangulationResist" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffBandolier" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3"/>
+			</effect_group>
+		</buff>
+		
+		<!-- *** buffAllRegenBlock1 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunMeleeRadRemoverImp -->
+		<!-- Temporarily disables radiated entities buffRadiatedRegen abilities -->
+		<buff name="buffAllRegenBlock1" name_key="buffAllRegenBlockName" icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+		</buff>
+		
+		<!-- *** buffAllRegenBlock2 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunMeleeRadRemoverImp -->
+		<!-- Temporarily disables radiated entities buffRadiatedRegen abilities -->
+		<buff name="buffAllRegenBlock2" name_key="buffAllRegenBlockName" icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="90"/>
+		</buff>
+		
+		<!-- *** buffReducedDamageResistance1 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunCrippleEmImp -->
+		<buff name="buffReducedDamageResistance1" name_key="buffReducedDamageResistance1Name" icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<effect_group>
+				<requirement name="!HasBuff" buff="buffReducedDamageResistance2"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" value="-.5" />
+					<passive_effect name="EntityDamage" operation="perc_add" value="-.1"/>
+			</effect_group>
+		</buff>
+		
+		<!-- *** buffReducedDamageResistance2 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunCrippleEmUnique -->
+		<buff name="buffReducedDamageResistance2" name_key="buffReducedDamageResistance1Name" icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="7"/>
+			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="perc_add" value="-.15" />
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.3"/>
+			</effect_group>
+		</buff>
+		
+		<!-- *** buffGunBooster1 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunBoosterExp -->
+		<buff name="buffGunBooster1" name_key="buffGunBooster1Name" tooltip_key="buffGunBooster1Tooltip" description_key="buffGunBooster1Desc" icon="ui_game_symbol_block_repair" icon_color="255,102,102" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="vehicle_turbo" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="switch_up" play_in_head="true"/>
+
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="3.5"/>			
+			</effect_group>
+			
+		</buff>
+		
+		<!-- *** buffGunBooster2 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunBoosterUnique -->
+		<buff name="buffGunBooster2" name_key="buffGunBooster2Name" tooltip_key="buffGunBooster2Tooltip" description_key="buffGunBooster2Desc" icon="ui_game_symbol_block_repair" icon_color="255,184,0" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="vehicle_turbo" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="switch_up" play_in_head="true"/>
+
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="7"/>			
+			</effect_group>
+		</buff>
+		
+		<!-- *** buffGunDAc1 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunDamageAccumulatorExp -->
+		<buff name="buffGunDAc1" name_key="buffGunDAc1Name" tooltip_key="buffGunDAc1Tooltip" description_key="buffGunDAc1Desc" icon="ui_game_symbol_marksmanship" icon_color="255,102,102">
+			<stack_type value="ignore"/>
+			<display_value value=".modDAcDisplay"/>
+			<display_value_format value="based"/>
+			<update_rate value=".2"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$modDAcStatus" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".modDAcDisplay" operation="set" value="@$modDAcStatus"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$modDAcStatus" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar=".modDAcDisplay" operation="set" value="@$modDAcStatus"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffGunDAcShot1">
+					<requirement name="CVarCompare" cvar="$modDAcStatus" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGunDAc1">
+					<requirement name="CVarCompare" cvar="$modDAcStatus" operation="GTE" value="5"/>
+				</triggered_effect>	
+			</effect_group>
+		
+		</buff>
+		
+		<!-- *** buffGunDAcShot1 -->
+		<!-- TRIGGERED_BY: buff = buffGunDAc1 -->
+		<buff name="buffGunDAcShot1" name_key="buffGunDAcShot1Name" tooltip_key="buffGunDAcShot1Tooltip" description_key="buffGunDAcShot1Desc" icon="ui_game_symbol_marksmanship" icon_color="255,102,102" icon_blink="true">
+			<stack_type value="ignore"/>
+			<update_rate value=".2"/>
+			
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="4"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$modDAcStatusShot" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$modDAcStatusShot" operation="subtract" value="1"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffGunDAc1">
+					<requirement name="CVarCompare" cvar="$modDAcStatusShot" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGunDAcShot1">
+					<requirement name="CVarCompare" cvar="$modDAcStatusShot" operation="LTE" value="0"/>
+				</triggered_effect>	
+			</effect_group>
+
+		</buff>
+		
+		<!-- *** buffGunDAc2 -->
+		<!-- TRIGGERED_BY: item_modifiers = modGunDamageAccumulatorUnique -->
+		<buff name="buffGunDAc2" name_key="buffGunDAc2Name" tooltip_key="buffGunDAc2Tooltip" description_key="buffGunDAc2Desc" icon="ui_game_symbol_marksmanship" icon_color="255,184,0">
+			<stack_type value="ignore"/>
+			<display_value value=".modDAcDisplay2"/>
+			<display_value_format value="based"/>
+			<update_rate value=".2"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$modDAcStatus2" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".modDAcDisplay2" operation="set" value="@$modDAcStatus2"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$modDAcStatus2" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar=".modDAcDisplay2" operation="set" value="@$modDAcStatus2"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffGunDAcShot2">
+					<requirement name="CVarCompare" cvar="$modDAcStatus2" operation="GTE" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGunDAc2">
+					<requirement name="CVarCompare" cvar="$modDAcStatus2" operation="GTE" value="3"/>
+				</triggered_effect>	
+			</effect_group>
+		
+		</buff>
+		
+		<!-- *** buffGunDAcShot2 -->
+		<!-- TRIGGERED_BY: buff = buffGunDAc2 -->
+		<buff name="buffGunDAcShot2" name_key="buffGunDAcShot2Name" tooltip_key="buffGunDAcShot2Tooltip" description_key="buffGunDAcShot2Desc" icon="ui_game_symbol_marksmanship" icon_color="255,184,0" icon_blink="true">
+			<stack_type value="ignore"/>
+			<update_rate value=".2"/>
+			
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="6"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$modDAcStatusShot2" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$modDAcStatusShot2" operation="subtract" value="1"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffGunDAc2">
+					<requirement name="CVarCompare" cvar="$modDAcStatusShot2" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGunDAcShot2">
+					<requirement name="CVarCompare" cvar="$modDAcStatusShot2" operation="LTE" value="0"/>
+				</triggered_effect>	
+			</effect_group>
+
+		</buff>
+		
+	</append>
+		
+</config>

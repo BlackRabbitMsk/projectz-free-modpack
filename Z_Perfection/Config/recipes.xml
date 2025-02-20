@@ -1,0 +1,15 @@
+<config>
+
+	<insertAfter xpath="/recipes/recipe[@name='armorParts']">
+		<recipe name="MagazineNotes" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+	</insertAfter>
+	
+	<append xpath="/recipes">
+				
+		<recipe name="Magazine_AddSkillPoint" craft_time="60" count="1" >
+			<ingredient name="MagazineNotes" count="150"/>
+		</recipe>
+		
+	</append>
+	
+</config>

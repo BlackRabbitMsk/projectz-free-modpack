@@ -1,0 +1,51 @@
+<config>
+	
+	<insertAfter xpath="/items/item[(contains(@name, 'Magazine'))]/property[@name='Extends']">
+		<property name="Material" value="MMagazineNotes"/>
+		<property name="Weight" value="1"/>
+		<property name="ScrapTimeOverride" value="4.0"/>
+	</insertAfter>
+	
+	<append xpath="/items">
+	
+		<item name="MagazineNotes">
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="MagazineNotesDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MMagazineNotes"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="250"/> <!-- STK resource -->
+			<property name="Group" value="Resources"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="NoScrapping" value="true" />
+		</item>
+		
+		<item name="Magazine_AddSkillPoint">
+			<property name="CustomIcon" value="cntBookPile13"/>
+			<property name="CustomIconTint" value="FFB800"/>
+			<property name="DescriptionKey" value="Magazine_AddSkillPointDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Weight" value="5"/>
+			<property name="Group" value="Books"/>
+			<property name="EconomicValue" value="7500"/>
+			<property name="Stacknumber" value="25"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_skillbook"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_1Skillpont" allow_client_call="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2500"/>
+			</effect_group>
+		</item>
+		
+	</append>
+	
+</config>

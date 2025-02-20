@@ -1,0 +1,18 @@
+<config>
+	
+	<append xpath="/buffs">
+	
+       <buff name="buffStartBleeding" name_key="buffStartBleedingName" icon="ui_game_symbol_critical" icon_color="255,20,0" icon_blink="true">
+			<damage_type value="bloodloss"/>
+			<duration value="5"/>
+            <stack_type value="ignore"/>
+			
+			<effect_group>	
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="5"/>
+            </effect_group>
+			
+       </buff>
+		
+    </append>
+	
+</config>

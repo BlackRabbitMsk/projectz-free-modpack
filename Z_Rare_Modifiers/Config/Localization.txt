@@ -1,0 +1,228 @@
+Key,Source,Context,Changes,English,Russian
+
+NerdNotes,items,Books,,Nerd Notes,Записки ботаника
+NerdNotesDesc,items,Resources,,"This is a unique journal that contains a note on the accelerated creation of any items. Holding this item in your hands while crafting will speed up the creation of any items in any station by 15%","Это уникальный журнал который содержит заметка по ускоренному созданию любых предметов. Удерживая этот предмет в руках при крафте вы ускорите создание любых предметов в любой станции на 15%"
+
+modSurgicalBladeSchematic,item_modifiers,Mod,,Surgical Blade Mod Schematic,Схема модификации «Хирургическое лезвие»
+
+modRareArmorARResistHelmet,item_modifiers,mod,,Defender-Z Mod. [DECEA3]Head[-],Мод Защитник-Z. [DECEA3]Голова[-]
+modRareArmorARResistHelmetDesc,item_modifiers,mod,,"Experimental protective armor coating. Protects your head from most negative effects.\nPhysical protection [DECEA3]+2[-]\nTemperature protection [DECEA3]+7[-]\nExplosive protection [DECEA3]+1[-]\nRadiation damage [DECEA3]-10%[-]\nIncreases the speed of recovery from radiation\n\nConsidered for the RadProtect set\n\nFull set of protection mods: [DECEA3]Provides resistance to 2 active radiation effects[-]","Экспериментальное защитное покрытие брони. Спасает вашу голову от большинства негативных воздействий.\nФизическая защита [DECEA3]+2[-]\nЗащита от температур [DECEA3]+7[-]\nЗащита от взрывов [DECEA3]+1[-]\nУрону от радиации [DECEA3]-10%[-]\nУвеличивает скорость восстановления от облучения\n\nУчитывается для набора РадПротект\n\nПолный набор модов защиты: [DECEA3]Дает сопротивление к 2 эффектам активной радиации[-]"
+modRareArmorARResistOutfit,item_modifiers,mod,,Defender-Z Mod. [DECEA3]Chest[-],Мод Защитник-Z. [DECEA3]Тело[-]
+modRareArmorARResistOutfitDesc,item_modifiers,mod,,"Experimental protective armor coating. Protects your body from most negative effects.\nPhysical protection [DECEA3]+2[-]\nTemperature protection [DECEA3]+7[-]\nExplosive protection [DECEA3]+1[-]\nRadiation damage [DECEA3]-10%[-]\nIncreases the speed of recovery from radiation\n\nConsidered for the RadProtect set\n\nFull set of protection mods: [DECEA3]Provides resistance to 2 active radiation effects[-]","Экспериментальное защитное покрытие брони. Спасает вашу тело от большинства негативных воздействий.\nФизическая защита [DECEA3]+2[-]\nЗащита от температур [DECEA3]+7[-]\nЗащита от взрывов [DECEA3]+1[-]\nУрону от радиации [DECEA3]-10%[-]\nУвеличивает скорость восстановления от облучения\n\nУчитывается для набора РадПротект\n\nПолный набор модов защиты: [DECEA3]Дает сопротивление к 2 эффектам активной радиации[-]"
+modRareArmorARResistGloves,item_modifiers,mod,,Defender-Z Mod. [DECEA3]Hands[-],Мод Защитник-Z. [DECEA3]Руки[-]
+modRareArmorARResistGlovesDesc,item_modifiers,mod,,"Experimental protective armor coating. Protects your hands from most negative effects.\nPhysical protection [DECEA3]+2[-]\nTemperature protection [DECEA3]+7[-]\nExplosive protection [DECEA3]+1[-]\nRadiation damage [DECEA3]-10%[-]\nIncreases the speed of recovery from radiation\n\nConsidered for the RadProtect set\n\nFull set of protection mods: [DECEA3]Provides resistance to 2 active radiation effects[-]","Экспериментальное защитное покрытие брони. Спасает ваши руки от большинства негативных воздействий.\nФизическая защита [DECEA3]+2[-]\nЗащита от температур [DECEA3]+7[-]\nЗащита от взрывов [DECEA3]+1[-]\nУрону от радиации [DECEA3]-10%[-]\nУвеличивает скорость восстановления от облучения\n\nУчитывается для набора РадПротект\n\nПолный набор модов защиты: [DECEA3]Дает сопротивление к 2 эффектам активной радиации[-]"
+modRareArmorARResistBoots,item_modifiers,mod,,Defender-Z Mod. [DECEA3]Feet[-],Мод Защитник-Z. [DECEA3]Ноги[-]
+modRareArmorARResistBootsDesc,item_modifiers,mod,,"Experimental protective armor coating. Protects your feet from most negative effects.\nPhysical protection [DECEA3]+2[-]\nTemperature protection [DECEA3]+7[-]\nExplosive protection [DECEA3]+1[-]\nRadiation damage [DECEA3]-10%[-]\nIncreases the speed of recovery from radiation\n\nConsidered for the RadProtect set\n\nFull set of protection mods: [DECEA3]Provides resistance to 2 active radiation effects[-]","Экспериментальное защитное покрытие брони. Спасает ваши ноги от большинства негативных воздействий.\nФизическая защита [DECEA3]+2[-]\nЗащита от температур [DECEA3]+7[-]\nЗащита от взрывов [DECEA3]+1[-]\nУрону от радиации [DECEA3]-10%[-]\nУвеличивает скорость восстановления от облучения\n\nУчитывается для набора РадПротект\n\nПолный набор модов защиты: [DECEA3]Дает сопротивление к 2 эффектам активной радиации[-]"
+modArmorLSSHelmet,item_modifiers,mod,,LSS-1 Mod. [DECEA3]Head[-],Мод LSS-1. [DECEA3]Голова[-]
+modArmorLSSHelmetDesc,item_modifiers,mod,,"Experimental life support system for head protection. Increases food and water reserves by 50. You can drink turbid water without fear of poisoning.\n\nFull set of life support mods: [DECEA3]Increases the values of basic stats (health, stamina, food and water) by 50[-]","Экспериментальная система жизнеобеспечания для защиты головы. Увеличивает запас еды и воды на 50. Вы можете употреблять мутную воду не боясь отравления.\n\nПолный набор модов жизнеобеспечания: [DECEA3]Увеличивает значения базовых показателей (здоровье, выносливость, еда и вода) на 50[-]"
+modArmorLSSOutfit,item_modifiers,mod,,LSS-1 Mod. [DECEA3]Chest[-],Мод LSS-1. [DECEA3]Тело[-]
+modArmorLSSOutfitDesc,item_modifiers,mod,,"Experimental life support system for body protection. Increases health by 50. Healing speed is increased by 2 times.\n\nFull set of life support mods: [DECEA3]Increases the values of basic stats (health, stamina, food and water) by 50[-]","Экспериментальная система жизнеобеспечания для защиты тела. Увеличивает запас здоровья на 50. Скорость лечения увеличена в 2 раза.\n\nПолный набор модов жизнеобеспечания: [DECEA3]Увеличивает значения базовых показателей (здоровье, выносливость, еда и вода) на 50[-]"
+modArmorLSSGloves,item_modifiers,mod,,LSS-1 Mod. [DECEA3]Hands[-],Мод LSS-1. [DECEA3]Руки[-]
+modArmorLSSGlovesDesc,item_modifiers,mod,,"Experimental life support system for hands protection. Reduces food and water consumption by 25%\n\nFull set of life support mods: [DECEA3]Increases the values of basic stats (health, stamina, food and water) by 50[-]","Экспериментальная система жизнеобеспечания для защиты рук. Уменьшает расход еды и воды на 25%.\n\nПолный набор модов жизнеобеспечания: [DECEA3]Увеличивает значения базовых показателей (здоровье, выносливость, еда и вода) на 50[-]"
+modArmorLSSBoots,item_modifiers,mod,,LSS-1 Mod. [DECEA3]Feet[-],Мод LSS-1. [DECEA3]Ноги[-]
+modArmorLSSBootsDesc,item_modifiers,mod,,"Experimental life support system for foot protection. Reduces damage when falling\n\nFull set of life support mods: [DECEA3]Increases the values of basic stats (health, stamina, food and water) by 50[-]","Экспериментальная система жизнеобеспечания для защиты ног. Уменьшает урон при падении.\n\nПолный набор модов жизнеобеспечания: [DECEA3]Увеличивает значения базовых показателей (здоровье, выносливость, еда и вода) на 50[-]"
+
+modArmorHeadset,item_modifiers,mod,,Armor Headset Mod. [DECEA3]Improved[-],Мод Гарнитура брони. [DECEA3]Улучшенная[-]
+modArmorHeadsetDesc,item_modifiers,mod,,"A quality headset allows you to fit any armor almost perfectly.\n\nSignificantly reduces stamina consumption, mobility penalty, and noise when worn","Качественная гарнитура позволяет подогнать любую броню почти идеально.\n\nЗначительно снижает расход выносливости, штраф мобильности и шум при ношении"
+
+modBandolierImp,item_modifiers,mod,,Bandolier Mod. [DECEA3]Improved[-],Мод Патронтаж. [DECEA3]Улучшенный[-]
+modBandolierImpDesc,item_modifiers,mod,,"This modifier increases reload speed by 30% and reduces overload penalty by 6\n\nThe mod cannot be crafted by yourself but can be found in the open world","Этот модификатор увеличивает скорость перезарядки на 30% и уменьшает штраф от перегрузки на 6\n\nМодификацию нельзя создать самому но можно найти в открытом мире"
+
+modSmartGlass,item_modifiers,mod,,[DECEA3]Improved[-] Smart Glass Mod,Мод «Умные очки» [DECEA3]Улучшенный[-]
+modSmartGlassDesc,item_modifiers,mod,,"This AI-powered headgear mod increases the speed of learning and improves the ability to find valuable items and hidden treasures. New firmware allows you to increase the modification bonus\n\nThe modification cannot be crafted by yourself, but can be found in the open world","Этот модификатор головного убора, усиленный ИИ, повышает скорость изучения и улучшает способность поиска ценных предметов и спрятанных сокровищ. Новая прошивка позволяет увеличить бонус модификации\n\nМодификацию нельзя создать самому но можно найти в открытом мире"
+
+modOkGoogle,item_modifiers,mod,,[FFB800]Unique[-] Ok Google Mod ,Мод «Окей Гугл» [FFB800]Уникальный[-]
+modOkGoogleDesc,item_modifiers,mod,,"This AI-enhanced headgear mod increases learning speed and improves the ability to find valuable items and hidden treasures. This item can also be linked to the outside world to sync. If it works, don't break it\n\nAn extremely rare mod that can only be found in the open world.","Этот модификатор головного убора, усиленный ИИ, повышает скорость изучения и улучшает способность поиска ценных предметов и спрятанных сокровищ. Эта вещь еще может связываться для синхронизации с внешним миром. Лучше не ломать то что работает\n\nКрайне редкая модификация которую можно найти только в открытом мире."
+
+modMotorBooster,item_modifiers,mod,,Motor tool booster Mod,Мод Бустер моторных инструментов 
+modMotorBoosterDesc,item_modifiers,mod,,"When installed in a motor tool, it will allow you to activate the boost mode.\nActive mode increases the [DECEA3]work speed by 2 times[-].\nAt the same time, the tool breakage rate is increased by [FFB800]200%[-]. Also, the amount of resources mined is reduced by [FFB800]50%[-]","При установке в моторный инструмент, позволят активировать буст режим.\nАктивный режим увеличивает [DECEA3]скорость работа в 2 раза[-].\nПри этом скорость поломки инструмента увеличена на [FFB800]200%[-]. Также количество добываемых ресурсов уменьшено на [FFB800]50%[-]"
+
+modLuckyMining,item_modifiers,mod,,Lucky Mining Mod,Мод «Удачная добыча» 
+modLuckyMiningDesc,item_modifiers,mod,,"When installed in a motor tool, increases the amount of precious resources mined by [DECEA3]2 times[-]","При установке в моторный инструмент, увеличивает количество добываемых драгоценных ресурсов в [DECEA3]2 раза[-]"
+
+modLuckyMiningUnique,item_modifiers,mod,,[FFB800]Unique[-] Lucky Mining Mod,Мод «Удачная добыча» [FFB800]Уникальный[-]
+modLuckyMiningUniqueDesc,item_modifiers,mod,,"When installed in a motor tool, increases the amount of precious resources mined by [DECEA3]3 times[-]","При установке в моторный инструмент, увеличивает количество добываемых драгоценных ресурсов в [DECEA3]3 раза[-]"
+
+modReactorBooster,item_modifiers,mod,,Reactor tool booster Mod,Мод Бустер реакторных инструментов
+modReactorBoosterDesc,item_modifiers,mod,,"When installed in a reactor tool, it will activate the boost mode.\nActive mode increases [DECEA3]work speed by 2 times[-].\nAt the same time, the tool breakage rate is increased by [FFB800]200%[-]. Also, the amount of resources mined is reduced by [FFB800]50%[-]","При установке в реакторный инструмент, позволят активировать буст режим.\nАктивный режим увеличивает [DECEA3]скорость работа в 2 раза[-].\nПри этом скорость поломки инструмента увеличена на [FFB800]200%[-]. Также количество добываемых ресурсов уменьшено на [FFB800]50%[-]"
+
+modElongatedCore,item_modifiers,mod,,Elongated Core Mod,Мод Удлиненная серцевина
+modElongatedCoreDesc,item_modifiers,mod,,"Increases mining radius by [FFB800]1.5[-] and resource yield by [FFB800]20%[-].\n\n[DECEA3]Installed in a auger or chainsaw[-]","Увеличивает радиус добычи на [FFB800]1,5[-] и количество ресурсов на [FFB800]20%[-].\n\n[DECEA3]Устанавливается в бур или бензопилу[-]"
+
+modReinforcedParts,item_modifiers,mod,,Reinforced parts Mod,Мод Усиленные части
+modReinforcedPartsDesc,item_modifiers,mod,,"Increases damage to all types of surfaces by [FFB800]15%[-].\n\n[DECEA3]Installs in a drill or chainsaw[-]","Увеличивает урон по всем видам поверхностей на [FFB800]15%[-].\n\n[DECEA3]Устанавливается в бур или бензопилу[-]"
+
+modIncreasedBattery,item_modifiers,mod,,Increased Battery Mod,Мод Увеличенная батарея
+modIncreasedBatteryDesc,item_modifiers,mod,,"Battery charge size increased by [FFB800]100%[-]","Размер заряда батареи увеличен на [FFB800]100%[-]"
+
+modReactorElectric,item_modifiers,mod,,Advanced Electronics Mod,Мод Продвинутая электроника
+modReactorElectricDesc,item_modifiers,mod,,"Charge drain rate reduced by [FFB800]30%[-]","Скорость расхода заряда уменьшена на [FFB800]30%[-]"
+
+modEnhancedMechanisms,item_modifiers,mod,,Enhanced Mechanisms Mod,Мод Улучшенные механизмы
+modEnhancedMechanismsDesc,item_modifiers,mod,,"Increases block damage when disassembled by [FFB800]20%[-]","Увеличивает урон по блоку при разборе на [FFB800]20%[-]"
+
+modFastMechanisms,item_modifiers,mod,,Fast Mechanisms Mod,Мод Быстрые механизмы
+modFastMechanismsDesc,item_modifiers,mod,,"Increases the speed of the impact driver by [FFB800]30%[-]","Увеличивает скорость работы шуруповерта на [FFB800]30%[-]"
+
+modSpareBox,item_modifiers,mod,,Spare Bolt Box Mod,Мод Запасная коробка для болтов
+modSpareBoxDesc,item_modifiers,mod,,"Increases the amount of resources when disassembled by [FFB800]20%[-]","Увеличивает количество ресурсов при разборе на [FFB800]20%[-]"
+
+modSpareBox,item_modifiers,mod,,Spare Bolt Box Mod,Мод Запасная коробка для болтов
+modSpareBoxDesc,item_modifiers,mod,,"Increases the amount of resources when disassembled by [FFB800]20%[-]","Увеличивает количество ресурсов при разборе на [FFB800]20%[-]"
+
+modJetPack,item_modifiers,mod,,JetPack Mod,Мод Реактивный ранец
+modJetPackDesc,item_modifiers,mod,,"Allows you to perform powerful jumps with a small cooldown. When disabled, reduces stamina consumption when jumping by [FFB800]30%[-]\n\nModifies the armor chest","Дает возможность совершать усиленные прыжки с небольшой перезарядкой. В выключенном режиме уменьшает расход выносливости при прыжках на [FFB800]30%[-]\n\nМодифицирует корпус брони"
+
+modSurgicalBlade,item_modifiers,mod,,Surgical Blade Mod,Мод «Хирургическое лезвие»
+modSurgicalBladeDesc,item_modifiers,mod,,"The ultra-strong surgical blade stays sharp significantly longer. Resource yield from butchering animal carcasses is increased by [DECEA3]20%[-]. Allows you to collect [5AFF75]Mutation Samples[-] from butchering radioactive and elite zombies, as well as bosses and minibosses\n\n[DECEA3]The Meat Feast enhancement skill also increases the number of samples collected[-]","Сверхпрочное хирургическое лезвие значительно дольше остается острым. Добыча ресурсов при разделке туш животных увеличена на [DECEA3]20%[-]. Дает возможность собирать [5AFF75]Образцы мутаций[-] разделывая туши радиоактивных и элитных зомби, а также боссов и минибоссов\n\n[DECEA3]Навык совершенствования Мясной пир также увеличивает количество собираемых образцов[-]"
+
+modSurgicalBladeUnique,item_modifiers,mod,,[FFB800]Unique[-] Surgical Blade Mod,Мод «Хирургическое лезвие» [FFB800]Уникальное[-]
+modSurgicalBladeUniqueDesc,item_modifiers,mod,,"The ultra-strong surgical blade stays sharp significantly longer. Resource yield from butchering animal carcasses is increased by [DECEA3]40%[-]. Allows you to collect [5AFF75]Mutation Samples[-] from butchering radioactive and elite zombies, as well as bosses and minibosses. You get [FFB800]2x[-] more samples\n\n[DECEA3]The Meat Feast enhancement skill also increases the number of samples collected[-]","Сверхпрочное хирургическое лезвие значительно дольше остается острым. Добыча ресурсов при разделке туш животных увеличена на [DECEA3]40%[-]. Дает возможность собирать [5AFF75]Образцы мутаций[-] разделывая туши радиоактивных и элитных зомби, а также боссов и минибоссов. Вы получаете в [FFB800]2 раза[-] больше образцов\n\n[DECEA3]Навык совершенствования Мясной пир также увеличивает количество собираемых образцов[-]"
+
+modGunDrumMagazineExtenderImp,item_modifiers,mod,,[DECEA3]Improved[-] Drum Magazine Mod,Мод «Барабанный магазин». [DECEA3]Улучшенный[-]
+modGunDrumMagazineExtenderImpDesc,item_modifiers,mod,,"Thanks to the improvement, your weapon's magazine size by [DECEA3]150%[-], while the reload speed does not decrease","Благодаря улучшению, размер магазина вашего оружия увеличен на [DECEA3]150%[-], при этом скорость перезарядки не снижается"
+
+modGunDrumMagazineExtenderUnique,item_modifiers,mod,,[FFB800]Unique[-] Drum Magazine Mod,Мод «Барабанный магазин». [FFB800]Уникальный[-]
+modGunDrumMagazineExtenderUniqueDesc,item_modifiers,mod,,"Unique modification, the magazine size of your weapon is increased by [DECEA3]200%[-], and the reload speed by [DECEA3]25%[-]","Уникальная модификация, размер магазина вашего оружия увеличен на [DECEA3]200%[-], а скорость перезарядки на [DECEA3]25%[-]"
+
+modGunMagazineExtenderImp,item_modifiers,mod,,[DECEA3]Improved[-] Magazine Extender Mod,Мод «Увеличенный магазин». [DECEA3]Улучшенный[-]
+modGunMagazineExtenderImpDesc,item_modifiers,mod,,"Thanks to the improvement, increases your weapon's magazine size by [DECEA3]100%[-], fire rate by [DECEA3]10%[-], and reload speed by [DECEA3]25%[-]","Благодаря улучшению, размер магазина вашего оружия увеличен на [DECEA3]100%[-], скорострельность на [DECEA3]10%[-], и скорость перезарядки на [DECEA3]25%[-]"
+
+modGunMagazineExtenderUnique,item_modifiers,mod,,[FFB800]Unique[-] Magazine Extender Mod,Мод «Увеличенный магазин». [FFB800]Уникальный[-]
+modGunMagazineExtenderUniqueDesc,item_modifiers,mod,,"Unique modification, increases your weapon's magazine size by [DECEA3]150%[-], fire rate by [DECEA3]20%[-], and reload speed by [DECEA3]50%[-]","Уникальная модификация, размер магазина вашего оружия увеличен на [DECEA3]150%[-], скорострельность на [DECEA3]20%[-], и скорость перезарядки на [DECEA3]50%[-]"
+
+modGunMeleeRadRemoverImp,item_modifiers,mod,,[DECEA3]Improved[-] Rad Remover Mod,Мод «Подавитель радиации». [DECEA3]Улучшенный[-]
+modGunMeleeRadRemoverImpDesc,item_modifiers,mod,,"Thanks to the improvement, it blocks the regenerative abilities of all types of zombies. For irradiated ones, the blocking lasts [DECEA3]90[-] sec, for all others [DECEA3]60[-] sec.\nAlso increases your damage to zombies: Irradiated zombies by [DECEA3]20%[-], Elite zombies by [DECEA3]10%[-], Minibosses by [DECEA3]5%[-]","Благодаря улучшению, блокирует регенеративные способности всех типов зомби. Для облученных блокировка действует [DECEA3]90[-] сек., для всех остальных [DECEA3]60[-] сек.\nТакже увеличивает ваш урон по зомби: Облученные зомби на [DECEA3]20%[-], Элитные зомби на [DECEA3]10%[-], Минибоссы на [DECEA3]5%[-]"
+
+modGunMeleeRadRemoverUnique,item_modifiers,mod,,[FFB800]Unique[-] Rad Remover Mod,Мод «Подавитель радиации». [FFB800]Уникальный[-]
+modGunMeleeRadRemoverUniqueDesc,item_modifiers,mod,,"Unique modification, blocks regenerative abilities of all types of zombies for [DECEA3]90[-] sec.\nAlso increases your damage to zombies: Irradiated zombies by [DECEA3]50%[-], Elite zombies by [DECEA3]25%[-], Minibosses by [DECEA3]10%[-], Bosses by [DECEA3]5%[-]","Уникальная модификация, блокирует регенеративные способности всех типов зомби на [DECEA3]90[-] сек.\nТакже увеличивает ваш урон по зомби: Облученные зомби на [DECEA3]50%[-], Элитные зомби на [DECEA3]25%[-], Минибоссы на [DECEA3]10%[-], Боссы на [DECEA3]5%[-]"
+
+modGunCrippleEmImp,item_modifiers,mod,,[DECEA3]Improved[-] Cripple 'Em Mod,Мод «Разрывные пули». [DECEA3]Улучшенный[-]
+modGunCrippleEmImpDesc,item_modifiers,mod,,"Thanks to the improvement, [DECEA3]40%[-] chance to cripple a bipedal target's leg, and for [DECEA3]5[-] seconds reduces damage resistance by [DECEA3]5%[-] and damage dealt to the target by [DECEA3]10%[-]","Благодаря улучшению, [DECEA3]40%[-] шанс искалечить ногу двуногой цели, а также на [DECEA3]5[-] секунд снижает сопротивление к урона на [DECEA3]5%[-] и наносимый урон цели на [DECEA3]10%[-]"
+
+modGunCrippleEmUnique,item_modifiers,mod,,[FFB800]Unique[-] Cripple 'Em Mod,Мод «Разрывные пули». [FFB800]Уникальный[-]
+modGunCrippleEmUniqueDesc,item_modifiers,mod,,"Unique modification, [DECEA3]60%[-] chance to cripple a bipedal target's leg, and for [DECEA3]7[-] seconds reduces damage resistance by [DECEA3]15%[-] and damage dealt to the target by [DECEA3]30%[-]","Уникальная модификация, [DECEA3]60%[-] шанс искалечить ногу двуногой цели, а также на [DECEA3]7[-] секунд снижает сопротивление к урона на [DECEA3]15%[-] и наносимый урон цели на [DECEA3]30%[-]"
+
+modGunRiflePartsImp,item_modifiers,mod,,[DECEA3]Improved[-] Rifle Parts Mod,Мод «Части винтовки». [DECEA3]Улучшенные[-]
+modGunRiflePartsImpDesc,item_modifiers,mod,,"Thanks to the improvement, increases the durability of sniper rifles by [DECEA3]100%[-], also reduces durability consumption by [DECEA3]20%[-]","Благодаря улучшению, увеличивает прочность снайперских винтовок на [DECEA3]100%[-], так же уменьшает расход прочности на [DECEA3]20%[-]"
+
+modGunRiflePartsUnique,item_modifiers,mod,,[FFB800]Unique[-] Rifle Parts Mod,Мод «Части винтовки». [FFB800]Уникальные[-]
+modGunRiflePartsUniqueDesc,item_modifiers,mod,,"Unique modification, increases the durability of sniper rifles by [DECEA3]200%[-], also by [DECEA3]30%[-] decreases durability consumption and increases weapon handling skill","Уникальная модификация, увеличивает прочность снайперских винтовок на [DECEA3]200%[-], так же на [DECEA3]30%[-] уменьшается расход прочности и увеличивается навык обращения с оружием"
+
+modGunPistolPartsImp,item_modifiers,mod,,[DECEA3]Improved[-] Pistols Parts Mod,Мод «Части пистолета». [DECEA3]Улучшенные[-]
+modGunPistolPartsImpDesc,item_modifiers,mod,,"Thanks to the improvement, increases the durability of pistols by [DECEA3]100%[-], also reduces durability consumption by [DECEA3]20%[-]","Благодаря улучшению, увеличивает прочность пистолетов на [DECEA3]100%[-], так же уменьшает расход прочности на [DECEA3]20%[-]"
+
+modGunPistolPartsUnique,item_modifiers,mod,,[FFB800]Unique[-] Pistols Parts Mod,Мод «Части пистолета». [FFB800]Уникальные[-]
+modGunPistolPartsUniqueDesc,item_modifiers,mod,,"Unique modification, increases the durability of pistols by [DECEA3]200%[-], also by [DECEA3]30%[-] decreases durability consumption and increases weapon handling skill","Уникальная модификация, увеличивает прочность пистолетов на [DECEA3]200%[-], так же на [DECEA3]30%[-] уменьшается расход прочности и увеличивается навык обращения с оружием"
+
+modGunM60PartsImp,item_modifiers,mod,,[DECEA3]Improved[-] Machine Gun Parts Mod,Мод «Части пулемета». [DECEA3]Улучшенные[-]
+modGunM60PartsImpDesc,item_modifiers,mod,,"Thanks to the improvement, increases the durability of machine guns by [DECEA3]100%[-], also reduces durability consumption by [DECEA3]20%[-]","Благодаря улучшению, увеличивает прочность пулеметов на [DECEA3]100%[-], так же уменьшает расход прочности на [DECEA3]20%[-]"
+
+modGunM60PartsUnique,item_modifiers,mod,,[FFB800]Unique[-] Machine Gun Parts Mod,Мод «Части пулемета». [FFB800]Уникальные[-]
+modGunM60PartsUniqueDesc,item_modifiers,mod,,"Unique modification, increases the durability of machine guns by [DECEA3]200%[-], also by [DECEA3]30%[-] decreases durability consumption and increases weapon handling skill","Уникальная модификация, увеличивает прочность пулеметов на [DECEA3]200%[-], так же на [DECEA3]30%[-] уменьшается расход прочности и увеличивается навык обращения с оружием"
+
+modGunShotgunPartsImp,item_modifiers,mod,,[DECEA3]Improved[-] Shotgun Parts Mod,Мод «Части дробовика». [DECEA3]Улучшенные[-]
+modGunShotgunPartsImpDesc,item_modifiers,mod,,"Thanks to the improvement, increases the durability of shotgun by [DECEA3]100%[-], also reduces durability consumption by [DECEA3]20%[-]","Благодаря улучшению, увеличивает прочность дробовиков на [DECEA3]100%[-], так же уменьшает расход прочности на [DECEA3]20%[-]"
+
+modGunShotgunPartsUnique,item_modifiers,mod,,[FFB800]Unique[-] Shotgun Parts Mod,Мод «Части дробовика». [FFB800]Уникальные[-]
+modGunShotgunPartsUniqueDesc,item_modifiers,mod,,"Unique modification, increases the durability of shotgun by [DECEA3]200%[-], also by [DECEA3]30%[-] decreases durability consumption and increases weapon handling skill","Уникальная модификация, увеличивает прочность дробовиков на [DECEA3]200%[-], так же на [DECEA3]30%[-] уменьшается расход прочности и увеличивается навык обращения с оружием"
+
+modGunForegripImp,item_modifiers,mod,,[DECEA3]Improved[-] Fore Grip Mod,Мод «Передняя рукоятка». [DECEA3]Улучшенный[-]
+modGunForegripImpDesc,item_modifiers,mod,,"Thanks to the improvement, significantly improved control and accuracy when firing a firearm from the hip or while moving","Благодаря улучшению, значительно управляемость и точность при стрельбе из огнестрельного оружия от бедра или в движении"
+
+modGunForegripUnique,item_modifiers,mod,,[FFB800]Unique[-] Fore Grip Mod,Мод «Передняя рукоятка». [FFB800]Уникальный[-]
+modGunForegripUniqueDesc,item_modifiers,mod,,"Unique modification, significantly improved control and accuracy when firing a firearm from the hip or while moving","Уникальная модификация, значительно управляемость и точность при стрельбе из огнестрельного оружия от бедра или в движении"
+
+modGunBipodImp,item_modifiers,mod,,[DECEA3]Improved[-] Bipod Mod,Мод «Сошка». [DECEA3]Улучшенный[-]
+modGunBipodImpDesc,item_modifiers,mod,,"Thanks to the improvement, it significantly increases weapon accuracy and controllability when aiming.","Благодаря улучшению, значительно увеличивает точность оружия и управляемость при наведении"
+
+modGunBipodUnique,item_modifiers,mod,,[FFB800]Unique[-] Bipod Mod,Мод «Сошка». [FFB800]Уникальный[-]
+modGunBipodUniqueDesc,item_modifiers,mod,,"Unique modification, it significantly increases weapon accuracy and controllability when aiming.","Уникальная модификация, значительно увеличивает точность оружия и управляемость при наведении"
+
+modGunSoundSuppressorSilencerImp,item_modifiers,mod,,[DECEA3]Improved[-] Silencer Mod,Мод «Глушитель». [DECEA3]Улучшенный[-]
+modGunSoundSuppressorSilencerImpDesc,item_modifiers,mod,,"Thanks to the improvement, it significantly reduces the volume of the shot, while the maximum range and damage are slightly reduced. The damage bonus from stealth is increased by [DECEA3]50%[-]","Благодаря улучшению, значительно снижает громкость выстрела, при этом максимальная дальность стрельбы и урон немного уменьшены. Бонус к урону из скрытности увеличен на [DECEA3]50%[-]"
+
+modGunSoundSuppressorSilencerUnique,item_modifiers,mod,,[FFB800]Unique[-] Silencer Mod,Мод «Глушитель». [FFB800]Уникальный[-]
+modGunSoundSuppressorSilencerUniqueDesc,item_modifiers,mod,,"Unique modification, it significantly reduces the volume of the shot, while the maximum firing range is increased by [DECEA3]10%[-]. The damage bonus from stealth is increased by [DECEA3]150%[-]","Уникальная модификация, значительно снижает громкость выстрела, при этом максимальная дальность стрельбы увеличена на [DECEA3]10%[-]. Бонус к урону из скрытности увеличен на [DECEA3]150%[-]"
+
+modGunBoosterExp,item_modifiers,mod,,[DECEA3]Experimental[-] Gun Booster Mod,Мод «Бустер оружия». [DECEA3]Экспериментальный[-]
+modGunBoosterExpDesc,item_modifiers,mod,,"An experimental modification, when activated it increases the rate of fire not [DECEA3]50%[-], but also significantly increases the rate of weapon breakdown","Экспериментальная модификация, при активации увеличивает скорострельность на [DECEA3]50%[-], но также значительно увеличивает скорость поломки оружия"
+
+modGunBoosterUnique,item_modifiers,mod,,[FFB800]Unique[-] Gun Booster Mod,Мод «Бустер оружия». [FFB800]Уникальный[-]
+modGunBoosterUniqueDesc,item_modifiers,mod,,"Unique modification, when activated, increases the rate of fire by [DECEA3]2 times[-], but also significantly increases the rate of weapon breakdown","Уникальная модификация, при активации увеличивает скорострельность в [DECEA3]2 раза[-], но также значительно увеличивает скорость поломки оружия"
+
+modGunDamageAccumulatorExp,item_modifiers,mod,,[DECEA3]Experimental[-] Damage Accumulator Mod,Мод «Накопитель урона». [DECEA3]Экспериментальный[-]
+modGunDamageAccumulatorExpDesc,item_modifiers,mod,,"An experimental modification, Each [DECEA3]6[-] shot deals [DECEA3]400%[-] damage","Экспериментальная модификация, каждый [DECEA3]6[-] выстрел наносит [DECEA3]400%[-] урона"
+
+modGunDamageAccumulatorUnique,item_modifiers,mod,,[FFB800]Unique[-] Damage Accumulator Mod,Мод «Накопитель урона». [FFB800]Уникальный[-]
+modGunDamageAccumulatorUniqueDesc,item_modifiers,mod,,"An experimental modification, Each [DECEA3]4[-] shot deals [DECEA3]600%[-] damage","Экспериментальная модификация, каждый [DECEA3]4[-] выстрел наносит [DECEA3]600%[-] урона"
+
+modVehicleSuperChargerImp,item_modifiers,mod,,[DECEA3]Improved[-] Vehicle Super Charger Mod,Мод «Заряженный». [DECEA3]Улучшенный[-]
+modVehicleSuperChargerImpDesc,item_modifiers,mod,,"Thanks to the improvement, the acceleration and maximum speed of the vehicle are increased by [DECEA3]30%[-]","Благодаря улучшению, ускороние и максимальная скорость транспортного средства увеличены на [DECEA3]30%[-]"
+
+modVehicleSuperChargerUnique,item_modifiers,mod,,[FFB800]Unique[-] Vehicle Super Charger Mod,Мод «Заряженный». [FFB800]Уникальный[-]
+modVehicleSuperChargerUniqueDesc,item_modifiers,mod,,"A unique modification that allows you to increase the acceleration and maximum speed of the vehicle by [DECEA3]60%[-]","Уникальная модификация, которая позволяет увеличить ускороние и максимальную скорость транспортного средства на [DECEA3]60%[-]"
+
+modReactorAcceleratorExp,item_modifiers,mod,,[FFB800]Experimental[-] Reactor accelerator Mod,Мод «Реакторный ускоритель» [FFB800]Экспериментальный[-]
+modReactorAcceleratorExpDesc,item_modifiers,mod,,"A portable reactor can not only power any network, but also significantly increase the power of any engine. Installing such a modification on an [DECEA3]gyrocopter[-] will increase its speed several times, but it also requires twice as much fuel.","Портативный реактор может не только питать любые сети, но и значительно усиливать мощности любого двигателя. Установка  подобной модификации на [DECEA3]автожир[-] позволит в разы увеличить скорость его передвижения, однако и топливо требуется в два раза больше."
+
+modVehicleFuelSaverImp,item_modifiers,mod,,[DECEA3]Improved[-] Vehicle Fuel Saver Mod,Мод «Ограничитель расхода топлива». [DECEA3]Улучшенный[-]
+modVehicleFuelSaverImpDesc,item_modifiers,mod,,"Thanks to the improvement, the vehicle's fuel consumption has been reduced by [DECEA3]65%[-]","Благодаря улучшению, расход топлива транспортным средством уменьшен на [DECEA3]65%[-]"
+
+modVehicleReserveFuelTankImp,item_modifiers,mod,,[DECEA3]Improved[-] Vehicle Reserve Fuel Tank Mod,Мод «Резервный бак». [DECEA3]Улучшенный[-]
+modVehicleReserveFuelTankImpDesc,item_modifiers,mod,,"Thanks to the improvement, the vehicle's fuel capacity has been increased by [DECEA3]100%[-]","Благодаря улучшению, запас топлива транспортного средства увеличен на [DECEA3]100%[-]"
+
+modVehicleFuelSystemUnique,item_modifiers,mod,,[FFB800]Unique[-] Vehicle Advanced Fuel System Mod,Мод «Продвинутая топливная система». [FFB800]Уникальный[-]
+modVehicleFuelSystemUniqueDesc,item_modifiers,mod,,"A unique modification that allows you to reduce fuel consumption by [DECEA3]80%[-], and also increases the fuel reserve by [DECEA3]200%[-]","Уникальная модификация, которая позволяет снизить расход топлива транспортным средством на [DECEA3]80%[-], а также увеличивает запас топлина на [DECEA3]200%[-]"
+
+modVehiclePlowUnique,item_modifiers,mod,,[FFB800]Unique[-] Vehicle Terrible Plow Mod,Мод «Ужастный Ковш». [FFB800]Уникальный[-]
+modVehiclePlowUniqueDesc,item_modifiers,mod,,"A heavy-duty plow for a [DECEA3]4x4 truck[-]. Hundreds of zombies have left their marks on it.\n\nReduces damage taken from objects hitting the front of the 4x4 truck. Significantly increases damage to blocks and creatures.","Сверхпрочный плуг для [DECEA3]грузовика 4х4[-]. Не одна сотня зомби оставили свои отпечатки на нем.\n\nУменьшает урон, получаемый при попадании объектов в переднюю часть грузовика 4х4. Значительно увеличивает урон по блокам и существам."
+
+modVehicleArmorImp,item_modifiers,mod,,[DECEA3]Improved[-] Vehicle Armor Mod,Мод «Броня». [DECEA3]Улучшенный[-]
+modVehicleArmorImpDesc,item_modifiers,mod,,"Thanks to the upgrade, it significantly reduces the damage received when objects hit the front of the vehicle and also increases damage to blocks and creatures.\nInstalled on a [DECEA3]motorcycle[-] or [DECEA3]gyrocopter[-].","Благодаря улучшению, заметно уменьшает урон, получаемый при попадании объектов в переднюю часть транспортного средства а также увеличивает урон по блокам и существам.\nУстанавливается на [DECEA3]мотоцикл[-] или [DECEA3]автожир[-]."
+
+modVehicleArmorUnique,item_modifiers,mod,,[FFB800]Unique[-] Vehicle Terrible Armor Mod,Мод «Ужастная Броня». [FFB800]Уникальный[-]
+modVehicleArmorUniqueDesc,item_modifiers,mod,,"A unique modification that significantly reduces damage received when objects hit the front of the vehicle and also significantly increases damage to blocks and creatures.\nInstalled on a [DECEA3]motorcycle[-] or [DECEA3]gyrocopter[-].","Уникальная модификация, значительно уменьшающая урон, получаемый при попадании объектов в переднюю часть транспортного средства а также  значительно увеличивает урон по блокам и существам.\nУстанавливается на [DECEA3]мотоцикл[-] или [DECEA3]автожир[-]."
+
+
+buffJetPackReloadName,buffs,buff,,Recharging the jetpack,Перезарядка реактивного ранца 
+buffJetPackReloadTooltip,buffs,buff,,Your jetpack is on recharge,Ваш реактивный ранец на перезарядке
+buffJetPackReloadIncDesc,buffs,Buff,,"Your jetpack is on recharge. Wait until it is complete before you can use it.\n\n[DECEA3]Duration: 7 seconds[-]","Ваш реативный ранец на перезарядки. Дождитесь ее завершения для возможности его использования.\n\n[DECEA3]Длительность: 7 секунд[-]"
+buffJetPackNormalName,buffs,buff,,JetPack [DECEA3]OFF[-],Реактивный ранец [DECEA3]ВЫКЛ[-]
+buffJetPackNormalTooltip,buffs,buff,,Your jetpack is disabled,Ваш реактивный ранец выключен
+buffJetPackNormalIncDesc,buffs,Buff,,"Your jetpack is disabled. You must activate it to use jump boosts.\n\nIn this mode, stamina consumption when jumping is reduced by [DECEA3]30%[-]","Ваш реативный ранец выключен. Для использования усиленных прыжком его необходимо активировать.\n\nВ этом режиме расход выносливости при прыжках уменьшено на [DECEA3]30%[-]"
+buffJetPackBoostName,buffs,buff,,JetPack [DECEA3]ON[-],Реактивный ранец [DECEA3]ВКЛ[-]
+buffJetPackBoostTooltip,buffs,buff,,Your jetpack is active,Ваш реактивный ранец активен
+buffJetPackBoostIncDesc,buffs,Buff,,"Your jetpack is active. Your next jump will be boosted by [DECEA3]300%[-]\n\n[DECEA3]After a boosted jump, your jetpack will go on recharge. Be careful not to break your legs[-]"Ваш реативный ранец активен. Следующий ваш прыжок будет усилен на [DECEA3]300%[-]\n\n[DECEA3]После усиленного прыжка ваш ранец уйдет на перезарядку. Будьте осторожны и не поломайте ноги[-]"
+
+buffMotorBoosterName,buffs,buff,,Tool Booster,Бустер инструмента 
+buffMotorBoosterTooltip,buffs,buff,,tool boost mode active,Активен режим буста инструмента
+buffMotorBoosterIncDesc,buffs,Buff,,"Active mode increases the speed of [FFB800]work by 2 times[-]\nAt the same time, the tool breakage rate is increased by [DECEA3]250%[-]. Also, the amount of extracted resources is reduced by [DECEA3]70%[-]","Активный режим увеличивает cкорость работы [FFB800]в 2 раза[-]\nПри этом скорость поломки инструмента увеличена на [DECEA3]250%[-]. Также количество добываемых ресурсов уменьшено на [DECEA3]70%[-]"
+
+buffGunBooster1Name,buffs,buff,,[DECEA3]Experimental[-] Gun Booster,Бустер оружия [DECEA3]Экспериментальный[-]
+buffGunBooster1Tooltip,buffs,buff,,gun boost mode active,Активен режим буста оружия
+buffGunBooster1Desc,buffs,Buff,,"Active mode increases the rate of fire by [DECEA3]50%[-]\nAt the same time, the rate of weapon breakdown is significantly increased","Активный режим увеличивает скорострельность на [DECEA3]50%[-]\nПри этом скорость поломки оружия значительно увеличена"
+
+buffGunBooster2Name,buffs,buff,,[FFB800]Unique[-] Gun Booster,Бустер оружия [FFB800]Уникальный[-]
+buffGunBooster2Tooltip,buffs,buff,,gun boost mode active,Активен режим буста оружия
+buffGunBooster2Desc,buffs,Buff,,"Active mode increases the rate of fire of [DECEA3]by 2 times[-]\nAt the same time, the rate of weapon breakdown is significantly increased","Активный режим увеличивает скорострельность [DECEA3]в 2 раза[-]\nПри этом скорость поломки оружия значительно увеличена"
+
+buffGunDAc1Name,buffs,buff,,[DECEA3]Experimental[-] Damage Accumulator - Charging,Зарядка - Накопитель урона [DECEA3]Экспериментальный[-]
+buffGunDAc1Tooltip,buffs,buff,,Charging the damage accumulator,Зарядка накопитель урона
+buffGunDAc1Desc,buffs,Buff,,"Active mode accumulates charges when dealing damage to an enemy\nWhen [DECEA3]5[-] charges are accumulated, the next shot will deal increased damage","Активный режим накапливает заряды при нанесении урона по противнику\nПри накоплении [DECEA3]5[-] зарядов следующий выстрел нанесет повышенный урон"
+buffGunDAcShot1Name,buffs,buff,,[DECEA3]Experimental[-] Damage Accumulator - Active,Активен - Накопитель урона [DECEA3]Экспериментальный[-]
+buffGunDAcShot1Tooltip,buffs,buff,,damage accumulator active,Активен накопитель уроно
+buffGunDAcShot1Desc,buffs,Buff,,"Your next shot will deal [DECEA3]400%[-] damage","Следующий ваш выстрел нанесет [DECEA3]400%[-] урона"
+
+buffGunDAc2Name,buffs,buff,,[FFB800]Unique[-] Damage Accumulator - Charging,Зарядка - Накопитель урона [FFB800]Уникальный[-]
+buffGunDAc2Tooltip,buffs,buff,,Charging the damage accumulator,Зарядка накопитель урона
+buffGunDAc2Desc,buffs,Buff,,"Active mode accumulates charges when dealing damage to an enemy\nWhen [DECEA3]3[-] charges are accumulated, the next shot will deal increased damage","Активный режим накапливает заряды при нанесении урона по противнику\nПри накоплении [DECEA3]3[-] зарядов следующий выстрел нанесет повышенный урон"
+buffGunDAcShot2Name,buffs,buff,,[FFB800]Unique[-] Damage Accumulator - Active,Активен - Накопитель урона [FFB800]Уникальный[-]
+buffGunDAcShot2Tooltip,buffs,buff,,damage accumulator active,Активен накопитель уроно
+buffGunDAcShot2Desc,buffs,Buff,,"Your next shot will deal [DECEA3]600%[-] damage","Следующий ваш выстрел нанесет [DECEA3]600%[-] урона"
+
+buffLSSset,buffs,buff,,LSS-1,LSS-1
+buffLSSsetName,buffs,buff,,Life support system,Система жизнеобеспечения
+buffLSSsetTooltip,buffs,buff,,Life support system active,Активна система жизнеобеспечения
+buffLSSsetIncDesc,buffs,Buff,,"Active Life Support increases your core stats: Health, Stamina, Food and Water by [DECEA3]50[-]","Активная система жизнеобеспечания увеличивает ваши основные показатели: Здоровье, выносливость, еда и вода на [DECEA3]50[-]"
+

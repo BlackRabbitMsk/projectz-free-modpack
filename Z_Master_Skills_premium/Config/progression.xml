@@ -1,0 +1,825 @@
+<config>
+	
+	<!-- SEED_SKILLS improvement -->
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/@max_level">50</set>
+	
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/display_entry[@unlock_level='12,14,16,18,20']">
+		
+		<display_entry icon="resourceCropCoffeeBeans,plantedCotton1,plantedGoldenrod1,plantedCoffee1,plantedYucca1,plantedAloe1,plantedBlueberry1,plantedHop1,plantedPumpkin1,plantedMushroom1,plantedCorn1,plantedPotato1" name_key="seedsT3-1,seedsT3-2,seedsT3-3,seedsT3-4,seedsT3-5,seedsT3-6,seedsT3-7,seedsT3-8,seedsT3-9,seedsT3-10,seedsT3-11,seedsT3-12" has_quality="false" unlock_level="22,26,28,30,32,34,36,38,40,42,44,46" >
+			<unlock_entry item="resourceFertilizer" unlock_tier="1" />
+			<unlock_entry item="SeedlingCotton" unlock_tier="2" />
+			<unlock_entry item="SeedlingGoldenrod,SeedlingChrysanthemum" unlock_tier="3" />
+			<unlock_entry item="SeedlingCoffee" unlock_tier="4" />
+			<unlock_entry item="SeedlingYucca" unlock_tier="5" />
+			<unlock_entry item="SeedlingAloe" unlock_tier="6" />
+			<unlock_entry item="SeedlingBlueberry" unlock_tier="7" />
+			<unlock_entry item="SeedlingHop" unlock_tier="8" />
+			<unlock_entry item="SeedlingPumpkin" unlock_tier="9" />
+			<unlock_entry item="SeedlingMushroom" unlock_tier="10" />
+			<unlock_entry item="SeedlingCorn" unlock_tier="11" />
+			<unlock_entry item="SeedlingPotato" unlock_tier="12" />
+		</display_entry>
+		<display_entry icon="plantHydroponicAloe" name_key="seedsT4-1" has_quality="false" unlock_level="24" >
+			<unlock_entry item="farmerStation" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="plantHydroponicVertical" name_key="seedsT5-1" has_quality="false" unlock_level="50" >
+			<unlock_entry item="HydroponicStation" unlock_tier="1" />
+		</display_entry>
+	</insertAfter>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="resourceFertilizer"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="farmerStation"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="SeedlingCotton"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="28,100" value="1" tags="SeedlingGoldenrod,SeedlingChrysanthemum"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="SeedlingCoffee"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="SeedlingYucca"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="34,100" value="1" tags="SeedlingAloe"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,100" value="1" tags="SeedlingBlueberry"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="38,100" value="1" tags="SeedlingHop"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="SeedlingPumpkin"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="42,100" value="1" tags="SeedlingMushroom"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="44,100" value="1" tags="SeedlingCorn"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="46,100" value="1" tags="SeedlingPotato"/>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="HydroponicStation"/>	
+	</append>
+	
+	<append xpath="/progression/attributes">	
+		<attribute name="attmaster" name_key="attmaster" desc_key="attmaster" icon="ui_game_symbol_block_upgrade" min_level="0" max_level="0" base_skill_point_cost="0"/>
+	</append>
+	
+	<!-- Adding conditions for crafting Master's magazines -->
+	
+	<append xpath="/progression/attributes/attribute[@name='attPerception']">
+		<effect_group>			
+			<passive_effect name="LootProb" operation="perc_add" level="1,10" value="1,10" tags="armorCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingArmor" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterArmor" operation="LT" value="30"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,10" value="1,1" tags="armorCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterArmor" operation="Equals" value="30"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/attributes/attribute[@name='attStrength']">
+		<effect_group>			
+			<passive_effect name="LootProb" operation="perc_add" level="1,10" value="1,10" tags="armorCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingArmor" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterArmor" operation="LT" value="30"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,10" value="1,1" tags="armorCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterArmor" operation="Equals" value="30"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+		
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterRiflesSkillMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="riflesCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingRifles" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingRifle" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="riflesCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingRifle" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterHeavyMeleeWeaponMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="spearsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingSpears" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterHeavyMeleeWeapon" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="spearsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterHeavyMeleeWeapon" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkSalvageOperations']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterToolsMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="salvageToolsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingSalvageTools" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterTools" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="salvageToolsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterTools" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterHeavyMeleeWeaponMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="sledgehammersCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingSledgehammers" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterHeavyMeleeWeapon" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="sledgehammersCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterHeavyMeleeWeapon" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterHeavyMeleeWeaponMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="clubsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingClubs" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterHeavyMeleeWeapon" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="clubsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterHeavyMeleeWeapon" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterShotgunsSkillMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="shotgunsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingShotguns" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingShotgun" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="shotgunsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingShotgun" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkHeavyArmor']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,4" value="1" tags="MasterArmorMagazine"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,3" value="1" tags="MasterKitchenMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="foodCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingFood" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterKitchen" operation="LT" value="10"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="foodCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterKitchen" operation="Equals" value="10"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterToolsMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="harvestingToolsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingHarvestingTools" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterTools" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="harvestingToolsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterTools" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="masterMachineGunsSkillMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="machineGunsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingMachineGuns" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingMachineGuns" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="machineGunsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingMachineGuns" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkBrawler']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterLightMeleeWeaponMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="knucklesCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingKnuckles" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterLightMeleeWeapon" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="knucklesCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterLightMeleeWeapon" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect/requirement[@name='ProgressionLevel']/@value">50</set>
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,3" value="1" tags="MasterFarmerMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="seedCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingSeeds" operation="Equals" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="MasterFarmer" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="seedCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterFarmer" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterHandgunsSkillMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="handgunsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingHandguns" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingHandguns" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="handgunsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingHandguns" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMediumArmor']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,4" value="1" tags="MasterArmorMagazine"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkArchery']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterBowsSkillMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="bowsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingBows" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingBows" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="bowsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterCraftingBows" operation="Equals" value="50"/>
+			</passive_effect>
+			
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterLightMeleeWeaponMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="bladesCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingBlades" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterLightMeleeWeapon" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="bladesCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterLightMeleeWeapon" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterLightMeleeWeaponMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="roboticsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingRobotics" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterLightMeleeWeapon" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="roboticsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterLightMeleeWeapon" operation="Equals" value="50"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterWorkstationsMagazine"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterToolsMagazine"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterElectricianMagazine"/>
+			<!-- Adding craft new items -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="resourceMechanicalPartsImp"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="resourceElectricPartsImp"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="resourceReactorBattery"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="workstationCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingWorkstations" operation="Equals" value="75"/>
+				<requirement name="ProgressionLevel" progression_name="MasterWorkstations" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairToolsCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="Equals" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="MasterTools" operation="LT" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="electricianCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingElectrician" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterElectrician" operation="LT" value="20"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="workstationCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterWorkstations" operation="Equals" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="repairToolsCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterTools" operation="Equals" value="50"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="electricianCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterElectrician" operation="Equals" value="20"/>
+			</passive_effect>
+			
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']">	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="MasterVehicleMagazine"/>
+			
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="vehiclesCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="MasterVehicle" operation="LT" value="20"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="vehiclesCSM">
+				<requirement name="ProgressionLevel" progression_name="MasterVehicle" operation="Equals" value="20"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/progression/crafting_skills">
+		
+		<!-- Tools -->
+		<crafting_skill name="MasterTools" max_level="50" parent="attmaster" name_key="MasterToolsName" desc_key="MasterToolsDesc" long_desc_key="MasterToolsLongDesc" icon="ui_game_symbol_tool">
+			
+			<display_entry icon="meleeToolPickT3Auger" name_key="mastertoolsT1" has_quality="true" unlock_level="5,10,15,20,25,28">
+				<unlock_entry item="meleeToolPickT4AugerImp,meleeToolAxeT4ChainsawImp,meleeToolSalvageT4ImpactDriverImp,meleeToolRepairT4NailgunImp" unlock_tier="1" recipes="meleeToolPickT4AugerImp,meleeToolAxeT4ChainsawImp,meleeToolSalvageT4ImpactDriverImp,meleeToolRepairT4NailgunImp"/>
+			</display_entry>
+			<display_entry icon="meleeToolPickT3Auger" name_key="mastertoolsT2" has_quality="true" unlock_level="25,30,35,40,45,50">
+				<unlock_entry item="meleeToolPickT5AugerReact,meleeToolSalvageT5ImpactDriverReact" unlock_tier="1" recipes="meleeToolPickT5AugerReact,meleeToolSalvageT5ImpactDriverReact"/>
+			</display_entry>
+			<display_entry icon="meleeToolAxeT3ChainsawParts,meleeToolPickT3Auger,smallEngine,resourceMechanicalParts,resourceSpring,modRoboticDroneCargoMod,modMeleeBunkerBuster" name_key="masterToolsT1-1,masterToolsT1-2,masterToolsT1-3,masterToolsT1-4,masterToolsT1-5,masterToolsT1-6,masterToolsT1-7" has_quality="false" unlock_level="5,10,15,20,25,30,35">
+				<unlock_entry item="modReinforcedParts" unlock_tier="1" />
+				<unlock_entry item="modElongatedCore" unlock_tier="2" />
+				<unlock_entry item="modMotorBooster" unlock_tier="3" />
+				<unlock_entry item="modEnhancedMechanisms" unlock_tier="4" />
+				<unlock_entry item="modFastMechanisms" unlock_tier="5" />
+				<unlock_entry item="modSpareBox" unlock_tier="6" />
+				<unlock_entry item="modLuckyMining" unlock_tier="7" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeToolPickT4AugerImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeToolAxeT4ChainsawImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeToolSalvageT4ImpactDriverImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeToolRepairT4NailgunImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="meleeToolPickT5AugerReact"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="meleeToolSalvageT5ImpactDriverReact"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="modReinforcedParts"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="modElongatedCore"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="modMotorBooster"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="modEnhancedMechanisms"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="modFastMechanisms"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="modSpareBox"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="modLuckyMining"/>
+				
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeToolPickT4AugerImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeToolAxeT4ChainsawImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeToolSalvageT4ImpactDriverImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeToolRepairT4NailgunImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="meleeToolPickT5AugerReact"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="meleeToolSalvageT5ImpactDriverReact"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Workstations -->
+		<crafting_skill name="MasterWorkstations" max_level="30" parent="attmaster" name_key="MasterWorkstationsName" desc_key="MasterWorkstationsDesc" long_desc_key="MasterWorkstationsLongDesc" icon="ui_game_symbol_workbench">
+			
+			<display_entry icon="cntWoodBurningStove,toolDewGatherer,toolDewTarp,toolDewFilter,cntDewCollector" name_key="masterworkstationsT1-1,masterworkstationsT1-2,masterworkstationsT1-3,masterworkstationsT1-4,masterworkstationsT1-5" has_quality="false" unlock_level="3,6,6,9,12">
+				<unlock_entry item="kitchenStove" unlock_tier="1" />
+				<unlock_entry item="toolDewGatherer" unlock_tier="2" />
+				<unlock_entry item="toolDewTarp" unlock_tier="3" />
+				<unlock_entry item="toolDewFilter" unlock_tier="4" />
+				<unlock_entry item="DewCollectorImp" unlock_tier="5" />
+			</display_entry>
+			<display_entry icon="workbench,meleeToolAllSteelParts,cntToolBoxClosedWhite" name_key="masterworkstationsT2-1,masterworkstationsT2-2,masterworkstationsT2-3" has_quality="false" unlock_level="15,18,21">
+				<unlock_entry item="workbenchImp" unlock_tier="1" />
+				<unlock_entry item="toolSmallParts" unlock_tier="2" />
+				<unlock_entry item="toolImprovedTools" unlock_tier="3" />
+			</display_entry>
+			<display_entry icon="cementMixer" name_key="masterworkstationsT3-1" has_quality="false" unlock_level="24" >
+				<unlock_entry item="cementMixerImp" unlock_tier="1" />
+			</display_entry>
+			<display_entry icon="forge,toolBellows,toolAnvil" name_key="masterworkstationsT4-1,masterworkstationsT4-2,masterworkstationsT4-3" has_quality="false" unlock_level="27,30,30">
+				<unlock_entry item="forgeImp" unlock_tier="1" />
+				<unlock_entry item="toolBellowsImp" unlock_tier="2" />
+				<unlock_entry item="toolAnvilImp" unlock_tier="3" />
+			</display_entry>		
+			<display_entry item="resourceDurablAlloys" unlock_level="25"/>			
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="kitchenStove"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="toolDewGatherer"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="toolDewTarp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,100" value="1" tags="toolDewFilter"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="DewCollectorImp"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="workbenchImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="toolSmallParts"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,100" value="1" tags="toolImprovedTools"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="cementMixerImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="resourceDurablAlloys"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="forgeImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="toolBellowsImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="toolAnvilImp"/>
+				
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Master Electrician -->
+		<crafting_skill name="MasterElectrician" max_level="50" parent="attmaster" name_key="MasterElectricianName" desc_key="MasterElectricianDesc" long_desc_key="MasterElectricianLongDesc" icon="ui_game_symbol_electric_generator">
+			
+			<display_entry icon="solarbank,decoCarMotorFlat,electricwirerelay,electrictimerrelay,switch,motionsensor,bladeTrap,electricfencepost,bladeTrap,electricfencepost" name_key="MasterElectricianT1-1,MasterElectricianT1-2,MasterElectricianT1-3,MasterElectricianT1-4,MasterElectricianT1-5,MasterElectricianT1-6,MasterElectricianT1-7,MasterElectricianT1-8,MasterElectricianT1-9,MasterElectricianT1-10" has_quality="false" unlock_level="3,5,7,9,12,15,20,30,40,50">
+				<unlock_entry item="solarbank" unlock_tier="1" />
+				<unlock_entry item="IndustrialEngine" unlock_tier="2" />
+				<unlock_entry item="electricwirerelayImp" unlock_tier="3" />
+				<unlock_entry item="electrictimerrelayImp" unlock_tier="4" />
+				<unlock_entry item="switchImp" unlock_tier="5" />
+				<unlock_entry item="motionsensorImp" unlock_tier="6" />
+				<unlock_entry item="bladeTrapImp" unlock_tier="7" />
+				<unlock_entry item="electricfencepostImp" unlock_tier="8" />
+				<unlock_entry item="bladeTrapExp" unlock_tier="9" />
+				<unlock_entry item="electricfencepostExp" unlock_tier="10" />
+			</display_entry>
+			
+			<display_entry item="solarCell" unlock_level="4,8,12,16,20,24"/>
+			
+			<display_entry item="PortableReactor" unlock_level="28,32,36,40,44,48"/>
+			
+			<display_entry icon="controlPanelBase01,questGeneratorLarge,electricalBox02" name_key="MasterElectricianT4-1,MasterElectricianT4-2,MasterElectricianT4-3" has_quality="false" unlock_level="20,30,40">
+				<unlock_entry item="ReactorСhargingStation" unlock_tier="1" />
+				<unlock_entry item="GeneratorImp" unlock_tier="2" />
+				<unlock_entry item="ReactorBank" unlock_tier="3" />
+			</display_entry>
+			
+			<display_entry icon="decoCarMotorFlat,carBattery,resourceElectricParts,modMeleeStunBatonRepulsor,modMeleeStunBatonRepulsor" name_key="MasterElectricianT5-1,MasterElectricianT5-2,MasterElectricianT5-3,MasterElectricianT5-4,MasterElectricianT5-5" has_quality="false" unlock_level="18,21,23,25,25">
+				<unlock_entry item="modJetPack" unlock_tier="1" />
+				<unlock_entry item="modIncreasedBattery" unlock_tier="2" />
+				<unlock_entry item="modReactorElectric" unlock_tier="3" />
+				<unlock_entry item="modReactorBooster" unlock_tier="4" />
+				<unlock_entry item="modReactorAcceleratorExp" unlock_tier="5" />
+			</display_entry>
+		
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="solarbank"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,100" value="1" tags="solarCell"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="IndustrialEngine"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,100" value="1" tags="electricwirerelayImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,100" value="1" tags="electrictimerrelayImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="switchImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="motionsensorImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="bladeTrapImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="electricfencepostImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="bladeTrapExp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="electricfencepostExp"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="ReactorBank"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="GeneratorImp"/>
+				
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="28,100" value="1" tags="PortableReactor"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="ReactorСhargingStation"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="modJetPack"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,100" value="1" tags="modIncreasedBattery"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="modReactorElectric"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="modReactorBooster"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="modReactorAcceleratorExp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="8,12,16,20,24,100" value="1,2,3,4,5,5" tags="solarCell"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="32,36,40,44,48,100" value="1,2,3,4,5,5" tags="PortableReactor"/>
+			</effect_group>
+			
+		</crafting_skill>
+		
+		<!-- Master Vehicle -->
+		<crafting_skill name="MasterVehicle" max_level="20" parent="attmaster" name_key="MasterVehicleName" desc_key="MasterVehicleDesc" long_desc_key="MasterVehicleLongDesc" icon="ui_game_symbol_service">
+			
+			<display_entry icon="modVehicleFuelSaver,modVehicleReserveFuelTank,modVehicleArmor,modVehicleSuperCharger" name_key="MasterVehicleT1-1,MasterVehicleT1-2,MasterVehicleT1-3,MasterVehicleT1-4" has_quality="false" unlock_level="5,10,15,20">
+				<unlock_entry item="modVehicleFuelSaverImp" unlock_tier="1" />
+				<unlock_entry item="modVehicleReserveFuelTankImp" unlock_tier="2" />
+				<unlock_entry item="modVehicleArmorImp" unlock_tier="3" />
+				<unlock_entry item="modVehicleSuperChargerImp" unlock_tier="4" />
+			</display_entry>
+						
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="modVehicleFuelSaverImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="modVehicleReserveFuelTankImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="modVehicleArmorImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="modVehicleSuperChargerImp"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Master Kitchen -->
+		<crafting_skill name="MasterKitchen" max_level="10" parent="attmaster" name_key="MasterKitchenName" desc_key="MasterKitchenDesc" long_desc_key="MasterKitchenLongDesc" icon="ui_game_symbol_hunger">
+			
+			<display_entry item="superElixirQuestRunner" unlock_level="2"/>
+			<display_entry item="superElixirMinerMaster" unlock_level="4"/>
+			<display_entry item="superElixirMeleeMaster" unlock_level="6"/>
+			<display_entry item="superElixirTradeMaster" unlock_level="8"/>
+			<display_entry item="superElixirHordeExpert" unlock_level="10"/>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,100" value="1" tags="superElixirQuestRunner"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,100" value="1" tags="superElixirMinerMaster"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="superElixirMeleeMaster"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="superElixirTradeMaster"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="superElixirHordeExpert"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Master Farmer -->
+		<crafting_skill name="MasterFarmer" max_level="50" parent="attmaster" name_key="MasterFarmerName" desc_key="MasterFarmerDesc" long_desc_key="MasterFarmerLongDesc" icon="ui_game_symbol_foliage">
+			
+			<display_entry icon="plantedCotton1,plantedGoldenrod1,plantedChrysanthemum1,plantedCoffee1,plantedYucca1,plantedAloe1,plantedBlueberry1,plantedHop1,plantedPumpkin1,plantedMushroom1,plantedCorn1,plantedPotato1" name_key="MasterfarmerT1-1,MasterfarmerT1-2,MasterfarmerT1-3,MasterfarmerT1-4,MasterfarmerT1-5,MasterfarmerT1-6,MasterfarmerT1-7,MasterfarmerT1-8,MasterfarmerT1-9,MasterfarmerT1-10,MasterfarmerT1-11,MasterfarmerT1-12" has_quality="false" unlock_level="4,6,8,10,12,14,16,18,20,22,24,26" >
+				<unlock_entry item="plantedCotton1Sel1" unlock_tier="1" />
+				<unlock_entry item="plantedGoldenrod1Sel1" unlock_tier="2" />
+				<unlock_entry item="plantedChrysanthemum1Sel1" unlock_tier="3" />
+				<unlock_entry item="plantedCoffee1Sel1" unlock_tier="4" />
+				<unlock_entry item="plantedYucca1Sel1" unlock_tier="5" />
+				<unlock_entry item="plantedAloe1Sel1" unlock_tier="6" />
+				<unlock_entry item="plantedBlueberry1Sel1" unlock_tier="7" />
+				<unlock_entry item="plantedHop1Sel1" unlock_tier="8" />
+				<unlock_entry item="plantedPumpkin1Sel1" unlock_tier="9" />
+				<unlock_entry item="plantedMushroom1Sel1" unlock_tier="10" />
+				<unlock_entry item="plantedCorn1Sel1" unlock_tier="11" />
+				<unlock_entry item="plantedPotato1Sel1" unlock_tier="12" />
+			</display_entry>
+			<display_entry icon="plantedCotton1,plantedGoldenrod1,plantedChrysanthemum1,plantedCoffee1,plantedYucca1,plantedAloe1,plantedBlueberry1,plantedHop1,plantedPumpkin1,plantedMushroom1,plantedCorn1,plantedPotato1" name_key="MasterfarmerT2-1,MasterfarmerT2-2,MasterfarmerT2-3,MasterfarmerT2-4,MasterfarmerT2-5,MasterfarmerT2-6,MasterfarmerT2-7,MasterfarmerT2-8,MasterfarmerT2-9,MasterfarmerT2-10,MasterfarmerT2-11,MasterfarmerT2-12" has_quality="false" unlock_level="28,30,32,34,36,38,40,42,44,46,48,50" >
+				<unlock_entry item="plantedCotton1Sel2" unlock_tier="1" />
+				<unlock_entry item="plantedGoldenrod1Sel2" unlock_tier="2" />
+				<unlock_entry item="plantedChrysanthemum1Sel2" unlock_tier="3" />
+				<unlock_entry item="plantedCoffee1Sel2" unlock_tier="4" />
+				<unlock_entry item="plantedYucca1Sel2" unlock_tier="5" />
+				<unlock_entry item="plantedAloe1Sel2" unlock_tier="6" />
+				<unlock_entry item="plantedBlueberry1Sel2" unlock_tier="7" />
+				<unlock_entry item="plantedHop1Sel2" unlock_tier="8" />
+				<unlock_entry item="plantedPumpkin1Sel2" unlock_tier="9" />
+				<unlock_entry item="plantedMushroom1Sel2" unlock_tier="10" />
+				<unlock_entry item="plantedCorn1Sel2" unlock_tier="11" />
+				<unlock_entry item="plantedPotato1Sel2" unlock_tier="12" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,100" value="1" tags="plantedCotton1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="plantedGoldenrod1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="plantedChrysanthemum1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="plantedCoffee1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="plantedYucca1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="plantedAloe1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="plantedBlueberry1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="plantedHop1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="plantedPumpkin1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="plantedMushroom1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="plantedCorn1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="plantedPotato1Sel1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="28,100" value="1" tags="plantedCotton1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="plantedGoldenrod1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="plantedChrysanthemum1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="34,100" value="1" tags="plantedCoffee1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,100" value="1" tags="plantedYucca1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="38,100" value="1" tags="plantedAloe1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="plantedBlueberry1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="42,100" value="1" tags="plantedHop1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="44,100" value="1" tags="plantedPumpkin1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="46,100" value="1" tags="plantedMushroom1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="48,100" value="1" tags="plantedCorn1Sel2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="plantedPotato1Sel2"/>
+
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Master Armor -->
+		<crafting_skill name="MasterArmor" max_level="30" parent="attmaster" name_key="MasterArmorName" desc_key="MasterArmorDesc" long_desc_key="MasterArmorLongDesc" icon="ui_game_symbol_armor_iron">
+			
+			<display_entry icon="resourceArmorCraftingKit,modArmorQuadStoragePocket,modArmorCustomizedFittings" name_key="MasterArmorT1-1,MasterArmorT1-2,MasterArmorT1-3" has_quality="false" unlock_level="1,5,10">
+				<unlock_entry item="resourceArmorCraftingKitImp" unlock_tier="1" />
+				<unlock_entry item="modArmorQuadStoragePocket" unlock_tier="2" />
+				<unlock_entry item="modArmorHeadset" unlock_tier="3" />
+			</display_entry>
+			
+			<display_entry icon="modArmorWaterPurifier,medicalFirstAidKit,drinkJarPureMineralWater,modArmorImpactBracing,modArmorPlatingReinforced,modArmorPlatingReinforced,modArmorPlatingReinforced,modArmorPlatingReinforced" name_key="MasterArmorT2-1,MasterArmorT2-2,MasterArmorT2-3,MasterArmorT2-4,MasterArmorT2-5,MasterArmorT2-6,MasterArmorT2-7,MasterArmorT2-8" has_quality="false" unlock_level="2,6,10,14,16,22,26,30">
+				<unlock_entry item="modArmorLSSHelmet" unlock_tier="1" />
+				<unlock_entry item="modArmorLSSOutfit" unlock_tier="2" />
+				<unlock_entry item="modArmorLSSGloves" unlock_tier="3" />
+				<unlock_entry item="modArmorLSSBoots" unlock_tier="4" />
+				<unlock_entry item="modRareArmorARResistHelmet" unlock_tier="5" />
+				<unlock_entry item="modRareArmorARResistOutfit" unlock_tier="6" />
+				<unlock_entry item="modRareArmorARResistGloves" unlock_tier="7" />
+				<unlock_entry item="modRareArmorARResistBoots" unlock_tier="8" />
+			</display_entry>
+			
+			<display_entry icon="armorCommandoHelmet" name_key="MasterArmorT3" has_quality="true" unlock_level="5,10,15,20,25,30">
+				<unlock_entry item="armorRescuerHelmet,armorRescuerOutfit,armorRescuerGloves,armorRescuerBoots" unlock_tier="1"/>
+			</display_entry>
+			<display_entry icon="armorAssassinHelmet" name_key="MasterArmorT4" has_quality="true" unlock_level="5,10,15,20,25,30">
+				<unlock_entry item="armorPredatorHelmet,armorPredatorOutfit,armorPredatorGloves,armorPredatorBoots" unlock_tier="1"/>
+			</display_entry>
+			<display_entry icon="armorNomadHelmet" name_key="MasterArmorT5" has_quality="true" unlock_level="5,10,15,20,25,30">
+				<unlock_entry item="armorMausHelmet,armorMausOutfit,armorMausGloves,armorMausBoots" unlock_tier="1"/>
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="resourceArmorCraftingKitImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="modArmorQuadStoragePocket"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="modArmorHeadset"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,100" value="1" tags="modArmorLSSHelmet"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="modArmorLSSOutfit"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="modArmorLSSGloves"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="modArmorLSSBoots"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="modRareArmorARResistHelmet"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="modRareArmorARResistOutfit"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="modRareArmorARResistGloves"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="modRareArmorARResistBoots"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="armorRescuerHelmet,armorRescuerOutfit,armorRescuerGloves,armorRescuerBoots"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="armorPredatorHelmet,armorPredatorOutfit,armorPredatorGloves,armorPredatorBoots"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="armorMausHelmet,armorMausOutfit,armorMausGloves,armorMausBoots"/>
+				
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30,100" value="1,2,3,4,5,5" tags="armorRescuerHelmet,armorRescuerOutfit,armorRescuerGloves,armorRescuerBoots"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30,100" value="1,2,3,4,5,5" tags="armorPredatorHelmet,armorPredatorOutfit,armorPredatorGloves,armorPredatorBoots"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30,100" value="1,2,3,4,5,5" tags="armorMausHelmet,armorMausOutfit,armorMausGloves,armorMausBoots"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Machine gun -->
+		<crafting_skill name="MasterCraftingMachineGuns" max_level="50" parent="attmaster" name_key="MasterMachineGunsName" desc_key="MasterMachineGunsDesc" long_desc_key="MasterMachineGunsLongDesc" icon="ui_game_symbol_rifle">
+			
+			<display_entry item="gunMGT4M60Imp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunMGT5M60Bulldog" unlock_level="25,30,35,40,45,50"/>
+			<display_entry icon="gunMGT1AK47Parts,modGunDrumMagazineExtender,modGunTriggerGroupAutomatic" name_key="MasterMachineGunsT3-1,MasterMachineGunsT3-2,MasterMachineGunsT3-3" has_quality="false" unlock_level="8,16,24">
+				<unlock_entry item="modGunM60PartsImp" unlock_tier="1" />
+				<unlock_entry item="modGunDrumMagazineExtenderImp" unlock_tier="2" />
+				<unlock_entry item="modGunBoosterExp" unlock_tier="3" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunMGT4M60Imp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunMGT5M60Bulldog"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="modGunM60PartsImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="modGunDrumMagazineExtenderImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="modGunBoosterExp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="gunMGT4M60Imp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="gunMGT5M60Bulldog"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Shotgun -->
+		<crafting_skill name="MasterCraftingShotgun" max_level="50" parent="attmaster" name_key="MasterCraftingShotgunName" desc_key="MasterCraftingShotgunDesc" long_desc_key="MasterCraftingShotgunLongDesc" icon="ui_game_symbol_shotgun">
+			
+			<display_entry item="gunShotgunT4AutoShotgunImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunShotgunT5AutoShotgunEraser" unlock_level="25,30,35,40,45,50"/>
+			<display_entry icon="gunShotgunT1DoubleBarrelParts,modGunForegrip,modGunCrippleEm" name_key="MasterShotgunT3-1,MasterShotgunT3-2,MasterShotgunT3-3" has_quality="false" unlock_level="8,16,24">
+				<unlock_entry item="modGunShotgunPartsImp" unlock_tier="1" />
+				<unlock_entry item="modGunForegripImp" unlock_tier="2" />
+				<unlock_entry item="modGunCrippleEmImp" unlock_tier="3" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunShotgunT4AutoShotgunImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunShotgunT5AutoShotgunEraser"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="modGunShotgunPartsImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="modGunForegripImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="modGunCrippleEmImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="gunShotgunT4AutoShotgunImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="gunShotgunT5AutoShotgunEraser"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Sniper rifle -->
+		<crafting_skill name="MasterCraftingRifle" max_level="50" parent="attmaster" name_key="MasterCraftingRifleName" desc_key="MasterCraftingRifleDesc" long_desc_key="MasterCraftingRifleLongDesc" icon="ui_game_symbol_long_shot">
+			
+			<display_entry item="gunRifleT4SniperRifleImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunRifleT5SniperRifleGaus" unlock_level="25,30,35,40,45,50"/>
+			<display_entry icon="gunRifleT1HuntingRifleParts,modGunBipod,modGunSoundSuppressorSilencer,modGunTriggerGroupSemi" name_key="MasterRifleT3-1,MasterRifleT3-2,MasterRifleT3-3,MasterRifleT3-4" has_quality="false" unlock_level="8,16,24,32">
+				<unlock_entry item="modGunRiflePartsImp" unlock_tier="1" />
+				<unlock_entry item="modGunBipodImp" unlock_tier="2" />
+				<unlock_entry item="modGunSoundSuppressorSilencerImp" unlock_tier="3" />
+				<unlock_entry item="modGunDamageAccumulatorExp" unlock_tier="4" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunRifleT4SniperRifleImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunRifleT5SniperRifleGaus"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="modGunRiflePartsImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="modGunBipodImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="modGunSoundSuppressorSilencerImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="modGunDamageAccumulatorExp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="gunRifleT4SniperRifleImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="gunRifleT5SniperRifleGaus"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Handguns -->
+		<crafting_skill name="MasterCraftingHandguns" max_level="50" parent="attmaster" name_key="MasterCraftingHandgunsName" desc_key="MasterCraftingHandgunsDesc" long_desc_key="MasterCraftingHandgunsLongDesc" icon="ui_game_symbol_pistol">
+			
+			<display_entry item="gunHandgunT4SMG5Imp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunHandgunT5SMG5Zinger" unlock_level="25,30,35,40,45,50"/>
+			<display_entry icon="gunHandgunT1PistolParts,modGunMagazineExtender,modGunMeleeRadRemover" name_key="MasterHandgunsT3-1,MasterHandgunsT3-2,MasterHandgunsT3-3" has_quality="false" unlock_level="8,16,24">
+				<unlock_entry item="modGunPistolPartsImp" unlock_tier="1" />
+				<unlock_entry item="modGunMagazineExtenderImp" unlock_tier="2" />
+				<unlock_entry item="modGunMeleeRadRemoverImp" unlock_tier="3" />
+			</display_entry>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunHandgunT4SMG5Imp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunHandgunT5SMG5Zinger"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="modGunPistolPartsImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="modGunMagazineExtenderImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="24,100" value="1" tags="modGunMeleeRadRemoverImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="gunHandgunT4SMG5Imp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="gunHandgunT5SMG5Zinger"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Bows -->
+		<crafting_skill name="MasterCraftingBows" max_level="50" parent="attmaster" name_key="MasterCraftingBowsName" desc_key="MasterCraftingBowsDesc" long_desc_key="MasterCraftingHandgunsLongDesc" icon="ui_game_symbol_archery">
+						
+			<display_entry item="gunBowT4CompoundBowImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunBowT4CompoundCrossbowImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="gunBowT5CompoundCrossbowMantis" unlock_level="25,30,35,40,45,50"/>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBowT4CompoundBowImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBowT4CompoundCrossbowImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gunBowT5CompoundCrossbowMantis"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="gunBowT4CompoundBowImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="gunBowT4CompoundCrossbowImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="gunBowT5CompoundCrossbowMantis"/>
+			</effect_group>
+		</crafting_skill>
+		
+		<!-- Heavy Melee Weapon -->
+		<crafting_skill name="MasterHeavyMeleeWeapon" max_level="50" parent="attmaster" name_key="MasterHeavyMeleeWeaponName" desc_key="MasterHeavyMeleeWeaponDesc" long_desc_key="MasterHeavyMeleeWeaponLongDesc" icon="ui_game_symbol_sledge">
+						
+			<display_entry item="meleeWpnSledgeT4SteelSledgehammerImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="meleeWpnClubT4SteelClubImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="meleeWpnSpearT4SteelSpearImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="meleeWpnClubT5SteelAxeBarbarian" unlock_level="25,30,35,40,45,50"/>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeWpnSledgeT4SteelSledgehammerImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeWpnClubT4SteelClubImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeWpnSpearT4SteelSpearImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="meleeWpnClubT5SteelAxeBarbarian"/>
+
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeWpnSledgeT4SteelSledgehammerImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeWpnClubT4SteelClubImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeWpnSpearT4SteelSpearImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="meleeWpnClubT5SteelAxeBarbarian"/>
+			</effect_group>
+		</crafting_skill>
+		
+		
+		<!-- Light Melee Weapon -->
+		<crafting_skill name="MasterLightMeleeWeapon" max_level="50" parent="attmaster" name_key="MasterLightMeleeWeaponName" desc_key="MasterLightMeleeWeaponDesc" long_desc_key="MasterLightMeleeWeaponLongDesc" icon="ui_game_symbol_deep_cuts">
+						
+			<display_entry item="meleeWpnBatonT4PlasmaBaton" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="meleeWpnKnucklesT4SteelKnucklesImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="meleeWpnBladeT4MacheteImp" unlock_level="5,10,15,20,25,28"/>
+			<display_entry item="meleeWpnBladeT5MacheteIndiana" unlock_level="25,30,35,40,45,50"/>
+			
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeWpnBatonT4PlasmaBaton"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeWpnKnucklesT4SteelKnucklesImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="meleeWpnBladeT4MacheteImp"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="meleeWpnBladeT5MacheteIndiana"/>
+
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeWpnBatonT4PlasmaBaton"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeWpnKnucklesT4SteelKnucklesImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,28,100" value="1,2,3,4,5,5" tags="meleeWpnBladeT4MacheteImp"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="30,35,40,45,50,100" value="1,2,3,4,5,5" tags="meleeWpnBladeT5MacheteIndiana"/>
+			</effect_group>
+		</crafting_skill>
+		
+	</append>
+	
+	<!-- Add AntiRad and Rescuer's First Aid Kit-->
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@unlock_level='50,60,75']/@icon">medicalFirstAidKit,drugAntibiotics,drugSteroids,drugPainkillers,medicalFirstAidKit</set>
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@unlock_level='50,60,75']/@name_key">medicalT3-1,medicalT3-2,medicalT3-3,medicalT3-4,medicalT3-5</set>
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@unlock_level='50,60,75']/@unlock_level">50,60,75,75,75</set>
+	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@unlock_level='50,60,75,75,75']">
+		<unlock_entry item="drugAntiRadPills" unlock_tier="4" />
+		<unlock_entry item="medicalRescuerFirstAidKit" unlock_tier="5" />
+	</append>
+	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugAntiRadPills"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="medicalRescuerFirstAidKit"/>
+	</append>
+	 
+
+</config>

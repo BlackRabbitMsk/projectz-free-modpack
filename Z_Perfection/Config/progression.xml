@@ -64,7 +64,7 @@
 			</level_requirements>
 
 			<effect_group>
-				<passive_effect name="PlayerExpGain" operation="perc_add" level="1,5" value=".05,.25"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1,5" value=".08,.4"/>
 			</effect_group>
 			
 			<effect_group name="XP Buff Bonus">
@@ -438,6 +438,7 @@
 
 			<effect_group>
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="butcherHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="butcherHarvestMutation"/>
 			</effect_group>
 
 			<effect_group>
@@ -452,21 +453,24 @@
 		<perk name="perkGoodSowing" max_level="3" parent="skillResourceGathering" base_skill_point_cost="1" name_key="perkGoodSowingName" desc_key="perkGoodSowingDesc" icon="ui_game_symbol_crops">
 			
 			<level_requirements level="1">
-				<requirement name="ProgressionLevel" progression_name="attPerfection" operation="GTE" value="3" desc_key="reqPerfectLevel03"/>
+				<requirement name="ProgressionLevel" progression_name="attPerfection" operation="GTE" value="1" desc_key="reqPerfectLevel01"/>
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="3" desc_key="reqFortitudeLevel03"/>
 			</level_requirements>
 			<level_requirements level="2">
-				<requirement name="ProgressionLevel" progression_name="attPerfection" operation="GTE" value="6" desc_key="reqPerfectLevel06"/>
-				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel05"/>
+				<requirement name="ProgressionLevel" progression_name="attPerfection" operation="GTE" value="3" desc_key="reqPerfectLevel03"/>
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/>
 			</level_requirements>
 			<level_requirements level="3">
-				<requirement name="ProgressionLevel" progression_name="attPerfection" operation="GTE" value="10" desc_key="reqPerfectLevel05"/>
-				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel07"/>
+				<requirement name="ProgressionLevel" progression_name="attPerfection" operation="GTE" value="5" desc_key="reqPerfectLevel05"/>
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/>
 			</level_requirements>
 
 			<effect_group>
+				<passive_effect name="CraftingTier" operation="base_set" level="0,3" value="0,3" tags="perkGoodSowing"/>
 				<passive_effect name="HarvestCount" operation="perc_add" level="2,3" value="1,2" tags="cropHarvest,wildCropsHarvest"/>
 				<passive_effect name="HarvestCount" operation="base_add" level="1,2,3" value="1,1,1" tags="bonusCropHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" level="2,3" value="1,1" tags="farmerSelectionSeed"/>
+				<passive_effect name="HarvestCount" operation="base_set" level="3" value="1" tags="farmerAdvSelectionSeed"/>
 				<effect_group>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" level="2,3" value="10,20"/>
 					<passive_effect name="HarvestCount" operation="base_add" value="1" tags="farmerBonusSeed"/>
@@ -678,11 +682,11 @@
 			<effect_group>
 				<passive_effect name="DegradationPerUse" operation="base_subtract" level="1,2,3,4,5" value=".1,.2,.3,.4,.5" tags="heavyArmor"/>
 				
-				<effect_description level="1" desc_key="perkArmorMediumRank1Desc" long_desc_key="perkArmorMediumRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkArmorMediumRank2Desc" long_desc_key="perkArmorMediumRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkArmorMediumRank3Desc" long_desc_key="perkArmorMediumRank3LongDesc"/>
-				<effect_description level="4" desc_key="perkArmorMediumRank4Desc" long_desc_key="perkArmorMediumRank4LongDesc"/>
-				<effect_description level="5" desc_key="perkArmorMediumRank5Desc" long_desc_key="perkArmorMediumRank5LongDesc"/>
+				<effect_description level="1" desc_key="perkArmorMediumRank1Desc" long_desc_key="perkArmorHeavyRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkArmorMediumRank2Desc" long_desc_key="perkArmorHeavyRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkArmorMediumRank3Desc" long_desc_key="perkArmorHeavyRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkArmorMediumRank4Desc" long_desc_key="perkArmorHeavyRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkArmorMediumRank5Desc" long_desc_key="perkArmorHeavyRank5LongDesc"/>
 			</effect_group>
 		</perk>
 		

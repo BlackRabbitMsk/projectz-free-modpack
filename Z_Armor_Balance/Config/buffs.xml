@@ -301,12 +301,12 @@
 	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
         <effect_group>
             <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLightArmorSetBonus">
-                <requirement name="WornItems" operation="LT" value="4" tags="lightArmor"/>
+                <requirement name="WornItems" operation="LT" value="4" tags="NoPrimitive"/>
                 <requirement name="StatCompareCurrent" stat="Armor" operation="GT" value="0.00"/>
                 <requirement name="HasBuff" buff="buffLightArmorSetBonus"/>
             </triggered_effect>
             <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLightArmorSetBonus">
-                <requirement name="WornItems" operation="Equals" value="4" tags="lightArmor"/>
+                <requirement name="WornItems" operation="Equals" value="4" tags="NoPrimitive"/>
                 <requirement name="StatCompareCurrent" stat="Armor" operation="GT" value="0.00"/>
                 <requirement name="!HasBuff" buff="buffLightArmorSetBonus"/>
             </triggered_effect>
@@ -317,7 +317,7 @@
         <buff name="buffLightArmorSetBonus" name_key="buffLightArmorSetBonusName" description_key="buffLightArmorSetBonusDesc" tooltip_key="buffLightArmorSetBonusTooltip" icon="ui_game_symbol_agility" icon_color="180,180,180">
             <stack_type value="ignore"/>
 			<effect_group>
-                <passive_effect name="RunSpeed" operation="perc_add" value=".2" />
+                <passive_effect name="RunSpeed" operation="perc_add" value=".1" />
             </effect_group>
         </buff>
     </append>

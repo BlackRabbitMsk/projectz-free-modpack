@@ -1,0 +1,71 @@
+Key,Source,Context,Changes,English,Russian
+
+buffBuffDevourerAOE,buffs,Buff,,Devourer,Пожиратель
+
+BuffDevourerAOEName,buffs,buff,,Devourer nearby, Пожиратель рядом
+BuffDevourerAOETooltip,buffs,buff,,The Devourer is on the hunt,Пожиратель вышел на охоту
+BuffDevourerAOEIncDesc,buffs,Buff,,"You have sometimes heard about this creature in stories from experienced wanderers. And here is this creature next to you. If you are not ready to meet it, you better run away. The Devourer never walks alone, if it senses danger, it can call minions.\nIt is difficult for you to overcome fear. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Вы иногда слышали об этой твари в расказах от бывалых странников. И вот это тварь рядом с вами. Если вы не готовы к встречи с ней лучше убегайте. Пожиратель никогда не ходит один, если он почувствует опасность он может позвать приспешников.\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffBearDaddyAOE,buffs,Buff,,Bear Daddy,Папа Медведь
+
+BuffBearDaddyAOEName,buffs,buff,,Bear Daddy nearby, Папа Медведь рядом
+BuffBearDaddyAOETooltip,buffs,buff,,Bear Daddy is on the hunt,Папа Медведь вышел на охоту
+BuffBearDaddyAOEIncDesc,buffs,Buff,,"You have sometimes heard about this creature in stories from experienced wanderers. And here is this creature next to you. If you are not ready to meet it, you better run away. The Bear Daddy never walks alone, if it senses danger, it can call minions.\nIt is difficult for you to overcome fear. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Вы иногда слышали об этой твари в расказах странников. И вот это тварь рядом с вами. Если вы не готовы к встречи с ней лучше убегайте. Папа медведь никогда не ходит один, если он почувствует опасность он может позвать приспешников.\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffGargulAOE,buffs,Buff,,Gargul,Гаргул
+
+BuffGargulAOEName,buffs,buff,,Gargul nearby, Гаргул рядом
+BuffGargulAOETooltip,buffs,buff,,Gargul is on the hunt,Гаргул вышел на охоту
+BuffGargulAOEIncDesc,buffs,Buff,,"You have sometimes heard about this creature in stories from experienced wanderers. And here is this creature next to you. If you are not ready to meet it, you better run away. Gargul never flies alone, if he senses danger he can call his minions.\nIt is difficult for you to overcome fear. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Вы иногда слышали об этой твари в расказах странников. И вот это тварь рядом с вами. Если вы не готовы к встречи с ней лучше убегайте. Гаргул никогда не летает один, если он почувствует опасность он может позвать приспешников.\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffBullAOE,buffs,Buff,,Bull,Бугай
+BuffBullAOEName,buffs,buff,,Bull nearby, Бугай рядом
+BuffBullAOETooltip,buffs,buff,,Bull is on the hunt,Бугай вышел на охоту
+BuffBullAOEIncDesc,buffs,Buff,,"What do you get when you cross a strongman and a bull? Nothing good!!!\nThis creature knows no fatigue, and its blows are capable of turning any fortification into crumbs. An extremely dangerous opponent. If you get hit by its blow, you will most likely die. Think three times before engaging it in battle.\n\nYour fear is difficult to overcome. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Что получиться если скрестить силача и быка. Ничего хорого!!!\nЭта тварь не знает усталостии, а его удары способны превратить в крошку любое укрепрение. Крайне опасный противник. Если вы попадете под его удар, вы скорее всего умрете. Подумайте трижды прежде чем ввязываться с ним в бой.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffShockerAOE,buffs,Buff,,Shocker,Шокер
+BuffShockerAOEName,buffs,buff,,Shocker nearby, Шокер рядом
+BuffShockerAOETooltip,buffs,buff,,Shocker is on the hunt,Шокер вышел на охоту
+BuffShockerAOEIncDesc,buffs,Buff,,"What happens if you connect an irradiated zombie to the network. Apparently someone seriously asked this question!!!\nThis creature burns everything on its own near itself. Try not to get close to it, if possible.\n\nIt is difficult for you to overcome your fear. Your eyes are dark and everything is swimming. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Что получиться если подключить к сети облученного зомби. Видимо ктото всерьез задался этим вопросом!!!\nЭта тварь сжигает все на своем рядом с собой. Старайтель не сближаться с ней, если получиться.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffVeteranAOE,buffs,Buff,,Veteran,Ветеран
+BuffVeteranAOEName,buffs,buff,,Veteran nearby, Ветеран рядом
+BuffVeteranAOETooltip,buffs,buff,,Veteran is on the hunt,Ветеран вышел на охоту
+BuffVeteranAOEIncDesc,buffs,Buff,,"This creature was once one of the elite units. But a little beer and a bit of zombies do the trick. Don't underestimate the stamina and thirst for shooting of someone who only knew how to kill - even in this form. They say the brotherhood of arms is on another physical level. And even now they are always ready to help each other.\n\nIt's hard for you to overcome your fear. Your eyes are dark and everything is blurry. But you can still RUN!!!\nYour mobility is reduced by [FFB800]10%[-]","Это создание когда давно был одним из представителей элитных подразделений. Но немного пива и чуток зомби делают свое дело. Не стоит недооценивать выносливость и жажду пострелять того, кто только и умел что убивать - даже в таком виде. Говорят боевое братство на другом физическом уровне. И даже сейчас они всегда готовы помочь друг другу.\n\nВам сложно преодолеть страх. В глазах потемнего и все поплыло. Но вы все еще можете БЕЖАТЬ!!!\nВаша мобильность снижена на [FFB800]10%[-]"
+
+BuffBossEnragePlayer,buffs,Buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerName,buffs,buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerTooltip,buffs,buff,,Boss in rage,Босс в бешенстве
+BuffBossEnragePlayerIncDesc,buffs,Buff,,"You've driven Boss into a rage. Better run away!\nHis movement speed is increased by [DECEA3]50%[-], his attack speed is increased by [DECEA3]60%[-], and any of his attacks will knock you down.\n\nHowever, his damage resistance is decreased by [DECEA3]30%[-]","Вы довели Босса до приступа бешенства. Лучше убегайте!\nСкорость его передвижения увеличена на [DECEA3]50%[-], скорость атаки увеличена на [DECEA3]60%[-], также любая его атака собъет вас с ног.\n\nОднако сопротивление урону уменьшенно на [DECEA3]30%[-]"
+
+BuffBossImmortalPlayer,buffs,Buff,,Boss is invulnerable,Босс неуязвим
+BuffBossImmortalPlayerName,buffs,buff,,Boss is invulnerable,Босс неуязвим
+BuffBossImmortalPlayerTooltip,buffs,buff,,Boss is invulnerable,Босс неуязвим
+BuffBossImmortalPlayerIncDesc,buffs,Buff,,"The Boss has gone into deep defense. He emits strong radiation, be careful!\nIt's better to hit him for now. He is invulnerable to any type of damage.","Босс ушел в глухую оборону. Он излучает сильную радиацию, будьте осторожны!\nПока лучше его бить. Оне неуязвим к любому типу урона."
+
+BuffBossHealthTheftPlayer,buffs,Buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerName,buffs,buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerTooltip,buffs,buff,,Boss steals health,Босс крадет здоровье
+BuffBossHealthTheftPlayerIncDesc,buffs,Buff,,"The boss feeds on your adrenaline. You take damage over time and are slowed down. Try to wait it out and stay alive.","Босс питается вашим адреналином. Вы получаете периодический урон и замедлены\nПостарайтесь переждать и остаться в живых."
+
+BuffBossBrotherhoodPlayer,buffs,Buff,,Brotherhood in arms,Боевое братство
+BuffBossBrotherhoodPlayerName,buffs,buff,,Boss's Brotherhood of War,Боевое братство босса
+BuffBossBrotherhoodPlayerTooltip,buffs,buff,,The boss calls for a fighting brotherhood,Босс призывает боевое братство
+BuffBossBrotherhoodPlayerIncDesc,buffs,Buff,,"The boss summons a brotherhood of arms. For the duration of the ability, all enemies within 20 meters of the boss receive a mobility bonus of [DECEA3]25%[-], and all damage taken by them is reduced by [DECEA3]50%[-]. In addition, your resistance to physical damage is reduced by [FFB800]25%[-]\nTry to wait it out and stay alive.","Босс вызывает боевое братство. На время действия способности все противники в радиусе 20 метров от боссы получают бонус к мобильности [DECEA3]25%[-], а также весь урон по ним уменьшен на [DECEA3]50%[-]. Кроме ваше сопротивление к физическому урону снижено на [FFB800]25%[-]\nПостарайтесь переждать и остаться в живых."
+
+BuffTerribleWoundsName,buffs,buff,,Terrible wound, Ужасные раны
+BuffTerribleWoundsTooltip,buffs,buff,,You have a terrible wound,У вас ужасная рана
+BuffTerribleWoundsIncDesc,buffs,Buff,,"You have opened up a nasty wound. You take periodic damage from blood loss. \nYour health is reduced by [FFB800]25[-] and your mobility is reduced by [FFB800]20%[-]","У вас открылась ужасная рана. Вы получаете периодический урон от потери крови. \nЗапас здоровья снижен на [FFB800]25[-] а ваша мобильность на [FFB800]20%[-]"
+
+bossDevourer,entityclasses,Entity,,[FFB800]Mini BOSS[-] DEVOURER,[FFB800]Мини БОСС[-] ПОЖИРАТЕЛЬ
+DevourerMinion,entityclasses,Entity,,[94CBFF]MINION[-] Devourer,[94CBFF]МИНЬЕН[-] Пожирателя
+bossBearDaddy,entityclasses,Entity,,[FFB800]Mini BOSS[-] BEAR DADDY,[FFB800]Мини БОСС[-] ПАПА МЕДВЕДЬ
+BearDaddyMinion,entityclasses,Entity,,[94CBFF]MINION[-] Bear Daddy,[94CBFF]МИНЬЕН[-] Папы медведя
+bossGargul,entityclasses,Entity,,[FFB800]Mini BOSS[-] GARGUL,[FFB800]Мини БОСС[-] ГАРГУЛ
+GargulMinion,entityclasses,Entity,,[94CBFF]MINION[-] Gargul,[94CBFF]МИНЬЕН[-] Гаргула
+bossBull,entityclasses,Entity,,[FFB800]BOSS[-] BULL,[FFB800]БОСС[-] БУГАЙ
+bossShocker,entityclasses,Entity,,[FFB800]BOSS[-] SHOCKER,[FFB800]БОСС[-] ШОКЕР
+bossVeteran,entityclasses,Entity,,[FFB800]BOSS[-] VETERAN,[FFB800]БОСС[-] ВЕТЕРАН
+
+MiniBossLootContainer,entityclasses,Entity,,Loot [DECEA3]Mini BOSS[-],Добыча [DECEA3]Мини БОСС[-]
+BossLootContainer,entityclasses,Entity,,Loot [FFB800]BOSS[-],Добыча [FFB800]БОСС[-]

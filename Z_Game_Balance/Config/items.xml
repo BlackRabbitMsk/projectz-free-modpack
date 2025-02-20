@@ -1,0 +1,5 @@
+<config>
+	
+	<set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='EconomicValue']/@value">40</set>
+	
+</config>

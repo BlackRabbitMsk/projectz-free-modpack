@@ -1,0 +1,68 @@
+<config>
+		
+	<!-- WASTELAND -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		bossDevourer, .18
+		bossGargul, .15
+		bossBearDaddy, .18
+		bossBull, .1
+		bossShocker, .1
+		bossVeteran, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		bossDevourer, .3
+		bossBearDaddy, .2
+		bossGargul, .15
+		bossBull, .1
+		bossShocker, .1
+		bossVeteran, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add" >
+		bossDevourer, .18
+		bossBearDaddy, .18
+		bossGargul, .15
+		bossBull, .15
+		bossShocker, .15
+		bossVeteran, .15
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']/text()" delim="\n" op="add" >
+		bossDevourer, .18
+		bossBearDaddy, .18
+		bossGargul, .15
+		bossBull, .12
+		bossShocker, .12
+		bossVeteran, .12
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']/text()" delim="\n" op="add" >
+		bossDevourer, .18
+		bossGargul, .15
+		bossBearDaddy, .18
+		bossBull, .1
+		bossShocker, .1
+		bossVeteran, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']/text()" delim="\n" op="add" >
+		bossDevourer, .18
+		bossGargul, .15
+		bossBearDaddy, .18
+		bossBull, .1
+		bossShocker, .1
+		bossVeteran, .1
+	</csv>
+		
+	<!-- BURNT_FOREST -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestNight']/text()" delim="\n" op="add" >
+		bossDevourer, 4
+	</csv>
+	
+	<!-- DESERT -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesertNight']/text()" delim="\n" op="add" >
+		bossGargul, 2
+	</csv>
+		
+	<!-- SNOW -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnowNight']/text()" delim="\n" op="add" >
+		bossBearDaddy, 4
+	</csv>
+	
+</config>

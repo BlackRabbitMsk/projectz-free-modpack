@@ -1,0 +1,17 @@
+<config>
+	
+	<set xpath="/blocks/block[(starts-with(@name, 'terr')) and contains(@name, 'Ore')]/drop[@name='resourceRawDiamond']/@prob">.008</set>
+	<set xpath="/blocks/block[(starts-with(@name, 'terr')) and contains(@name, 'Ore')]/drop[@name='resourceGoldNugget']/@prob">.016</set>
+	<set xpath="/blocks/block[(starts-with(@name, 'terr')) and contains(@name, 'Ore')]/drop[@name='resourceSilverNugget']/@prob">.032</set>
+	
+	
+	<insertAfter xpath="/blocks/block[(starts-with(@name, 'terr')) and contains(@name, 'Ore')]/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".01" count="1" tag="modPreciousMetals"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".025" count="1" tag="modPreciousMetals"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".05" count="1" tag="modPreciousMetals"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".016" count="1" tag="modPreciousMetalsUnique"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".05" count="1" tag="modPreciousMetalsUnique"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".1" count="1" tag="modPreciousMetalsUnique"/>
+	</insertAfter>
+	
+</config>

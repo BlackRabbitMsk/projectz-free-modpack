@@ -1,0 +1,209 @@
+<config>
+	
+	 <append xpath="/lootcontainers">
+		
+		<!-- *** Imp Ammo_Groups -->
+		<!-- 9mm -->
+		<lootgroup name="group9mmHPLarge">
+			<item name="ammo9mmBulletHP" count="22,30" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="group9mmAPLarge">
+			<item name="ammo9mmBulletAP" count="22,30" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="group9mmDULarge">
+			<item name="ammo9mmBulletDU" count="18,24" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<!-- .44 -->
+		<lootgroup name="group44MagnumHPLarge">
+			<item name="ammo44MagnumBulletHP" count="19,26" loot_stage_count_mod="0.006"/>
+		</lootgroup>	
+		<lootgroup name="group44MagnumAPLarge">
+			<item name="ammo44MagnumBulletAP" count="19,26" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="group44MagnumDULarge">
+			<item name="ammo44MagnumBulletDU" count="16,21" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<!-- 7.62 -->
+		<lootgroup name="group762mmHPLarge">
+			<item name="ammo762mmBulletHP" count="18,25" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="group762mmAPLarge">
+			<item name="ammo762mmBulletAP" count="18,25" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="group762mmDULarge">
+			<item name="ammo762mmBulletDU" count="15,20" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<!-- Shotgun -->
+		<lootgroup name="groupShotgunSlugLarge">
+			<item name="ammoShotgunSlug" count="18,25" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="groupShotgunBreachingSlugLarge">
+			<item name="ammoShotgunBreachingSlug" count="18,25" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		<lootgroup name="groupShotgunSlugDULarge">
+			<item name="ammoShotgunSlugDU" count="12,16" loot_stage_count_mod="0.006"/>
+		</lootgroup>
+		
+		<!-- Rare Resources -->
+		<lootgroup name="groupUltraLightAlloysBoss">
+			<item name="resourceUltraLightAlloys" count="3,5" loot_stage_count_mod="0.002"/>
+		</lootgroup>
+		<lootgroup name="groupStrengthAlloysBoss">
+			<item name="resourceUltraStrengthAlloys" count="3,5" loot_stage_count_mod="0.002"/>
+		</lootgroup>
+		<lootgroup name="groupExperimentalAlloysBoss">
+			<item name="resourceExperimentalAlloys" count="1,2" loot_stage_count_mod="0.001"/>
+		</lootgroup>
+		<lootgroup name="groupPreciousMetalsBoss">
+			<item name="resourcePreciousMetals" count="1" loot_stage_count_mod="0.001"/>
+		</lootgroup>
+		<lootgroup name="groupMechanicalPartsImp">
+			<item name="resourceMechanicalPartsImp" count="1,3" loot_stage_count_mod="0.002"/>
+		</lootgroup>
+		<lootgroup name="groupElectricPartsImp">
+			<item name="resourceElectricPartsImp" count="1,3" loot_stage_count_mod="0.002"/>
+		</lootgroup>
+		
+		<lootgroup name="groupAmmoImpLarge">
+			<item group="group9mmHPLarge"/>
+			<item group="group9mmAPLarge"/>
+			<item group="group44MagnumHPLarge"/>
+			<item group="group44MagnumAPLarge"/>
+			<item group="group762mmHPLarge"/>
+			<item group="group762mmAPLarge"/>
+			<item group="groupShotgunSlugLarge"/>
+			<item group="groupShotgunBreachingSlugLarge"/>
+		</lootgroup>
+		
+		<lootgroup name="groupAmmoDU">
+			<item group="group9mmDULarge"/>
+			<item group="group44MagnumDULarge"/>
+			<item group="group762mmDULarge"/>
+			<item group="groupShotgunSlugDULarge"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMiniBoss01">
+			<item name="resourceDuctTape" count="1,4" loot_prob_template="high"/>
+			<item group="groupFoodUncommon" loot_prob_template="high"/>
+			<item group="groupDrinksUncommon" loot_prob_template="high"/>
+			<item group="groupMedicalUncommon" loot_prob_template="med"/>
+			<item name="resourceAcid" count="2" loot_prob_template="low"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMiniBoss04">
+			<item group="groupRareToolsTiered" loot_prob_template="high"/>
+			<item group="booksRareOnlyScaled" loot_prob_template="med"/>
+			<item group="groupWeaponsAllScaledNoStone" loot_prob_template="high"/>
+			<item name="casinoCoin" count="2000,4000" loot_prob_template="med"/>
+			<item name="oldCash" count="1000,2000" loot_prob_template="med"/>
+			<item group="groupMedicalRare" loot_prob_template="medHigh"/>
+			<item group="groupTreasureMaps" loot_prob_template="low"/>
+			<item name="modArmorNightVision" loot_prob_template="veryLow"/>
+			<item group="groupModAllScaled" loot_prob_template="med"/>
+			<item group="vehiclePartsTiered" loot_prob_template="med"/>
+			<item name="modArmorHelmetLight" loot_prob_template="veryLow"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMiniBossAlloys">
+			<item group="groupUltraLightAlloysBoss" loot_prob_template="medHigh"/>
+			<item group="groupStrengthAlloysBoss" loot_prob_template="medHigh"/>
+			<item group="groupMechanicalPartsImp" loot_prob_template="veryLow"/>
+			<item group="groupElectricPartsImp" loot_prob_template="veryLow"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBossAlloys">
+			<item group="groupPreciousMetalsBoss" loot_prob_template="low"/>
+			<item group="groupExperimentalAlloysBoss" loot_prob_template="low"/>
+			<item group="groupMechanicalPartsImp" loot_prob_template="medHigh"/>
+			<item group="groupElectricPartsImp" loot_prob_template="medHigh"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRareMods">
+			<item name="modMotorBooster" prob=".25"/>
+			<item name="modReactorBooster" prob=".08"/>
+			<item name="modIncreasedBattery" prob=".25"/>
+			<item name="modReactorElectric" prob=".25"/>
+			<item name="modElongatedCore" loot_prob_template="med"/>
+			<item name="modReinforcedParts" loot_prob_template="med"/>
+			<item name="modEnhancedMechanisms" loot_prob_template="med"/>
+			<item name="modFastMechanisms" loot_prob_template="med"/>
+			<item name="modSpareBox" loot_prob_template="med"/>
+			<item name="modBandolierImp" loot_prob_template="med"/>
+			<item name="modSmartGlass" loot_prob_template="med"/>			
+						
+			<item name="modSurgicalBladeUnique" prob=".08"/>	
+			<item name="modGunDrumMagazineExtenderImp" prob=".16"/>
+			<item name="modGunMagazineExtenderImp" prob=".16"/>
+			<item name="modGunMeleeRadRemoverImp" prob=".16"/>
+			<item name="modGunCrippleEmImp" prob=".16"/>
+			<item name="modGunRiflePartsImp" prob=".16"/>
+			<item name="modGunPistolPartsImp" prob=".16"/>
+			<item name="modGunM60PartsImp" prob=".16"/>
+			<item name="modGunShotgunPartsImp" prob=".16"/>
+			<item name="modGunForegripImp" prob=".16"/>
+			<item name="modGunBipodImp" prob=".16"/>
+			<item name="modGunSoundSuppressorSilencerImp" prob=".16"/>
+			<item name="modGunBoosterExp" prob=".08"/>
+			<item name="modGunDamageAccumulatorExp" prob=".08"/>
+		</lootgroup>
+		
+		<lootgroup name="groupUniqMods">
+			<item name="modJetPack" prob=".16"/>
+			<item name="modOkGoogle" prob=".08"/>
+			<item name="modVehicleSuperChargerUnique" prob=".16"/>
+			<item name="modVehicleFuelSystemUnique" prob=".16"/>
+			<item name="modVehiclePlowUnique" prob=".16"/>
+			<item name="modVehicleArmorUnique" prob=".16"/>
+			<item name="modGunDrumMagazineExtenderUnique" prob=".16"/>			
+			<item name="modGunMagazineExtenderUnique" prob=".16"/>			
+			<item name="modGunMeleeRadRemoverUnique" prob=".16"/>			
+			<item name="modGunCrippleEmUnique" prob=".16"/>			
+			<item name="modGunRiflePartsUnique" prob=".16"/>			
+			<item name="modGunPistolPartsUnique" prob=".16"/>			
+			<item name="modGunM60PartsUnique" prob=".16"/>			
+			<item name="modGunShotgunPartsUnique" prob=".16"/>			
+			<item name="modGunForegripUnique" prob=".16"/>			
+			<item name="modGunBipodUnique" prob=".16"/>			
+			<item name="modGunSoundSuppressorSilencerUnique" prob=".16"/>			
+			<item name="modGunBoosterUnique" prob=".16"/>			
+			<item name="modGunDamageAccumulatorUnique" prob=".16"/>			
+			<item name="modLuckyMiningUnique" prob=".16"/>			
+		</lootgroup>
+		
+		<!-- lootgroups -->
+		<lootgroup name="groupMiniBoss" count="all">
+			<item group="groupAmmoImpLarge" count="3"/>
+			<item group="groupMiniBoss01" count="2"/>
+			<item group="groupZpackBoss02" count="2"/>
+			<item group="groupZpackBoss03" count="1"/>
+			<item group="groupMiniBossAlloys" count="1"/>
+			<item group="groupZpackBoss04" prob=".7" force_prob="true"/>
+			<item group="groupRareMods" prob=".25" force_prob="true"/>
+		</lootgroup>
+		
+		<!-- lootgroups -->
+		<lootgroup name="groupBoss" count="all">
+			<item group="groupAmmoImpLarge" count="3"/>
+			<item group="groupAmmoDU" count="3"/>
+			<item group="groupMiniBoss01" count="3"/>
+			<item group="groupZpackBoss02" count="3"/>
+			<item group="groupZpackBoss03" count="1"/>
+			<item group="groupBossAlloys" count="2"/>
+			<item group="groupZpackBoss04" prob=".8" force_prob="true"/>
+			<item group="groupRareMods" prob=".4" force_prob="true"/>
+			<item group="groupUniqMods" prob=".25" force_prob="true"/>
+		</lootgroup>
+		
+		<!-- EntityLootContainerBoss, rare random drop off bosses -->
+		<lootcontainer name="rewardMiniBoss" count="1" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+			<item group="groupMiniBoss"/>
+		</lootcontainer>
+		
+		<lootcontainer name="rewardBoss" count="1" size="6,5" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+			<item group="groupBoss"/>
+		</lootcontainer>
+
+		
+	</append>
+	
+</config>

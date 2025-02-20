@@ -5,5 +5,7 @@
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/@installable_tags">armorHands</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/@installable_tags">armorHands</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/@installable_tags">armorHands</set>
+
+	<set xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']/@installable_tags">BlockItem</set>
 	
 </config>

@@ -1,0 +1,88 @@
+<config>
+			
+	<append xpath="/buffs">
+		
+		<buff name="BuffEliteHands">
+			<stack_type value="replace"/>
+			<duration value="600"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="BuffAcRadEliteZombie">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_right" />
+				</triggered_effect>				
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffAcRadEliteZombie">
+			<stack_type value="replace"/>
+			<duration value="6"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$IRradiationStatus" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$AcRadEliteZombieHit" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$AcRadEliteZombieHit"/>
+			</effect_group>
+		</buff>	
+		
+		<buff name="BuffAcRadEliteZombieAOEself" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="BuffAcRadEliteZombieAOE">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="BuffAcRadEliteZombieAOE" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<update_rate value="1"/>
+			
+			<!-- Visual effect of radiation -->
+			
+			<!-- <effect_group> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"> -->
+					<!-- <requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/> -->
+				<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity=".06" fade=".3" effect_name="Hot"> -->
+					<!-- <requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/> -->
+				<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".3" effect_name="Hot"> -->
+					<!-- <requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/> -->
+				<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".06" fade="2"/> -->
+				<!-- <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/> -->
+			<!-- </effect_group> -->
+		</buff>
+		
+	</append>
+		
+</config>

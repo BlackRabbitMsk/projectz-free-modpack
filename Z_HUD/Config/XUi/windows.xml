@@ -11,10 +11,18 @@
 				<filledsprite pos="3,-3" depth="5"  name="BarContent" color="255,0,0,180" width="314" height="28" fill="{fill}" globalopacity="true"/>
 				<label depth="3" name="TextContent" pos="-3,-6" font_size="22" color="[white]" justify="center" pivot="topleft" text="{name}:{currentwithmax}" height="34"/>
 			</rect>
+			<!-- <rect pos="-154,400" width="320" height="34" visible="{visible}" tag="boss"> -->
+				<!-- <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true"  gamepad_selectable="false"/> -->
+				<!-- <sprite depth="3" name="background" color="[black]" type="sliced" /> -->
+				<!-- <filledsprite pos="3,-3" depth="5"  name="BarContent" color="255,0,0,180" width="314" height="28" fill="{fill}" globalopacity="true"/> -->
+				<!-- <label depth="3" name="TextContent" pos="-3,-6" font_size="22" color="[white]" justify="center" pivot="topleft" text="{name}:{currentwithmax}" height="34"/> -->
+			<!-- </rect> -->
 		</window>
 	</append>
 	
+	<!-- Left Panel -->
 	<remove xpath="/windows/window[@name='HUDLeftStatBars']"/>
+	
 	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@stat_type='Water']" />
 	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@stat_type='Food']" />
 	<remove xpath="/windows/window[@name='windowToolbelt']/rect/sprite[@pos='0,6']" />
@@ -50,7 +58,15 @@
 					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="24,24" pos="8,-8" foregroundlayer="true"/>
 					<label depth="7" name="TextContent" pos="-8,-8" font_size="26" color="[white]" text="{statcurrentwithmax}" height="44" justify="right"/>
 					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
-				</rect>				
+					<rect pos="186,0" width="40" height="40" visible="{sprintactive}">
+						<filledsprite pos="3,-3" depth="3" name="background" color="[black]" width="34" height="34" type="filled" fill="{statmodifiedmax}" />
+						<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true"  gamepad_selectable="false"/>
+						<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+						<sprite pos="6,-20" depth="8" name="sprint" atlas="{uiatlas}" sprite="ui_game_symbol_run" size="28,28" pivot="left"/>
+						<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					</rect>
+				</rect>		
+				
 				<!--XP Bar Adjustments, Now Circle-->
 				
 				<rect pos="90,-94" width="90" height="90" cursor_area="true" xp_fill_speed="2" >
@@ -97,5 +113,5 @@
 			</rect>
 		</window>
 	</append>
-
+		
 </config>

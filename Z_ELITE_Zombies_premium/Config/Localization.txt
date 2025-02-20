@@ -1,0 +1,32 @@
+Key,Source,Context,Changes,English,Russian
+
+zombieDemolitionElite,entityclasses,Entity,,[94CBFF]ELITE[-] Demolition,[94CBFF]ЭЛИТНЫЙ[-] Разрушитель
+zombieFemaleFatElite,entityclasses,Entity,,[94CBFF]ELITE[-] Big Mama,[94CBFF]ЭЛИТНЫЙ[-] Толстуха
+zombieFatHawaiianElite,entityclasses,Entity,,[94CBFF]ELITE[-] Tourist,[94CBFF]ЭЛИТНЫЙ[-] Турист
+zombieCopElite,entityclasses,Entity,,[94CBFF]ELITE[-] Cop,[94CBFF]ЭЛИТНЫЙ[-] Полицейский
+
+zombieWightElite,entityclasses,Entity,,[94CBFF]ELITE[-] Wight,[94CBFF]ЭЛИТНЫЙ[-] Упырь
+zombieSoldierElite,entityclasses,Entity,,[94CBFF]ELITE[-] Soldier,[94CBFF]ЭЛИТНЫЙ[-] Солдат
+zombieSkaterElite,entityclasses,Entity,,[94CBFF]ELITE[-] Skater,[94CBFF]ЭЛИТНЫЙ[-] Скейтер
+zombieBikerElite,entityclasses,Entity,,[94CBFF]ELITE[-] Biker,[94CBFF]ЭЛИТНЫЙ[-] Байкер
+zombieHazmatElite,entityclasses,Entity,,[94CBFF]ELITE[-] Hazmat,[94CBFF]ЭЛИТНЫЙ[-] Ликвидатор
+zombieLumberjackElite,entityclasses,Entity,,[94CBFF]ELITE[-] Lumberjack,[94CBFF]ЭЛИТНЫЙ[-] Дровосек
+zombieMoeElite,entityclasses,Entity,,[94CBFF]ELITE[-] Moe,[94CBFF]ЭЛИТНЫЙ[-] Пухляш
+zombieUtilityWorkerElite,entityclasses,Entity,,[94CBFF]ELITE[-] Cop,[94CBFF]ЭЛИТНЫЙ[-] Строитель
+
+zombieMarleneElite,entityclasses,Entity,,[94CBFF]ELITE[-] Marlene,[94CBFF]ЭЛИТНЫЙ[-] Марлин
+zombieSpiderElite,entityclasses,Entity,,[94CBFF]ELITE[-] Spider,[94CBFF]ЭЛИТНЫЙ[-] Паук
+zombieBoeElite,entityclasses,Entity,,[94CBFF]ELITE[-] Boe,[94CBFF]ЭЛИТНЫЙ[-] Бо
+zombieDarleneElite,entityclasses,Entity,,[94CBFF]ELITE[-] Darlene,[94CBFF]ЭЛИТНЫЙ[-] Дарлин
+zombieJoeElite,entityclasses,Entity,,[94CBFF]ELITE[-] Joe,[94CBFF]ЭЛИТНЫЙ[-] Джо
+zombieSteveElite,entityclasses,Entity,,[94CBFF]ELITE[-] Steve,[94CBFF]ЭЛИТНЫЙ[-] Стив
+zombieYoElite,entityclasses,Entity,,[94CBFF]ELITE[-] Yo,[94CBFF]ЭЛИТНЫЙ[-] Йо
+zombieNurseElite,entityclasses,Entity,,[94CBFF]ELITE[-] Nurse,[94CBFF]ЭЛИТНЫЙ[-] Медсестра
+zombiePartyGirlElite,entityclasses,Entity,,[94CBFF]ELITE[-] Party Girl,[94CBFF]ЭЛИТНЫЙ[-] Стриптизерша
+zombieLabElite,entityclasses,Entity,,[94CBFF]ELITE[-] Lab Worker,[94CBFF]ЭЛИТНЫЙ[-] Лаборант
+zombieTomClarkElite,entityclasses,Entity,,[94CBFF]ELITE[-] Tom Clark,[94CBFF]ЭЛИТНЫЙ[-] Том Кларк
+zombieJanitorElite,entityclasses,Entity,,[94CBFF]ELITE[-] Janitor,[94CBFF]ЭЛИТНЫЙ[-] Механик
+zombieBurntElite,entityclasses,Entity,,[94CBFF]ELITE[-] Burnt,[94CBFF]ЭЛИТНЫЙ[-] Тлеющий зомби
+zombieBusinessManElite,entityclasses,Entity,,[94CBFF]ELITE[-] Business Man,[94CBFF]ЭЛИТНЫЙ[-] Бизнесмен
+zombieInmateElite,entityclasses,Entity,,[94CBFF]ELITE[-] Inmate,[94CBFF]ЭЛИТНЫЙ[-] Заключенный
+

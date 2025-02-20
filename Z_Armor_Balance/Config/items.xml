@@ -8,6 +8,8 @@
 	<!-- LUMBERJACK -->
 		
 	<!-- Lumberjack helmet xxx Not working -->
+	<set xpath="/items/item[@name='armorLumberjackHelmet']/property[@name='Tags']/@value">head,armor,armorHead,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
+	
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorLumberjackHelmet']/effect_group/passive_effect[@name='HarvestCount']"/>
 	<remove xpath="/items/item[@name='armorLumberjackHelmet']/effect_group/display_value[@name='dHarvestCount']"/>
@@ -21,8 +23,10 @@
 	</append>
 	
 	<!-- Lumberjack outfit / WITHOUT CHANGES -->
+	<set xpath="/items/item[@name='armorLumberjackOutfit']/property[@name='Tags']/@value">upperbody,chest,armor,armorChest,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	
 	<!-- LUMBERJACK GLOVES -->
+	<set xpath="/items/item[@name='armorLumberjackGloves']/property[@name='Tags']/@value">upperbody,hands,armor,armorHands,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorLumberjackGloves']/effect_group/passive_effect[@name='EntityDamage']"/>
 	<remove xpath="/items/item[@name='armorLumberjackGloves']/effect_group/display_value[@name='dLumberJackDamage']"/>
@@ -36,6 +40,7 @@
 	</append>
 				
 	<!-- LUMBERJACK BOOTS -->
+	<set xpath="/items/item[@name='armorLumberjackBoots']/property[@name='Tags']/@value">lowerbody,feet,armor,armorFeet,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorLumberjackBoots']/effect_group/passive_effect[@name='StaminaChangeOT']"/>
 	<remove xpath="/items/item[@name='armorLumberjackBoots']/effect_group/display_value[@name='dStaminaRegen']"/>
@@ -54,18 +59,22 @@
 	<!-- PREACHER -->
 		
 	<!-- PREACHER HELMET -->
-	<set xpath="/items/item[@name='armorPreacherHelmet']/effect_group/display_value[@name='dBartering']/@value">.04,.08,.12,.16,.2,.3</set>
-	<set xpath="/items/item[@name='armorPreacherHelmet']/effect_group/passive_effect[@name='BarteringBuying']/@value">.04,.08,.12,.16,.2,.3</set>
+	<set xpath="/items/item[@name='armorPreacherHelmet']/property[@name='Tags']/@value">head,armor,armorHead,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
+	<set xpath="/items/item[@name='armorPreacherHelmet']/effect_group/display_value[@name='dBartering']/@value">.02,.04,.06,.08,.1,.15</set>
+	<set xpath="/items/item[@name='armorPreacherHelmet']/effect_group/passive_effect[@name='BarteringBuying']/@value">.02,.04,.06,.08,.1,.15</set>
 	
 	<!-- PREACHER OUTFIT -->
+	<set xpath="/items/item[@name='armorPreacherOutfit']/property[@name='Tags']/@value">upperbody,chest,armor,armorChest,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<set xpath="/items/item[@name='armorPreacherOutfit']/effect_group[@name='PreacherOutfit']/display_value[@name='dDamageResist']/@value">.04,.08,.12,.16,.2,.3</set>
 	<set xpath="/items/item[@name='armorPreacherOutfit']/effect_group/passive_effect[@name='PhysicalDamageResist' and contains(@operation,'perc_add')]/@value">.04,.08,.12,.16,.2,.3</set>
 	
 	<!-- PREACHER GLOVES -->
+	<set xpath="/items/item[@name='armorPreacherGloves']/property[@name='Tags']/@value">upperbody,hands,armor,armorHands,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<set xpath="/items/item[@name='armorPreacherGloves']/effect_group/passive_effect[@name='EntityDamage']/@value">.04,.08,.12,.16,.2,.3</set>
 	<set xpath="/items/item[@name='armorPreacherGloves']/effect_group/display_value[@name='dEntityDamage']/@value">.04,.08,.12,.16,.2,.3</set>
 	
 	<!-- PREACHER BOOTS -->
+	<set xpath="/items/item[@name='armorPreacherBoots']/property[@name='Tags']/@value">lowerbody,feet,armor,armorFeet,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<set xpath="/items/item[@name='armorPreacherBoots']/effect_group/display_value[@name='dTreatedCritHealing']/@value">.04,.08,.12,.16,.2,.3</set>
 	<set xpath="/items/item[@name='armorPreacherBoots']/effect_group/triggered_effect[@trigger='onSelfEquipUpdate']/@value">.04,.08,.12,.16,.2,.3</set>
 		
@@ -73,6 +82,7 @@
 	<!-- ROGUE -->
 	
 	<!-- ROGUE HELMET -->
+	<set xpath="/items/item[@name='armorRogueHelmet']/property[@name='Tags']/@value">head,armor,armorHead,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorRogueHelmet']/effect_group/passive_effect[@name='ScavengingTime']"/>
 	<remove xpath="/items/item[@name='armorRogueHelmet']/effect_group/passive_effect[@name='LootStage']"/>
@@ -85,6 +95,7 @@
 	</append>
 	
 	<!-- ROGUE OUTFIT -->
+	<set xpath="/items/item[@name='armorRogueOutfit']/property[@name='Tags']/@value">upperbody,chest,armor,armorChest,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group[@name='RogueOutfit']/display_value[@name='dSneakEffectiveness']"/>
 	<remove xpath="/items/item[@name='armorRogueOutfit']/effect_group/requirement[@name='CVarCompare']"/>
@@ -101,6 +112,7 @@
 	</append>
 
 	<!-- ROGUE GLOVES -->
+	<set xpath="/items/item[@name='armorRogueGloves']/property[@name='Tags']/@value">upperbody,hands,armor,armorHands,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorRogueGloves']/effect_group[@name='RogueGloves']/display_value[@name='dLockpickSpeed']"/>
 	<remove xpath="/items/item[@name='armorRogueGloves']/effect_group[@name='RogueGloves']/display_value[@name='dLockpickSuccess']"/>
@@ -116,6 +128,7 @@
 	</append>
 	
 	<!-- ROGUE BOOTS -->
+	<set xpath="/items/item[@name='armorRogueBoots']/property[@name='Tags']/@value">lowerbody,feet,armor,armorFeet,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorRogueBoots']/effect_group[@name='RogueBoots']/display_value[@name='dFallDamage']"/>
 	<remove xpath="/items/item[@name='armorRogueBoots']/effect_group/triggered_effect"/>
@@ -141,6 +154,7 @@
 	<!-- ATHLETIC -->
 		
 	<!-- ATHLETIC HELMET -->
+	<set xpath="/items/item[@name='armorAthleticHelmet']/property[@name='Tags']/@value">head,armor,armorHead,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorAthleticHelmet']/effect_group[@name='AthleticHelmet']/display_value[@name='dFitnessBartering']"/>
 	<remove xpath="/items/item[@name='armorAthleticHelmet']/effect_group/passive_effect[@name='BarteringBuying']"/>
@@ -157,10 +171,12 @@
 	</append>
 	
 	<!-- ATHLETIC OUTFIT -->
+	<set xpath="/items/item[@name='armorAthleticOutfit']/property[@name='Tags']/@value">upperbody,chest,armor,armorChest,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<set xpath="/items/item[@name='armorAthleticOutfit']/effect_group/passive_effect[@name='HealthMax']/@value">4,8,12,16,20,30</set>
 	<set xpath="/items/item[@name='armorAthleticOutfit']/effect_group/display_value[@name='dHealthMax']/@value">4,8,12,16,20,30</set>
 	
 	<!-- ATHLETIC GLOVES -->
+	<set xpath="/items/item[@name='armorAthleticGloves']/property[@name='Tags']/@value">upperbody,hands,armor,armorHands,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<remove xpath="/items/item[@name='armorAthleticGloves']/effect_group/passive_effect[@name='StaminaMax']"/>
 	<remove xpath="/items/item[@name='armorAthleticGloves']/effect_group/display_value[@name='dStaminaMax']"/>
 	
@@ -170,6 +186,7 @@
 	</append>
 	
 	<!-- ATHLETIC BOOTS -->
+	<set xpath="/items/item[@name='armorAthleticBoots']/property[@name='Tags']/@value">lowerbody,feet,armor,armorFeet,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<remove xpath="/items/item[@name='armorAthleticBoots']/effect_group/passive_effect[@name='RunSpeed']"/>
 	<remove xpath="/items/item[@name='armorAthleticBoots']/effect_group/display_value[@name='dRunSpeed']"/>
 	
@@ -184,6 +201,7 @@
 	<!-- ENFORCER -->
 		
 	<!-- ENFORCER HELMET -->
+	<set xpath="/items/item[@name='armorEnforcerHelmet']/property[@name='Tags']/@value">head,armor,armorHead,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorEnforcerHelmet']/effect_group/passive_effect[@name='BarteringBuying']"/>
 	<remove xpath="/items/item[@name='armorEnforcerHelmet']/effect_group/passive_effect[@name='BarteringSelling']"/>	
@@ -191,14 +209,16 @@
 		<!-- Add new property -->
 	<append xpath="/items/item[@name='armorEnforcerHelmet']">
 		<effect_group>
-			<passive_effect name="BarteringSelling" operation="base_add" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6" />
-			<display_value name="dBarteringSelling" value=".04,.08,.12,.16,.2,.3" tier="1,2,3,4,5,6"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".02,.04,.06,.08,.1,.15" tier="1,2,3,4,5,6" />
+			<display_value name="dBarteringSelling" value=".02,.04,.06,.08,.1,.15" tier="1,2,3,4,5,6"/>
 		</effect_group>
 	</append>
 	
 	<!-- ENFORCER OUTFIT / WITHOUT CHANGES -->
+	<set xpath="/items/item[@name='armorEnforcerOutfit']/property[@name='Tags']/@value">upperbody,chest,armor,armorChest,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	
 	<!-- ENFORCER GLOVES -->
+	<set xpath="/items/item[@name='armorEnforcerGloves']/property[@name='Tags']/@value">upperbody,hands,armor,armorHands,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 		<!-- Removing old property -->
 	<remove xpath="/items/item[@name='armorEnforcerGloves']/effect_group[@name='EnforcerGloves']/display_value[@name='dFuelUsage']"/>
 	<remove xpath="/items/item[@name='armorEnforcerGloves']/effect_group/passive_effect[@name='VehicleFuelUsePer']"/>
@@ -212,6 +232,7 @@
 	</append>
 	
 	<!-- ENFORCER BOOTS -->
+	<set xpath="/items/item[@name='armorEnforcerBoots']/property[@name='Tags']/@value">lowerbody,feet,armor,armorFeet,canHaveCosmetic,lightArmor,lightArmorDeg,NoPrimitive</set>
 	<remove xpath="/items/item[@name='armorEnforcerBoots']/effect_group/passive_effect[@name='RunSpeed']"/>
 	<remove xpath="/items/item[@name='armorEnforcerBoots']/effect_group/display_value[@name='dRunSpeed']"/>
 	
@@ -394,7 +415,11 @@
 	
 	<!-- RANGER -->
 		
-	<!-- RANGER HELMET / WITHOUT CHANGES -->
+	<!-- RANGER HELMET -->
+	
+	<set xpath="/items/item[@name='armorRangerHelmet']/effect_group/passive_effect[@name='BarteringBuying']/@value">.01,.02,.03,.04,.05,.1</set>
+	<set xpath="/items/item[@name='armorRangerHelmet']/effect_group/passive_effect[@name='BarteringSelling']/@value">.01,.02,.03,.04,.05,.1</set>
+	
 	<!-- RANGER OUTFIT -->
 	<set xpath="/items/item[@name='armorRangerOutfit']/effect_group/passive_effect[@name='HealthMax']/@value">4,8,12,16,20,30</set>
 	<set xpath="/items/item[@name='armorRangerOutfit']/effect_group/display_value[@name='dHealthMax']/@value">4,8,12,16,20,30</set>

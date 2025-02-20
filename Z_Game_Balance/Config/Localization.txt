@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English,Russian
+
+modRoboticDroneMedicModDesc,item_modifiers,Mod,,Modify your drone into a robotic field medic that will automatically heal you as long as medical bandages or first aid kits are in its inventory.\n\n[FF6666]Attention! Modification is temporarily blocked to avoid duping items.[-],"Превращает ваш дрон в роботизированного полевого медика, который будет автоматически лечить вас при наличии в его инвентаре бинтов и аптечек.\n\n[FF6666]Внимание! Модификация временно заблокирована во избежании дюпа предметов.[-]"

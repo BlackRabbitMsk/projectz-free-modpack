@@ -1,0 +1,116 @@
+<config>
+		
+	<append xpath="/gameevents">
+		
+		
+		<action_sequence name="Small_Wave_WolfMinions">
+			
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="spawnedEnemies" />
+				<property name="entity_tags" value="entity" />
+				<property name="target_only" value="true" />
+			</action>
+		
+			<decision class="If">
+				<requirement class="GroupLiveCount">
+					<property name="target_group" value="spawnedEnemies"/>
+					<property name="operation" value="Equals"/> 
+					<property name="count" value="0"/>	
+				</requirement>
+				<action class="CallGameEvent">
+					<property name="phase" value="1" />
+					<property name="game_events" value="spawnerCallDevourerWolfMinion" />
+				</action>
+			</decision>
+		</action_sequence>
+		
+		<action_sequence name="Small_Wave_BearMinions">
+			
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="spawnedEnemies" />
+				<property name="entity_tags" value="entity" />
+				<property name="target_only" value="true" />
+			</action>
+		
+			<decision class="If">
+				<requirement class="GroupLiveCount">
+					<property name="target_group" value="spawnedEnemies"/>
+					<property name="operation" value="Equals"/> 
+					<property name="count" value="0"/>	
+				</requirement>
+				<action class="CallGameEvent">
+					<property name="phase" value="1" />
+					<property name="game_events" value="spawnerCallBearMinion" />
+				</action>
+			</decision>
+		</action_sequence>
+		
+		<action_sequence name="Small_Wave_GargulMinions">
+			
+			<action class="AddSpawnedEntitiesToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="spawnedEnemies" />
+				<property name="entity_tags" value="entity" />
+				<property name="target_only" value="true" />
+			</action>
+		
+			<decision class="If">
+				<requirement class="GroupLiveCount">
+					<property name="target_group" value="spawnedEnemies"/>
+					<property name="operation" value="Equals"/> 
+					<property name="count" value="0"/>	
+				</requirement>
+				<action class="CallGameEvent">
+					<property name="phase" value="1" />
+					<property name="game_events" value="spawnerCallGargul" />
+				</action>
+			</decision>
+		</action_sequence>
+		
+		<!-- Wave for Devourer Minions -->
+		<action_sequence name="spawnerCallDevourerWolfMinion">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="DevourerMinion" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="10" param1="maxdist" />
+				<property name="min_distance" value="10" param1="mindist" />
+				<property name="add_to_group" value="targets" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="spawnerCallBearMinion">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="BearDaddyMinion" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="10" param1="maxdist" />
+				<property name="min_distance" value="10" param1="mindist" />
+				<property name="add_to_group" value="targets" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="spawnerCallGargul">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="GargulMinion" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="max_distance" value="20" param1="maxdist" />
+				<property name="min_distance" value="20" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+				<property name="add_to_group" value="targets" />
+			</action>	
+		</action_sequence>
+		
+		<action_sequence name="spawnerVeteranBrotherhood">
+			<action class="SpawnEntity">	    
+				<property name="entity_names" value="zombieDemolition,zombieSoldierFeral,zombieSoldierRadiated" param1="zombiename" />
+				<property name="spawn_count" value="2" param1="spawncount" />
+				<property name="max_distance" value="10" param1="maxdist" />
+				<property name="min_distance" value="10" param1="mindist" />
+				<property name="air_spawn" value="true" param1="airspawn" />
+			</action>	
+		</action_sequence>
+		
+	</append>
+	
+</config>

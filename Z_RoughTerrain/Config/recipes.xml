@@ -1,0 +1,21 @@
+<config>
+	
+	<append xpath="/recipes">
+		<recipe name="modSnowResist" count="1" craft_time="120">
+			<ingredient name="resourceWood" count="150"/>
+			<ingredient name="resourceMetalPipe" count="15"/>
+		</recipe>
+		
+		<recipe name="modSandResist" count="1" craft_time="120">
+			<ingredient name="resourceCloth" count="100"/>
+			<ingredient name="resourceYuccaFibers" count="250"/>
+		</recipe>
+		
+		<recipe name="modDesrtResist" count="1" craft_time="120">
+			<ingredient name="resourceForgedIron" count="50"/>
+			<ingredient name="resourceScrapPolymers" count="25"/>
+		</recipe>
+		
+	</append>
+	
+</config>

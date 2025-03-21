@@ -1,0 +1,47 @@
+<config>
+	
+	<!--Snow -->
+	<append xpath="/blocks/block[@name='terrSnow']">
+		<property name="BuffsWhenWalkedOn" value="buffDeepSnowStatus"/>
+	</append>
+	
+	<!--Sand -->
+	<append xpath="/blocks/block[@name='terrSand']">
+		<property name="BuffsWhenWalkedOn" value="buffSandStatus"/>
+	</append>
+	
+	<!--Desert Ground -->
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<property name="BuffsWhenWalkedOn" value="buffDesertGroundStatus"/>
+	</append>
+	
+	<!--Rough Ground -->
+	<append xpath="/blocks/block[@name='terrForestGround']">
+		<property name="BuffsWhenWalkedOn" value="buffRoughGroundStatus"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<property name="BuffsWhenWalkedOn" value="buffRoughGroundStatus"/>
+	</append>
+	
+	<!--Destroyed Stone -->
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">
+		<property name="BuffsWhenWalkedOn" value="buffDestroyedStoneStatus"/>
+	</append>
+	
+	<!--Gravel -->
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="BuffsWhenWalkedOn" value="BuffGravelBonus"/>
+	</append>
+	
+	<!--Concrete -->
+	<append xpath="/blocks/block[@name='terrConcrete']">
+		<property name="BuffsWhenWalkedOn" value="BuffConcreteBonus"/>
+	</append>
+	
+	<!--Asphalt -->
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="BuffsWhenWalkedOn" value="BuffAsphaltBonus"/>
+	</append>
+	
+</config>

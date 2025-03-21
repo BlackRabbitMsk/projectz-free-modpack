@@ -1,0 +1,61 @@
+Key,Source,Context,Changes,English,Russian
+
+buffDestroyedStoneKey,buffs,buff,,Garbage,Мусор
+buffDestroyedStoneBaseName,buffs,buff,,Dangerous soil,Опасный грунт
+buffDestroyedStoneBaseTooltip,buffs,buff,,You are moving through Dangerous soil,Вы передвигаетесь по опасному грунту
+buffDestroyedStoneBaseIncDesc,buffs,Buff,,"With so much trash underfoot, you better watch your surroundings.\n\nYour movement speed is reduced by [DECEA3]25%[-], your jump height is reduced by [DECEA3]25%[-], and your stamina consumption while running is increased by [DECEA3]50%[-]\n\nWarning: When running on dangerous surfaces, you have a [DECEA3]25%[-] chance of getting a punctured foot\n\n[DECEA3]You need to equip the [DECEA3]Sole Guard[-] modification to increase your mobility[-]","Когда столько мусора под ногами, лучше внимательно смотреть по сторонам.\n\nВаша скорость передвижения снижена на [DECEA3]25%[-], высота прыжка на [DECEA3]25%[-], а расход выносливости при беге увеличен на [DECEA3]50%[-]\n\nВнимание при беге по опасной поверхности вы можете проколоть ногу с вероятностью [DECEA3]25%[-]\n\n[DECEA3]Вам необходимо одень модификацию [DECEA3]Защита подошвы[-], чтобы повысить вашу мобильность[-]"
+buffDestroyedStoneResistName,buffs,buff,,Dangerous soil [DECEA3]Protection[-],Опасный грунт [DECEA3]Защита[-]
+buffDestroyedStoneResistTooltip,buffs,buff,,You are moving through Dangerous soil (PROTECTION),Вы передвигаетесь по опасному грунту (ЗАЩИТА)
+buffDestroyedStoneResistIncDesc,buffs,Buff,,"With so much trash underfoot, it's best to keep your eyes peeled.\n\nEven with protection, your movement speed is reduced by [DECEA3]15%[-]","Когда столько мусора под ногами, лучше внимательно смотреть по сторонам.\n\nДаже с защитой ваша скорость передвижения снижена на [DECEA3]15%[-]"
+
+BuffLegPunctuteName,buffs,buff,,Leg puncture,Прокол ноги
+BuffLegPunctuteTooltip,buffs,buff,,You punctured your foot,Вы прокололи ногу
+BuffLegPunctuteIncDesc,buffs,Buff,,"You stepped on something sharp and punctured your leg. The wound is not fatal but extremely unpleasant.\n\nYour movement speed is reduced by [DECEA3]25%[-]","Вы всетаки наступили на чтото острое и проколи ногу. Рана не смертельная но крайне неприятная.\n\nВаша скорость передвижения снижена на [DECEA3]25%[-]"
+
+buffDeepSnowKey,buffs,buff,,Snow,Снег
+buffDeepSnowBaseName,buffs,buff,,Deep Snow,Глубокий снег
+buffDeepSnowBaseTooltip,buffs,buff,,You are moving through deep snow,Вы передвигаетесь по глубокому снегу
+buffDeepSnowBaseIncDesc,buffs,Buff,,"Moving through deep snow is not easy, and running is even more so. \n\nYour walking speed is reduced by [DECEA3]25%[-], running speed by [DECEA3]50%[-], jump height by [DECEA3]25%[-], and stamina consumption when jumping is increased by [DECEA3]25%[-]\n\n[DECEA3]You need to equip the [DECEA3]Snowshoes[-] modification to increase your mobility[-]","Передвигаться по глубокому снегу не так уж и просто, а бегать тем более. \n\nВаша скорость ходьбы снижена на [DECEA3]25%[-], скорость бега на [DECEA3]50%[-], высота прыжка на [DECEA3]25%[-], а расход выносливости при прыжках увеличен на [DECEA3]25%[-]\n\n[DECEA3]Вам необходимо одень модификацию [DECEA3]Снегоступы[-], чтобы повысить вашу мобильность[-]"
+buffDeepSnowResistName,buffs,buff,,Deep Snow 2, Глубокий снег [DECEA3]Снегоступы[-]
+buffDeepSnowResistTooltip,buffs,buff,,You are moving through deep snow (SNOWSHOES),Вы передвигаетесь по глубокому снегу (СНЕГОСТУПЫ)
+buffDeepSnowResistIncDesc,buffs,Buff,,"You are moving through deep snow. You have snowshoes, but you still cannot move at full speed.\n\nYour walking speed is reduced by [DECEA3]10%[-], your running speed is reduced by [DECEA3]20%[-], and your jump height is reduced by [DECEA3]10%[-]","Вы передвигаетесь по глубокому снегу. У Вас есть снегоступы, но вы все равно не можете двигаться в полную силу.\n\nВаша скорость ходьбы снижена на [DECEA3]10%[-], скорость бега на [DECEA3]20%[-], а высота прыжка на [DECEA3]10%[-]"
+
+buffTerSand,buffs,buff,,Sand,Песок
+buffTerSandBaseName,buffs,buff,,Sand,Песок
+buffTerSandBaseTooltip,buffs,buff,,You are moving on the sand,Вы передвигаетесь по песку
+buffTerSandBaseIncDesc,buffs,Buff,,"Moving on shifting sand is not so easy, and running is even more so. \n\nYour walking speed is reduced by [DECEA3]15%[-], running speed by [DECEA3]15%[-], jump height by [DECEA3]20%[-], and stamina consumption when jumping is increased by [DECEA3]10%[-]\n\n[DECEA3]You need to equip the [DECEA3]Wide Sole[-] modification to increase your mobility[-]","Передвигаться по зыбкому песку не так уж и просто, а бегать тем более. \n\nВаша скорость ходьбы снижена на [DECEA3]15%[-], скорость бега на [DECEA3]15%[-], высота прыжка на [DECEA3]20%[-], а расход выносливости при прыжках увеличен на [DECEA3]10%[-]\n\n[DECEA3]Вам необходимо одень модификацию [DECEA3]Широкая подошва[-], чтобы повысить вашу мобильность[-]"
+buffTerSandResistName,buffs,buff,,Sand [DECEA3]Wide Sole[-], Песок [DECEA3]Широкая подошва[-]
+buffTerSandResistTooltip,buffs,buff,,You are moving on the sand (Wide Sole),Вы передвигаетесь по песку (Широкая подошва)
+buffTerSandResistIncDesc,buffs,Buff,,"You move across the sand. You have wide soles, but you still cannot move at full strength. \n\nYour walking speed, running speed, and jumping height are reduced by [DECEA3]5%[-]","Вы передвигаетесь по песку. У Вас есть широкая подошва, но вы все равно не можете двигаться в полную силу. \n\nВаша скорость ходьбы, бега и высота прыжка снижены на [DECEA3]5%[-]"
+
+buffRoughGroundKey,buffs,buff,,Ground,Земля
+buffRoughGroundBaseName,buffs,buff,,Rough Ground,Неровная земля
+buffRoughGroundBaseTooltip,buffs,buff,,You are moving on the rough ground,Вы передвигаетесь по неровной земле
+buffRoughGroundBaseIncDesc,buffs,Buff,,"It's not easy to move around on rough ground, let alone run. \n\nYour movement speed is reduced by [DECEA3]15%[-]\n\n[DECEA3]You need to equip any footwear to increase your mobility[-]","Передвигаться по грубой земле не так уж и просто, а бегать тем более. \n\nВаша скорость передвижения снижена на [DECEA3]15%[-]\n\n[DECEA3]Вам необходимо одень любую обувь, чтобы повысить вашу мобильность[-]"
+
+buffDesertGroundKey,buffs,buff,,Desert,Пустыня
+buffDesertGroundBaseName,buffs,buff,,Desert Ground,Пустынная земля
+buffDesertGroundBaseTooltip,buffs,buff,,You are moving on the desert ground,Вы передвигаетесь по пустынной земле
+buffDesertGroundBaseIncDesc,buffs,Buff,,"Moving around the desert ground isn't easy, let alone running. \n\nYour movement speed is reduced by [DECEA3]10%[-] and your jump height is reduced by [DECEA3]15%[-]\n\n[DECEA3]You need to equip the [DECEA3]Wide Sole[-] modification to increase your mobility[-]","Передвигаться по пустынной земле не так уж и просто, а бегать тем более. \n\nВаша скорость передвижения снижена на [DECEA3]10%[-], а высота прыжка на [DECEA3]15%[-]\n\n[DECEA3]Вам необходимо одень модификацию [DECEA3]Широкая подошва[-], чтобы повысить вашу мобильность[-]"
+
+BuffGravelKey,buffs,buff,,Gravel,Гравий
+BuffGravelBonusName,buffs,buff,,Gravel,Гравий
+BuffGravelBonusTooltip,buffs,buff,,You are moving on gravel,Вы передвигаетесь по гравию
+BuffGravelBonusIncDesc,buffs,Buff,,"Gravel makes walking easier and safer.\n\nYour mobility is increased by [DECEA3]5%[-]","По гравию передвигаться легче и безопасней.\n\nВаша мобильность увеличена на [DECEA3]5%[-]"
+
+BuffConcreteKey,buffs,buff,,Concrete,Бетон
+BuffConcreteBonusName,buffs,buff,,Concrete,Бетон
+BuffConcreteBonusTooltip,buffs,buff,,You are moving on Concrete,Вы передвигаетесь по бетону
+BuffConcreteBonusIncDesc,buffs,Buff,,"Walking on smooth concrete is a pleasure.\n\nYour mobility is increased by [DECEA3]10%[-]","Ходить по гладкому бетону одно удовольствие.\n\nВаша мобильность увеличена на [DECEA3]10%[-]"
+
+BuffAsphaltKey,buffs,buff,,Asphalt,Асфальт
+BuffAsphaltBonusName,buffs,buff,,Asphalt,Асфальт
+BuffAsphaltBonusTooltip,buffs,buff,,You are moving on Asphalt,Вы передвигаетесь по асфальту
+BuffAsphaltBonusIncDesc,buffs,Buff,,"A great asphalt road is important not only when you are in transport.\n\nYour mobility is increased by [DECEA3]25%[-]","Прекрасная асфальтная дорога важна не только когда вы на транспорте.\n\nВаша мобильность увеличена на [DECEA3]25%[-]"
+
+modSnowResist,item_modifiers,mod,,Snowshoes Mod,Мод Снегоступы
+modSnowResistDesc,item_modifiers,mod,,"Moving through deep snow is now no problem. You significantly increase your mobility when moving through snow","Передвигать по глубокому снегу теперь не составит проблем. Вы значительно повышаете вашу мобильность при передвижении по снегу"
+modSandResist,item_modifiers,mod,,Wide Sole Mod,Мод Широкая подошва
+modSandResistDesc,item_modifiers,mod,,"Moving on shifting sand will not be a problem. You significantly increase your mobility when moving on sand and desert soil","Передвигать по зыбкому песку не составит проблем. Вы значительно повышаете вашу мобильность при передвижении по песку и пустнынному грунту"
+modDesrtResist,item_modifiers,mod,,Sole Protection Mod,Мод Защита подошвы
+modDesrtResistDesc,item_modifiers,mod,,"Moving on dangerous surfaces is now no problem. You significantly increase your mobility when moving on dangerous ground, and you are also completely protected from punctures","Передвигать по опасным поверхностям теперь не составит проблем. Вы значительно повышаете вашу мобильность при передвижении по опасному грунту, а также вы полностью защищены от прокола ноги"

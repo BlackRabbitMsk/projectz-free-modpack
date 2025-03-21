@@ -1,0 +1,340 @@
+<config>
+	
+	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RoughResist" operation="set" value="1">
+                <requirement name="WornItems" operation="Equals" value="1" tags="feet"/>
+            </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RoughResist" operation="set" value="0">
+                <requirement name="WornItems" operation="LT" value="1" tags="feet"/>
+            </triggered_effect>
+        </effect_group>
+    </append>
+	
+	<append xpath="/buffs">
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN SNOW -->
+		<buff name="buffDeepSnowStatus" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDeepSnowBase">
+					<requirement name="CVarCompare" cvar="$terSnowResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDeepSnowResist">
+					<requirement name="CVarCompare" cvar="$terSnowResist" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffDeepSnowBase">
+					<requirement name="CVarCompare" cvar="$terSnowResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffDeepSnowResist">
+					<requirement name="CVarCompare" cvar="$terSnowResist" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffDeepSnowBase">
+					<requirement name="HasBuff" buff="buffDeepSnowBase"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffDeepSnowResist">
+					<requirement name="HasBuff" buff="buffDeepSnowResist"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffDeepSnowBase" name_key="buffDeepSnowBaseName" tooltip_key="buffDeepSnowBaseTooltip" description_key="buffDeepSnowBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffDeepSnowKey"/>
+			<display_value value="xxx"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDeepSnowResist"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.25"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.50"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="-.25"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value=".25" tags="jumping"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffDeepSnowResist" name_key="buffDeepSnowResistName" tooltip_key="buffDeepSnowResistTooltip" description_key="buffDeepSnowResistIncDesc" icon="ui_game_symbol_agility" icon_color="255,230,40">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffDeepSnowKey"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDeepSnowBase"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.2"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="-.1"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN SAND -->
+		<buff name="buffSandStatus" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffTerSandBase">
+					<requirement name="CVarCompare" cvar="$terSandResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffTerSandResist">
+					<requirement name="CVarCompare" cvar="$terSandResist" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffTerSandBase">
+					<requirement name="CVarCompare" cvar="$terSandResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffTerSandResist">
+					<requirement name="CVarCompare" cvar="$terSandResist" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffTerSandBase">
+					<requirement name="HasBuff" buff="buffTerSandBase"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffTerSandResist">
+					<requirement name="HasBuff" buff="buffTerSandResist"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTerSandBase" name_key="buffTerSandBaseName" tooltip_key="buffTerSandBaseTooltip" description_key="buffTerSandBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffTerSandKey"/>
+			<display_value value="xxx"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffTerSandResist"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.15"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.15"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="-.2"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value=".1" tags="jumping"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTerSandResist" name_key="buffTerSandResistName" tooltip_key="buffTerSandResistTooltip" description_key="buffTerSandResistIncDesc" icon="ui_game_symbol_agility" icon_color="255,230,40">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffTerSandKey"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffTerSandBase"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.05"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.05"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="-.05"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN DESERT GROUND -->
+		<buff name="buffDesertGroundStatus" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDesertGroundBase">
+					<requirement name="CVarCompare" cvar="$terSandResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffDesertGroundBase">
+					<requirement name="CVarCompare" cvar="$terSandResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffDesertGroundBase">
+					<requirement name="HasBuff" buff="buffDesertGroundBase"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffDesertGroundBase" name_key="buffDesertGroundBaseName" tooltip_key="buffDesertGroundBaseTooltip" description_key="buffDesertGroundBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffDesertGroundKey"/>
+			<display_value value="xxx"/>
+		
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.1"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="-.15"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN ROUGH GROUND -->
+		<buff name="buffRoughGroundStatus" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffRoughGroundBase">
+					<requirement name="CVarCompare" cvar="$RoughResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffRoughGroundBase">
+					<requirement name="CVarCompare" cvar="$RoughResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffRoughGroundBase">
+					<requirement name="HasBuff" buff="buffRoughGroundBase"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffRoughGroundBase" name_key="buffRoughGroundBaseName" tooltip_key="buffRoughGroundBaseTooltip" description_key="buffRoughGroundBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffRoughGroundKey"/>
+			<display_value value="xxx"/>
+		
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.5"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.15"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN DESTRIOD STONE -->		
+		<buff name="buffDestroyedStoneStatus" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDestroyedStoneBase">
+					<requirement name="CVarCompare" cvar="$terDestrResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDestroyedStoneResist">
+					<requirement name="CVarCompare" cvar="$terDestrResist" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffDestroyedStoneBase">
+					<requirement name="CVarCompare" cvar="$terDestrResist" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffDestroyedStoneResist">
+					<requirement name="CVarCompare" cvar="$terDestrResist" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffDestroyedStoneBase">
+					<requirement name="HasBuff" buff="buffDestroyedStoneBase"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffDestroyedStoneResist">
+					<requirement name="HasBuff" buff="buffDestroyedStoneResist"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffDestroyedStoneBase" name_key="buffDestroyedStoneBaseName" tooltip_key="buffDestroyedStoneBaseTooltip" description_key="buffDestroyedStoneBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffDestroyedStoneKey"/>
+			<display_value value="xxx"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneResist"/>
+				<triggered_effect trigger="onSelfRun" action="AddBuff" buff="BuffLegPunctute">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+				</triggered_effect>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.25"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.25"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="-.15"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value=".5" tags="running"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffDestroyedStoneResist" name_key="buffDestroyedStoneResistName" tooltip_key="buffDestroyedStoneResistTooltip" description_key="buffDestroyedStoneResistIncDesc" icon="ui_game_symbol_agility" icon_color="255,230,40">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="buffDestroyedStoneKey"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneBase"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="-.15"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="-.15"/>
+			</effect_group>
+		</buff>
+		
+		<!-- Leg puncture -->
+		<buff name="BuffLegPunctute" name_key="BuffLegPunctuteName" tooltip_key="BuffLegPunctuteTooltip" description_key="BuffLegPunctuteIncDesc" icon="ui_game_symbol_splint" icon_color="255,20,0" icon_blink="true">
+			<damage_type value="bloodloss"/>
+			<damage_source value="Internal"/>
+			<stack_type value="replace"/>
+			<duration value="5"/>
+			<update_rate value="1"/>
+			<display_value value=".BuffLegPunctute"/>
+			<display_value_format value="time"/>
+			
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="2"/>
+				<passive_effect name="Mobility" operation="base_add" value="-.25"/>
+			</effect_group>
+			<effect_group name="Timer">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".BuffLegPunctute" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".BuffLegPunctute" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".BuffLegPunctute"/>
+			</effect_group>
+		</buff>
+    
+		<!-- ===================================== -->
+		<!-- TERRAIN GRAVEL -->
+		<buff name="BuffGravelBonus" name_key="BuffGravelBonusName" tooltip_key="BuffGravelBonusTooltip" description_key="BuffGravelBonusIncDesc" icon="ui_game_symbol_agility" icon_color="180,180,180" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="BuffGravelKey"/>
+			<display_value value="xxx"/>
+		
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffConcreteBonus,BuffAsphaltBonus"/>
+				<passive_effect name="Mobility" operation="base_add" value=".05"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN CONCRATE -->
+		<buff name="BuffConcreteBonus" name_key="BuffConcreteBonusName" tooltip_key="BuffConcreteBonusTooltip" description_key="BuffConcreteBonusIncDesc" icon="ui_game_symbol_agility" icon_color="255,255,255" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="BuffConcreteKey"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffAsphaltBonus"/>
+				<passive_effect name="Mobility" operation="base_add" value=".1"/>
+			</effect_group>
+		</buff>
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN ASPHALT -->
+		<buff name="BuffAsphaltBonus" name_key="BuffAsphaltBonusName" tooltip_key="BuffAsphaltBonusTooltip" description_key="BuffAsphaltBonusIncDesc" icon="ui_game_symbol_agility" icon_color="55,237,85" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value_key value="BuffAsphaltKey"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus"/>
+				<passive_effect name="Mobility" operation="base_add" value=".25"/>
+			</effect_group>
+		</buff>
+		
+	</append>
+	
+</config>

@@ -1,0 +1,44 @@
+<config>
+		
+	<append xpath="/item_modifiers">
+		
+		<!-- ===================================== -->
+		<!-- TERRAIN RESIST MODIFIERS -->
+		<!-- ===================================== -->
+		
+		<item_modifier name="modSnowResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorPreacherBoots"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="600"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terSnowResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terSnowResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modSandResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorLumberjackBoots"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="600600"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terSandResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terSandResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modDesrtResist" installable_tags="armorFeet" modifier_tags="terResist" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="armorRaiderBoots"/>
+			<property name="CustomIconTint" value="8692FF"/>
+			<property name="EconomicValue" value="600"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$terDestrResist" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$terDestrResist" operation="set" value="0"/>
+			</effect_group>
+		</item_modifier>
+		
+	</append>
+	
+</config>

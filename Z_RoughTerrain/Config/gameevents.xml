@@ -1,0 +1,17 @@
+<config>
+		
+	<append xpath="/gameevents">
+							
+		<action_sequence name="SnowVehicleCheck">		
+			<requirement class="InVehicle">
+				<property name="invert" value="true"/>
+			</requirement>
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffDeepSnowStatus"/>
+				<property name="phase" value="0"/>
+			</action>
+		</action_sequence>
+	
+	</append>
+	
+</config>

@@ -17,7 +17,7 @@
 		<!-- TERRAIN SNOW -->
 		<buff name="buffDeepSnowStatus" hidden="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
@@ -44,7 +44,7 @@
 		
 		<buff name="buffDeepSnowBase" name_key="buffDeepSnowBaseName" tooltip_key="buffDeepSnowBaseTooltip" description_key="buffDeepSnowBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffDeepSnowKey"/>
 			<display_value value="xxx"/>
 
@@ -62,7 +62,7 @@
 		
 		<buff name="buffDeepSnowResist" name_key="buffDeepSnowResistName" tooltip_key="buffDeepSnowResistTooltip" description_key="buffDeepSnowResistIncDesc" icon="ui_game_symbol_agility" icon_color="255,230,40">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffDeepSnowKey"/>
 			<display_value value="xxx"/>
 			
@@ -81,7 +81,7 @@
 		<!-- TERRAIN SAND -->
 		<buff name="buffSandStatus" hidden="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffDesertGroundStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
@@ -108,7 +108,7 @@
 		
 		<buff name="buffTerSandBase" name_key="buffTerSandBaseName" tooltip_key="buffTerSandBaseTooltip" description_key="buffTerSandBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffTerSandKey"/>
 			<display_value value="xxx"/>
 
@@ -126,7 +126,7 @@
 		
 		<buff name="buffTerSandResist" name_key="buffTerSandResistName" tooltip_key="buffTerSandResistTooltip" description_key="buffTerSandResistIncDesc" icon="ui_game_symbol_agility" icon_color="255,230,40">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffTerSandKey"/>
 			<display_value value="xxx"/>
 			
@@ -145,7 +145,7 @@
 		<!-- TERRAIN DESERT GROUND -->
 		<buff name="buffDesertGroundStatus" hidden="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffRoughGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
@@ -163,7 +163,7 @@
 		
 		<buff name="buffDesertGroundBase" name_key="buffDesertGroundBaseName" tooltip_key="buffDesertGroundBaseTooltip" description_key="buffDesertGroundBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffDesertGroundKey"/>
 			<display_value value="xxx"/>
 		
@@ -178,7 +178,7 @@
 		<!-- TERRAIN ROUGH GROUND -->
 		<buff name="buffRoughGroundStatus" hidden="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDestroyedStoneStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
@@ -196,7 +196,7 @@
 		
 		<buff name="buffRoughGroundBase" name_key="buffRoughGroundBaseName" tooltip_key="buffRoughGroundBaseTooltip" description_key="buffRoughGroundBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffRoughGroundKey"/>
 			<display_value value="xxx"/>
 		
@@ -210,7 +210,7 @@
 		<!-- TERRAIN DESTRIOD STONE -->		
 		<buff name="buffDestroyedStoneStatus" hidden="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffRoughGroundStatus,buffDesertGroundStatus,buffSandStatus,buffDeepSnowStatus,BuffGravelBonus,BuffConcreteBonus,BuffAsphaltBonus"/>
@@ -237,7 +237,7 @@
 		
 		<buff name="buffDestroyedStoneBase" name_key="buffDestroyedStoneBaseName" tooltip_key="buffDestroyedStoneBaseTooltip" description_key="buffDestroyedStoneBaseIncDesc" icon="ui_game_symbol_agility" icon_color="255,160,50">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffDestroyedStoneKey"/>
 			<display_value value="xxx"/>
 
@@ -258,7 +258,7 @@
 		
 		<buff name="buffDestroyedStoneResist" name_key="buffDestroyedStoneResistName" tooltip_key="buffDestroyedStoneResistTooltip" description_key="buffDestroyedStoneResistIncDesc" icon="ui_game_symbol_agility" icon_color="255,230,40">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="buffDestroyedStoneKey"/>
 			<display_value value="xxx"/>
 			
@@ -297,7 +297,7 @@
 		<!-- TERRAIN GRAVEL -->
 		<buff name="BuffGravelBonus" name_key="BuffGravelBonusName" tooltip_key="BuffGravelBonusTooltip" description_key="BuffGravelBonusIncDesc" icon="ui_game_symbol_agility" icon_color="180,180,180" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="BuffGravelKey"/>
 			<display_value value="xxx"/>
 		
@@ -311,7 +311,7 @@
 		<!-- TERRAIN CONCRATE -->
 		<buff name="BuffConcreteBonus" name_key="BuffConcreteBonusName" tooltip_key="BuffConcreteBonusTooltip" description_key="BuffConcreteBonusIncDesc" icon="ui_game_symbol_agility" icon_color="255,255,255" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="BuffConcreteKey"/>
 			<display_value value="xxx"/>
 			
@@ -325,7 +325,7 @@
 		<!-- TERRAIN ASPHALT -->
 		<buff name="BuffAsphaltBonus" name_key="BuffAsphaltBonusName" tooltip_key="BuffAsphaltBonusTooltip" description_key="BuffAsphaltBonusIncDesc" icon="ui_game_symbol_agility" icon_color="55,237,85" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="0"/>
+			<duration value="2"/>
 			<display_value_key value="BuffAsphaltKey"/>
 			<display_value value="xxx"/>
 			
